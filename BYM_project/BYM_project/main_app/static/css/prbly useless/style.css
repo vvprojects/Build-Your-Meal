@@ -1,0 +1,94 @@
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+* {box-sizing: border-box;}
+form {
+  width: auto;
+  float: right;
+  margin-right: 30px;
+  margin-left: 550px;
+}
+input {
+  width: 250px;
+  height: 47px;
+  padding-left: 15px;
+  border-radius: 47px;
+  border: 2px solid black;
+  background: white;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+input:focus {
+  width: 300px;
+}
+button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: white;
+}
+.theme-dark {
+    background: white;
+    color: white;
+  }
+  
+  .theme-light {
+    background: #ffb3b3;
+    color: #ffb3b3;
+  }
+  body{
+    background-color: #ffb3b3;
+    color: white;
+  }
+  #header{
+    padding: 0;
+    background-color: #ffb3b3;
+    color: white;
+
+  }
+  nav {
+    display: flex;
+    justify-content: center; /* Флексы по центру ряда */
+    width: 80%; /* Ширина */
+    font-family: 'emoji'; /* Google Font */
+  }
+  .navbar-brand {
+    color: white;
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: var(--bs-navbar-brand-margin-end);
+    font-size: 40px;
+    padding-left: 25px;
+}
+.nav-link {
+    color: white;
+    padding-left: 250px;
+}
+.nav-item{
+   color: white;
+}
+.nav-name{
+    font-size: 25px;
+}
+
+ .card {
+    --bs-card-bg: grey;
+}
+.navbar {
+    --bs-navbar-padding-x: 1.5rem;
+}
+
+.nav-item {
+    padding-right: 20px;
+    font-size: 25px;
+}
