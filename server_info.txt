@@ -1,0 +1,4 @@
+Заявка https://track.miem.hse.ru/project/19106/issue/441
+ssh i441@172.18.130.50 -p 5175
+Пароль: frgr45$g
+Подключаться по ВПН

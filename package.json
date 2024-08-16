@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "vue-yandex-maps": "^0.12.7"
+  }
+}
