@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.ProductLog Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.ProductLog</primary></indexterm>
+<para>
+
+<para>информация о ранее заказанных товарах в магазине <?linebreak?> name – название товара <?linebreak?> price – цена <?linebreak?> amount – количество (в unit_id) товара которое в одной единице заказ (например 300, unit_id – граммы) <?linebreak?> quantity – количество единиц, которое было заказано <?linebreak?> link – ссылка на товар <?linebreak?> shop_id – магазин, из которого товар <?linebreak?> order_id – заказ, в котором был куплен данный товар <?linebreak?> unit_id – единица измерения <?linebreak?> </para>
+ 
+</para>
+<para>Inheritance diagram for bym.BYM_project.main_app.models.ProductLog:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1_1_meta">Meta</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a84e1b8f531e4e3cd3468320065743fa1">order</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a98b3d3ef54221e38d976bd04a25e22a6">Order</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a9cb6e368a91a7fa12f1b9f27a0f10433">on_delete</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a65e3a4594a41f198ed662856d2ecbbda">shop</link> = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop">Shop</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a9cb6e368a91a7fa12f1b9f27a0f10433">on_delete</link>=models.CASCADE)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1af46abc1d110ff668e58604b77e767e08">unit</link> = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure">UnitOfMeasure</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a9cb6e368a91a7fa12f1b9f27a0f10433">on_delete</link>=models.CASCADE)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1adf15e6ea2e1f6a0ea640326691140ce8">name</link> = models.CharField(max_length=100)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1af158701900a361a9b0498c97b8ff2310">price</link> = models.PositiveIntegerField()</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1ae387b693aa90ec7d8b04d5ae9cc47608">amount</link> = models.DecimalField(max_digits=4 + 4, decimal_places=4)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1aa5e3b31f2096adb94626dcfbd356b7de">quantity</link> = models.PositiveIntegerField()</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1af8607133f1651d3e132d75183af8d4c3">link</link> = models.URLField()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>информация о ранее заказанных товарах в магазине <?linebreak?> name – название товара <?linebreak?> price – цена <?linebreak?> amount – количество (в unit_id) товара которое в одной единице заказ (например 300, unit_id – граммы) <?linebreak?> quantity – количество единиц, которое было заказано <?linebreak?> link – ссылка на товар <?linebreak?> shop_id – магазин, из которого товар <?linebreak?> order_id – заказ, в котором был куплен данный товар <?linebreak?> unit_id – единица измерения <?linebreak?> </para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00281">281</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1ae387b693aa90ec7d8b04d5ae9cc47608"/><section>
+    <title>amount</title>
+<indexterm><primary>amount</primary><secondary>bym.BYM_project.main_app.models.ProductLog</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.ProductLog</primary><secondary>amount</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.ProductLog.amount = models.DecimalField(max_digits=4 + 4, decimal_places=4)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00303">303</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1af8607133f1651d3e132d75183af8d4c3"/><section>
+    <title>link</title>
+<indexterm><primary>link</primary><secondary>bym.BYM_project.main_app.models.ProductLog</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.ProductLog</primary><secondary>link</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.ProductLog.link = models.URLField()<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00305">305</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1adf15e6ea2e1f6a0ea640326691140ce8"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>bym.BYM_project.main_app.models.ProductLog</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.ProductLog</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.ProductLog.name = models.CharField(max_length=100)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00301">301</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a9cb6e368a91a7fa12f1b9f27a0f10433"/><section>
+    <title>on_delete</title>
+<indexterm><primary>on_delete</primary><secondary>bym.BYM_project.main_app.models.ProductLog</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.ProductLog</primary><secondary>on_delete</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.ProductLog.on_delete<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00297">297</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a84e1b8f531e4e3cd3468320065743fa1"/><section>
+    <title>order</title>
+<indexterm><primary>order</primary><secondary>bym.BYM_project.main_app.models.ProductLog</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.ProductLog</primary><secondary>order</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.ProductLog.order<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00297">297</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a98b3d3ef54221e38d976bd04a25e22a6"/><section>
+    <title>Order</title>
+<indexterm><primary>Order</primary><secondary>bym.BYM_project.main_app.models.ProductLog</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.ProductLog</primary><secondary>Order</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.ProductLog.Order<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00297">297</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1af158701900a361a9b0498c97b8ff2310"/><section>
+    <title>price</title>
+<indexterm><primary>price</primary><secondary>bym.BYM_project.main_app.models.ProductLog</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.ProductLog</primary><secondary>price</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.ProductLog.price = models.PositiveIntegerField()<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00302">302</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1aa5e3b31f2096adb94626dcfbd356b7de"/><section>
+    <title>quantity</title>
+<indexterm><primary>quantity</primary><secondary>bym.BYM_project.main_app.models.ProductLog</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.ProductLog</primary><secondary>quantity</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.ProductLog.quantity = models.PositiveIntegerField()<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00304">304</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a65e3a4594a41f198ed662856d2ecbbda"/><section>
+    <title>shop</title>
+<indexterm><primary>shop</primary><secondary>bym.BYM_project.main_app.models.ProductLog</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.ProductLog</primary><secondary>shop</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.ProductLog.shop = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop">Shop</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a9cb6e368a91a7fa12f1b9f27a0f10433">on_delete</link>=models.CASCADE)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00298">298</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1af46abc1d110ff668e58604b77e767e08"/><section>
+    <title>unit</title>
+<indexterm><primary>unit</primary><secondary>bym.BYM_project.main_app.models.ProductLog</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.ProductLog</primary><secondary>unit</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.ProductLog.unit = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure">UnitOfMeasure</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a9cb6e368a91a7fa12f1b9f27a0f10433">on_delete</link>=models.CASCADE)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00299">299</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

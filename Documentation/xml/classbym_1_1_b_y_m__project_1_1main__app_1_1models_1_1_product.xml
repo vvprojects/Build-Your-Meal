@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::Product</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">models.Model</basecompoundref>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1_1_meta" prot="public">bym::BYM_project::main_app::models::Product::Meta</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ac9e0922428a11a7b2f84f0be129df61d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Product::user</definition>
+        <argsstring></argsstring>
+        <name>user</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Product.user</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="271" column="1" bodyfile="models.py" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1aa394d0514225da780a89399d98480137" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Product::User</definition>
+        <argsstring></argsstring>
+        <name>User</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Product.User</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="271" column="1" bodyfile="models.py" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1afd57eb422a20419b099d3a32076368c1" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Product::on_delete</definition>
+        <argsstring></argsstring>
+        <name>on_delete</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Product.on_delete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="271" column="1" bodyfile="models.py" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1af0343ad34783cf481faab110321612f0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Product::unit</definition>
+        <argsstring></argsstring>
+        <name>unit</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Product.unit</qualifiedname>
+        <initializer>=  models.ForeignKey(<ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure" kindref="compound">UnitOfMeasure</ref>, <ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1afd57eb422a20419b099d3a32076368c1" kindref="member">on_delete</ref>=models.CASCADE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="272" column="1" bodyfile="models.py" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ae61b00ace29b79c99799c7eed8b1cc0f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Product::shop</definition>
+        <argsstring></argsstring>
+        <name>shop</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Product.shop</qualifiedname>
+        <initializer>=  models.ForeignKey(<ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop" kindref="compound">Shop</ref>, <ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1afd57eb422a20419b099d3a32076368c1" kindref="member">on_delete</ref>=models.CASCADE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="273" column="1" bodyfile="models.py" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1aced0198e63546bdc47f09ebe932fc489" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Product::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Product.name</qualifiedname>
+        <initializer>=  models.CharField(max_length=100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="275" column="1" bodyfile="models.py" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ad84f499b39050cd0d1cf361c61a7d0e1" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Product::price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Product.price</qualifiedname>
+        <initializer>=  models.PositiveIntegerField()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="276" column="1" bodyfile="models.py" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ad3098ea42061e5edd90246487a1681ee" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Product::amount</definition>
+        <argsstring></argsstring>
+        <name>amount</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Product.amount</qualifiedname>
+        <initializer>=  models.DecimalField(max_digits=4 + 4, decimal_places=4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="277" column="1" bodyfile="models.py" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1a437b04ab4c70ba73e87291ae41849a22" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Product::link</definition>
+        <argsstring></argsstring>
+        <name>link</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Product.link</qualifiedname>
+        <initializer>=  models.URLField()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="278" column="1" bodyfile="models.py" bodystart="278" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>информация о конкретном товаре в магазине <linebreak/>
+ name – название товара <linebreak/>
+ price – цена <linebreak/>
+ amount – количество (в unit_id) товара которое в одной единице заказ (например 300, unit_id – граммы) <linebreak/>
+ link – ссылка на товар <linebreak/>
+ shop_id – магазин, из которого товар <linebreak/>
+ unit_id – единица измерения <linebreak/>
+ user_id – пользователь для которого был спаршен данный товар <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Product</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Product</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="models.py" line="256" column="1" bodyfile="models.py" bodystart="256" bodyend="280"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ad3098ea42061e5edd90246487a1681ee" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Product</scope><name>amount</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1a437b04ab4c70ba73e87291ae41849a22" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Product</scope><name>link</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1aced0198e63546bdc47f09ebe932fc489" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Product</scope><name>name</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1afd57eb422a20419b099d3a32076368c1" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Product</scope><name>on_delete</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ad84f499b39050cd0d1cf361c61a7d0e1" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Product</scope><name>price</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ae61b00ace29b79c99799c7eed8b1cc0f" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Product</scope><name>shop</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1af0343ad34783cf481faab110321612f0" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Product</scope><name>unit</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ac9e0922428a11a7b2f84f0be129df61d" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Product</scope><name>user</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1aa394d0514225da780a89399d98480137" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Product</scope><name>User</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

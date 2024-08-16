@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::Menu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">models.Model</basecompoundref>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1_1_meta" prot="public">bym::BYM_project::main_app::models::Menu::Meta</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ae4080b09fc284646192827337d90c3ab" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Menu::dish</definition>
+        <argsstring></argsstring>
+        <name>dish</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Menu.dish</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="236" column="1" bodyfile="models.py" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a7b64ed962974553336d38ded9d878b36" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Menu::Dish</definition>
+        <argsstring></argsstring>
+        <name>Dish</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Menu.Dish</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="236" column="1" bodyfile="models.py" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ac02d37b66a6b97f357683f1f1dc18dcb" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Menu::on_delete</definition>
+        <argsstring></argsstring>
+        <name>on_delete</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Menu.on_delete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="236" column="1" bodyfile="models.py" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a0d4a72836a3e7d09b49f4ce66faa7b5c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Menu::order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Menu.order</qualifiedname>
+        <initializer>=  models.ForeignKey(<ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order" kindref="compound">Order</ref>, <ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ac02d37b66a6b97f357683f1f1dc18dcb" kindref="member">on_delete</ref>=models.CASCADE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="237" column="1" bodyfile="models.py" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a60fdd5397861c0b59ecd1296d7575140" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Menu::amount</definition>
+        <argsstring></argsstring>
+        <name>amount</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Menu.amount</qualifiedname>
+        <initializer>=  models.PositiveIntegerField(default=1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="239" column="1" bodyfile="models.py" bodystart="239" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>состав заказа <linebreak/>
+ amount– кол-во товара, которое было заказано <linebreak/>
+ dish_id – товар который был заказан <linebreak/>
+ order_id – заказ в котором этот товар был заказан <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Menu</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Menu</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="models.py" line="225" column="1" bodyfile="models.py" bodystart="225" bodyend="241"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a60fdd5397861c0b59ecd1296d7575140" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Menu</scope><name>amount</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ae4080b09fc284646192827337d90c3ab" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Menu</scope><name>dish</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a7b64ed962974553336d38ded9d878b36" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Menu</scope><name>Dish</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ac02d37b66a6b97f357683f1f1dc18dcb" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Menu</scope><name>on_delete</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a0d4a72836a3e7d09b49f4ce66faa7b5c" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Menu</scope><name>order</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

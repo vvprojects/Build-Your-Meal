@@ -1,0 +1,167 @@
+.TH "bym.BYM_project.main_app.models.User" 3 "BYM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bym.BYM_project.main_app.models.User \- Информация о пользователе\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits models\&.Model\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMeta\fP"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBauthorization\fP (user_id, \fBlogin\fP)"
+.br
+.RI "Поиск пользователя по логину, если не найден то присвоить логин текущему user_id\&. "
+.ti -1c
+.RI "\fBget_user_id\fP (request)"
+.br
+.RI "Возвращаем id пользователя - залогиненного или выданного по session_id\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBsession\fP"
+.br
+.ti -1c
+.RI "\fBSession\fP"
+.br
+.ti -1c
+.RI "\fBon_delete\fP"
+.br
+.ti -1c
+.RI "\fBCASCADE\fP"
+.br
+.ti -1c
+.RI "\fBnull\fP"
+.br
+.ti -1c
+.RI "\fBTrue\fP"
+.br
+.ti -1c
+.RI "\fBblank\fP"
+.br
+.ti -1c
+.RI "\fBlast_address\fP = models\&.CharField(max_length=100, \fBnull\fP=\fBTrue\fP, \fBblank\fP=\fBTrue\fP)"
+.br
+.ti -1c
+.RI "\fBnickname\fP = models\&.CharField(max_length=50, \fBnull\fP=\fBTrue\fP, \fBblank\fP=\fBTrue\fP)"
+.br
+.ti -1c
+.RI "\fBlogin\fP = models\&.EmailField(\fBnull\fP=\fBTrue\fP, \fBblank\fP=\fBTrue\fP)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Информация о пользователе\&. 
+
+
+.br
+ last_address – последний адрес, с которого пользователь заказывал 
+.br
+ nickname – ник пользователья 
+.br
+ login – его логин 
+.br
+ session_id – id текущей сессии 
+.br
+ 
+.PP
+Definition at line \fB5\fP of file \fBmodels\&.py\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.models\&.User\&.authorization ( user_id,  login)\fC [static]\fP"
+
+.PP
+Поиск пользователя по логину, если не найден то присвоить логин текущему user_id\&. В противном случае вернуть новый user_id 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuser_id\fP int 
+.br
+\fIlogin\fP string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+user_id int 
+.RE
+.PP
+
+.PP
+Definition at line \fB24\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.User\&.get_user_id ( request)\fC [static]\fP"
+
+.PP
+Возвращаем id пользователя - залогиненного или выданного по session_id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrequest\fP HttpRequest 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+user_id int 
+.RE
+.PP
+
+.PP
+Definition at line \fB39\fP of file \fBmodels\&.py\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.models\&.User\&.blank\fC [static]\fP"
+
+.PP
+Definition at line \fB17\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.User\&.CASCADE\fC [static]\fP"
+
+.PP
+Definition at line \fB17\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.User\&.last_address = models\&.CharField(max_length=100, \fBnull\fP=\fBTrue\fP, \fBblank\fP=\fBTrue\fP)\fC [static]\fP"
+
+.PP
+Definition at line \fB19\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.User\&.login = models\&.EmailField(\fBnull\fP=\fBTrue\fP, \fBblank\fP=\fBTrue\fP)\fC [static]\fP"
+
+.PP
+Definition at line \fB21\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.User\&.nickname = models\&.CharField(max_length=50, \fBnull\fP=\fBTrue\fP, \fBblank\fP=\fBTrue\fP)\fC [static]\fP"
+
+.PP
+Definition at line \fB20\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.User\&.null\fC [static]\fP"
+
+.PP
+Definition at line \fB17\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.User\&.on_delete\fC [static]\fP"
+
+.PP
+Definition at line \fB17\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.User\&.session\fC [static]\fP"
+
+.PP
+Definition at line \fB17\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.User\&.Session\fC [static]\fP"
+
+.PP
+Definition at line \fB17\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.User\&.True\fC [static]\fP"
+
+.PP
+Definition at line \fB17\fP of file \fBmodels\&.py\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BYM from the source code\&.

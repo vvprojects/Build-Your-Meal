@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::SubType</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">models.Model</basecompoundref>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1_1_meta" prot="public">bym::BYM_project::main_app::models::SubType::Meta</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1ae3a0877aafd0c4cf0311dbd6992ac550" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.SubType::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>bym.BYM_project.main_app.models.SubType.type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="85" column="1" bodyfile="models.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a6056327a813f8bc582cf30e156827da9" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.SubType::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <qualifiedname>bym.BYM_project.main_app.models.SubType.Type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="85" column="1" bodyfile="models.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a498b3918f9d559c2f57d5e8a7743e5f5" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.SubType::on_delete</definition>
+        <argsstring></argsstring>
+        <name>on_delete</name>
+        <qualifiedname>bym.BYM_project.main_app.models.SubType.on_delete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="85" column="1" bodyfile="models.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a2a8418c68b0aba53d130a3ea16bc320e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.SubType::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>bym.BYM_project.main_app.models.SubType.name</qualifiedname>
+        <initializer>=  models.CharField(max_length=30)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="87" column="1" bodyfile="models.py" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>таблица с подтипами блюд <linebreak/>
+ name – название подтипа (например фруктовые десерты) <linebreak/>
+ type_id – тип к которому относится подтип <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.SubType</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.SubType</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="models.py" line="75" column="1" bodyfile="models.py" bodystart="75" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a2a8418c68b0aba53d130a3ea16bc320e" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::SubType</scope><name>name</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a498b3918f9d559c2f57d5e8a7743e5f5" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::SubType</scope><name>on_delete</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1ae3a0877aafd0c4cf0311dbd6992ac550" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::SubType</scope><name>type</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a6056327a813f8bc582cf30e156827da9" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::SubType</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

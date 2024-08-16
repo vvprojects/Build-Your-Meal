@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::search::SearchProduct</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a21b433635039afa0a1432ccd644e3d59" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.search.SearchProduct::category</definition>
+        <argsstring></argsstring>
+        <name>category</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchProduct.category</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="109" column="1" bodyfile="search.py" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a16ef129c969ce1b76a9b57a52bd5ee85" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.search.SearchProduct::products</definition>
+        <argsstring></argsstring>
+        <name>products</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchProduct.products</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="110" column="1" bodyfile="search.py" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a47c3087bdb8dbfbd2d8ef5afb605e3ed" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.search.SearchProduct::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchProduct.threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="111" column="1" bodyfile="search.py" bodystart="111" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a915ef58475303424251d924cf320cfde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None bym.BYM_project.main_app.search.SearchProduct.__init__</definition>
+        <argsstring>(self, category_id, user_id, threshold=0.7)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchProduct.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>category_id</type>
+          <defname>category_id</defname>
+        </param>
+        <param>
+          <type>user_id</type>
+          <defname>user_id</defname>
+        </param>
+        <param>
+          <type><ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a47c3087bdb8dbfbd2d8ef5afb605e3ed" kindref="member">threshold</ref></type>
+          <defname>threshold</defname>
+          <defval>0.7</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>category_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="104" column="1" bodyfile="search.py" bodystart="104" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a98b6b788934df61c45018bad900da5b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float bym.BYM_project.main_app.search.SearchProduct.score</definition>
+        <argsstring>(self, product)</argsstring>
+        <name>score</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchProduct.score</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>product</type>
+          <defname>product</defname>
+        </param>
+        <briefdescription>
+<para>Сопосталяет каждому объекту класса Product число, по которому будет осуществлена сортировка </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>product</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Product </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>score double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="113" column="1" bodyfile="search.py" bodystart="113" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1ab8d86256ea2baed501418f019c0cee48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list</type>
+        <definition> list bym.BYM_project.main_app.search.SearchProduct.get</definition>
+        <argsstring>(self)</argsstring>
+        <name>get</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchProduct.get</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Сортирует список объектов класса Product. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>products list of Product </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="122" column="1" bodyfile="search.py" bodystart="122" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a260d6a89c8d23506cd854aba92524a75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float bym.BYM_project.main_app.search.SearchProduct.seq_match_scorer</definition>
+        <argsstring>(self, product)</argsstring>
+        <name>seq_match_scorer</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchProduct.seq_match_scorer</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>product</type>
+          <defname>product</defname>
+        </param>
+        <briefdescription>
+<para>Сравнивает Product.name и self.category.name с помощью SequenceMather() </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>product</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Product </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sm_score float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="133" column="1" bodyfile="search.py" bodystart="133" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a13bba77ad707a998d896a172d2e37899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category" kindref="compound">Category</ref></type>
+        <definition> Category bym.BYM_project.main_app.search.SearchProduct.get_category</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_category</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchProduct.get_category</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Возвращает self.category. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>category Category </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="149" column="1" bodyfile="search.py" bodystart="149" bodyend="155"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><orderedlist>
+<listitem><para>Загружаем из бд список всех спаршенных продуктов</para>
+</listitem><listitem><para>Вызов функции SequenceMatch() (взвешиваем каждый product.name относительно category.name по похожести)</para>
+</listitem><listitem><para>Сортируем продукты по убыванию весов и эффективности покупки <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>category_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>products [[Product obj, ...], [Category.name, [image1, ...]]]] </para>
+</simplesect>
+</para>
+</listitem></orderedlist>
+</para>
+    </detaileddescription>
+    <location file="search.py" line="95" column="1" bodyfile="search.py" bodystart="95" bodyend="155"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a915ef58475303424251d924cf320cfde" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchProduct</scope><name>__init__</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a21b433635039afa0a1432ccd644e3d59" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchProduct</scope><name>category</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1ab8d86256ea2baed501418f019c0cee48" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchProduct</scope><name>get</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a13bba77ad707a998d896a172d2e37899" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchProduct</scope><name>get_category</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a16ef129c969ce1b76a9b57a52bd5ee85" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchProduct</scope><name>products</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a98b6b788934df61c45018bad900da5b9" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchProduct</scope><name>score</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a260d6a89c8d23506cd854aba92524a75" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchProduct</scope><name>seq_match_scorer</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a47c3087bdb8dbfbd2d8ef5afb605e3ed" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchProduct</scope><name>threshold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,126 @@
+\doxysection{cart.\+py}
+\label{cart_8py_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{from}\ main\_app.models\ \textcolor{keyword}{import}\ Dish,\ Menu,\ Category,\ DishCategory,\ Order,\ UnitOfMeasure,\ Conversion}
+\DoxyCodeLine{00002\ \textcolor{keyword}{from}\ main\_app.search\ \textcolor{keyword}{import}\ SearchProduct}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }Cart:}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{'''!\ Класс\ для\ работы\ с\ карзиной\ пользователья}}
+\DoxyCodeLine{00007\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{def\ }\_\_init\_\_(self,\ user\_id):}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!\ Находит\ текущий\ Order\ по\ user\_id}}
+\DoxyCodeLine{00010\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ user\_id}}
+\DoxyCodeLine{00011\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ self.order\_obj\ =\ Order.objects.get(user\_\_id=user\_id,\ current=\textcolor{keyword}{True})}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{def\ }change\_order(self,\ dish\_id,\ add\_flg):}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!\ Изменяем\ корзину\ блюд\ пользователя\ -\/\ или\ добавить\ (+1),\ или\ убрать\ (-\/1)}}
+\DoxyCodeLine{00016\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ dish\_id\ int}}
+\DoxyCodeLine{00017\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ add\_flg\ bool\ -\/\ True\ прибавление,\ False\ вычитание}}
+\DoxyCodeLine{00018\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ dish\_obj\ =\ Dish.objects.get(pk=dish\_id)}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ menu\_obj,\ created\ =\ Menu.objects.get\_or\_create(order=self.order\_obj,\ dish=dish\_obj)}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{keywordflow}{not}\ created:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ amount\ =\ menu\_obj.amount\ +\ 1\ if\ add\_flg\ else\ (-\/1)}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ add\_flg\ ==\ \textcolor{keyword}{True}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ amount\ =\ menu\_obj.amount\ +\ 1}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ amount\ =\ menu\_obj.amount\ -\/\ 1}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ amount\ <=\ 0:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Menu.objects.filter(order=self.order\_obj,\ dish=dish\_obj).delete()}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Menu.objects.filter(order=self.order\_obj,\ dish=dish\_obj).update(amount=amount)}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{def\ }get\_order\_array(self):}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!\ Возвращает\ текущую\ корзину\ блюд\ пользователя}}
+\DoxyCodeLine{00034\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ order\_array\ [\{"{}dish"{}:\ Dish,\ "{}amount"{}:\ int\},\ ...]}}
+\DoxyCodeLine{00035\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ order\_array\ =\ []}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ order\ =\ Menu.objects.filter(order=self.order\_obj)}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ for\ x\ in\ order:}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ \ \ \ \ order\_array.append(\{"{}dish"{}:\ x.dish,\ "{}amount"{}:\ x.amount\})}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ return\ order\_array}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Menu.objects.filter(order=self.order\_obj)}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{preprocessor}{@staticmethod}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{def\ }get\_categories(order\_array):}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!\ Раскладывает\ карзину\ пользователя\ (в\ виде\ блюд),\ на\ товары\ если\ в\ рецептах\ товары\ в\ разных\ единицах\ измерения\ приводит\ к\ единой}}
+\DoxyCodeLine{00047\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ order\_array\ [\{"{}dish"{}:\ Dish,\ "{}amount"{}:\ int\},\ ...]}}
+\DoxyCodeLine{00048\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ categories\ [\{"{}category"{}:\ Category,\ "{}amount"{}:\ float,\ "{}unit\_name"{}:\ string\},\ ...]}}
+\DoxyCodeLine{00049\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ category\_dict\ =\ dict()}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ x\ \textcolor{keywordflow}{in}\ order\_array:}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ dish\_category\_list\ =\ DishCategory.objects.filter(dish=x[\textcolor{stringliteral}{'dish'}])}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ dish\_category\_obj\ \textcolor{keywordflow}{in}\ dish\_category\_list:}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ category\_id\ =\ dish\_category\_obj.category.id}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ number\ =\ float(dish\_category\_obj.amount)\ *\ x[\textcolor{stringliteral}{'amount'}]}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ unit\_name\ =\ dish\_category\_obj.unit.supreme\_unit.name}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ dish\_category\_obj.unit.supreme\_unit.name\ ==\ \textcolor{stringliteral}{'по\ вкусу'}:}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ category\_id\ \textcolor{keywordflow}{in}\ category\_dict.keys():}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ category\_dict[category\_id][\textcolor{stringliteral}{'unit\_name'}]\ !=\ unit\_name:}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ category\_dict[category\_id][\textcolor{stringliteral}{'unit\_name'}]\ ==\ [\textcolor{stringliteral}{'г'},\ \textcolor{stringliteral}{'мл'}]:}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ category\_dict[category\_id][\textcolor{stringliteral}{'amount'}]\ +=\ number\ *\ float(Conversion.objects.get(category=dish\_category\_obj.category,\ from\_unit=dish\_category\_obj.unit.supreme\_unit).to\_unit.coefficient)}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ prev\_unit\ =\ UnitOfMeasure.objects.get(name=category\_dict[category\_id][\textcolor{stringliteral}{'unit\_name'}])}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ dish\_category\_obj.unit.supreme\_unit.name\ ==\ \textcolor{stringliteral}{'г'}:}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ category\_dict[category\_id][\textcolor{stringliteral}{'unit\_name'}]\ =\ \textcolor{stringliteral}{'г'}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ dish\_category\_obj.unit.supreme\_unit.name\ ==\ \textcolor{stringliteral}{'мл'}:}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ category\_dict[category\_id][\textcolor{stringliteral}{'unit\_name'}]\ =\ \textcolor{stringliteral}{'мл'}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print(dish\_category\_obj.category.name,\ dish\_category\_obj.unit.supreme\_unit.name)}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ category\_dict[category\_id][\textcolor{stringliteral}{'unit\_name'}]\ =\ Conversion.objects.get(category=dish\_category\_obj.category,\ from\_unit=dish\_category\_obj.unit.supreme\_unit).to\_unit.supreme\_unit.name}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ prev\_unit.name\ \textcolor{keywordflow}{in}\ [\textcolor{stringliteral}{'г'},\ \textcolor{stringliteral}{'мл'}]:}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ category\_dict[category\_id][\textcolor{stringliteral}{'amount'}]\ =\ category\_dict[category\_id][\textcolor{stringliteral}{'amount'}]}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ category\_dict[category\_id][\textcolor{stringliteral}{'amount'}]\ =\ category\_dict[category\_id][\textcolor{stringliteral}{'amount'}]\ *\ float(Conversion.objects.get(category=dish\_category\_obj.category,\ from\_unit=prev\_unit).coefficient)}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ dish\_category\_obj.unit.name\ \textcolor{keywordflow}{in}\ [\textcolor{stringliteral}{'г'},\ \textcolor{stringliteral}{'мл'}]:}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ category\_dict[category\_id][\textcolor{stringliteral}{'amount'}]\ +=\ number}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ category\_dict[category\_id][\textcolor{stringliteral}{'amount'}]\ +=\ number\ *\ float(Conversion.objects.get(category=dish\_category\_obj.category,\ from\_unit=dish\_category\_obj.unit.supreme\_unit).coefficient)}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ category\_dict[category\_id][\textcolor{stringliteral}{'amount'}]\ +=\ number}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ category\_dict[category\_id]\ =\ \{\textcolor{stringliteral}{"{}amount"{}}:\ number,\ \textcolor{stringliteral}{"{}unit\_name"{}}:\ unit\_name\}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ categories\ =\ []}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ key\ \textcolor{keywordflow}{in}\ category\_dict.keys():}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ category\ =\ Category.objects.get(id=key)}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ amount\ =\ category\_dict[key][\textcolor{stringliteral}{'amount'}]}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ amount\ =\ f\textcolor{stringliteral}{'\{float(amount):g\}'}}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ unit\_name\ =\ category\_dict[key][\textcolor{stringliteral}{'unit\_name'}]}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ amount\ ==\ 0:}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ amount\ =\ \textcolor{keywordtype}{None}}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ categories.append(\{\textcolor{stringliteral}{"{}category"{}}:\ category,\ \textcolor{stringliteral}{"{}amount"{}}:\ amount,\ \textcolor{stringliteral}{"{}unit\_name"{}}:\ unit\_name\})}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ categories}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{def\ }get\_categories\_list(self,\ slice):}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!\ Выдает\ slice\ наиболие\ подходящих\ товаров\ в\ каждой\ категории}}
+\DoxyCodeLine{00105\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ slice\ int}}
+\DoxyCodeLine{00106\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ categories\_list[\{"{}category"{}:\ string,\ "{}category\_amount"{}:\ int,\ "{}category\_unit\_name"{}:\ string,\ "{}product\_list"{}:\ [Product,\ ...]\},\ ...]}}
+\DoxyCodeLine{00107\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ order\_array\ =\ self.get\_order\_array()}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ categories\ =\ Cart.get\_categories(order\_array)}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ categories\_list\ =\ []}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ cat\ \textcolor{keywordflow}{in}\ categories:}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ product\_list\ =\ SearchProduct(cat[\textcolor{stringliteral}{"{}category"{}}].id,\ self.order\_obj.user.id,\ 0).get()[:slice]}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ product\ \textcolor{keywordflow}{in}\ product\_list:}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ product.amount\ =\ f\textcolor{stringliteral}{'\{float(product.amount):g\}'}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ cat[\textcolor{stringliteral}{"{}amount"{}}]\ \textcolor{keywordflow}{is}\ \textcolor{keywordflow}{not}\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ categories\_list.append(\{\textcolor{stringliteral}{"{}category"{}}:\ cat[\textcolor{stringliteral}{"{}category"{}}].name,\ \textcolor{stringliteral}{"{}category\_amount"{}}:\ cat[\textcolor{stringliteral}{"{}amount"{}}],}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}category\_unit\_name"{}}:\ cat[\textcolor{stringliteral}{"{}unit\_name"{}}],\ \textcolor{stringliteral}{"{}product\_list"{}}:\ product\_list\})}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ categories\_list}
+
+\end{DoxyCode}

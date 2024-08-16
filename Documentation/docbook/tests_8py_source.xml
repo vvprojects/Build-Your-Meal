@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_tests_8py_source" xml:lang="en-US">
+<title>tests.py</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_tests_8py_source_1l00001"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1tests">00001</link> <emphasis role="keyword">from</emphasis>&#32;django.test&#32;<emphasis role="keyword">import</emphasis>&#32;TestCase
+<anchor xml:id="_tests_8py_source_1l00002"/>00002 
+<anchor xml:id="_tests_8py_source_1l00003"/>00003 <emphasis role="comment">#&#32;Create&#32;your&#32;tests&#32;here.</emphasis>
+</programlisting></section>

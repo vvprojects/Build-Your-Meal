@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::Shop::Meta</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta_1ad0ccc462233e9843d141b6612d0736d8" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str bym.BYM_project.main_app.models.Shop.Meta::verbose_name</definition>
+        <argsstring></argsstring>
+        <name>verbose_name</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Shop.Meta.verbose_name</qualifiedname>
+        <initializer>=  &apos;Магазин&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="249" column="1" bodyfile="models.py" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta_1ad7aa3f44386afe3f13b9a69da9423fbc" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str bym.BYM_project.main_app.models.Shop.Meta::verbose_name_plural</definition>
+        <argsstring></argsstring>
+        <name>verbose_name_plural</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Shop.Meta.verbose_name_plural</qualifiedname>
+        <initializer>=  &apos;Магазины&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="250" column="1" bodyfile="models.py" bodystart="250" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="models.py" line="248" column="1" bodyfile="models.py" bodystart="248" bodyend="251"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta_1ad0ccc462233e9843d141b6612d0736d8" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Shop::Meta</scope><name>verbose_name</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta_1ad7aa3f44386afe3f13b9a69da9423fbc" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Shop::Meta</scope><name>verbose_name_plural</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

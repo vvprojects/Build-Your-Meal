@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart" kind="class"><name>bym::BYM_project::main_app::cart::Cart</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1a6dadcf33fdddf4dec707ef8eb23a9546" kind="variable"><name>order_obj</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1aae1ee7fe39927e772c7d309596b76b8e" kind="function"><name>__init__</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1a141414bf901a7f709c1236868d0c455e" kind="function"><name>change_order</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1a885a19088c15f1ad61b667bf2ea88324" kind="function"><name>get_order_array</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1af16ee5c19236a81b6ebb9412ea6aaf56" kind="function"><name>get_categories_list</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1ac4ab133fb38a9416f72aea457b23f8cf" kind="function"><name>get_categories</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category" kind="class"><name>bym::BYM_project::main_app::models::Category</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1aa704133cb427ffc20a6ddf673ca52a0e" kind="variable"><name>supreme_category</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1ae872f27c1746cfee0f6f9ed36ee6493e" kind="variable"><name>null</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a332600d9dc56374e36e5366f9084fa2c" kind="variable"><name>True</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a9c1f3305e89355c12f2a40dfdd2cde78" kind="variable"><name>blank</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1afa1db1b3e4007af9c1d7c68c0134fded" kind="variable"><name>on_delete</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a9de968ced436a1b6629a47ac306c9524" kind="variable"><name>name</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_change_cart_api" kind="class"><name>bym::BYM_project::main_app::views::ChangeCartApi</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_change_cart_api_1a05cb8ebfa4babf71e5521db9ff9dfcae" kind="function"><name>post</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion" kind="class"><name>bym::BYM_project::main_app::models::Conversion</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad77672c4eab4f735b1ca2bf26ca85628" kind="variable"><name>category</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a17bd76ab340d9237df03889fc9cb3d22" kind="variable"><name>Category</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a9a48f7c7f04f14a202d3fe2bb56cd42e" kind="variable"><name>on_delete</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad4acc8777678dd8cba9d6b57081d8fc6" kind="variable"><name>from_unit</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a43a4b6d570628ec9d2a306796d089daa" kind="variable"><name>to_unit</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad6746dc9010525fa7f784b471148617a" kind="variable"><name>coefficient</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage" kind="class"><name>bym::BYM_project::main_app::models::CookingStage</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1a7efd4e0231bdb1d4f552cd8c995c5b02" kind="variable"><name>dish</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1a7fc977b8ba83f2f2e59e0c4a6e37d39e" kind="variable"><name>Dish</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1ac5dc5b1cf52c091801ceebc37ec52cfd" kind="variable"><name>on_delete</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1a3e9f3884aa758a7a5a6c8e04b4cd187c" kind="variable"><name>description</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1ac42016ad7c5c2eda4a332a7f88495a66" kind="variable"><name>order</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1a733164f5e440d4d5060abd28f3127082" kind="variable"><name>image</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country" kind="class"><name>bym::BYM_project::main_app::models::Country</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1aa8ac90d41c1054d04261479a1430ee06" kind="variable"><name>name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1ae6fcd5e555cc5f98574cc4a2dc1b1d8f" kind="variable"><name>max_length</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish" kind="class"><name>bym::BYM_project::main_app::models::Dish</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a98e01229bbeada507b776f7ecc8ead27" kind="variable"><name>country</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a59ec1607401fd259b23b47847b59b296" kind="variable"><name>Country</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a914c843d8b866b98e3cfbd26f7ef8202" kind="variable"><name>on_delete</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a273d0e1c9b091aadb25f4a17e77262bc" kind="variable"><name>subtype</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1ac16c094d9da72cb8d08d0a8b177f3e4f" kind="variable"><name>name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1aa6dc2e38ec33dc3515ec2ee5f473da8d" kind="variable"><name>pers_num</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a8e70dff838d796fa6fdde5a2bf71cbb2" kind="variable"><name>cooking_time_minutes</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a466a56c198c08d4acf38553a5eb725df" kind="variable"><name>image</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1aef53fe87ee71c04493865e68f150e2b0" kind="variable"><name>calories</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1ab2d72414d6b36df30358e4f7d11d0db4" kind="variable"><name>proteins</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a0d59ba53aacdf9b785a7b919c65fc6c3" kind="variable"><name>carbohydrates</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a6219673d99d12e14f8118d897b8c75e1" kind="variable"><name>fats</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category" kind="class"><name>bym::BYM_project::main_app::models::DishCategory</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a4d5c513b84d4b7232adfa7ee54209b0a" kind="variable"><name>dish</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a4c77ce78acd97e2311f1b9380865606b" kind="variable"><name>Dish</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a1679693f639f3e5e4e43f94032e82bdc" kind="variable"><name>on_delete</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a981a0bc18837363acca13f8dfb08f2c3" kind="variable"><name>category</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a7cc4793ed0df72cb94a9d2d1944efa13" kind="variable"><name>unit</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1aae8ce0362f2bcdc47aebf75e88d6f1c7" kind="variable"><name>amount</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_home_page_api" kind="class"><name>bym::BYM_project::main_app::views::HomePageApi</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_home_page_api_1a09b826720d38c1720597f2f2be6e26fb" kind="function"><name>get</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka" kind="class"><name>bym::BYM_project::main_app::parser::Lavka</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a23885f0e3a25fe52b40160bf50b95d86" kind="variable"><name>url_main</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1aa4d243133ee2225c281004cada6c617f" kind="variable"><name>driver</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ab11214453defaf1caacb34e33abbe04f" kind="variable"><name>wait</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ad7973256e11d6291b8641b3e438ca595" kind="variable"><name>urls</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a928051a5a0fb32b70882272b9c97983c" kind="variable"><name>sl_tags</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ae79912d1031916b7daf34ee69d05e8d6" kind="function"><name>__init__</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a44f7318d5af307484c100b74733461b3" kind="function"><name>get_data_product</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1aa85beac3725cdc9934390e1c49fcb9f1" kind="function"><name>get_data_html</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a16780d5d1ca7bb8cf262758e2dac66ee" kind="function"><name>pars</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config" kind="class"><name>bym::BYM_project::main_app::apps::MainAppConfig</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config_1aef0cf79007455603508a92ee4790336a" kind="variable"><name>default_auto_field</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config_1a4721d005d31a86d57752c61316c6ae23" kind="variable"><name>name</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu" kind="class"><name>bym::BYM_project::main_app::models::Menu</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ae4080b09fc284646192827337d90c3ab" kind="variable"><name>dish</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a7b64ed962974553336d38ded9d878b36" kind="variable"><name>Dish</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ac02d37b66a6b97f357683f1f1dc18dcb" kind="variable"><name>on_delete</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a0d4a72836a3e7d09b49f4ce66faa7b5c" kind="variable"><name>order</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a60fdd5397861c0b59ecd1296d7575140" kind="variable"><name>amount</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::Category::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1_1_meta_1a6f6824b1e0c914c0adb00a530add8708" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1_1_meta_1a5770ffbd597d9ca2f97e2192ed26e1f1" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::Conversion::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1_1_meta_1a5b91f7b3138d28acaa379cee2d2bdf52" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1_1_meta_1abc0878b259b6d58b8b1db9b1cc03415a" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::CookingStage::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta_1ad04241cf369d16076a09693381d37188" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta_1a0453040ff15291fa8b5f89ee67904712" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::Country::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta_1a8da9c506d5007f4e82e8556fee272dac" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta_1aff2d8515aba73497fc125e8d32e87707" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::Dish::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1_1_meta_1aeb0acd0e031f566a72c321685c492611" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1_1_meta_1ac209a6b791399869d1d1dc7b32b8bdaf" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::DishCategory::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta_1a106adcf838c65b717f5afd11c7cb1059" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta_1aad2adc21c080b9cc65126e81c584ceae" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::Menu::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1_1_meta_1ad5f7df30634aa88e95cd0e6d52ba75ec" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1_1_meta_1a055158e6db5b6195869dde452583dec6" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::Order::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1_1_meta_1aa2c46ff2b38ab1fe365f21d19baed10f" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1_1_meta_1a3388cd09441c1fc223dc9065b263aecf" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::Product::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1_1_meta_1a3ba91158825e66889edef7b33eb338e5" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1_1_meta_1a214e7e28d4d5e16c32362fa32365fca0" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::ProductLog::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1_1_meta_1aa2670518c91030e0cbb7fa488b69557e" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1_1_meta_1ab824c629b4cc6e5679185cdead1f4aae" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::Shop::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta_1ad0ccc462233e9843d141b6612d0736d8" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta_1ad7aa3f44386afe3f13b9a69da9423fbc" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::SubType::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1_1_meta_1a79e9e0c74f949107d98f4622dcbc72a7" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1_1_meta_1ae8be74e068817e66887182cb6a46a9a7" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::Type::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1_1_meta_1af2ad721d00f1dc6699c89f285a7d2da6" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1_1_meta_1a10387b4849a72d1ae3f8632fd4f54315" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::UnitOfMeasure::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta_1a9e71859360b9cce0e1f49a53a466f6f0" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta_1aeea5099ac1d8491e243d1211184059d9" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1_1_meta" kind="class"><name>bym::BYM_project::main_app::models::User::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1_1_meta_1a5bc3daeb8015a968c0cd8b1abe9ded6c" kind="variable"><name>verbose_name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1_1_meta_1aedc34f1aa1ba262a16ffe98c11e4ea8f" kind="variable"><name>verbose_name_plural</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta" kind="class"><name>bym::BYM_project::main_app::serializers::UserSerializer::Meta</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta_1ad7cdc57d4f31d000a5770c46e3eec2d3" kind="variable"><name>model</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta_1a2334aa703376cabe0580810e2227ab73" kind="variable"><name>fields</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order" kind="class"><name>bym::BYM_project::main_app::models::Order</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a3220615ffc105fee679b8a0e32ebc53f" kind="variable"><name>user</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a6ca3b1af4a14a45664f1acfd147a3dc3" kind="variable"><name>User</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a7eaf471782c9434bf40e61a1011687e4" kind="variable"><name>on_delete</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a609c35dfd5a69b984f4f055552501fd4" kind="variable"><name>order_date</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a37e52b58e2a8b31b954384bd4abf4a16" kind="variable"><name>current</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_parse_products_api" kind="class"><name>bym::BYM_project::main_app::views::ParseProductsApi</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_parse_products_api_1a1962798efbaeb5f428cc761e7bacf8f6" kind="function"><name>post</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser" kind="class"><name>bym::BYM_project::main_app::parser::Parser</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_1aed9cf2be1a6f7d6b919c1e785439841f" kind="variable"><name>user_obj</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_1a5c931b5a38f849cc37bef4901ce4b4d6" kind="variable"><name>options</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_1a6b93696ad189eeeb4ce00ce8ff8f2808" kind="variable"><name>product_list</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_1ab419c1f3c1d5bcc94f0bdb3af2b175a2" kind="variable"><name>shop_obj</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_1acfb5504aa987e575ccfbe05617190604" kind="function"><name>__init__</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_1a86d3e44d06c24d8d354c5eb2ed5a8cde" kind="function"><name>sql_script</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product" kind="class"><name>bym::BYM_project::main_app::models::Product</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ac9e0922428a11a7b2f84f0be129df61d" kind="variable"><name>user</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1aa394d0514225da780a89399d98480137" kind="variable"><name>User</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1afd57eb422a20419b099d3a32076368c1" kind="variable"><name>on_delete</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1af0343ad34783cf481faab110321612f0" kind="variable"><name>unit</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ae61b00ace29b79c99799c7eed8b1cc0f" kind="variable"><name>shop</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1aced0198e63546bdc47f09ebe932fc489" kind="variable"><name>name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ad84f499b39050cd0d1cf361c61a7d0e1" kind="variable"><name>price</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ad3098ea42061e5edd90246487a1681ee" kind="variable"><name>amount</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1a437b04ab4c70ba73e87291ae41849a22" kind="variable"><name>link</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log" kind="class"><name>bym::BYM_project::main_app::models::ProductLog</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a84e1b8f531e4e3cd3468320065743fa1" kind="variable"><name>order</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a98b3d3ef54221e38d976bd04a25e22a6" kind="variable"><name>Order</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a9cb6e368a91a7fa12f1b9f27a0f10433" kind="variable"><name>on_delete</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a65e3a4594a41f198ed662856d2ecbbda" kind="variable"><name>shop</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1af46abc1d110ff668e58604b77e767e08" kind="variable"><name>unit</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1adf15e6ea2e1f6a0ea640326691140ce8" kind="variable"><name>name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1af158701900a361a9b0498c97b8ff2310" kind="variable"><name>price</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1ae387b693aa90ec7d8b04d5ae9cc47608" kind="variable"><name>amount</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1aa5e3b31f2096adb94626dcfbd356b7de" kind="variable"><name>quantity</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1af8607133f1651d3e132d75183af8d4c3" kind="variable"><name>link</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system" kind="class"><name>bym::BYM_project::main_app::recommendation_system::RecommendationSystem</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1ac663f6fcde624d8a8ddf306dbfbcaf36" kind="function"><name>__init__</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1a6a21ef01c9e8477c1e7ca12e1bb9d7a3" kind="function"><name>fit</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1aa6a4374935339bde873ad8fa4f7edc82" kind="function"><name>predict</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish" kind="class"><name>bym::BYM_project::main_app::search::SearchDish</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ac9cbb3ffcf81339ac4f642304f8216b7" kind="variable"><name>threshold</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a197d4ded41fbe1069a823bc3b6c117ca" kind="variable"><name>search_string</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a127bbfb5c6b64d3be69cf35a564c6a3e" kind="variable"><name>address_flg</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a2b4f1c0ced07f7a4d6b9077ef2495224" kind="variable"><name>ratio</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ae43f9d32132f76eab0278b8df4462071" kind="variable"><name>dish_list</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ab7f870616fc70cb2a4d1199a60eb6452" kind="function"><name>__init__</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a214893e087146660c2e9c28ce0f3610c" kind="function"><name>score</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a65b19a56e1f65b7ed560f7e5ddef877e" kind="function"><name>get</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1afbe65b7e09fdd36049dbfc568a9a3db9" kind="function"><name>recommend_scorer</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ac0193c57b7c6f6e00d208737d2cf8e08" kind="function"><name>seq_match_scorer</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api" kind="class"><name>bym::BYM_project::main_app::views::SearchDishApi</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api_1ada48bd7ec0ce9964b6ea181d6bdb35a9" kind="function"><name>post</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1forms_1_1_search_dish_form" kind="class"><name>bym::BYM_project::main_app::forms::SearchDishForm</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1forms_1_1_search_dish_form_1a9e939b7bf2342aee35e263c18ed54cc1" kind="variable"><name>search_string</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product" kind="class"><name>bym::BYM_project::main_app::search::SearchProduct</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a21b433635039afa0a1432ccd644e3d59" kind="variable"><name>category</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a16ef129c969ce1b76a9b57a52bd5ee85" kind="variable"><name>products</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a47c3087bdb8dbfbd2d8ef5afb605e3ed" kind="variable"><name>threshold</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a915ef58475303424251d924cf320cfde" kind="function"><name>__init__</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a98b6b788934df61c45018bad900da5b9" kind="function"><name>score</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1ab8d86256ea2baed501418f019c0cee48" kind="function"><name>get</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a260d6a89c8d23506cd854aba92524a75" kind="function"><name>seq_match_scorer</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a13bba77ad707a998d896a172d2e37899" kind="function"><name>get_category</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop" kind="class"><name>bym::BYM_project::main_app::models::Shop</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1af56df25cce9db36a05c3bab3f50881af" kind="variable"><name>name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1a65cbb33ac3a746c18955a5b5ca9d1303" kind="variable"><name>max_length</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1a9013b400df80ef53b1663155dbce38bc" kind="variable"><name>link</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type" kind="class"><name>bym::BYM_project::main_app::models::SubType</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1ae3a0877aafd0c4cf0311dbd6992ac550" kind="variable"><name>type</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a6056327a813f8bc582cf30e156827da9" kind="variable"><name>Type</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a498b3918f9d559c2f57d5e8a7743e5f5" kind="variable"><name>on_delete</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a2a8418c68b0aba53d130a3ea16bc320e" kind="variable"><name>name</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type" kind="class"><name>bym::BYM_project::main_app::models::Type</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1a76f2c5ad5c43a7f0f3408a19377c1273" kind="variable"><name>name</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1ada45504e4babeb26a397200f2f0c9b8d" kind="variable"><name>max_length</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure" kind="class"><name>bym::BYM_project::main_app::models::UnitOfMeasure</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a1b1b02a5da6f179c95963877165048f7" kind="variable"><name>supreme_unit</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a7359e9ef1a76227493aedcaa8b42c9e3" kind="variable"><name>null</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1aeff13c235b7e7fff55860bcb163b490c" kind="variable"><name>True</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a3109f3e7f355a8ff4b0ca4b7ff10e7ad" kind="variable"><name>blank</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1ac5889745ab38ac425281ac68e663e6b7" kind="variable"><name>on_delete</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a7332fe3a27b419882b39cf2552fd67ab" kind="variable"><name>name</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user" kind="class"><name>bym::BYM_project::main_app::models::User</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ae2702233c542947f0a785e208f8907f6" kind="variable"><name>session</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a1fc29e11a30a6b31a558f4ef9817e31c" kind="variable"><name>Session</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a6bcdd4b2f18cd6f8eb8a2b0ed1f9c98f" kind="variable"><name>on_delete</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1af28f869bcfc2144c48e30c231ca2cc4a" kind="variable"><name>CASCADE</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a17edf846d38a7295eb9805b7e286dea1" kind="variable"><name>null</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61" kind="variable"><name>True</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ae82374586f8dddce1f3eb664b6b09687" kind="variable"><name>blank</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a774e79a804baf0f13d4e1c7e0e9bc464" kind="variable"><name>last_address</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a8aa271136e93202daf9e8d79f2059049" kind="variable"><name>nickname</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a8cd58cf6d85c37d43c5dcc3527efce8c" kind="variable"><name>login</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ab0a8bfa053f7e8010fd64f61a5b1ff68" kind="function"><name>authorization</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1af999c39e1e2700b9feb14cbb9f4dd951" kind="function"><name>get_user_id</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view" kind="class"><name>bym::BYM_project::main_app::views::UserApiView</name>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view_1aacb642227e968a27ee2ef74245d562d8" kind="variable"><name>queryset</name></member>
+    <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view_1ab99538f3807467e93d017cf000516cd9" kind="variable"><name>serializer_class</name></member>
+  </compound>
+  <compound refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer" kind="class"><name>bym::BYM_project::main_app::serializers::UserSerializer</name>
+  </compound>
+  <compound refid="namespacebym" kind="namespace"><name>bym</name>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project" kind="namespace"><name>bym::BYM_project</name>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app" kind="namespace"><name>bym::BYM_project::main_app</name>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1admin" kind="namespace"><name>bym::BYM_project::main_app::admin</name>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1apps" kind="namespace"><name>bym::BYM_project::main_app::apps</name>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1cart" kind="namespace"><name>bym::BYM_project::main_app::cart</name>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1config" kind="namespace"><name>bym::BYM_project::main_app::config</name>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1ad2134171b2678db43657ebb4707a71e5" kind="variable"><name>webdriver_name</name></member>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1a33e627ec953d99555066175ad5255567" kind="variable"><name>urls_lavka</name></member>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions" kind="namespace"><name>bym::BYM_project::main_app::conversions_functions</name>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions_1aedc887b909c552c4dc6d68d3f3c82294" kind="function"><name>how_many_add</name></member>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions_1a7f6cdbfd78f849181eb8729d15de8339" kind="function"><name>get_lavka_unit_id</name></member>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1forms" kind="namespace"><name>bym::BYM_project::main_app::forms</name>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend" kind="namespace"><name>bym::BYM_project::main_app::functions_backend</name>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a8c445e64e551d7b0b43b70a843c62965" kind="function"><name>start_session</name></member>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1acec8d87adc7236e231b7ac0bd7e395fa" kind="function"><name>get_dish_types</name></member>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1acc450f9517914ab71f0b81484e45337d" kind="function"><name>get_particular_dish</name></member>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a08d73957bbfccb8e19348c923f80fb53" kind="function"><name>string_to_minutes</name></member>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a723d59131bb3c4986041292c982b118f" kind="function"><name>convert_fraction</name></member>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a4a88e8eaaa6f0e827859fc69485a0f3f" kind="function"><name>number_and_measure</name></member>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1models" kind="namespace"><name>bym::BYM_project::main_app::models</name>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1parser" kind="namespace"><name>bym::BYM_project::main_app::parser</name>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1parser_1a741bfb7f8809b3d04e5d9c6509de9c69" kind="function"><name>parse_by_address</name></member>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system" kind="namespace"><name>bym::BYM_project::main_app::recommendation_system</name>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1search" kind="namespace"><name>bym::BYM_project::main_app::search</name>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1serializers" kind="namespace"><name>bym::BYM_project::main_app::serializers</name>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1tests" kind="namespace"><name>bym::BYM_project::main_app::tests</name>
+  </compound>
+  <compound refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views" kind="namespace"><name>bym::BYM_project::main_app::views</name>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1af62b4a87706c5fb300e65530e91865d5" kind="function"><name>HomePageView</name></member>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab171977260210f1eb95ecc71c06ba531" kind="function"><name>Dish</name></member>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a8fc8f72e5badf96f335b79fed3122955" kind="function"><name>FinalPage</name></member>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab62631df59f779ad4e58eb58d2b98428" kind="function"><name>my_view</name></member>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a4d8aaf2a4449720f8eb2e47a527692fc" kind="function"><name>update_counter</name></member>
+    <member refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a1874c4140cef5dfd5dec770d61515c23" kind="function"><name>parse_adress</name></member>
+  </compound>
+  <compound refid="namespaceforms" kind="namespace"><name>forms</name>
+  </compound>
+  <compound refid="namespacegenerics" kind="namespace"><name>generics</name>
+  </compound>
+  <compound refid="namespacemodels" kind="namespace"><name>models</name>
+  </compound>
+  <compound refid="namespaceserializers" kind="namespace"><name>serializers</name>
+  </compound>
+  <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="admin_8py" kind="file"><name>admin.py</name>
+  </compound>
+  <compound refid="apps_8py" kind="file"><name>apps.py</name>
+  </compound>
+  <compound refid="cart_8py" kind="file"><name>cart.py</name>
+  </compound>
+  <compound refid="config_8py" kind="file"><name>config.py</name>
+  </compound>
+  <compound refid="conversions__functions_8py" kind="file"><name>conversions_functions.py</name>
+  </compound>
+  <compound refid="forms_8py" kind="file"><name>forms.py</name>
+  </compound>
+  <compound refid="functions__backend_8py" kind="file"><name>functions_backend.py</name>
+  </compound>
+  <compound refid="models_8py" kind="file"><name>models.py</name>
+  </compound>
+  <compound refid="parser_8py" kind="file"><name>parser.py</name>
+  </compound>
+  <compound refid="recommendation__system_8py" kind="file"><name>recommendation_system.py</name>
+  </compound>
+  <compound refid="search_8py" kind="file"><name>search.py</name>
+  </compound>
+  <compound refid="serializers_8py" kind="file"><name>serializers.py</name>
+  </compound>
+  <compound refid="tests_8py" kind="file"><name>tests.py</name>
+  </compound>
+  <compound refid="views_8py" kind="file"><name>views.py</name>
+  </compound>
+</doxygenindex>

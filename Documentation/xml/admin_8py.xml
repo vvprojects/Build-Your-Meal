@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="admin_8py" kind="file" language="Python">
+    <compoundname>admin.py</compoundname>
+    <innernamespace refid="namespacebym">bym</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project">bym::BYM_project</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app">bym::BYM_project::main_app</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1admin">bym::BYM_project::main_app::admin</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacebym" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>django.contrib<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>admin</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>main_app.models<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>User,<sp/>Country,<sp/>Type,<sp/>SubType,<sp/>Dish,<sp/>CookingStage,<sp/>Category,\</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UnitOfMeasure,<sp/>Conversion,<sp/>DishCategory,<sp/>\</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Order,<sp/>Menu,<sp/>Shop,<sp/>Product,<sp/>ProductLog</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">admin.site.register(User)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">admin.site.register(Country)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">admin.site.register(Type)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">admin.site.register(SubType)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">admin.site.register(Dish)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">admin.site.register(CookingStage)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">admin.site.register(Category)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">admin.site.register(UnitOfMeasure)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">admin.site.register(Conversion)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">admin.site.register(DishCategory)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">admin.site.register(Order)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">admin.site.register(Menu)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">admin.site.register(Shop)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">admin.site.register(Product)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">admin.site.register(ProductLog)</highlight></codeline>
+    </programlisting>
+    <location file="admin.py"/>
+  </compounddef>
+</doxygen>

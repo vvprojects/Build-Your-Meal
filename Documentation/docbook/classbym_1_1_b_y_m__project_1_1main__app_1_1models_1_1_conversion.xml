@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.Conversion Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.Conversion</primary></indexterm>
+<para>
+
+<para>коэффициенты для перевода единиц измерения <?linebreak?> coefficient – число на которое нужно умножить что бы перевести from_unit_id в to_unit_id <?linebreak?> category_id – категория для которой выполняется перевод (очевидно что коэффициент для перевода штук в граммы для помидоров и огурцов отличается) <?linebreak?> from_unit_id– единица измерения из которой выполняется перевод <?linebreak?> to_unit_id – единица измерения в которую выполняется перевод <?linebreak?> </para>
+ 
+</para>
+<para>Inheritance diagram for bym.BYM_project.main_app.models.Conversion:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1_1_meta">Meta</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad77672c4eab4f735b1ca2bf26ca85628">category</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a17bd76ab340d9237df03889fc9cb3d22">Category</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a9a48f7c7f04f14a202d3fe2bb56cd42e">on_delete</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad4acc8777678dd8cba9d6b57081d8fc6">from_unit</link> = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure">UnitOfMeasure</link>, related_name=&apos;from_unit&apos;, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a9a48f7c7f04f14a202d3fe2bb56cd42e">on_delete</link>=models.CASCADE)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a43a4b6d570628ec9d2a306796d089daa">to_unit</link> = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure">UnitOfMeasure</link>, related_name=&apos;to_unit&apos;, null=True, blank=True, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a9a48f7c7f04f14a202d3fe2bb56cd42e">on_delete</link>=models.CASCADE)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad6746dc9010525fa7f784b471148617a">coefficient</link> = models.DecimalField(max_digits=4 + 4, decimal_places=4, default=1)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>коэффициенты для перевода единиц измерения <?linebreak?> coefficient – число на которое нужно умножить что бы перевести from_unit_id в to_unit_id <?linebreak?> category_id – категория для которой выполняется перевод (очевидно что коэффициент для перевода штук в граммы для помидоров и огурцов отличается) <?linebreak?> from_unit_id– единица измерения из которой выполняется перевод <?linebreak?> to_unit_id – единица измерения в которую выполняется перевод <?linebreak?> </para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00170">170</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad77672c4eab4f735b1ca2bf26ca85628"/><section>
+    <title>category</title>
+<indexterm><primary>category</primary><secondary>bym.BYM_project.main_app.models.Conversion</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Conversion</primary><secondary>category</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Conversion.category<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00182">182</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a17bd76ab340d9237df03889fc9cb3d22"/><section>
+    <title>Category</title>
+<indexterm><primary>Category</primary><secondary>bym.BYM_project.main_app.models.Conversion</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Conversion</primary><secondary>Category</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Conversion.Category<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00182">182</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad6746dc9010525fa7f784b471148617a"/><section>
+    <title>coefficient</title>
+<indexterm><primary>coefficient</primary><secondary>bym.BYM_project.main_app.models.Conversion</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Conversion</primary><secondary>coefficient</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Conversion.coefficient = models.DecimalField(max_digits=4 + 4, decimal_places=4, default=1)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00186">186</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad4acc8777678dd8cba9d6b57081d8fc6"/><section>
+    <title>from_unit</title>
+<indexterm><primary>from_unit</primary><secondary>bym.BYM_project.main_app.models.Conversion</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Conversion</primary><secondary>from_unit</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Conversion.from_unit = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure">UnitOfMeasure</link>, related_name=&apos;from_unit&apos;, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a9a48f7c7f04f14a202d3fe2bb56cd42e">on_delete</link>=models.CASCADE)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00183">183</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a9a48f7c7f04f14a202d3fe2bb56cd42e"/><section>
+    <title>on_delete</title>
+<indexterm><primary>on_delete</primary><secondary>bym.BYM_project.main_app.models.Conversion</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Conversion</primary><secondary>on_delete</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Conversion.on_delete<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00182">182</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a43a4b6d570628ec9d2a306796d089daa"/><section>
+    <title>to_unit</title>
+<indexterm><primary>to_unit</primary><secondary>bym.BYM_project.main_app.models.Conversion</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Conversion</primary><secondary>to_unit</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Conversion.to_unit = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure">UnitOfMeasure</link>, related_name=&apos;to_unit&apos;, null=True, blank=True, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a9a48f7c7f04f14a202d3fe2bb56cd42e">on_delete</link>=models.CASCADE)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00184">184</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

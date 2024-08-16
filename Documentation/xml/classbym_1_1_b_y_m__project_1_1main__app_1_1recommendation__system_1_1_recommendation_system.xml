@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::recommendation_system::RecommendationSystem</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1ac663f6fcde624d8a8ddf306dbfbcaf36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.recommendation_system.RecommendationSystem.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>bym.BYM_project.main_app.recommendation_system.RecommendationSystem.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="recommendation_system.py" line="2" column="1" bodyfile="recommendation_system.py" bodystart="2" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1a6a21ef01c9e8477c1e7ca12e1bb9d7a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.recommendation_system.RecommendationSystem.fit</definition>
+        <argsstring>(self, X, y)</argsstring>
+        <name>fit</name>
+        <qualifiedname>bym.BYM_project.main_app.recommendation_system.RecommendationSystem.fit</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="recommendation_system.py" line="5" column="1" bodyfile="recommendation_system.py" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1aa6a4374935339bde873ad8fa4f7edc82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.recommendation_system.RecommendationSystem.predict</definition>
+        <argsstring>(self, X, y)</argsstring>
+        <name>predict</name>
+        <qualifiedname>bym.BYM_project.main_app.recommendation_system.RecommendationSystem.predict</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>X</type>
+          <defname>X</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="recommendation_system.py" line="8" column="1" bodyfile="recommendation_system.py" bodystart="8" bodyend="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="recommendation_system.py" line="1" column="1" bodyfile="recommendation_system.py" bodystart="1" bodyend="10"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1ac663f6fcde624d8a8ddf306dbfbcaf36" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::recommendation_system::RecommendationSystem</scope><name>__init__</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1a6a21ef01c9e8477c1e7ca12e1bb9d7a3" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::recommendation_system::RecommendationSystem</scope><name>fit</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1aa6a4374935339bde873ad8fa4f7edc82" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::recommendation_system::RecommendationSystem</scope><name>predict</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

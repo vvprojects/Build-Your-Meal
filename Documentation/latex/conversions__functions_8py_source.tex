@@ -1,0 +1,72 @@
+\doxysection{conversions\+\_\+functions.\+py}
+\label{conversions__functions_8py_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{import}\ math}
+\DoxyCodeLine{00002\ \textcolor{keyword}{from}\ main\_app.models\ \textcolor{keyword}{import}\ Conversion,\ UnitOfMeasure}
+\DoxyCodeLine{00003\ \textcolor{keyword}{from}\ django.core.mail\ \textcolor{keyword}{import}\ send\_mail}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{def\ }how\_many\_add(category\_id,\ need\_unit,\ have\_unit,\ need,\ have):}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{'''!\ Расчет\ сколько\ штук\ товара\ необходимо\ купть\ на\ что\ бы\ полностью\ покрыть\ рецепт}}
+\DoxyCodeLine{00008\ \textcolor{stringliteral}{\ \ \ \ @param\ category\_id\ int}}
+\DoxyCodeLine{00009\ \textcolor{stringliteral}{\ \ \ \ @param\ need\_unit\ UnitOfMeasure\ -\/\ еденицы\ измерения\ продукта\ по\ рецепту\ (например\ стаканы)}}
+\DoxyCodeLine{00010\ \textcolor{stringliteral}{\ \ \ \ @param\ have\_unit\ UnitOfMeasure\ -\/\ еденицы\ измерения\ товара\ из\ магазина\ (например\ граммы)}}
+\DoxyCodeLine{00011\ \textcolor{stringliteral}{\ \ \ \ @param\ need\ int\ -\/\ необходимое\ количество\ по\ рецепту\ (например\ 5,\ have\_unit\ -\/\ стаканы)}}
+\DoxyCodeLine{00012\ \textcolor{stringliteral}{\ \ \ \ @param\ have\ int\ -\/\ количество\ в\ одном\ юните\ в\ магазине\ (например\ 500,\ have\_unit-\/граммы)}}
+\DoxyCodeLine{00013\ \textcolor{stringliteral}{\ \ \ \ @return\ kol\ int\ -\/\ сколько\ нужно\ заказать}}
+\DoxyCodeLine{00014\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordflow}{if}\ need\_unit\ ==\ UnitOfMeasure.objects.get(pk=41)\ \textcolor{keywordflow}{or}\ have\_unit\ ==\ UnitOfMeasure.objects.get(pk=41):}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordflow}{if}\ need\_unit\ ==\ UnitOfMeasure.objects.get(pk=13):}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ need\ =\ need\ *\ 1000}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ need\_unit\ =\ UnitOfMeasure.objects.get(pk=7)}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{elif}\ need\_unit\ ==\ UnitOfMeasure.objects.get(pk=16):}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ need\ =\ need\ *\ 1000}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ need\_unit\ =\ UnitOfMeasure.objects.get(pk=1)}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordflow}{if}\ have\_unit\ ==\ UnitOfMeasure.objects.get(pk=13):}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ have\ =\ have\ *\ 1000}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ need\_unit\ =\ UnitOfMeasure.objects.get(pk=7)}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{elif}\ have\_unit\ ==\ UnitOfMeasure.objects.get(pk=16):}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ have\ =\ have\ *\ 1000}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ need\_unit\ =\ UnitOfMeasure.objects.get(pk=1)}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordflow}{if}\ have\_unit\ ==\ need\_unit:}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordflow}{elif}\ have\_unit\ ==\ UnitOfMeasure.objects.get(pk=1)\ \textcolor{keywordflow}{or}\ have\_unit\ ==\ UnitOfMeasure.objects.get(pk=7):}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ coef\ =\ Conversion(category=category\_id,\ from\_unit=need\_unit,\ to\_unit=have\_unit).coefficient}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ need\ =\ need\ *\ coef}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{elif}\ need\_unit\ ==\ UnitOfMeasure.objects.get(pk=1)\ \textcolor{keywordflow}{or}\ need\_unit\ ==\ UnitOfMeasure.objects.get(pk=7):}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ coef\ =\ Conversion(category=category\_id,\ from\_unit=have\_unit,\ to\_unit=need\_unit).coefficient}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ need\ =\ need\ /\ coef}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0}
+\DoxyCodeLine{00043\ \ \ \ \ kol\ =\ math.ceil(need\ /\ have)}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordflow}{return}\ kol}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{def\ }get\_lavka\_unit\_id(name\_unit):}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{stringliteral}{'''!\ Исчет\ единицу\ измерения\ из\ магазина\ в\ базе\ данных,\ если\ нет\ создает}}
+\DoxyCodeLine{00049\ \textcolor{stringliteral}{\ \ \ \ @param\ name\_unit\ string}}
+\DoxyCodeLine{00050\ \textcolor{stringliteral}{\ \ \ \ @return\ UnitOfMeasure}}
+\DoxyCodeLine{00051\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00052\ \ \ \ \ units\ =\ UnitOfMeasure.objects.filter(name=name\_unit)}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordflow}{if}\ units.exists():}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ x\ \textcolor{keywordflow}{in}\ units:}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ x.supreme\_unit}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''}}
+\DoxyCodeLine{00058\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ send\_mail(}}
+\DoxyCodeLine{00059\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ 'Subject\ here',}}
+\DoxyCodeLine{00060\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ 'Here\ is\ the\ message.',}}
+\DoxyCodeLine{00061\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ 'from@example.com',}}
+\DoxyCodeLine{00062\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ ['sdgssdfsdf@mail.ru'],}}
+\DoxyCodeLine{00063\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ fail\_silently=False,}}
+\DoxyCodeLine{00064\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ )}}
+\DoxyCodeLine{00065\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \_,\ created\ =\ UnitOfMeasure.objects.get\_or\_create(supreme\_unit=UnitOfMeasure.objects.get(pk=41),\ name=name\_unit)}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ UnitOfMeasure.objects.get(pk=41)}
+
+\end{DoxyCode}

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacebym" kind="namespace" language="Python">
+    <compoundname>bym</compoundname>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project">bym::BYM_project</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="admin.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="serializers_8py" kind="file" language="Python">
+    <compoundname>serializers.py</compoundname>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer" prot="public">bym::BYM_project::main_app::serializers::UserSerializer</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta" prot="public">bym::BYM_project::main_app::serializers::UserSerializer::Meta</innerclass>
+    <innernamespace refid="namespacebym">bym</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project">bym::BYM_project</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app">bym::BYM_project::main_app</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1serializers">bym::BYM_project::main_app::serializers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1serializers" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>rest_framework<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>serializers</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.models<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>User</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer" kindref="compound">UserSerializer</ref>(serializers.ModelSerializer):</highlight></codeline>
+<codeline lineno="6" refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta" kindref="compound">Meta</ref>:</highlight></codeline>
+<codeline lineno="7" refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta_1ad7cdc57d4f31d000a5770c46e3eec2d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model<sp/>=<sp/>User</highlight></codeline>
+<codeline lineno="8" refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta_1a2334aa703376cabe0580810e2227ab73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fields<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;__all__&apos;</highlight></codeline>
+    </programlisting>
+    <location file="serializers.py"/>
+  </compounddef>
+</doxygen>

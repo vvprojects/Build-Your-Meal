@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_serializers_8py_source" xml:lang="en-US">
+<title>serializers.py</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_serializers_8py_source_1l00001"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1serializers">00001</link> <emphasis role="keyword">from</emphasis>&#32;rest_framework&#32;<emphasis role="keyword">import</emphasis>&#32;serializers
+<anchor xml:id="_serializers_8py_source_1l00002"/>00002 <emphasis role="keyword">from</emphasis>&#32;.models&#32;<emphasis role="keyword">import</emphasis>&#32;User
+<anchor xml:id="_serializers_8py_source_1l00003"/>00003 
+<anchor xml:id="_serializers_8py_source_1l00004"/>00004 
+<anchor xml:id="_serializers_8py_source_1l00005"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer">00005</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer">UserSerializer</link>(serializers.ModelSerializer):
+<anchor xml:id="_serializers_8py_source_1l00006"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta">00006</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta">Meta</link>:
+<anchor xml:id="_serializers_8py_source_1l00007"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta_1ad7cdc57d4f31d000a5770c46e3eec2d3">00007</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;model&#32;=&#32;User
+<anchor xml:id="_serializers_8py_source_1l00008"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta_1a2334aa703376cabe0580810e2227ab73">00008</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;fields&#32;=&#32;<emphasis role="stringliteral">&apos;__all__&apos;</emphasis>
+</programlisting></section>

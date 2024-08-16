@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::search::SearchDish</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ac9cbb3ffcf81339ac4f642304f8216b7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.search.SearchDish::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchDish.threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="24" column="1" bodyfile="search.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a197d4ded41fbe1069a823bc3b6c117ca" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.search.SearchDish::search_string</definition>
+        <argsstring></argsstring>
+        <name>search_string</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchDish.search_string</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="29" column="1" bodyfile="search.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a127bbfb5c6b64d3be69cf35a564c6a3e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.search.SearchDish::address_flg</definition>
+        <argsstring></argsstring>
+        <name>address_flg</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchDish.address_flg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="30" column="1" bodyfile="search.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a2b4f1c0ced07f7a4d6b9077ef2495224" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.search.SearchDish::ratio</definition>
+        <argsstring></argsstring>
+        <name>ratio</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchDish.ratio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="35" column="1" bodyfile="search.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ae43f9d32132f76eab0278b8df4462071" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.search.SearchDish::dish_list</definition>
+        <argsstring></argsstring>
+        <name>dish_list</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchDish.dish_list</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="39" column="1" bodyfile="search.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ab7f870616fc70cb2a4d1199a60eb6452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None bym.BYM_project.main_app.search.SearchDish.__init__</definition>
+        <argsstring>(self, types=None, subtypes=None, search_string=&apos;&apos;, address_flg=0, user_id=None, ratio=1, threshold=0)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchDish.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>types</type>
+          <defname>types</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>subtypes</type>
+          <defname>subtypes</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a197d4ded41fbe1069a823bc3b6c117ca" kindref="member">search_string</ref></type>
+          <defname>search_string</defname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <param>
+          <type><ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a127bbfb5c6b64d3be69cf35a564c6a3e" kindref="member">address_flg</ref></type>
+          <defname>address_flg</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>user_id</type>
+          <defname>user_id</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a2b4f1c0ced07f7a4d6b9077ef2495224" kindref="member">ratio</ref></type>
+          <defname>ratio</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type><ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ac9cbb3ffcf81339ac4f642304f8216b7" kindref="member">threshold</ref></type>
+          <defname>threshold</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Инициализирует класс списком блюд, делая запрос в базу данных </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>types=[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subtypes=[]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>search_string=&apos;&apos;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>str </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>adress_flg=0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user_id=None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ratio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float (во сколько раз рекомендательная система важнее совпадения строк) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="13" column="1" bodyfile="search.py" bodystart="13" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a214893e087146660c2e9c28ce0f3610c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float bym.BYM_project.main_app.search.SearchDish.score</definition>
+        <argsstring>(self, dish)</argsstring>
+        <name>score</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchDish.score</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dish</type>
+          <defname>dish</defname>
+        </param>
+        <briefdescription>
+<para>Сопосталяет каждому объекту класса Dish число, по которому будет осуществлена сортировка </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dish</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dish </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>score double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="48" column="1" bodyfile="search.py" bodystart="48" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a65b19a56e1f65b7ed560f7e5ddef877e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list</type>
+        <definition> list bym.BYM_project.main_app.search.SearchDish.get</definition>
+        <argsstring>(self, slice)</argsstring>
+        <name>get</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchDish.get</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>slice</type>
+          <defname>slice</defname>
+        </param>
+        <briefdescription>
+<para>Сортирует список объектов класса Dish. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>dish_list list of Dish </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="59" column="1" bodyfile="search.py" bodystart="59" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1afbe65b7e09fdd36049dbfc568a9a3db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float bym.BYM_project.main_app.search.SearchDish.recommend_scorer</definition>
+        <argsstring>(self, dish)</argsstring>
+        <name>recommend_scorer</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchDish.recommend_scorer</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dish</type>
+          <defname>dish</defname>
+        </param>
+        <briefdescription>
+<para>Предсказывает вес нравящности для блюда и пользователя. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dish</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dish </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>weight double </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="70" column="1" bodyfile="search.py" bodystart="70" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ac0193c57b7c6f6e00d208737d2cf8e08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float bym.BYM_project.main_app.search.SearchDish.seq_match_scorer</definition>
+        <argsstring>(self, dish)</argsstring>
+        <name>seq_match_scorer</name>
+        <qualifiedname>bym.BYM_project.main_app.search.SearchDish.seq_match_scorer</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dish</type>
+          <defname>dish</defname>
+        </param>
+        <briefdescription>
+<para>Сравнивает Dish.name и self.search_string с помощью SequenceMather() </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dish</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dish </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sm_score float </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="search.py" line="78" column="1" bodyfile="search.py" bodystart="78" bodyend="94"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс реализует функционал поиска и сортировки блюд по строке поиска, фильтрам блюда, рекомендациям конткретному пользователю и указанному адресу </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="search.py" line="7" column="1" bodyfile="search.py" bodystart="7" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ab7f870616fc70cb2a4d1199a60eb6452" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchDish</scope><name>__init__</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a127bbfb5c6b64d3be69cf35a564c6a3e" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchDish</scope><name>address_flg</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ae43f9d32132f76eab0278b8df4462071" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchDish</scope><name>dish_list</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a65b19a56e1f65b7ed560f7e5ddef877e" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchDish</scope><name>get</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a2b4f1c0ced07f7a4d6b9077ef2495224" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchDish</scope><name>ratio</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1afbe65b7e09fdd36049dbfc568a9a3db9" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchDish</scope><name>recommend_scorer</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a214893e087146660c2e9c28ce0f3610c" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchDish</scope><name>score</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a197d4ded41fbe1069a823bc3b6c117ca" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchDish</scope><name>search_string</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ac0193c57b7c6f6e00d208737d2cf8e08" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchDish</scope><name>seq_match_scorer</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ac9cbb3ffcf81339ac4f642304f8216b7" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::search::SearchDish</scope><name>threshold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

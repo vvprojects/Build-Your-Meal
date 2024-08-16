@@ -1,0 +1,188 @@
+\doxysection{parser.\+py}
+\label{parser_8py_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{from}\ selenium.webdriver\ \textcolor{keyword}{import}\ Chrome}
+\DoxyCodeLine{00002\ \textcolor{keyword}{from}\ selenium.webdriver.common.by\ \textcolor{keyword}{import}\ By}
+\DoxyCodeLine{00003\ \textcolor{keyword}{from}\ selenium.webdriver.common.keys\ \textcolor{keyword}{import}\ Keys}
+\DoxyCodeLine{00004\ \textcolor{keyword}{from}\ selenium.webdriver.support\ \textcolor{keyword}{import}\ expected\_conditions\ \textcolor{keyword}{as}\ EC}
+\DoxyCodeLine{00005\ \textcolor{keyword}{from}\ selenium.webdriver.support.ui\ \textcolor{keyword}{import}\ WebDriverWait}
+\DoxyCodeLine{00006\ \textcolor{keyword}{from}\ selenium\ \textcolor{keyword}{import}\ webdriver}
+\DoxyCodeLine{00007\ \textcolor{keyword}{from}\ selenium.webdriver.chrome.service\ \textcolor{keyword}{import}\ Service\ \textcolor{keyword}{as}\ ChromeService}
+\DoxyCodeLine{00008\ \textcolor{keyword}{from}\ webdriver\_manager.chrome\ \textcolor{keyword}{import}\ ChromeDriverManager}
+\DoxyCodeLine{00009\ \textcolor{keyword}{from}\ main\_app.config\ \textcolor{keyword}{import}\ urls\_lavka,\ webdriver\_name}
+\DoxyCodeLine{00010\ \textcolor{keyword}{from}\ bs4\ \textcolor{keyword}{import}\ BeautifulSoup}
+\DoxyCodeLine{00011\ \textcolor{keyword}{import}\ asyncio}
+\DoxyCodeLine{00012\ \textcolor{keyword}{from}\ main\_app.models\ \textcolor{keyword}{import}\ Product,\ Shop,\ User,\ UnitOfMeasure}
+\DoxyCodeLine{00013\ \textcolor{keyword}{from}\ main\_app.conversions\_functions\ \textcolor{keyword}{import}\ get\_lavka\_unit\_id}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{def\ }parse\_by\_address(user\_id,\ city\_street,\ number):}
+\DoxyCodeLine{00017\ \ \ \ \ a\ =\ Lavka(user\_id)}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{\#\ asyncio.run(a.pars("{}Москва,\ Таллинская\ улица"{},\ "{}34"{}))}}
+\DoxyCodeLine{00019\ \ \ \ \ asyncio.run(a.pars(city\_street,\ number))}
+\DoxyCodeLine{00020\ \ \ \ \ a.sql\_script()}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }Parser:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00025\ \textcolor{stringliteral}{\ \ \ \ Определяет\ базавый\ класс\ используемый\ для\ парсинга\ всех\ сайтов}}
+\DoxyCodeLine{00026\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{def\ }\_\_init\_\_(self,\ user\_id,\ shop\_id):}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00030\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Инициализирует\ класс\ Parser.}}
+\DoxyCodeLine{00031\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ user\_id}}
+\DoxyCodeLine{00032\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ shop\_id}}
+\DoxyCodeLine{00033\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ self.user\_obj\ =\ User.objects.get(pk=user\_id)}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ self.options\ =\ webdriver.ChromeOptions()}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ self.product\_list\ =\ []}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ self.shop\_obj\ =\ Shop.objects.get(pk=shop\_id)}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{def\ }sql\_script(self):}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!\ Сохраняет\ в\ базу\ данных}}
+\DoxyCodeLine{00041\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/START\_SAVE\_BD-\/-\/-\/-\/-\/-\/"{}})}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ x\ \textcolor{keywordflow}{in}\ self.product\_list:}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ if\ x["{}unit"{}]\ ==\ 'шт.':}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ \ \ \ \ надо\ поработать\ c\ get\ UnitOfMeasure}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ unit\_obj\ =\ get\_lavka\_unit\_id(x[\textcolor{stringliteral}{'unit'}])}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \_,\ created\ =\ Product.objects.get\_or\_create(user=self.user\_obj,}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ unit=unit\_obj,}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ shop=self.shop\_obj,\ name=x[\textcolor{stringliteral}{"{}name"{}}],}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ price=x[\textcolor{stringliteral}{"{}price"{}}],\ amount=x[\textcolor{stringliteral}{"{}amount"{}}],\ link=x[\textcolor{stringliteral}{"{}link"{}}])}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/END-\/-\/-\/-\/-\/-\/"{}})}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{class\ }Lavka(Parser):}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00058\ \textcolor{stringliteral}{\ \ \ \ Определяет\ класс\ используемый\ для\ парсинга\ лавки.}}
+\DoxyCodeLine{00059\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{def\ }\_\_init\_\_(self,\ user\_id):}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00063\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Инициализирует\ класс\ Lavka.}}
+\DoxyCodeLine{00064\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ user\_id\ int}}
+\DoxyCodeLine{00065\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ super().\_\_init\_\_(user\_id,\ 1)}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ self.url\_main\ =\ \textcolor{stringliteral}{"{}https://lavka.yandex.ru"{}}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ self.options.add\_argument(\textcolor{stringliteral}{"{}-\/-\/start-\/maximized"{}})}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ prefs\ =\ \{\textcolor{stringliteral}{"{}profile.managed\_default\_content\_settings.images"{}}:\ 2\}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ self.options.add\_experimental\_option(\textcolor{stringliteral}{"{}prefs"{}},\ prefs)}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ self.options.headless\ =\ \textcolor{keyword}{True}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ self.options.page\_load\_strategy\ =\ \textcolor{stringliteral}{'eager'}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ self.driver\ =\ Chrome(options=self.options,\ service=ChromeService(ChromeDriverManager().install()))}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ self.wait\ =\ WebDriverWait(self.driver,\ 100)}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ self.urls\ =\ urls\_lavka}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ self.sl\_tags\ =\ dict(product\_block=\textcolor{stringliteral}{"{}p10zc8qs"{}},\ product\_name=\textcolor{stringliteral}{"{}l4t8cc8"{}},\ product\_link=\textcolor{stringliteral}{"{}p11oed5n"{}},}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ discount\_price=\textcolor{stringliteral}{"{}b1bvai5j"{}},\ no\_discount\_price=\textcolor{stringliteral}{"{}c1jd7nwq"{}},\ amount\_and\_unit=\textcolor{stringliteral}{"{}iks4ndv"{}})}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{async\ def\ }get\_data\_product(self,\ product):}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00081\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Выделяет\ из\ блока\ с\ информацией\ о\ продукте\ нужную\ и\ записывает\ в\ БД}}
+\DoxyCodeLine{00082\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ product\ BeautifulSoup}}
+\DoxyCodeLine{00083\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (product.find(class\_=self.sl\_tags[\textcolor{stringliteral}{"{}product\_name"{}}])\ \textcolor{keywordflow}{is}\ \textcolor{keywordflow}{not}\ \textcolor{keywordtype}{None})\ \textcolor{keywordflow}{and}\ (}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ product.find(class\_=self.sl\_tags[\textcolor{stringliteral}{"{}product\_link"{}}])\ \textcolor{keywordflow}{is}\ \textcolor{keywordflow}{not}\ \textcolor{keywordtype}{None}):}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ name\ =\ product.find(class\_=self.sl\_tags[\textcolor{stringliteral}{"{}product\_name"{}}]).get\_text().replace(\textcolor{stringliteral}{'­'},\ \textcolor{stringliteral}{''})}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ print(name)}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ product.find(class\_=self.sl\_tags[\textcolor{stringliteral}{"{}discount\_price"{}}])\ \textcolor{keywordflow}{is}\ \textcolor{keywordflow}{not}\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ price\ =\ int(}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ product.find(class\_=self.sl\_tags[\textcolor{stringliteral}{"{}discount\_price"{}}]).get\_text().replace(\textcolor{stringliteral}{'₽'},\ \textcolor{stringliteral}{''}).replace(\textcolor{stringliteral}{'\ '},}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{''}).replace(}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{' '},\ \textcolor{stringliteral}{''}))}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ price\ =\ int(}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ product.find(class\_=self.sl\_tags[\textcolor{stringliteral}{"{}no\_discount\_price"{}}]).get\_text().replace(\textcolor{stringliteral}{'₽'},\ \textcolor{stringliteral}{''}).replace(\textcolor{stringliteral}{'\ '},}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{''}).replace(}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{' '},\ \textcolor{stringliteral}{''}))}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ link\ =\ self.url\_main\ +\ product.find(class\_=self.sl\_tags[\textcolor{stringliteral}{"{}product\_link"{}}])[\textcolor{stringliteral}{'href'}]}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ am\_un\ =\ product.find(class\_=self.sl\_tags[\textcolor{stringliteral}{"{}amount\_and\_unit"{}}]).get\_text()}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ amount\ =\ float(am\_un[:am\_un.find(\textcolor{stringliteral}{' '})].replace(\textcolor{stringliteral}{','},\ \textcolor{stringliteral}{'.'}))}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ unit\ =\ am\_un[am\_un.find(\textcolor{stringliteral}{' '})\ +\ 1:]}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ self.product\_list.append(\{\textcolor{stringliteral}{"{}name"{}}:\ name,\ \textcolor{stringliteral}{"{}price"{}}:\ price,\ \textcolor{stringliteral}{"{}link"{}}:\ link,\ \textcolor{stringliteral}{"{}amount"{}}:\ amount,\ \textcolor{stringliteral}{"{}unit"{}}:\ unit\})}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ print("{}pass"{})}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{async\ def\ }get\_data\_html(self,\ html):}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00109\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Разбивает\ html\ код\ на\ блоки\ по\ продуктам,\ асинхронно\ запускает\ их\ обработку}}
+\DoxyCodeLine{00110\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ html\ string}}
+\DoxyCodeLine{00111\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ soup\ =\ BeautifulSoup(html,\ \textcolor{stringliteral}{'html.parser'})}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ products\ =\ soup.find\_all(class\_=self.sl\_tags[\textcolor{stringliteral}{"{}product\_block"{}}])}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ tasks\ =\ []}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ loop2\ =\ asyncio.get\_event\_loop()}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ product\ \textcolor{keywordflow}{in}\ products:}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ task\ =\ loop2.create\_task(self.get\_data\_product(product))}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ tasks.append(task)}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ await\ asyncio.wait(tasks)}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keyword}{async\ def\ }pars(self,\ city\_street,\ home):}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00125\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Парсит\ список\ продуктов\ с\ ценами\ яндекс\ лавки\ по\ определенному\ адресу}}
+\DoxyCodeLine{00126\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Производит\ запись\ в\ базу\ данных}}
+\DoxyCodeLine{00127\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ city\_strit\ string}}
+\DoxyCodeLine{00128\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ home\ string}}
+\DoxyCodeLine{00129\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}pars\_start"{}})}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ self.driver.get(self.url\_main\ +\ \textcolor{stringliteral}{"{}/10743/category/ovoshchi\_griby\_i\_zelen"{}})}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ ukaz\_adr\ =\ self.wait.until(EC.presence\_of\_element\_located((By.XPATH,\ \textcolor{stringliteral}{'//*[@id="{}root"{}]/div[2]/header/div[5]/button'})))}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ ukaz\_adr.click()}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}adr\_start"{}})}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ self.wait.until(EC.presence\_of\_element\_located((By.CLASS\_NAME,\ \textcolor{stringliteral}{'c12fmzph'})))}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ await\ asyncio.sleep(1)}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ kr\ =\ self.wait.until(EC.element\_to\_be\_clickable(}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ (By.XPATH,\ \textcolor{stringliteral}{'/html/body/div[2]/div[3]/div/div/div/div[1]/div[2]/div[1]/div/button'})))}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ kr.click()}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ adr\_inp\ =\ self.driver.find\_element(By.CLASS\_NAME,\ \textcolor{stringliteral}{'i164506l'})}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ lit\ \textcolor{keywordflow}{in}\ city\_street:}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ adr\_inp.send\_keys(lit)}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ await\ asyncio.sleep(0.1)}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ adr\_inp.send\_keys(\textcolor{stringliteral}{'\ '})}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ await\ asyncio.sleep(1)}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ lit\ \textcolor{keywordflow}{in}\ home:}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ adr\_inp.send\_keys(lit)}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ await\ asyncio.sleep(1)}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ await\ asyncio.sleep(5)}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ adr\_inp.send\_keys(Keys.DOWN)}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ adr\_inp.send\_keys(Keys.ENTER)}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ ok\ =\ self.wait.until(}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ EC.element\_to\_be\_clickable((By.XPATH,\ \textcolor{stringliteral}{'/html/body/div[2]/div[3]/div/div/div/div[1]/div[2]/div[2]/button'})))}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ ok.click()}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ self.wait.until(EC.presence\_of\_element\_located((By.CLASS\_NAME,\ \textcolor{stringliteral}{'s17r5x1'})))}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}adr\_finish"{}})}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ k\ =\ 6}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ j\ \textcolor{keywordflow}{in}\ range(0,\ k):}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ tasks\ =\ []}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ loop1\ =\ asyncio.get\_event\_loop()}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ i\ =\ j}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ tabi\ =\ 1}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ i\ <\ len(self.urls):}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self.driver.execute\_script(f\textcolor{stringliteral}{"{}window.open('\{self.urls[i]\}',\ 'tab\{tabi\}');"{}})}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ i\ =\ i\ +\ k}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tabi\ =\ tabi\ +\ 1}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ i\ =\ j}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ tabi\ =\ 1}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ i\ <\ len(self.urls):}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self.driver.switch\_to.window(f\textcolor{stringliteral}{'tab\{tabi\}'})}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ html\ =\ self.driver.page\_source}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ task\ =\ loop1.create\_task(self.get\_data\_html(html))}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tasks.append(task)}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ i\ =\ i\ +\ k}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tabi\ =\ tabi\ +\ 1}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ await\ asyncio.wait(tasks)}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ self.driver.quit()}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ \textcolor{comment}{\#\ a\ =\ Lavka()}}
+\DoxyCodeLine{00183\ \textcolor{comment}{\#\ asyncio.run(a.pars("{}Москва,\ Таллинская\ улица"{},"{}34"{}))}}
+
+\end{DoxyCode}

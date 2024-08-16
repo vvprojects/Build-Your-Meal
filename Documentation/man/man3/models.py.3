@@ -1,0 +1,252 @@
+.TH "models.py" 3 "BYM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+models.py
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.User\fP"
+.br
+.RI "Информация о пользователе\&. "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.User\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Country\fP"
+.br
+.RI "Таблица с кухнями различных стран 
+.br
+ name – название кухни (например Русская кухня) 
+.br
+ "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Country\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Type\fP"
+.br
+.RI "таблица с типами блюд 
+.br
+ name – название типа (например Завтраки) 
+.br
+ "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Type\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.SubType\fP"
+.br
+.RI "таблица с подтипами блюд 
+.br
+ name – название подтипа (например фруктовые десерты) 
+.br
+ type_id – тип к которому относится подтип 
+.br
+ "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.SubType\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Dish\fP"
+.br
+.RI "информация о блюде 
+.br
+ name – названия блюда 
+.br
+ pers_num – кол-во порций 
+.br
+ cooking_time_minutes – время готовки в минутах 
+.br
+ calories – кол-во калорий в блюде 
+.br
+ proteins – кол0белки в блюде 
+.br
+ carbohydrates – углеводы в блюде 
+.br
+ fats – жиры 
+.br
+ country_id – страна из кухни которой это блюдо (например итальянская кухня) 
+.br
+ subtype_id – подтип блюда (например, фруктовые десерты) 
+.br
+ image – ссылка на изображения блюда 
+.br
+ "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Dish\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.CookingStage\fP"
+.br
+.RI "шаги для приготовления блюда 
+.br
+ description – текст того, что нужно сделать на этом шаге 
+.br
+ order – порядковый номер шага 
+.br
+ dish_id – блюдо, к которому относится этот шаг 
+.br
+ image – ссылка на изображение шага 
+.br
+ "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.CookingStage\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Category\fP"
+.br
+.RI "категории различных продуктов для приготовления 
+.br
+ name – название категории (например: бакалея или помидоры) 
+.br
+ supreme_category_id – надкатегория (например надкатегорией римских помидор являются помидоры) 
+.br
+ "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Category\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.UnitOfMeasure\fP"
+.br
+.RI "единицы изменения 
+.br
+ name – название единицы измерения (например штуки или кг) 
+.br
+ supreme_unit_id – основная форма категории (например Supreme_unit_id у 'штуки' это 'штука') 
+.br
+ "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.UnitOfMeasure\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Conversion\fP"
+.br
+.RI "коэффициенты для перевода единиц измерения 
+.br
+ coefficient – число на которое нужно умножить что бы перевести from_unit_id в to_unit_id 
+.br
+ category_id – категория для которой выполняется перевод (очевидно что коэффициент для перевода штук в граммы для помидоров и огурцов отличается) 
+.br
+ from_unit_id– единица измерения из которой выполняется перевод 
+.br
+ to_unit_id – единица измерения в которую выполняется перевод 
+.br
+ "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Conversion\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.DishCategory\fP"
+.br
+.RI "информация о составе блюда\&. "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.DishCategory\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Order\fP"
+.br
+.RI "информация о заказах\&. "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Order\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Menu\fP"
+.br
+.RI "состав заказа 
+.br
+ amount– кол-во товара, которое было заказано 
+.br
+ dish_id – товар который был заказан 
+.br
+ order_id – заказ в котором этот товар был заказан 
+.br
+ "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Menu\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Shop\fP"
+.br
+.RI "информация о магазине 
+.br
+ name – название магазина 
+.br
+ link – ссылка на магазин 
+.br
+ "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Shop\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Product\fP"
+.br
+.RI "информация о конкретном товаре в магазине 
+.br
+ name – название товара 
+.br
+ price – цена 
+.br
+ amount – количество (в unit_id) товара которое в одной единице заказ (например 300, unit_id – граммы) 
+.br
+ link – ссылка на товар 
+.br
+ shop_id – магазин, из которого товар 
+.br
+ unit_id – единица измерения 
+.br
+ user_id – пользователь для которого был спаршен данный товар 
+.br
+ "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.Product\&.Meta\fP"
+.br
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.ProductLog\fP"
+.br
+.RI "информация о ранее заказанных товарах в магазине 
+.br
+ name – название товара 
+.br
+ price – цена 
+.br
+ amount – количество (в unit_id) товара которое в одной единице заказ (например 300, unit_id – граммы) 
+.br
+ quantity – количество единиц, которое было заказано 
+.br
+ link – ссылка на товар 
+.br
+ shop_id – магазин, из которого товар 
+.br
+ order_id – заказ, в котором был куплен данный товар 
+.br
+ unit_id – единица измерения 
+.br
+ "
+.ti -1c
+.RI "class \fBbym\&.BYM_project\&.main_app\&.models\&.ProductLog\&.Meta\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBbym\fP"
+.br
+.ti -1c
+.RI "namespace \fBbym\&.BYM_project\fP"
+.br
+.ti -1c
+.RI "namespace \fBbym\&.BYM_project\&.main_app\fP"
+.br
+.ti -1c
+.RI "namespace \fBbym\&.BYM_project\&.main_app\&.models\fP"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BYM from the source code\&.

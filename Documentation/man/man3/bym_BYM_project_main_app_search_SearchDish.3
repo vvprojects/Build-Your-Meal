@@ -1,0 +1,177 @@
+.TH "bym.BYM_project.main_app.search.SearchDish" 3 "BYM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bym.BYM_project.main_app.search.SearchDish \- Класс реализует функционал поиска и сортировки блюд по строке поиска, фильтрам блюда, рекомендациям конткретному пользователю и указанному адресу  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "None \fB__init__\fP (self, types=None, subtypes=None, \fBsearch_string\fP='', \fBaddress_flg\fP=0, user_id=None, \fBratio\fP=1, \fBthreshold\fP=0)"
+.br
+.RI "Инициализирует класс списком блюд, делая запрос в базу данных "
+.ti -1c
+.RI "float \fBscore\fP (self, dish)"
+.br
+.RI "Сопосталяет каждому объекту класса Dish число, по которому будет осуществлена сортировка "
+.ti -1c
+.RI "list \fBget\fP (self, slice)"
+.br
+.RI "Сортирует список объектов класса Dish\&. "
+.ti -1c
+.RI "float \fBrecommend_scorer\fP (self, dish)"
+.br
+.RI "Предсказывает вес нравящности для блюда и пользователя\&. "
+.ti -1c
+.RI "float \fBseq_match_scorer\fP (self, dish)"
+.br
+.RI "Сравнивает Dish\&.name и self\&.search_string с помощью SequenceMather() "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBthreshold\fP"
+.br
+.ti -1c
+.RI "\fBsearch_string\fP"
+.br
+.ti -1c
+.RI "\fBaddress_flg\fP"
+.br
+.ti -1c
+.RI "\fBratio\fP"
+.br
+.ti -1c
+.RI "\fBdish_list\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Класс реализует функционал поиска и сортировки блюд по строке поиска, фильтрам блюда, рекомендациям конткретному пользователю и указанному адресу 
+.PP
+Definition at line \fB7\fP of file \fBsearch\&.py\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS " None bym\&.BYM_project\&.main_app\&.search\&.SearchDish\&.__init__ ( self,  types = \fCNone\fP,  subtypes = \fCNone\fP,  search_string = \fC''\fP,  address_flg = \fC0\fP,  user_id = \fCNone\fP,  ratio = \fC1\fP,  threshold = \fC0\fP)"
+
+.PP
+Инициализирует класс списком блюд, делая запрос в базу данных 
+.PP
+\fBParameters\fP
+.RS 4
+\fItypes=[]\fP list of int 
+.br
+\fIsubtypes=[]\fP list of int 
+.br
+\fIsearch_string=''\fP str 
+.br
+\fIadress_flg=0\fP int 
+.br
+\fIuser_id=None\fP int 
+.br
+\fIratio\fP float (во сколько раз рекомендательная система важнее совпадения строк) 
+.RE
+.PP
+
+.PP
+Definition at line \fB13\fP of file \fBsearch\&.py\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS " list bym\&.BYM_project\&.main_app\&.search\&.SearchDish\&.get ( self,  slice)"
+
+.PP
+Сортирует список объектов класса Dish\&. 
+.PP
+\fBReturns\fP
+.RS 4
+dish_list list of Dish 
+.RE
+.PP
+
+.PP
+Definition at line \fB59\fP of file \fBsearch\&.py\fP\&.
+.SS " float bym\&.BYM_project\&.main_app\&.search\&.SearchDish\&.recommend_scorer ( self,  dish)"
+
+.PP
+Предсказывает вес нравящности для блюда и пользователя\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdish\fP Dish 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+weight double 
+.RE
+.PP
+
+.PP
+Definition at line \fB70\fP of file \fBsearch\&.py\fP\&.
+.SS " float bym\&.BYM_project\&.main_app\&.search\&.SearchDish\&.score ( self,  dish)"
+
+.PP
+Сопосталяет каждому объекту класса Dish число, по которому будет осуществлена сортировка 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdish\fP Dish 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+score double 
+.RE
+.PP
+
+.PP
+Definition at line \fB48\fP of file \fBsearch\&.py\fP\&.
+.SS " float bym\&.BYM_project\&.main_app\&.search\&.SearchDish\&.seq_match_scorer ( self,  dish)"
+
+.PP
+Сравнивает Dish\&.name и self\&.search_string с помощью SequenceMather() 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdish\fP Dish 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+sm_score float 
+.RE
+.PP
+
+.PP
+Definition at line \fB78\fP of file \fBsearch\&.py\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.search\&.SearchDish\&.address_flg"
+
+.PP
+Definition at line \fB30\fP of file \fBsearch\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.search\&.SearchDish\&.dish_list"
+
+.PP
+Definition at line \fB39\fP of file \fBsearch\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.search\&.SearchDish\&.ratio"
+
+.PP
+Definition at line \fB35\fP of file \fBsearch\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.search\&.SearchDish\&.search_string"
+
+.PP
+Definition at line \fB29\fP of file \fBsearch\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.search\&.SearchDish\&.threshold"
+
+.PP
+Definition at line \fB24\fP of file \fBsearch\&.py\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BYM from the source code\&.

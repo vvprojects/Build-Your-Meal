@@ -1,0 +1,94 @@
+\doxysection{functions\+\_\+backend.\+py}
+\label{functions__backend_8py_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{from}\ django.utils\ \textcolor{keyword}{import}\ timezone}
+\DoxyCodeLine{00002\ \textcolor{keyword}{import}\ re}
+\DoxyCodeLine{00003\ \textcolor{keyword}{import}\ unicodedata}
+\DoxyCodeLine{00004\ \textcolor{keyword}{from}\ main\_app.models\ \textcolor{keyword}{import}\ User,\ Type,\ SubType,\ Dish,\ CookingStage,\ Order,\ DishCategory}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{def\ }start\_session(request):}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{'''!\ Начало\ сессии\ с\ пользователем\ и\ создание\ его\ кортежа\ в\ бд\ по\ session\_id}}
+\DoxyCodeLine{00009\ \textcolor{stringliteral}{\ \ \ \ @param\ request\ HttpRequest}}
+\DoxyCodeLine{00010\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{stringliteral}{'start\_session'}\ \textcolor{keywordflow}{not}\ \textcolor{keywordflow}{in}\ request.session:}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ request.session[\textcolor{stringliteral}{'start\_session'}]\ =\ \textcolor{stringliteral}{'start'}}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ request.session.save()}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ user\_obj\ =\ User(session\_id=request.session.session\_key)}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ user\_obj.save()}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ order\ =\ Order(user=user\_obj,\ order\_date=timezone.now())}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ order.save()}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{def\ }get\_dish\_types():}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{stringliteral}{'''!\ Запрос\ в\ бд\ на\ получение\ типов\ блюд\ и\ соответстующих\ им\ под\ типов}}
+\DoxyCodeLine{00023\ \textcolor{stringliteral}{\ \ \ \ @return\ dict\ \{type:[subtype,...]\}}}
+\DoxyCodeLine{00024\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00025\ \ \ \ \ dic\ =\ \{\}}
+\DoxyCodeLine{00026\ \ \ \ \ types\ =\ Type.objects.all()}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordflow}{for}\ type\ \textcolor{keywordflow}{in}\ types:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ dic[type]\ =\ [subtype\ \textcolor{keywordflow}{for}\ subtype\ \textcolor{keywordflow}{in}\ SubType.objects.filter(type=type)]}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{return}\ dic}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{def\ }get\_particular\_dish(dish\_id):}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{stringliteral}{'''!\ Возвращает\ конкретное\ блюдо,\ стадии\ его\ приготовления\ и\ необходимые\ игридиенты}}
+\DoxyCodeLine{00034\ \textcolor{stringliteral}{\ \ \ \ @param\ dish\_id\ int}}
+\DoxyCodeLine{00035\ \textcolor{stringliteral}{\ \ \ \ @return\ dish\ Dish}}
+\DoxyCodeLine{00036\ \textcolor{stringliteral}{\ \ \ \ @return\ cooking\_stages\ [CookingStage,...]}}
+\DoxyCodeLine{00037\ \textcolor{stringliteral}{\ \ \ \ @return\ ingredients\ [\{'name':string,\ amount:int\}]\ -\/\ список\ ингридиентов\ -\/\ название\ категории\ их\ кол-\/во}}
+\DoxyCodeLine{00038\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00039\ \ \ \ \ dish\ =\ Dish.objects.get(pk=dish\_id)}
+\DoxyCodeLine{00040\ \ \ \ \ cooking\_stages\ =\ CookingStage.objects.filter(dish=dish)}
+\DoxyCodeLine{00041\ \ \ \ \ ingredients\ =\ []}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordflow}{for}\ x\ \textcolor{keywordflow}{in}\ DishCategory.objects.filter(dish=dish):}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ x.amount\ !=\ 0:}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ amount\ =\ \textcolor{stringliteral}{'\ '}.join([f\textcolor{stringliteral}{'\{float(x.amount):g\}'},\ x.unit.name])}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ amount\ =\ x.unit.name}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ ingredients.append(\{\textcolor{stringliteral}{'name'}:\ x.category.name,\ \textcolor{stringliteral}{'amount'}:\ amount\})}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordflow}{return}\ dish,\ cooking\_stages,\ ingredients}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{def\ }string\_to\_minutes(string):}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{stringliteral}{'''!\ Возвращает\ количество\ минут\ в\ строке}}
+\DoxyCodeLine{00054\ \textcolor{stringliteral}{\ \ \ \ Варианты\ входа:\ 'n\ часов',\ 'n\ минут',\ 'n\ часов\ k\ минут'}}
+\DoxyCodeLine{00055\ \textcolor{stringliteral}{\ \ \ \ @param\ string\ string}}
+\DoxyCodeLine{00056\ \textcolor{stringliteral}{\ \ \ \ @return\ int}}
+\DoxyCodeLine{00057\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00058\ \ \ \ \ nums\ =\ [int(x)\ \textcolor{keywordflow}{for}\ x\ \textcolor{keywordflow}{in}\ re.findall(\textcolor{stringliteral}{r'\(\backslash\)d+'},\ string)]}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{stringliteral}{'час'}\ \textcolor{keywordflow}{in}\ string:}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{stringliteral}{'мин'}\ \textcolor{keywordflow}{in}\ string:}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ nums[0]\ *\ 60\ +\ nums[1]}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ nums[0]\ *\ 60}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ nums[0]}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{def\ }convert\_fraction(string):}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{stringliteral}{'''!\ Возвращает\ float\ из\ строки\ с\ числом}}
+\DoxyCodeLine{00070\ \textcolor{stringliteral}{\ \ \ \ @param\ string\ string}}
+\DoxyCodeLine{00071\ \textcolor{stringliteral}{\ \ \ \ @return\ float}}
+\DoxyCodeLine{00072\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00073\ \ \ \ \ string\ =\ string.replace(\textcolor{stringliteral}{','},\ \textcolor{stringliteral}{'.'})}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{if}\ len(string)\ ==\ 1:}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ unicodedata.numeric(string)}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{return}\ float(string)}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{keyword}{def\ }number\_and\_measure(string):}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{stringliteral}{'''!\ Возвращает\ по\ строке\ количества\ продукта\ число\ +\ единицу\ измерения\ в\ начальной\ форме}}
+\DoxyCodeLine{00081\ \textcolor{stringliteral}{\ \ \ \ @param\ string\ string}}
+\DoxyCodeLine{00082\ \textcolor{stringliteral}{\ \ \ \ @return\ float}}
+\DoxyCodeLine{00083\ \textcolor{stringliteral}{\ \ \ \ @return\ string}}
+\DoxyCodeLine{00084\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00085\ \ \ \ \ words\ =\ string.split()}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordflow}{if}\ len(words)\ >=\ 2\ \textcolor{keywordflow}{and}\ (words[0].isnumeric()\ \textcolor{keywordflow}{or}\ \textcolor{stringliteral}{'.'}\ \textcolor{keywordflow}{in}\ words[0]\ \textcolor{keywordflow}{or}\ \textcolor{stringliteral}{','}\ \textcolor{keywordflow}{in}\ words[0]):}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ convert\_fraction(words[0]),\ \textcolor{stringliteral}{'\ '}.join(words[1:])}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.0,\ \textcolor{stringliteral}{'\ '}.join(words)}
+
+\end{DoxyCode}

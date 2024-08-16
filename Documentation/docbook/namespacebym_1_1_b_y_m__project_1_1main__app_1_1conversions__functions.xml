@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions" xml:lang="en-US">
+<title>bym.BYM_project.main_app.conversions_functions Namespace Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.conversions_functions</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions_1aedc887b909c552c4dc6d68d3f3c82294">how_many_add</link> (category_id, need_unit, have_unit, need, have)</para>
+
+<para>Расчет сколько штук товара необходимо купть на что бы полностью покрыть рецепт </para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions_1a7f6cdbfd78f849181eb8729d15de8339">get_lavka_unit_id</link> (name_unit)</para>
+
+<para>Исчет единицу измерения из магазина в базе данных, если нет создает </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions_1a7f6cdbfd78f849181eb8729d15de8339"/><section>
+    <title>get_lavka_unit_id()</title>
+<indexterm><primary>get_lavka_unit_id</primary><secondary>bym.BYM_project.main_app.conversions_functions</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.conversions_functions</primary><secondary>get_lavka_unit_id</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.conversions_functions.get_lavka_unit_id ( name_unit)</computeroutput></para><para>
+
+<para>Исчет единицу измерения из магазина в базе данных, если нет создает </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>name_unit</entry><entry>
+<para>string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>UnitOfMeasure </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_conversions__functions_8py_source_1l00047">47</link> of file <link linkend="_conversions__functions_8py_source">conversions_functions.py</link>.</para>
+</section>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions_1aedc887b909c552c4dc6d68d3f3c82294"/><section>
+    <title>how_many_add()</title>
+<indexterm><primary>how_many_add</primary><secondary>bym.BYM_project.main_app.conversions_functions</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.conversions_functions</primary><secondary>how_many_add</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.conversions_functions.how_many_add ( category_id,  need_unit,  have_unit,  need,  have)</computeroutput></para><para>
+
+<para>Расчет сколько штук товара необходимо купть на что бы полностью покрыть рецепт </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>category_id</entry><entry>
+<para>int </para>
+</entry>
+                            </row>
+                            <row>
+<entry>need_unit</entry><entry>
+<para>UnitOfMeasure - еденицы измерения продукта по рецепту (например стаканы) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>have_unit</entry><entry>
+<para>UnitOfMeasure - еденицы измерения товара из магазина (например граммы) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>need</entry><entry>
+<para>int - необходимое количество по рецепту (например 5, have_unit - стаканы) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>have</entry><entry>
+<para>int - количество в одном юните в магазине (например 500, have_unit-граммы) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>kol int - сколько нужно заказать </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_conversions__functions_8py_source_1l00006">6</link> of file <link linkend="_conversions__functions_8py_source">conversions_functions.py</link>.</para>
+</section>
+</section>
+</section>

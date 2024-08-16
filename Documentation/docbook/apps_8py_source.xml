@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_apps_8py_source" xml:lang="en-US">
+<title>apps.py</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_apps_8py_source_1l00001"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1apps">00001</link> <emphasis role="keyword">from</emphasis>&#32;django.apps&#32;<emphasis role="keyword">import</emphasis>&#32;AppConfig
+<anchor xml:id="_apps_8py_source_1l00002"/>00002 
+<anchor xml:id="_apps_8py_source_1l00003"/>00003 
+<anchor xml:id="_apps_8py_source_1l00004"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config">00004</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config">MainAppConfig</link>(AppConfig):
+<anchor xml:id="_apps_8py_source_1l00005"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config_1aef0cf79007455603508a92ee4790336a">00005</link> &#32;&#32;&#32;&#32;default_auto_field&#32;=&#32;<emphasis role="stringliteral">&apos;django.db.models.BigAutoField&apos;</emphasis>
+<anchor xml:id="_apps_8py_source_1l00006"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config_1a4721d005d31a86d57752c61316c6ae23">00006</link> &#32;&#32;&#32;&#32;name&#32;=&#32;<emphasis role="stringliteral">&apos;main_app&apos;</emphasis>
+</programlisting></section>

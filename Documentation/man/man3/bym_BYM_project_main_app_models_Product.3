@@ -1,0 +1,128 @@
+.TH "bym.BYM_project.main_app.models.Product" 3 "BYM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bym.BYM_project.main_app.models.Product \- информация о конкретном товаре в магазине 
+.br
+ name – название товара 
+.br
+ price – цена 
+.br
+ amount – количество (в unit_id) товара которое в одной единице заказ (например 300, unit_id – граммы) 
+.br
+ link – ссылка на товар 
+.br
+ shop_id – магазин, из которого товар 
+.br
+ unit_id – единица измерения 
+.br
+ user_id – пользователь для которого был спаршен данный товар 
+.br
+  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits models\&.Model\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMeta\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBuser\fP"
+.br
+.ti -1c
+.RI "\fBUser\fP"
+.br
+.ti -1c
+.RI "\fBon_delete\fP"
+.br
+.ti -1c
+.RI "\fBunit\fP = models\&.ForeignKey(\fBUnitOfMeasure\fP, \fBon_delete\fP=models\&.CASCADE)"
+.br
+.ti -1c
+.RI "\fBshop\fP = models\&.ForeignKey(\fBShop\fP, \fBon_delete\fP=models\&.CASCADE)"
+.br
+.ti -1c
+.RI "\fBname\fP = models\&.CharField(max_length=100)"
+.br
+.ti -1c
+.RI "\fBprice\fP = models\&.PositiveIntegerField()"
+.br
+.ti -1c
+.RI "\fBamount\fP = models\&.DecimalField(max_digits=4 + 4, decimal_places=4)"
+.br
+.ti -1c
+.RI "\fBlink\fP = models\&.URLField()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+информация о конкретном товаре в магазине 
+.br
+ name – название товара 
+.br
+ price – цена 
+.br
+ amount – количество (в unit_id) товара которое в одной единице заказ (например 300, unit_id – граммы) 
+.br
+ link – ссылка на товар 
+.br
+ shop_id – магазин, из которого товар 
+.br
+ unit_id – единица измерения 
+.br
+ user_id – пользователь для которого был спаршен данный товар 
+.br
+ 
+.PP
+Definition at line \fB256\fP of file \fBmodels\&.py\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Product\&.amount = models\&.DecimalField(max_digits=4 + 4, decimal_places=4)\fC [static]\fP"
+
+.PP
+Definition at line \fB277\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Product\&.link = models\&.URLField()\fC [static]\fP"
+
+.PP
+Definition at line \fB278\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Product\&.name = models\&.CharField(max_length=100)\fC [static]\fP"
+
+.PP
+Definition at line \fB275\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Product\&.on_delete\fC [static]\fP"
+
+.PP
+Definition at line \fB271\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Product\&.price = models\&.PositiveIntegerField()\fC [static]\fP"
+
+.PP
+Definition at line \fB276\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Product\&.shop = models\&.ForeignKey(\fBShop\fP, \fBon_delete\fP=models\&.CASCADE)\fC [static]\fP"
+
+.PP
+Definition at line \fB273\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Product\&.unit = models\&.ForeignKey(\fBUnitOfMeasure\fP, \fBon_delete\fP=models\&.CASCADE)\fC [static]\fP"
+
+.PP
+Definition at line \fB272\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Product\&.user\fC [static]\fP"
+
+.PP
+Definition at line \fB271\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Product\&.User\fC [static]\fP"
+
+.PP
+Definition at line \fB271\fP of file \fBmodels\&.py\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BYM from the source code\&.

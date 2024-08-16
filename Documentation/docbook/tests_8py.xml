@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_tests_8py" xml:lang="en-US">
+<title>tests.py File Reference</title>
+<indexterm><primary>tests.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebym">bym</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project">bym.BYM_project</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app">bym.BYM_project.main_app</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1tests">bym.BYM_project.main_app.tests</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

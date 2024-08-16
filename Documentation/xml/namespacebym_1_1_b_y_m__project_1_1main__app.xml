@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacebym_1_1_b_y_m__project_1_1main__app" kind="namespace" language="Python">
+    <compoundname>bym::BYM_project::main_app</compoundname>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1admin">bym::BYM_project::main_app::admin</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1apps">bym::BYM_project::main_app::apps</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1cart">bym::BYM_project::main_app::cart</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1config">bym::BYM_project::main_app::config</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions">bym::BYM_project::main_app::conversions_functions</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1forms">bym::BYM_project::main_app::forms</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend">bym::BYM_project::main_app::functions_backend</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1models">bym::BYM_project::main_app::models</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1parser">bym::BYM_project::main_app::parser</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system">bym::BYM_project::main_app::recommendation_system</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1search">bym::BYM_project::main_app::search</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1serializers">bym::BYM_project::main_app::serializers</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1tests">bym::BYM_project::main_app::tests</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views">bym::BYM_project::main_app::views</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="admin.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

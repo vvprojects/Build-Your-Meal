@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>BYM</title>
+    </info>
+<chapter>
+    <title>Namespace Documentation</title>
+<xi:include href="namespacebym.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1admin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1apps.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1cart.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1config.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1forms.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1models.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1parser.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1search.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1serializers.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1tests.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_change_cart_api.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_home_page_api.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_parse_products_api.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1forms_1_1_search_dish_form.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="____init_____8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="admin_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="admin_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="apps_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="apps_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="cart_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="cart_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="config_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="config_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="conversions__functions_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="conversions__functions_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="forms_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="forms_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="functions__backend_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="functions__backend_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="models_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="models_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="parser_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="parser_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="recommendation__system_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="recommendation__system_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="search_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="search_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="serializers_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="serializers_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="tests_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="tests_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="views_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="views_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

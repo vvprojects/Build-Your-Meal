@@ -1,0 +1,202 @@
+\doxysection{bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish Class Reference}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish}\index{bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}}
+
+
+информация о блюде ~\newline
+ name – названия блюда ~\newline
+ pers\+\_\+num – кол-\/во порций ~\newline
+ cooking\+\_\+time\+\_\+minutes – время готовки в минутах ~\newline
+ calories – кол-\/во калорий в блюде ~\newline
+ proteins – кол0белки в блюде ~\newline
+ carbohydrates – углеводы в блюде ~\newline
+ fats – жиры ~\newline
+ country\+\_\+id – страна из кухни которой это блюдо (например итальянская кухня) ~\newline
+ subtype\+\_\+id – подтип блюда (например, фруктовые десерты) ~\newline
+ image – ссылка на изображения блюда ~\newline
+  
+
+
+Inheritance diagram for bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ Meta}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ country}
+\item 
+\textbf{ Country}
+\item 
+\textbf{ on\+\_\+delete}
+\item 
+\textbf{ subtype} = models.\+Foreign\+Key(\textbf{ Sub\+Type}, \textbf{ on\+\_\+delete}=models.\+CASCADE)
+\item 
+\textbf{ name} = models.\+Char\+Field(max\+\_\+length=100)
+\item 
+\textbf{ pers\+\_\+num} = models.\+Positive\+Integer\+Field()
+\item 
+\textbf{ cooking\+\_\+time\+\_\+minutes} = models.\+Positive\+Integer\+Field()
+\item 
+\textbf{ image} = models.\+Image\+Field(null=True, blank=True, max\+\_\+length=130)
+\item 
+\textbf{ calories} = models.\+Positive\+Integer\+Field()
+\item 
+\textbf{ proteins} = models.\+Positive\+Integer\+Field()
+\item 
+\textbf{ carbohydrates} = models.\+Positive\+Integer\+Field()
+\item 
+\textbf{ fats} = models.\+Positive\+Integer\+Field()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+информация о блюде ~\newline
+ name – названия блюда ~\newline
+ pers\+\_\+num – кол-\/во порций ~\newline
+ cooking\+\_\+time\+\_\+minutes – время готовки в минутах ~\newline
+ calories – кол-\/во калорий в блюде ~\newline
+ proteins – кол0белки в блюде ~\newline
+ carbohydrates – углеводы в блюде ~\newline
+ fats – жиры ~\newline
+ country\+\_\+id – страна из кухни которой это блюдо (например итальянская кухня) ~\newline
+ subtype\+\_\+id – подтип блюда (например, фруктовые десерты) ~\newline
+ image – ссылка на изображения блюда ~\newline
+ 
+
+Definition at line \textbf{ 90} of file \textbf{ models.\+py}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_aef53fe87ee71c04493865e68f150e2b0} 
+\index{bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}!calories@{calories}}
+\index{calories@{calories}!bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}}
+\doxysubsubsection{calories}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish.\+calories = models.\+Positive\+Integer\+Field()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 115} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_a0d59ba53aacdf9b785a7b919c65fc6c3} 
+\index{bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}!carbohydrates@{carbohydrates}}
+\index{carbohydrates@{carbohydrates}!bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}}
+\doxysubsubsection{carbohydrates}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish.\+carbohydrates = models.\+Positive\+Integer\+Field()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 117} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_a8e70dff838d796fa6fdde5a2bf71cbb2} 
+\index{bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}!cooking\_time\_minutes@{cooking\_time\_minutes}}
+\index{cooking\_time\_minutes@{cooking\_time\_minutes}!bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}}
+\doxysubsubsection{cooking\_time\_minutes}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish.\+cooking\+\_\+time\+\_\+minutes = models.\+Positive\+Integer\+Field()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 113} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_a98e01229bbeada507b776f7ecc8ead27} 
+\index{bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}!country@{country}}
+\index{country@{country}!bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}}
+\doxysubsubsection{country}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish.\+country\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 108} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_a59ec1607401fd259b23b47847b59b296} 
+\index{bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}!Country@{Country}}
+\index{Country@{Country}!bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}}
+\doxysubsubsection{Country}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish.\+Country\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 108} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_a6219673d99d12e14f8118d897b8c75e1} 
+\index{bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}!fats@{fats}}
+\index{fats@{fats}!bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}}
+\doxysubsubsection{fats}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish.\+fats = models.\+Positive\+Integer\+Field()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 118} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_a466a56c198c08d4acf38553a5eb725df} 
+\index{bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}!image@{image}}
+\index{image@{image}!bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}}
+\doxysubsubsection{image}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish.\+image = models.\+Image\+Field(null=True, blank=True, max\+\_\+length=130)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 114} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_ac16c094d9da72cb8d08d0a8b177f3e4f} 
+\index{bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}!name@{name}}
+\index{name@{name}!bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}}
+\doxysubsubsection{name}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish.\+name = models.\+Char\+Field(max\+\_\+length=100)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 111} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_a914c843d8b866b98e3cfbd26f7ef8202} 
+\index{bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}!on\_delete@{on\_delete}}
+\index{on\_delete@{on\_delete}!bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}}
+\doxysubsubsection{on\_delete}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish.\+on\+\_\+delete\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 108} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_aa6dc2e38ec33dc3515ec2ee5f473da8d} 
+\index{bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}!pers\_num@{pers\_num}}
+\index{pers\_num@{pers\_num}!bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}}
+\doxysubsubsection{pers\_num}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish.\+pers\+\_\+num = models.\+Positive\+Integer\+Field()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 112} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_ab2d72414d6b36df30358e4f7d11d0db4} 
+\index{bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}!proteins@{proteins}}
+\index{proteins@{proteins}!bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}}
+\doxysubsubsection{proteins}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish.\+proteins = models.\+Positive\+Integer\+Field()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 116} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_a273d0e1c9b091aadb25f4a17e77262bc} 
+\index{bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}!subtype@{subtype}}
+\index{subtype@{subtype}!bym.BYM\_project.main\_app.models.Dish@{bym.BYM\_project.main\_app.models.Dish}}
+\doxysubsubsection{subtype}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish.\+subtype = models.\+Foreign\+Key(\textbf{ Sub\+Type}, \textbf{ on\+\_\+delete}=models.\+CASCADE)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 109} of file \textbf{ models.\+py}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ models.\+py}\end{DoxyCompactItemize}

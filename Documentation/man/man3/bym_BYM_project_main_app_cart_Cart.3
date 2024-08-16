@@ -1,0 +1,140 @@
+.TH "bym.BYM_project.main_app.cart.Cart" 3 "BYM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bym.BYM_project.main_app.cart.Cart \- Класс для работы с карзиной пользователья  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__init__\fP (self, user_id)"
+.br
+.RI "Находит текущий Order по user_id\&. "
+.ti -1c
+.RI "\fBchange_order\fP (self, dish_id, add_flg)"
+.br
+.RI "Изменяем корзину блюд пользователя - или добавить (+1), или убрать (-1) "
+.ti -1c
+.RI "\fBget_order_array\fP (self)"
+.br
+.RI "Возвращает текущую корзину блюд пользователя "
+.ti -1c
+.RI "\fBget_categories_list\fP (self, slice)"
+.br
+.RI "Выдает slice наиболие подходящих товаров в каждой категории "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBget_categories\fP (order_array)"
+.br
+.RI "Раскладывает карзину пользователя (в виде блюд), на товары если в рецептах товары в разных единицах измерения приводит к единой "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBorder_obj\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Класс для работы с карзиной пользователья 
+.PP
+Definition at line \fB5\fP of file \fBcart\&.py\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.cart\&.Cart\&.__init__ ( self,  user_id)"
+
+.PP
+Находит текущий Order по user_id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuser_id\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB8\fP of file \fBcart\&.py\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.cart\&.Cart\&.change_order ( self,  dish_id,  add_flg)"
+
+.PP
+Изменяем корзину блюд пользователя - или добавить (+1), или убрать (-1) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdish_id\fP int 
+.br
+\fIadd_flg\fP bool - True прибавление, False вычитание 
+.RE
+.PP
+
+.PP
+Definition at line \fB14\fP of file \fBcart\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.cart\&.Cart\&.get_categories ( order_array)\fC [static]\fP"
+
+.PP
+Раскладывает карзину пользователя (в виде блюд), на товары если в рецептах товары в разных единицах измерения приводит к единой 
+.PP
+\fBParameters\fP
+.RS 4
+\fIorder_array\fP [{'dish': Dish, 'amount': int}, \&.\&.\&.] 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+categories [{'category': Category, 'amount': float, 'unit_name': string}, \&.\&.\&.] 
+.RE
+.PP
+
+.PP
+Definition at line \fB45\fP of file \fBcart\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.cart\&.Cart\&.get_categories_list ( self,  slice)"
+
+.PP
+Выдает slice наиболие подходящих товаров в каждой категории 
+.PP
+\fBParameters\fP
+.RS 4
+\fIslice\fP int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+categories_list[{'category': string, 'category_amount': int, 'category_unit_name': string, 'product_list': [Product, \&.\&.\&.]}, \&.\&.\&.] 
+.RE
+.PP
+
+.PP
+Definition at line \fB103\fP of file \fBcart\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.cart\&.Cart\&.get_order_array ( self)"
+
+.PP
+Возвращает текущую корзину блюд пользователя 
+.PP
+\fBReturns\fP
+.RS 4
+order_array [{'dish': Dish, 'amount': int}, \&.\&.\&.] 
+.RE
+.PP
+
+.PP
+Definition at line \fB32\fP of file \fBcart\&.py\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.cart\&.Cart\&.order_obj"
+
+.PP
+Definition at line \fB12\fP of file \fBcart\&.py\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BYM from the source code\&.

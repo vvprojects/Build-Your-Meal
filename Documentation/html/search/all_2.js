@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['blank_0',['blank',['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user.html#ae82374586f8dddce1f3eb664b6b09687',1,'bym.BYM_project.main_app.models.User.blank'],['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category.html#a9c1f3305e89355c12f2a40dfdd2cde78',1,'bym.BYM_project.main_app.models.Category.blank'],['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure.html#a3109f3e7f355a8ff4b0ca4b7ff10e7ad',1,'bym.BYM_project.main_app.models.UnitOfMeasure.blank']]],
+  ['bym_1',['bym',['../namespacebym.html',1,'']]],
+  ['bym_3a_3abym_5fproject_2',['BYM_project',['../namespacebym_1_1_b_y_m__project.html',1,'bym']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3',['main_app',['../namespacebym_1_1_b_y_m__project_1_1main__app.html',1,'bym::BYM_project']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3aadmin_4',['admin',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1admin.html',1,'bym::BYM_project::main_app']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3aapps_5',['apps',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1apps.html',1,'bym::BYM_project::main_app']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3acart_6',['cart',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1cart.html',1,'bym::BYM_project::main_app']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3aconfig_7',['config',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1config.html',1,'bym::BYM_project::main_app']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3aconversions_5ffunctions_8',['conversions_functions',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions.html',1,'bym::BYM_project::main_app']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3aforms_9',['forms',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1forms.html',1,'bym::BYM_project::main_app']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3afunctions_5fbackend_10',['functions_backend',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend.html',1,'bym::BYM_project::main_app']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3amodels_11',['models',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1models.html',1,'bym::BYM_project::main_app']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3aparser_12',['parser',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1parser.html',1,'bym::BYM_project::main_app']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3arecommendation_5fsystem_13',['recommendation_system',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system.html',1,'bym::BYM_project::main_app']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3asearch_14',['search',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1search.html',1,'bym::BYM_project::main_app']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3aserializers_15',['serializers',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1serializers.html',1,'bym::BYM_project::main_app']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3atests_16',['tests',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1tests.html',1,'bym::BYM_project::main_app']]],
+  ['bym_3a_3abym_5fproject_3a_3amain_5fapp_3a_3aviews_17',['views',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1views.html',1,'bym::BYM_project::main_app']]]
+];

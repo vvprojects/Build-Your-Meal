@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.User Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.User</primary></indexterm>
+<para>
+
+<para>Информация о пользователе. </para>
+ 
+</para>
+<para>Inheritance diagram for bym.BYM_project.main_app.models.User:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1_1_meta">Meta</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ab0a8bfa053f7e8010fd64f61a5b1ff68">authorization</link> (user_id, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a8cd58cf6d85c37d43c5dcc3527efce8c">login</link>)</para>
+
+<para>Поиск пользователя по логину, если не найден то присвоить логин текущему user_id. </para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1af999c39e1e2700b9feb14cbb9f4dd951">get_user_id</link> (request)</para>
+
+<para>Возвращаем id пользователя - залогиненного или выданного по session_id. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ae2702233c542947f0a785e208f8907f6">session</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a1fc29e11a30a6b31a558f4ef9817e31c">Session</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a6bcdd4b2f18cd6f8eb8a2b0ed1f9c98f">on_delete</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1af28f869bcfc2144c48e30c231ca2cc4a">CASCADE</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a17edf846d38a7295eb9805b7e286dea1">null</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61">True</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ae82374586f8dddce1f3eb664b6b09687">blank</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a774e79a804baf0f13d4e1c7e0e9bc464">last_address</link> = models.CharField(max_length=100, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a17edf846d38a7295eb9805b7e286dea1">null</link>=<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61">True</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ae82374586f8dddce1f3eb664b6b09687">blank</link>=<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61">True</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a8aa271136e93202daf9e8d79f2059049">nickname</link> = models.CharField(max_length=50, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a17edf846d38a7295eb9805b7e286dea1">null</link>=<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61">True</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ae82374586f8dddce1f3eb664b6b09687">blank</link>=<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61">True</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a8cd58cf6d85c37d43c5dcc3527efce8c">login</link> = models.EmailField(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a17edf846d38a7295eb9805b7e286dea1">null</link>=<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61">True</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ae82374586f8dddce1f3eb664b6b09687">blank</link>=<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61">True</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Информация о пользователе. </para>
+
+
+
+<para><?linebreak?> last_address – последний адрес, с которого пользователь заказывал <?linebreak?> nickname – ник пользователья <?linebreak?> login – его логин <?linebreak?> session_id – id текущей сессии <?linebreak?> </para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00005">5</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ab0a8bfa053f7e8010fd64f61a5b1ff68"/><section>
+    <title>authorization()</title>
+<indexterm><primary>authorization</primary><secondary>bym.BYM_project.main_app.models.User</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.User</primary><secondary>authorization</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.User.authorization ( user_id,  login)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Поиск пользователя по логину, если не найден то присвоить логин текущему user_id. </para>
+</para>
+
+<para>В противном случае вернуть новый user_id 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>user_id</entry><entry>
+<para>int </para>
+</entry>
+                            </row>
+                            <row>
+<entry>login</entry><entry>
+<para>string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>user_id int </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00024">24</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1af999c39e1e2700b9feb14cbb9f4dd951"/><section>
+    <title>get_user_id()</title>
+<indexterm><primary>get_user_id</primary><secondary>bym.BYM_project.main_app.models.User</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.User</primary><secondary>get_user_id</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.User.get_user_id ( request)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Возвращаем id пользователя - залогиненного или выданного по session_id. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>request</entry><entry>
+<para>HttpRequest </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>user_id int </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00039">39</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ae82374586f8dddce1f3eb664b6b09687"/><section>
+    <title>blank</title>
+<indexterm><primary>blank</primary><secondary>bym.BYM_project.main_app.models.User</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.User</primary><secondary>blank</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.User.blank<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00017">17</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1af28f869bcfc2144c48e30c231ca2cc4a"/><section>
+    <title>CASCADE</title>
+<indexterm><primary>CASCADE</primary><secondary>bym.BYM_project.main_app.models.User</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.User</primary><secondary>CASCADE</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.User.CASCADE<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00017">17</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a774e79a804baf0f13d4e1c7e0e9bc464"/><section>
+    <title>last_address</title>
+<indexterm><primary>last_address</primary><secondary>bym.BYM_project.main_app.models.User</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.User</primary><secondary>last_address</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.User.last_address = models.CharField(max_length=100, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a17edf846d38a7295eb9805b7e286dea1">null</link>=<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61">True</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ae82374586f8dddce1f3eb664b6b09687">blank</link>=<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61">True</link>)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00019">19</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a8cd58cf6d85c37d43c5dcc3527efce8c"/><section>
+    <title>login</title>
+<indexterm><primary>login</primary><secondary>bym.BYM_project.main_app.models.User</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.User</primary><secondary>login</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.User.login = models.EmailField(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a17edf846d38a7295eb9805b7e286dea1">null</link>=<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61">True</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ae82374586f8dddce1f3eb664b6b09687">blank</link>=<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61">True</link>)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00021">21</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a8aa271136e93202daf9e8d79f2059049"/><section>
+    <title>nickname</title>
+<indexterm><primary>nickname</primary><secondary>bym.BYM_project.main_app.models.User</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.User</primary><secondary>nickname</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.User.nickname = models.CharField(max_length=50, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a17edf846d38a7295eb9805b7e286dea1">null</link>=<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61">True</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ae82374586f8dddce1f3eb664b6b09687">blank</link>=<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61">True</link>)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00020">20</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a17edf846d38a7295eb9805b7e286dea1"/><section>
+    <title>null</title>
+<indexterm><primary>null</primary><secondary>bym.BYM_project.main_app.models.User</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.User</primary><secondary>null</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.User.null<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00017">17</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a6bcdd4b2f18cd6f8eb8a2b0ed1f9c98f"/><section>
+    <title>on_delete</title>
+<indexterm><primary>on_delete</primary><secondary>bym.BYM_project.main_app.models.User</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.User</primary><secondary>on_delete</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.User.on_delete<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00017">17</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ae2702233c542947f0a785e208f8907f6"/><section>
+    <title>session</title>
+<indexterm><primary>session</primary><secondary>bym.BYM_project.main_app.models.User</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.User</primary><secondary>session</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.User.session<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00017">17</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a1fc29e11a30a6b31a558f4ef9817e31c"/><section>
+    <title>Session</title>
+<indexterm><primary>Session</primary><secondary>bym.BYM_project.main_app.models.User</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.User</primary><secondary>Session</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.User.Session<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00017">17</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a76a20d5f32b81209cb51cec7a7f16a61"/><section>
+    <title>True</title>
+<indexterm><primary>True</primary><secondary>bym.BYM_project.main_app.models.User</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.User</primary><secondary>True</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.User.True<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00017">17</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

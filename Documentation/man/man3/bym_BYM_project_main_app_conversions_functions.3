@@ -1,0 +1,69 @@
+.TH "bym.BYM_project.main_app.conversions_functions" 3 "BYM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bym.BYM_project.main_app.conversions_functions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBhow_many_add\fP (category_id, need_unit, have_unit, need, have)"
+.br
+.RI "Расчет сколько штук товара необходимо купть на что бы полностью покрыть рецепт "
+.ti -1c
+.RI "\fBget_lavka_unit_id\fP (name_unit)"
+.br
+.RI "Исчет единицу измерения из магазина в базе данных, если нет создает "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.conversions_functions\&.get_lavka_unit_id ( name_unit)"
+
+.PP
+Исчет единицу измерения из магазина в базе данных, если нет создает 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname_unit\fP string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+UnitOfMeasure 
+.RE
+.PP
+
+.PP
+Definition at line \fB47\fP of file \fBconversions_functions\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.conversions_functions\&.how_many_add ( category_id,  need_unit,  have_unit,  need,  have)"
+
+.PP
+Расчет сколько штук товара необходимо купть на что бы полностью покрыть рецепт 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcategory_id\fP int 
+.br
+\fIneed_unit\fP UnitOfMeasure - еденицы измерения продукта по рецепту (например стаканы) 
+.br
+\fIhave_unit\fP UnitOfMeasure - еденицы измерения товара из магазина (например граммы) 
+.br
+\fIneed\fP int - необходимое количество по рецепту (например 5, have_unit - стаканы) 
+.br
+\fIhave\fP int - количество в одном юните в магазине (например 500, have_unit-граммы) 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+kol int - сколько нужно заказать 
+.RE
+.PP
+
+.PP
+Definition at line \fB6\fP of file \fBconversions_functions\&.py\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BYM from the source code\&.

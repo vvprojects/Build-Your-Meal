@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_forms_8py_source" xml:lang="en-US">
+<title>forms.py</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_forms_8py_source_1l00001"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1forms">00001</link> <emphasis role="keyword">from</emphasis>&#32;django&#32;<emphasis role="keyword">import</emphasis>&#32;forms
+<anchor xml:id="_forms_8py_source_1l00002"/>00002 
+<anchor xml:id="_forms_8py_source_1l00003"/>00003 
+<anchor xml:id="_forms_8py_source_1l00004"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1forms_1_1_search_dish_form">00004</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1forms_1_1_search_dish_form">SearchDishForm</link>(forms.Form):
+<anchor xml:id="_forms_8py_source_1l00005"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1forms_1_1_search_dish_form_1a9e939b7bf2342aee35e263c18ed54cc1">00005</link> &#32;&#32;&#32;&#32;search_string&#32;=&#32;forms.CharField(widget=forms.TextInput(attrs={
+<anchor xml:id="_forms_8py_source_1l00006"/>00006 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;id&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;search-input-id&quot;</emphasis>,
+<anchor xml:id="_forms_8py_source_1l00007"/>00007 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;class&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;i1ypu1yl&quot;</emphasis>,
+<anchor xml:id="_forms_8py_source_1l00008"/>00008 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;value&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>,
+<anchor xml:id="_forms_8py_source_1l00009"/>00009 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;aria-label&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;Поиск&quot;</emphasis>,
+<anchor xml:id="_forms_8py_source_1l00010"/>00010 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;autocomplete&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;off&quot;</emphasis>,
+<anchor xml:id="_forms_8py_source_1l00011"/>00011 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;placeholder&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;Найти&#32;блюдо&quot;</emphasis>
+<anchor xml:id="_forms_8py_source_1l00012"/>00012 &#32;&#32;&#32;&#32;}))
+</programlisting></section>

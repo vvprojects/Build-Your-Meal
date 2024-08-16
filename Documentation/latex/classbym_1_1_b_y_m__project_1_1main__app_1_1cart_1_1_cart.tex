@@ -1,0 +1,160 @@
+\doxysection{bym.\+BYM\+\_\+project.\+main\+\_\+app.\+cart.\+Cart Class Reference}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart}\index{bym.BYM\_project.main\_app.cart.Cart@{bym.BYM\_project.main\_app.cart.Cart}}
+
+
+Класс для работы с карзиной пользователья  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ \+\_\+\+\_\+init\+\_\+\+\_\+} (self, user\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Находит текущий Order по user\+\_\+id. \end{DoxyCompactList}\item 
+\textbf{ change\+\_\+order} (self, dish\+\_\+id, add\+\_\+flg)
+\begin{DoxyCompactList}\small\item\em Изменяем корзину блюд пользователя -\/ или добавить (+1), или убрать (-\/1) \end{DoxyCompactList}\item 
+\textbf{ get\+\_\+order\+\_\+array} (self)
+\begin{DoxyCompactList}\small\item\em Возвращает текущую корзину блюд пользователя \end{DoxyCompactList}\item 
+\textbf{ get\+\_\+categories\+\_\+list} (self, slice)
+\begin{DoxyCompactList}\small\item\em Выдает slice наиболие подходящих товаров в каждой категории \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ get\+\_\+categories} (order\+\_\+array)
+\begin{DoxyCompactList}\small\item\em Раскладывает карзину пользователя (в виде блюд), на товары если в рецептах товары в разных единицах измерения приводит к единой \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ order\+\_\+obj}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для работы с карзиной пользователья 
+
+Definition at line \textbf{ 5} of file \textbf{ cart.\+py}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_aae1ee7fe39927e772c7d309596b76b8e} 
+\index{bym.BYM\_project.main\_app.cart.Cart@{bym.BYM\_project.main\_app.cart.Cart}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bym.BYM\_project.main\_app.cart.Cart@{bym.BYM\_project.main\_app.cart.Cart}}
+\doxysubsubsection{\_\_init\_\_()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+cart.\+Cart.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{user\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Находит текущий Order по user\+\_\+id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 8} of file \textbf{ cart.\+py}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_a141414bf901a7f709c1236868d0c455e} 
+\index{bym.BYM\_project.main\_app.cart.Cart@{bym.BYM\_project.main\_app.cart.Cart}!change\_order@{change\_order}}
+\index{change\_order@{change\_order}!bym.BYM\_project.main\_app.cart.Cart@{bym.BYM\_project.main\_app.cart.Cart}}
+\doxysubsubsection{change\_order()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+cart.\+Cart.\+change\+\_\+order (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dish\+\_\+id,  }\item[{}]{add\+\_\+flg }\end{DoxyParamCaption})}
+
+
+
+Изменяем корзину блюд пользователя -\/ или добавить (+1), или убрать (-\/1) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dish\+\_\+id} & int \\
+\hline
+{\em add\+\_\+flg} & bool -\/ True прибавление, False вычитание \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 14} of file \textbf{ cart.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_ac4ab133fb38a9416f72aea457b23f8cf} 
+\index{bym.BYM\_project.main\_app.cart.Cart@{bym.BYM\_project.main\_app.cart.Cart}!get\_categories@{get\_categories}}
+\index{get\_categories@{get\_categories}!bym.BYM\_project.main\_app.cart.Cart@{bym.BYM\_project.main\_app.cart.Cart}}
+\doxysubsubsection{get\_categories()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+cart.\+Cart.\+get\+\_\+categories (\begin{DoxyParamCaption}\item[{}]{order\+\_\+array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Раскладывает карзину пользователя (в виде блюд), на товары если в рецептах товары в разных единицах измерения приводит к единой 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order\+\_\+array} & [\{"{}dish"{}\+: Dish, "{}amount"{}\+: int\}, ...] \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+categories [\{"{}category"{}\+: Category, "{}amount"{}\+: float, "{}unit\+\_\+name"{}\+: string\}, ...] 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 45} of file \textbf{ cart.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_af16ee5c19236a81b6ebb9412ea6aaf56} 
+\index{bym.BYM\_project.main\_app.cart.Cart@{bym.BYM\_project.main\_app.cart.Cart}!get\_categories\_list@{get\_categories\_list}}
+\index{get\_categories\_list@{get\_categories\_list}!bym.BYM\_project.main\_app.cart.Cart@{bym.BYM\_project.main\_app.cart.Cart}}
+\doxysubsubsection{get\_categories\_list()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+cart.\+Cart.\+get\+\_\+categories\+\_\+list (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{slice }\end{DoxyParamCaption})}
+
+
+
+Выдает slice наиболие подходящих товаров в каждой категории 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slice} & int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+categories\+\_\+list[\{"{}category"{}\+: string, "{}category\+\_\+amount"{}\+: int, "{}category\+\_\+unit\+\_\+name"{}\+: string, "{}product\+\_\+list"{}\+: [Product, ...]\}, ...] 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 103} of file \textbf{ cart.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_a885a19088c15f1ad61b667bf2ea88324} 
+\index{bym.BYM\_project.main\_app.cart.Cart@{bym.BYM\_project.main\_app.cart.Cart}!get\_order\_array@{get\_order\_array}}
+\index{get\_order\_array@{get\_order\_array}!bym.BYM\_project.main\_app.cart.Cart@{bym.BYM\_project.main\_app.cart.Cart}}
+\doxysubsubsection{get\_order\_array()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+cart.\+Cart.\+get\+\_\+order\+\_\+array (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Возвращает текущую корзину блюд пользователя 
+
+\begin{DoxyReturn}{Returns}
+order\+\_\+array [\{"{}dish"{}\+: Dish, "{}amount"{}\+: int\}, ...] 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 32} of file \textbf{ cart.\+py}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_a6dadcf33fdddf4dec707ef8eb23a9546} 
+\index{bym.BYM\_project.main\_app.cart.Cart@{bym.BYM\_project.main\_app.cart.Cart}!order\_obj@{order\_obj}}
+\index{order\_obj@{order\_obj}!bym.BYM\_project.main\_app.cart.Cart@{bym.BYM\_project.main\_app.cart.Cart}}
+\doxysubsubsection{order\_obj}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+cart.\+Cart.\+order\+\_\+obj}
+
+
+
+Definition at line \textbf{ 12} of file \textbf{ cart.\+py}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ cart.\+py}\end{DoxyCompactItemize}

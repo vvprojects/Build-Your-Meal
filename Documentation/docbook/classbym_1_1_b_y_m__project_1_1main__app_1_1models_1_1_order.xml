@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.Order Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.Order</primary></indexterm>
+<para>
+
+<para>информация о заказах. </para>
+ 
+</para>
+<para>Inheritance diagram for bym.BYM_project.main_app.models.Order:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1_1_meta">Meta</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a3220615ffc105fee679b8a0e32ebc53f">user</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a6ca3b1af4a14a45664f1acfd147a3dc3">User</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a7eaf471782c9434bf40e61a1011687e4">on_delete</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a609c35dfd5a69b984f4f055552501fd4">order_date</link> = models.DateTimeField()</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a37e52b58e2a8b31b954384bd4abf4a16">current</link> = models.BooleanField(default=True)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>информация о заказах. </para>
+
+
+
+<para><?linebreak?> order_date – дата заказа <?linebreak?> current – статус (выполнен/ не выполнен) <?linebreak?> user_id – пользователь совершивший заказ <?linebreak?> </para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00208">208</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a37e52b58e2a8b31b954384bd4abf4a16"/><section>
+    <title>current</title>
+<indexterm><primary>current</primary><secondary>bym.BYM_project.main_app.models.Order</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Order</primary><secondary>current</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Order.current = models.BooleanField(default=True)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00222">222</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a7eaf471782c9434bf40e61a1011687e4"/><section>
+    <title>on_delete</title>
+<indexterm><primary>on_delete</primary><secondary>bym.BYM_project.main_app.models.Order</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Order</primary><secondary>on_delete</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Order.on_delete<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00219">219</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a609c35dfd5a69b984f4f055552501fd4"/><section>
+    <title>order_date</title>
+<indexterm><primary>order_date</primary><secondary>bym.BYM_project.main_app.models.Order</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Order</primary><secondary>order_date</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Order.order_date = models.DateTimeField()<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00221">221</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a3220615ffc105fee679b8a0e32ebc53f"/><section>
+    <title>user</title>
+<indexterm><primary>user</primary><secondary>bym.BYM_project.main_app.models.Order</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Order</primary><secondary>user</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Order.user<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00219">219</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a6ca3b1af4a14a45664f1acfd147a3dc3"/><section>
+    <title>User</title>
+<indexterm><primary>User</primary><secondary>bym.BYM_project.main_app.models.Order</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Order</primary><secondary>User</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Order.User<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00219">219</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

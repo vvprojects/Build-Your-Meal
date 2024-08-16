@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_apps_8py" xml:lang="en-US">
+<title>apps.py File Reference</title>
+<indexterm><primary>apps.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config">bym.BYM_project.main_app.apps.MainAppConfig</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebym">bym</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project">bym.BYM_project</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app">bym.BYM_project.main_app</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1apps">bym.BYM_project.main_app.apps</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

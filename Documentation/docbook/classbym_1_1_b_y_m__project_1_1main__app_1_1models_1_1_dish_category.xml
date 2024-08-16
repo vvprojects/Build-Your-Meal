@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.DishCategory Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.DishCategory</primary></indexterm>
+<para>
+
+<para>информация о составе блюда. </para>
+ 
+</para>
+<para>Inheritance diagram for bym.BYM_project.main_app.models.DishCategory:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta">Meta</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a4d5c513b84d4b7232adfa7ee54209b0a">dish</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a4c77ce78acd97e2311f1b9380865606b">Dish</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a1679693f639f3e5e4e43f94032e82bdc">on_delete</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a981a0bc18837363acca13f8dfb08f2c3">category</link> = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category">Category</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a1679693f639f3e5e4e43f94032e82bdc">on_delete</link>=models.CASCADE)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a7cc4793ed0df72cb94a9d2d1944efa13">unit</link> = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure">UnitOfMeasure</link>, null=True, blank=True, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a1679693f639f3e5e4e43f94032e82bdc">on_delete</link>=models.CASCADE)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1aae8ce0362f2bcdc47aebf75e88d6f1c7">amount</link> = models.DecimalField(max_digits=4 + 4, decimal_places=4)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>информация о составе блюда. </para>
+
+
+
+<para><?linebreak?> amount – кол-во продукта в блюде <?linebreak?> category_id – категория продукта <?linebreak?> dish_id – блюдо к которому относится продукт <?linebreak?> unit_id – единицы измерения в которых указано кол-во <?linebreak?> </para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00189">189</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1aae8ce0362f2bcdc47aebf75e88d6f1c7"/><section>
+    <title>amount</title>
+<indexterm><primary>amount</primary><secondary>bym.BYM_project.main_app.models.DishCategory</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.DishCategory</primary><secondary>amount</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.DishCategory.amount = models.DecimalField(max_digits=4 + 4, decimal_places=4)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00205">205</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a981a0bc18837363acca13f8dfb08f2c3"/><section>
+    <title>category</title>
+<indexterm><primary>category</primary><secondary>bym.BYM_project.main_app.models.DishCategory</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.DishCategory</primary><secondary>category</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.DishCategory.category = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category">Category</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a1679693f639f3e5e4e43f94032e82bdc">on_delete</link>=models.CASCADE)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00202">202</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a4d5c513b84d4b7232adfa7ee54209b0a"/><section>
+    <title>dish</title>
+<indexterm><primary>dish</primary><secondary>bym.BYM_project.main_app.models.DishCategory</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.DishCategory</primary><secondary>dish</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.DishCategory.dish<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00201">201</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a4c77ce78acd97e2311f1b9380865606b"/><section>
+    <title>Dish</title>
+<indexterm><primary>Dish</primary><secondary>bym.BYM_project.main_app.models.DishCategory</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.DishCategory</primary><secondary>Dish</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.DishCategory.Dish<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00201">201</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a1679693f639f3e5e4e43f94032e82bdc"/><section>
+    <title>on_delete</title>
+<indexterm><primary>on_delete</primary><secondary>bym.BYM_project.main_app.models.DishCategory</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.DishCategory</primary><secondary>on_delete</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.DishCategory.on_delete<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00201">201</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a7cc4793ed0df72cb94a9d2d1944efa13"/><section>
+    <title>unit</title>
+<indexterm><primary>unit</primary><secondary>bym.BYM_project.main_app.models.DishCategory</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.DishCategory</primary><secondary>unit</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.DishCategory.unit = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure">UnitOfMeasure</link>, null=True, blank=True, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a1679693f639f3e5e4e43f94032e82bdc">on_delete</link>=models.CASCADE)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00203">203</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

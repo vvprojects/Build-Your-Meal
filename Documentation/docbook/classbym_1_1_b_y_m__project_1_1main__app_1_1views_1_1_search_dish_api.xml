@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api" xml:lang="en-US">
+<title>bym.BYM_project.main_app.views.SearchDishApi Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.views.SearchDishApi</primary></indexterm>
+<para>Inheritance diagram for bym.BYM_project.main_app.views.SearchDishApi:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api_1ada48bd7ec0ce9964b6ea181d6bdb35a9">post</link> (self, request)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_views_8py_source_1l00148">148</link> of file <link linkend="_views_8py_source">views.py</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api_1ada48bd7ec0ce9964b6ea181d6bdb35a9"/><section>
+    <title>post()</title>
+<indexterm><primary>post</primary><secondary>bym.BYM_project.main_app.views.SearchDishApi</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.views.SearchDishApi</primary><secondary>post</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.views.SearchDishApi.post ( self,  request)</computeroutput></para><para>
+Definition at line <link linkend="_views_8py_source_1l00149">149</link> of file <link linkend="_views_8py_source">views.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_views_8py">views.py</link></section>
+</section>

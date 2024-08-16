@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_config_8py_source" xml:lang="en-US">
+<title>config.py</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_config_8py_source_1l00001"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1config">00001</link> <emphasis role="keyword">from</emphasis>&#32;dotenv&#32;<emphasis role="keyword">import</emphasis>&#32;load_dotenv
+<anchor xml:id="_config_8py_source_1l00002"/>00002 <emphasis role="keyword">import</emphasis>&#32;os
+<anchor xml:id="_config_8py_source_1l00003"/>00003 
+<anchor xml:id="_config_8py_source_1l00004"/>00004 
+<anchor xml:id="_config_8py_source_1l00005"/>00005 load_dotenv()
+<anchor xml:id="_config_8py_source_1l00006"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1ad2134171b2678db43657ebb4707a71e5">00006</link> webdriver_name&#32;=&#32;os.getenv(<emphasis role="stringliteral">&quot;webdriver_name&quot;</emphasis>)
+<anchor xml:id="_config_8py_source_1l00007"/>00007 
+<anchor xml:id="_config_8py_source_1l00008"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1a33e627ec953d99555066175ad5255567">00008</link> urls_lavka&#32;=&#32;[
+<anchor xml:id="_config_8py_source_1l00009"/>00009 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/ovoshchi_griby_i_zelen&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00010"/>00010 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/Frukty_i_yagody&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/milk_products&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00012"/>00012 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/cheese&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00013"/>00013 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/kefir_smetana_tvorog&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/e64b861bd9a34ebc9103dbf15e2d2932&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00015"/>00015 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/molochnoe_dlya_detej&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00016"/>00016 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/hleb&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00017"/>00017 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/vipechka&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00018"/>00018 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/hlebcy&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/beef_pork&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/wurst_all&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00021"/>00021 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/ryba_i_moreprodukty&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00022"/>00022 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/zakuski_i_pashtety&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00023"/>00023 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/morozhenoe&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00024"/>00024 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/pelmeni_i_vareniki&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/frozen_vegetables_and_berries&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00026"/>00026 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/deserty&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00027"/>00027 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/polufabrikaty&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00028"/>00028 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/553b84d49692448bb06588f9d694cbde&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00029"/>00029 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/b9c6c90166f1487888de39b933119747&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00030"/>00030 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/makarony_krupy_muka&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00031"/>00031 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/hlopya_i_myusli&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00032"/>00032 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/oils_sauces_spices&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/coffee_and_cocoa&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00034"/>00034 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/tea&apos;</emphasis>,
+<anchor xml:id="_config_8py_source_1l00035"/>00035 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/91ba4698f47f450087e3e8de50d93a15&apos;</emphasis>
+<anchor xml:id="_config_8py_source_1l00036"/>00036 ]
+</programlisting></section>

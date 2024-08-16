@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::serializers::UserSerializer::Meta</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta_1ad7cdc57d4f31d000a5770c46e3eec2d3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.serializers.UserSerializer.Meta::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <qualifiedname>bym.BYM_project.main_app.serializers.UserSerializer.Meta.model</qualifiedname>
+        <initializer>=  <ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user" kindref="compound">User</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="serializers.py" line="7" column="1" bodyfile="serializers.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta_1a2334aa703376cabe0580810e2227ab73" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str bym.BYM_project.main_app.serializers.UserSerializer.Meta::fields</definition>
+        <argsstring></argsstring>
+        <name>fields</name>
+        <qualifiedname>bym.BYM_project.main_app.serializers.UserSerializer.Meta.fields</qualifiedname>
+        <initializer>=  &apos;__all__&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="serializers.py" line="8" column="1" bodyfile="serializers.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="serializers.py" line="6" column="1" bodyfile="serializers.py" bodystart="6" bodyend="9"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta_1a2334aa703376cabe0580810e2227ab73" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::serializers::UserSerializer::Meta</scope><name>fields</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer_1_1_meta_1ad7cdc57d4f31d000a5770c46e3eec2d3" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::serializers::UserSerializer::Meta</scope><name>model</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

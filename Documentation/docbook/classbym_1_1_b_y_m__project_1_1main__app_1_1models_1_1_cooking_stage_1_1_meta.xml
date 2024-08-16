@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.CookingStage.Meta Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.CookingStage.Meta</primary></indexterm>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta_1ad04241cf369d16076a09693381d37188">verbose_name</link> = &apos;Этап приготовления блюда&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta_1a0453040ff15291fa8b5f89ee67904712">verbose_name_plural</link> = &apos;Этапы приготовления блюд&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00129">129</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta_1ad04241cf369d16076a09693381d37188"/><section>
+    <title>verbose_name</title>
+<indexterm><primary>verbose_name</primary><secondary>bym.BYM_project.main_app.models.CookingStage.Meta</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.CookingStage.Meta</primary><secondary>verbose_name</secondary></indexterm>
+<para><computeroutput>str bym.BYM_project.main_app.models.CookingStage.Meta.verbose_name = &apos;Этап приготовления блюда&apos;<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00130">130</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta_1a0453040ff15291fa8b5f89ee67904712"/><section>
+    <title>verbose_name_plural</title>
+<indexterm><primary>verbose_name_plural</primary><secondary>bym.BYM_project.main_app.models.CookingStage.Meta</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.CookingStage.Meta</primary><secondary>verbose_name_plural</secondary></indexterm>
+<para><computeroutput>str bym.BYM_project.main_app.models.CookingStage.Meta.verbose_name_plural = &apos;Этапы приготовления блюд&apos;<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00131">131</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

@@ -1,0 +1,145 @@
+.TH "bym.BYM_project.main_app.functions_backend" 3 "BYM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bym.BYM_project.main_app.functions_backend
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBstart_session\fP (request)"
+.br
+.RI "Начало сессии с пользователем и создание его кортежа в бд по session_id\&. "
+.ti -1c
+.RI "\fBget_dish_types\fP ()"
+.br
+.RI "Запрос в бд на получение типов блюд и соответстующих им под типов "
+.ti -1c
+.RI "\fBget_particular_dish\fP (dish_id)"
+.br
+.RI "Возвращает конкретное блюдо, стадии его приготовления и необходимые игридиенты "
+.ti -1c
+.RI "\fBstring_to_minutes\fP (string)"
+.br
+.RI "Возвращает количество минут в строке Варианты входа: 'n часов', 'n минут', 'n часов k минут'\&. "
+.ti -1c
+.RI "\fBconvert_fraction\fP (string)"
+.br
+.RI "Возвращает float из строки с числом "
+.ti -1c
+.RI "\fBnumber_and_measure\fP (string)"
+.br
+.RI "Возвращает по строке количества продукта число + единицу измерения в начальной форме "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.functions_backend\&.convert_fraction ( string)"
+
+.PP
+Возвращает float из строки с числом 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstring\fP string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float 
+.RE
+.PP
+
+.PP
+Definition at line \fB68\fP of file \fBfunctions_backend\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.functions_backend\&.get_dish_types ()"
+
+.PP
+Запрос в бд на получение типов блюд и соответстующих им под типов 
+.PP
+\fBReturns\fP
+.RS 4
+dict {type:[subtype,\&.\&.\&.]} 
+.RE
+.PP
+
+.PP
+Definition at line \fB21\fP of file \fBfunctions_backend\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.functions_backend\&.get_particular_dish ( dish_id)"
+
+.PP
+Возвращает конкретное блюдо, стадии его приготовления и необходимые игридиенты 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdish_id\fP int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+dish Dish 
+.PP
+cooking_stages [CookingStage,\&.\&.\&.] 
+.PP
+ingredients [{'name':string, amount:int}] - список ингридиентов - название категории их кол-во 
+.RE
+.PP
+
+.PP
+Definition at line \fB32\fP of file \fBfunctions_backend\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.functions_backend\&.number_and_measure ( string)"
+
+.PP
+Возвращает по строке количества продукта число + единицу измерения в начальной форме 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstring\fP string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float 
+.PP
+string 
+.RE
+.PP
+
+.PP
+Definition at line \fB79\fP of file \fBfunctions_backend\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.functions_backend\&.start_session ( request)"
+
+.PP
+Начало сессии с пользователем и создание его кортежа в бд по session_id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrequest\fP HttpRequest 
+.RE
+.PP
+
+.PP
+Definition at line \fB7\fP of file \fBfunctions_backend\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.functions_backend\&.string_to_minutes ( string)"
+
+.PP
+Возвращает количество минут в строке Варианты входа: 'n часов', 'n минут', 'n часов k минут'\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstring\fP string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.PP
+Definition at line \fB52\fP of file \fBfunctions_backend\&.py\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BYM from the source code\&.

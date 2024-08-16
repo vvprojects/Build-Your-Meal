@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.SubType Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.SubType</primary></indexterm>
+<para>
+
+<para>таблица с подтипами блюд <?linebreak?> name – название подтипа (например фруктовые десерты) <?linebreak?> type_id – тип к которому относится подтип <?linebreak?> </para>
+ 
+</para>
+<para>Inheritance diagram for bym.BYM_project.main_app.models.SubType:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1_1_meta">Meta</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1ae3a0877aafd0c4cf0311dbd6992ac550">type</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a6056327a813f8bc582cf30e156827da9">Type</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a498b3918f9d559c2f57d5e8a7743e5f5">on_delete</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a2a8418c68b0aba53d130a3ea16bc320e">name</link> = models.CharField(max_length=30)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>таблица с подтипами блюд <?linebreak?> name – название подтипа (например фруктовые десерты) <?linebreak?> type_id – тип к которому относится подтип <?linebreak?> </para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00075">75</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a2a8418c68b0aba53d130a3ea16bc320e"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>bym.BYM_project.main_app.models.SubType</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.SubType</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.SubType.name = models.CharField(max_length=30)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00087">87</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a498b3918f9d559c2f57d5e8a7743e5f5"/><section>
+    <title>on_delete</title>
+<indexterm><primary>on_delete</primary><secondary>bym.BYM_project.main_app.models.SubType</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.SubType</primary><secondary>on_delete</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.SubType.on_delete<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00085">85</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1ae3a0877aafd0c4cf0311dbd6992ac550"/><section>
+    <title>type</title>
+<indexterm><primary>type</primary><secondary>bym.BYM_project.main_app.models.SubType</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.SubType</primary><secondary>type</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.SubType.type<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00085">85</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a6056327a813f8bc582cf30e156827da9"/><section>
+    <title>Type</title>
+<indexterm><primary>Type</primary><secondary>bym.BYM_project.main_app.models.SubType</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.SubType</primary><secondary>Type</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.SubType.Type<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00085">85</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.Type Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.Type</primary></indexterm>
+<para>
+
+<para>таблица с типами блюд <?linebreak?> name – название типа (например Завтраки) <?linebreak?> </para>
+ 
+</para>
+<para>Inheritance diagram for bym.BYM_project.main_app.models.Type:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1_1_meta">Meta</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1a76f2c5ad5c43a7f0f3408a19377c1273">name</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1ada45504e4babeb26a397200f2f0c9b8d">max_length</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>таблица с типами блюд <?linebreak?> name – название типа (например Завтраки) <?linebreak?> </para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00063">63</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1ada45504e4babeb26a397200f2f0c9b8d"/><section>
+    <title>max_length</title>
+<indexterm><primary>max_length</primary><secondary>bym.BYM_project.main_app.models.Type</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Type</primary><secondary>max_length</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Type.max_length<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00072">72</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1a76f2c5ad5c43a7f0f3408a19377c1273"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>bym.BYM_project.main_app.models.Type</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Type</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Type.name<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00072">72</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

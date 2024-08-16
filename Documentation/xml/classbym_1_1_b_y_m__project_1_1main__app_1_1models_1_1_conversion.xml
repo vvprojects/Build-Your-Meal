@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::Conversion</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">models.Model</basecompoundref>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1_1_meta" prot="public">bym::BYM_project::main_app::models::Conversion::Meta</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad77672c4eab4f735b1ca2bf26ca85628" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Conversion::category</definition>
+        <argsstring></argsstring>
+        <name>category</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Conversion.category</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="182" column="1" bodyfile="models.py" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a17bd76ab340d9237df03889fc9cb3d22" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Conversion::Category</definition>
+        <argsstring></argsstring>
+        <name>Category</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Conversion.Category</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="182" column="1" bodyfile="models.py" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a9a48f7c7f04f14a202d3fe2bb56cd42e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Conversion::on_delete</definition>
+        <argsstring></argsstring>
+        <name>on_delete</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Conversion.on_delete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="182" column="1" bodyfile="models.py" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad4acc8777678dd8cba9d6b57081d8fc6" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Conversion::from_unit</definition>
+        <argsstring></argsstring>
+        <name>from_unit</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Conversion.from_unit</qualifiedname>
+        <initializer>=  models.ForeignKey(<ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure" kindref="compound">UnitOfMeasure</ref>, related_name=&apos;from_unit&apos;, <ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a9a48f7c7f04f14a202d3fe2bb56cd42e" kindref="member">on_delete</ref>=models.CASCADE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="183" column="1" bodyfile="models.py" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a43a4b6d570628ec9d2a306796d089daa" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Conversion::to_unit</definition>
+        <argsstring></argsstring>
+        <name>to_unit</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Conversion.to_unit</qualifiedname>
+        <initializer>=  models.ForeignKey(<ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure" kindref="compound">UnitOfMeasure</ref>, related_name=&apos;to_unit&apos;, null=True, blank=True, <ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a9a48f7c7f04f14a202d3fe2bb56cd42e" kindref="member">on_delete</ref>=models.CASCADE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="184" column="1" bodyfile="models.py" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad6746dc9010525fa7f784b471148617a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Conversion::coefficient</definition>
+        <argsstring></argsstring>
+        <name>coefficient</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Conversion.coefficient</qualifiedname>
+        <initializer>=  models.DecimalField(max_digits=4 + 4, decimal_places=4, default=1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="186" column="1" bodyfile="models.py" bodystart="186" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>коэффициенты для перевода единиц измерения <linebreak/>
+ coefficient – число на которое нужно умножить что бы перевести from_unit_id в to_unit_id <linebreak/>
+ category_id – категория для которой выполняется перевод (очевидно что коэффициент для перевода штук в граммы для помидоров и огурцов отличается) <linebreak/>
+ from_unit_id– единица измерения из которой выполняется перевод <linebreak/>
+ to_unit_id – единица измерения в которую выполняется перевод <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Conversion</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Conversion</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="models.py" line="170" column="1" bodyfile="models.py" bodystart="170" bodyend="188"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad77672c4eab4f735b1ca2bf26ca85628" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Conversion</scope><name>category</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a17bd76ab340d9237df03889fc9cb3d22" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Conversion</scope><name>Category</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad6746dc9010525fa7f784b471148617a" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Conversion</scope><name>coefficient</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad4acc8777678dd8cba9d6b57081d8fc6" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Conversion</scope><name>from_unit</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a9a48f7c7f04f14a202d3fe2bb56cd42e" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Conversion</scope><name>on_delete</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a43a4b6d570628ec9d2a306796d089daa" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Conversion</scope><name>to_unit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

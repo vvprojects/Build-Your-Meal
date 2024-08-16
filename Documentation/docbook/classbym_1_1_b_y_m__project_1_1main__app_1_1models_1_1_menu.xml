@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.Menu Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.Menu</primary></indexterm>
+<para>
+
+<para>состав заказа <?linebreak?> amount– кол-во товара, которое было заказано <?linebreak?> dish_id – товар который был заказан <?linebreak?> order_id – заказ в котором этот товар был заказан <?linebreak?> </para>
+ 
+</para>
+<para>Inheritance diagram for bym.BYM_project.main_app.models.Menu:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1_1_meta">Meta</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ae4080b09fc284646192827337d90c3ab">dish</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a7b64ed962974553336d38ded9d878b36">Dish</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ac02d37b66a6b97f357683f1f1dc18dcb">on_delete</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a0d4a72836a3e7d09b49f4ce66faa7b5c">order</link> = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order">Order</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ac02d37b66a6b97f357683f1f1dc18dcb">on_delete</link>=models.CASCADE)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a60fdd5397861c0b59ecd1296d7575140">amount</link> = models.PositiveIntegerField(default=1)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>состав заказа <?linebreak?> amount– кол-во товара, которое было заказано <?linebreak?> dish_id – товар который был заказан <?linebreak?> order_id – заказ в котором этот товар был заказан <?linebreak?> </para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00225">225</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a60fdd5397861c0b59ecd1296d7575140"/><section>
+    <title>amount</title>
+<indexterm><primary>amount</primary><secondary>bym.BYM_project.main_app.models.Menu</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Menu</primary><secondary>amount</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Menu.amount = models.PositiveIntegerField(default=1)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00239">239</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ae4080b09fc284646192827337d90c3ab"/><section>
+    <title>dish</title>
+<indexterm><primary>dish</primary><secondary>bym.BYM_project.main_app.models.Menu</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Menu</primary><secondary>dish</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Menu.dish<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00236">236</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a7b64ed962974553336d38ded9d878b36"/><section>
+    <title>Dish</title>
+<indexterm><primary>Dish</primary><secondary>bym.BYM_project.main_app.models.Menu</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Menu</primary><secondary>Dish</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Menu.Dish<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00236">236</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ac02d37b66a6b97f357683f1f1dc18dcb"/><section>
+    <title>on_delete</title>
+<indexterm><primary>on_delete</primary><secondary>bym.BYM_project.main_app.models.Menu</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Menu</primary><secondary>on_delete</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Menu.on_delete<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00236">236</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a0d4a72836a3e7d09b49f4ce66faa7b5c"/><section>
+    <title>order</title>
+<indexterm><primary>order</primary><secondary>bym.BYM_project.main_app.models.Menu</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Menu</primary><secondary>order</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Menu.order = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order">Order</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ac02d37b66a6b97f357683f1f1dc18dcb">on_delete</link>=models.CASCADE)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00237">237</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

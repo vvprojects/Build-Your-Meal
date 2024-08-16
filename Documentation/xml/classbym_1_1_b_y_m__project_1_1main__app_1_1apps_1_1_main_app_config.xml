@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::apps::MainAppConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AppConfig</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config_1aef0cf79007455603508a92ee4790336a" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str bym.BYM_project.main_app.apps.MainAppConfig::default_auto_field</definition>
+        <argsstring></argsstring>
+        <name>default_auto_field</name>
+        <qualifiedname>bym.BYM_project.main_app.apps.MainAppConfig.default_auto_field</qualifiedname>
+        <initializer>=  &apos;django.db.models.BigAutoField&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apps.py" line="5" column="1" bodyfile="apps.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config_1a4721d005d31a86d57752c61316c6ae23" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str bym.BYM_project.main_app.apps.MainAppConfig::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>bym.BYM_project.main_app.apps.MainAppConfig.name</qualifiedname>
+        <initializer>=  &apos;main_app&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="apps.py" line="6" column="1" bodyfile="apps.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.apps.MainAppConfig</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AppConfig</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.apps.MainAppConfig</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AppConfig</label>
+      </node>
+    </collaborationgraph>
+    <location file="apps.py" line="4" column="1" bodyfile="apps.py" bodystart="4" bodyend="7"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config_1aef0cf79007455603508a92ee4790336a" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::apps::MainAppConfig</scope><name>default_auto_field</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config_1a4721d005d31a86d57752c61316c6ae23" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::apps::MainAppConfig</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

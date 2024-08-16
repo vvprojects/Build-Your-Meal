@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_recommendation__system_8py_source" xml:lang="en-US">
+<title>recommendation_system.py</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_recommendation__system_8py_source_1l00001"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system">00001</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system">RecommendationSystem</link>:
+<anchor xml:id="_recommendation__system_8py_source_1l00002"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1ac663f6fcde624d8a8ddf306dbfbcaf36">00002</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1ac663f6fcde624d8a8ddf306dbfbcaf36">__init__</link>(self):
+<anchor xml:id="_recommendation__system_8py_source_1l00003"/>00003 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">pass</emphasis>
+<anchor xml:id="_recommendation__system_8py_source_1l00004"/>00004 
+<anchor xml:id="_recommendation__system_8py_source_1l00005"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1a6a21ef01c9e8477c1e7ca12e1bb9d7a3">00005</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1a6a21ef01c9e8477c1e7ca12e1bb9d7a3">fit</link>(self,&#32;X,&#32;y):
+<anchor xml:id="_recommendation__system_8py_source_1l00006"/>00006 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;self
+<anchor xml:id="_recommendation__system_8py_source_1l00007"/>00007 
+<anchor xml:id="_recommendation__system_8py_source_1l00008"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1aa6a4374935339bde873ad8fa4f7edc82">00008</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system_1_1_recommendation_system_1aa6a4374935339bde873ad8fa4f7edc82">predict</link>(self,&#32;X,&#32;y):
+<anchor xml:id="_recommendation__system_8py_source_1l00009"/>00009 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">pass</emphasis>
+</programlisting></section>

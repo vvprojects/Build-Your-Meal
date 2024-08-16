@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="tests_8py" kind="file" language="Python">
+    <compoundname>tests.py</compoundname>
+    <innernamespace refid="namespacebym">bym</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project">bym::BYM_project</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app">bym::BYM_project::main_app</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1tests">bym::BYM_project::main_app::tests</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1tests" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>django.test<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TestCase</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Create<sp/>your<sp/>tests<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="tests.py"/>
+  </compounddef>
+</doxygen>

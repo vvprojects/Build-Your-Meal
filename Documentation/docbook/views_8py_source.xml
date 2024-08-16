@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_views_8py_source" xml:lang="en-US">
+<title>views.py</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_views_8py_source_1l00001"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views">00001</link> <emphasis role="keyword">from</emphasis>&#32;django.shortcuts&#32;<emphasis role="keyword">import</emphasis>&#32;render
+<anchor xml:id="_views_8py_source_1l00002"/>00002 <emphasis role="keyword">from</emphasis>&#32;main_app.search&#32;<emphasis role="keyword">import</emphasis>&#32;SearchDish
+<anchor xml:id="_views_8py_source_1l00003"/>00003 <emphasis role="keyword">from</emphasis>&#32;main_app.functions_backend&#32;<emphasis role="keyword">import</emphasis>&#32;get_particular_dish,&#32;start_session
+<anchor xml:id="_views_8py_source_1l00004"/>00004 <emphasis role="keyword">from</emphasis>&#32;main_app.cart&#32;<emphasis role="keyword">import</emphasis>&#32;Cart
+<anchor xml:id="_views_8py_source_1l00005"/>00005 <emphasis role="keyword">from</emphasis>&#32;main_app.models&#32;<emphasis role="keyword">import</emphasis>&#32;User
+<anchor xml:id="_views_8py_source_1l00006"/>00006 <emphasis role="keyword">from</emphasis>&#32;main_app.parser&#32;<emphasis role="keyword">import</emphasis>&#32;parse_by_address
+<anchor xml:id="_views_8py_source_1l00007"/>00007 <emphasis role="keyword">from</emphasis>&#32;django.http&#32;<emphasis role="keyword">import</emphasis>&#32;JsonResponse,&#32;HttpResponseRedirect
+<anchor xml:id="_views_8py_source_1l00008"/>00008 <emphasis role="keyword">from</emphasis>&#32;django.views.decorators.csrf&#32;<emphasis role="keyword">import</emphasis>&#32;csrf_exempt
+<anchor xml:id="_views_8py_source_1l00009"/>00009 <emphasis role="keyword">from</emphasis>&#32;rest_framework&#32;<emphasis role="keyword">import</emphasis>&#32;generics
+<anchor xml:id="_views_8py_source_1l00010"/>00010 <emphasis role="keyword">from</emphasis>&#32;.models&#32;<emphasis role="keyword">import</emphasis>&#32;User
+<anchor xml:id="_views_8py_source_1l00011"/>00011 <emphasis role="keyword">from</emphasis>&#32;.serializers&#32;<emphasis role="keyword">import</emphasis>&#32;UserSerializer
+<anchor xml:id="_views_8py_source_1l00012"/>00012 <emphasis role="keyword">from</emphasis>&#32;rest_framework.views&#32;<emphasis role="keyword">import</emphasis>&#32;APIView
+<anchor xml:id="_views_8py_source_1l00013"/>00013 <emphasis role="keyword">from</emphasis>&#32;rest_framework.response&#32;<emphasis role="keyword">import</emphasis>&#32;Response
+<anchor xml:id="_views_8py_source_1l00014"/>00014 <emphasis role="keyword">from</emphasis>&#32;django.core&#32;<emphasis role="keyword">import</emphasis>&#32;serializers
+<anchor xml:id="_views_8py_source_1l00015"/>00015 <emphasis role="keyword">import</emphasis>&#32;json
+<anchor xml:id="_views_8py_source_1l00016"/>00016 
+<anchor xml:id="_views_8py_source_1l00017"/>00017 
+<anchor xml:id="_views_8py_source_1l00018"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1af62b4a87706c5fb300e65530e91865d5">00018</link> <emphasis role="keyword">def&#32;</emphasis><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1af62b4a87706c5fb300e65530e91865d5">HomePageView</link>(request):
+<anchor xml:id="_views_8py_source_1l00019"/>00019 &#32;&#32;&#32;&#32;start_session(request)
+<anchor xml:id="_views_8py_source_1l00020"/>00020 
+<anchor xml:id="_views_8py_source_1l00021"/>00021 &#32;&#32;&#32;&#32;user_id&#32;=&#32;User.get_user_id(request)
+<anchor xml:id="_views_8py_source_1l00022"/>00022 &#32;&#32;&#32;&#32;cart_obj&#32;=&#32;<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart">Cart</link>(user_id)
+<anchor xml:id="_views_8py_source_1l00023"/>00023 
+<anchor xml:id="_views_8py_source_1l00024"/>00024 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;if&#32;request.method&#32;==&#32;&apos;POST&apos;:</emphasis>
+<anchor xml:id="_views_8py_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;&#32;&#32;&#32;&#32;action&#32;=&#32;request.POST.get(&quot;action&quot;)</emphasis>
+<anchor xml:id="_views_8py_source_1l00026"/>00026 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;&#32;&#32;&#32;&#32;if&#32;action&#32;==&#32;&quot;click_mest&quot;:</emphasis>
+<anchor xml:id="_views_8py_source_1l00027"/>00027 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;parse_by_address(user_id)</emphasis>
+<anchor xml:id="_views_8py_source_1l00028"/>00028 
+<anchor xml:id="_views_8py_source_1l00029"/>00029 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>:
+<anchor xml:id="_views_8py_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;search&#32;=&#32;request.GET.get(<emphasis role="stringliteral">&apos;search&apos;</emphasis>)
+<anchor xml:id="_views_8py_source_1l00031"/>00031 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">except</emphasis>:
+<anchor xml:id="_views_8py_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;search&#32;=&#32;<emphasis role="keywordtype">None</emphasis>
+<anchor xml:id="_views_8py_source_1l00033"/>00033 
+<anchor xml:id="_views_8py_source_1l00034"/>00034 &#32;&#32;&#32;&#32;search_dish&#32;=&#32;<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish">SearchDish</link>(search_string=search)
+<anchor xml:id="_views_8py_source_1l00035"/>00035 &#32;&#32;&#32;&#32;object_list&#32;=&#32;search_dish.get(slice=12)
+<anchor xml:id="_views_8py_source_1l00036"/>00036 
+<anchor xml:id="_views_8py_source_1l00037"/>00037 &#32;&#32;&#32;&#32;cart&#32;=&#32;cart_obj.get_order_array()
+<anchor xml:id="_views_8py_source_1l00038"/>00038 
+<anchor xml:id="_views_8py_source_1l00039"/>00039 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;render(request,&#32;<emphasis role="stringliteral">&apos;landing_page.html&apos;</emphasis>,&#32;{<emphasis role="stringliteral">&apos;object_list&apos;</emphasis>:&#32;object_list,
+<anchor xml:id="_views_8py_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;cart&apos;</emphasis>:&#32;cart,
+<anchor xml:id="_views_8py_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;search&apos;</emphasis>:&#32;search})
+<anchor xml:id="_views_8py_source_1l00042"/>00042 
+<anchor xml:id="_views_8py_source_1l00043"/>00043 
+<anchor xml:id="_views_8py_source_1l00044"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab171977260210f1eb95ecc71c06ba531">00044</link> <emphasis role="keyword">def&#32;</emphasis><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab171977260210f1eb95ecc71c06ba531">Dish</link>(request,&#32;id):
+<anchor xml:id="_views_8py_source_1l00045"/>00045 &#32;&#32;&#32;&#32;start_session(request)
+<anchor xml:id="_views_8py_source_1l00046"/>00046 
+<anchor xml:id="_views_8py_source_1l00047"/>00047 &#32;&#32;&#32;&#32;user_id&#32;=&#32;User.get_user_id(request)
+<anchor xml:id="_views_8py_source_1l00048"/>00048 &#32;&#32;&#32;&#32;cart_obj&#32;=&#32;<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart">Cart</link>(user_id)
+<anchor xml:id="_views_8py_source_1l00049"/>00049 
+<anchor xml:id="_views_8py_source_1l00050"/>00050 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;if&#32;request.method&#32;==&#32;&apos;POST&apos;:</emphasis>
+<anchor xml:id="_views_8py_source_1l00051"/>00051 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;&#32;&#32;&#32;&#32;action&#32;=&#32;request.POST.get(&quot;action&quot;)</emphasis>
+<anchor xml:id="_views_8py_source_1l00052"/>00052 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;&#32;&#32;&#32;&#32;if&#32;action&#32;==&#32;&quot;click_mest&quot;:</emphasis>
+<anchor xml:id="_views_8py_source_1l00053"/>00053 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;parse_by_address(user_id)</emphasis>
+<anchor xml:id="_views_8py_source_1l00054"/>00054 
+<anchor xml:id="_views_8py_source_1l00055"/>00055 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;request.method&#32;==&#32;<emphasis role="stringliteral">&apos;GET&apos;</emphasis>:
+<anchor xml:id="_views_8py_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;value&#32;=&#32;request.GET.get(<emphasis role="stringliteral">&quot;add_dish&quot;</emphasis>)
+<anchor xml:id="_views_8py_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;print(<emphasis role="stringliteral">&quot;Action:&#32;&quot;</emphasis>,&#32;value)
+<anchor xml:id="_views_8py_source_1l00058"/>00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;value&#32;==&#32;<emphasis role="stringliteral">&quot;Добавить&#32;в&#32;меню&quot;</emphasis>:
+<anchor xml:id="_views_8py_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cart_obj.change_order(id,&#32;<emphasis role="keyword">True</emphasis>)
+<anchor xml:id="_views_8py_source_1l00060"/>00060 
+<anchor xml:id="_views_8py_source_1l00061"/>00061 &#32;&#32;&#32;&#32;dish,&#32;cooking_stages,&#32;ingredients&#32;=&#32;get_particular_dish(id)
+<anchor xml:id="_views_8py_source_1l00062"/>00062 
+<anchor xml:id="_views_8py_source_1l00063"/>00063 &#32;&#32;&#32;&#32;cart&#32;=&#32;cart_obj.get_order_array()
+<anchor xml:id="_views_8py_source_1l00064"/>00064 
+<anchor xml:id="_views_8py_source_1l00065"/>00065 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;render(request,&#32;<emphasis role="stringliteral">&apos;page_of_dish.html&apos;</emphasis>,&#32;{<emphasis role="stringliteral">&apos;dish&apos;</emphasis>:&#32;dish,
+<anchor xml:id="_views_8py_source_1l00066"/>00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;cart&apos;</emphasis>:&#32;cart,
+<anchor xml:id="_views_8py_source_1l00067"/>00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;cooking_stages&apos;</emphasis>:&#32;cooking_stages,
+<anchor xml:id="_views_8py_source_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;ingredients&apos;</emphasis>:&#32;ingredients})
+<anchor xml:id="_views_8py_source_1l00069"/>00069 
+<anchor xml:id="_views_8py_source_1l00070"/>00070 
+<anchor xml:id="_views_8py_source_1l00071"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a8fc8f72e5badf96f335b79fed3122955">00071</link> <emphasis role="keyword">def&#32;</emphasis><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a8fc8f72e5badf96f335b79fed3122955">FinalPage</link>(request):
+<anchor xml:id="_views_8py_source_1l00072"/>00072 &#32;&#32;&#32;&#32;start_session(request)
+<anchor xml:id="_views_8py_source_1l00073"/>00073 
+<anchor xml:id="_views_8py_source_1l00074"/>00074 &#32;&#32;&#32;&#32;user_id&#32;=&#32;User.get_user_id(request)
+<anchor xml:id="_views_8py_source_1l00075"/>00075 &#32;&#32;&#32;&#32;cart_obj&#32;=&#32;<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart">Cart</link>(user_id)
+<anchor xml:id="_views_8py_source_1l00076"/>00076 
+<anchor xml:id="_views_8py_source_1l00077"/>00077 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;if&#32;request.method&#32;==&#32;&apos;POST&apos;:</emphasis>
+<anchor xml:id="_views_8py_source_1l00078"/>00078 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;&#32;&#32;&#32;&#32;action&#32;=&#32;request.POST.get(&quot;action&quot;)</emphasis>
+<anchor xml:id="_views_8py_source_1l00079"/>00079 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;&#32;&#32;&#32;&#32;if&#32;action&#32;==&#32;&quot;click_mest&quot;:</emphasis>
+<anchor xml:id="_views_8py_source_1l00080"/>00080 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;parse_by_address(user_id)</emphasis>
+<anchor xml:id="_views_8py_source_1l00081"/>00081 
+<anchor xml:id="_views_8py_source_1l00082"/>00082 &#32;&#32;&#32;&#32;categories_list&#32;=&#32;cart_obj.get_categories_list(slice=4)
+<anchor xml:id="_views_8py_source_1l00083"/>00083 
+<anchor xml:id="_views_8py_source_1l00084"/>00084 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;render(request,&#32;<emphasis role="stringliteral">&apos;second_checkout.html&apos;</emphasis>,&#32;{<emphasis role="stringliteral">&apos;CatProd_list&apos;</emphasis>:&#32;categories_list})
+<anchor xml:id="_views_8py_source_1l00085"/>00085 
+<anchor xml:id="_views_8py_source_1l00086"/>00086 
+<anchor xml:id="_views_8py_source_1l00087"/>00087 
+<anchor xml:id="_views_8py_source_1l00088"/>00088 
+<anchor xml:id="_views_8py_source_1l00089"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab62631df59f779ad4e58eb58d2b98428">00089</link> <emphasis role="keyword">def&#32;</emphasis><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab62631df59f779ad4e58eb58d2b98428">my_view</link>(request):
+<anchor xml:id="_views_8py_source_1l00090"/>00090 &#32;&#32;&#32;&#32;count&#32;=&#32;request.POST.get(<emphasis role="stringliteral">&apos;count&apos;</emphasis>,&#32;0)
+<anchor xml:id="_views_8py_source_1l00091"/>00091 &#32;&#32;&#32;&#32;<emphasis role="comment">#передать&#32;значение&#32;счётчика&#32;на&#32;бэк</emphasis>
+<anchor xml:id="_views_8py_source_1l00092"/>00092 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;render(request,&#32;<emphasis role="stringliteral">&apos;vue.html&apos;</emphasis>)
+<anchor xml:id="_views_8py_source_1l00093"/>00093 
+<anchor xml:id="_views_8py_source_1l00094"/>00094 <emphasis role="preprocessor">@csrf_exempt</emphasis>
+<anchor xml:id="_views_8py_source_1l00095"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a4d8aaf2a4449720f8eb2e47a527692fc">00095</link> <emphasis role="keyword">def&#32;</emphasis><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a4d8aaf2a4449720f8eb2e47a527692fc">update_counter</link>(request):
+<anchor xml:id="_views_8py_source_1l00096"/>00096 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;request.method&#32;==&#32;<emphasis role="stringliteral">&apos;POST&apos;</emphasis>:
+<anchor xml:id="_views_8py_source_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;count&#32;=&#32;int(request.POST.get(<emphasis role="stringliteral">&apos;count&apos;</emphasis>,&#32;0))
+<anchor xml:id="_views_8py_source_1l00098"/>00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;Do&#32;something&#32;with&#32;the&#32;count&#32;value&#32;here</emphasis>
+<anchor xml:id="_views_8py_source_1l00099"/>00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;JsonResponse({<emphasis role="stringliteral">&apos;success&apos;</emphasis>:&#32;<emphasis role="keyword">True</emphasis>})
+<anchor xml:id="_views_8py_source_1l00100"/>00100 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>:
+<anchor xml:id="_views_8py_source_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;JsonResponse({<emphasis role="stringliteral">&apos;success&apos;</emphasis>:&#32;<emphasis role="keyword">False</emphasis>,&#32;<emphasis role="stringliteral">&apos;error&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;Invalid&#32;request&#32;method&apos;</emphasis>})
+<anchor xml:id="_views_8py_source_1l00102"/>00102 
+<anchor xml:id="_views_8py_source_1l00103"/>00103 <emphasis role="comment">#&#32;Функция&#32;ajax&#32;запроса&#32;нажатия&#32;на&#32;кнопку&#32;&quot;Таллинская&#32;34&quot;</emphasis>
+<anchor xml:id="_views_8py_source_1l00104"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a1874c4140cef5dfd5dec770d61515c23">00104</link> <emphasis role="keyword">def&#32;</emphasis><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a1874c4140cef5dfd5dec770d61515c23">parse_adress</link>(request):
+<anchor xml:id="_views_8py_source_1l00105"/>00105 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;request.method&#32;==&#32;<emphasis role="stringliteral">&apos;POST&apos;</emphasis>:
+<anchor xml:id="_views_8py_source_1l00106"/>00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;user_id&#32;=&#32;User.get_user_id(request)
+<anchor xml:id="_views_8py_source_1l00107"/>00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;print(<emphasis role="stringliteral">&quot;parser&#32;went&#32;to&#32;lavka&quot;</emphasis>)
+<anchor xml:id="_views_8py_source_1l00108"/>00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;parse_by_address(user_id)
+<anchor xml:id="_views_8py_source_1l00109"/>00109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;JsonResponse({<emphasis role="stringliteral">&apos;success&apos;</emphasis>:&#32;<emphasis role="keyword">True</emphasis>})
+<anchor xml:id="_views_8py_source_1l00110"/>00110 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>:
+<anchor xml:id="_views_8py_source_1l00111"/>00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;JsonResponse({<emphasis role="stringliteral">&apos;success&apos;</emphasis>:&#32;<emphasis role="keyword">False</emphasis>,&#32;<emphasis role="stringliteral">&apos;error&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;Invalid&#32;request&#32;method&apos;</emphasis>})
+<anchor xml:id="_views_8py_source_1l00112"/>00112 
+<anchor xml:id="_views_8py_source_1l00113"/>00113 
+<anchor xml:id="_views_8py_source_1l00114"/>00114 <emphasis role="comment">#&#32;class&#32;UserApiView(APIView):</emphasis>
+<anchor xml:id="_views_8py_source_1l00115"/>00115 <emphasis role="comment">#&#32;&#32;&#32;&#32;&#32;def&#32;get(self,&#32;request):</emphasis>
+<anchor xml:id="_views_8py_source_1l00116"/>00116 <emphasis role="comment">#&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;return&#32;Response({&apos;&apos;})</emphasis>
+<anchor xml:id="_views_8py_source_1l00117"/>00117 
+<anchor xml:id="_views_8py_source_1l00118"/>00118 
+<anchor xml:id="_views_8py_source_1l00119"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view">00119</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view">UserApiView</link>(generics.ListAPIView):
+<anchor xml:id="_views_8py_source_1l00120"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view_1aacb642227e968a27ee2ef74245d562d8">00120</link> &#32;&#32;&#32;&#32;queryset&#32;=&#32;User.objects.all()
+<anchor xml:id="_views_8py_source_1l00121"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view_1ab99538f3807467e93d017cf000516cd9">00121</link> &#32;&#32;&#32;&#32;serializer_class&#32;=&#32;UserSerializer
+<anchor xml:id="_views_8py_source_1l00122"/>00122 
+<anchor xml:id="_views_8py_source_1l00123"/>00123 
+<anchor xml:id="_views_8py_source_1l00124"/>00124 <emphasis role="comment">#&#32;для&#32;тестов</emphasis>
+<anchor xml:id="_views_8py_source_1l00125"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_home_page_api">00125</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_home_page_api">HomePageApi</link>(APIView):
+<anchor xml:id="_views_8py_source_1l00126"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_home_page_api_1a09b826720d38c1720597f2f2be6e26fb">00126</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_home_page_api_1a09b826720d38c1720597f2f2be6e26fb">get</link>(self,&#32;request):
+<anchor xml:id="_views_8py_source_1l00127"/>00127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;start_session(request)
+<anchor xml:id="_views_8py_source_1l00128"/>00128 
+<anchor xml:id="_views_8py_source_1l00129"/>00129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;user_id&#32;=&#32;User.get_user_id(request)
+<anchor xml:id="_views_8py_source_1l00130"/>00130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cart_obj&#32;=&#32;<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart">Cart</link>(user_id)
+<anchor xml:id="_views_8py_source_1l00131"/>00131 
+<anchor xml:id="_views_8py_source_1l00132"/>00132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>:
+<anchor xml:id="_views_8py_source_1l00133"/>00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;search&#32;=&#32;request.GET.get(<emphasis role="stringliteral">&apos;search&apos;</emphasis>)
+<anchor xml:id="_views_8py_source_1l00134"/>00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">except</emphasis>:
+<anchor xml:id="_views_8py_source_1l00135"/>00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;search&#32;=&#32;<emphasis role="keywordtype">None</emphasis>
+<anchor xml:id="_views_8py_source_1l00136"/>00136 
+<anchor xml:id="_views_8py_source_1l00137"/>00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;search_dish&#32;=&#32;<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish">SearchDish</link>(search_string=search)
+<anchor xml:id="_views_8py_source_1l00138"/>00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;object_list&#32;=&#32;search_dish.get(slice=12)
+<anchor xml:id="_views_8py_source_1l00139"/>00139 
+<anchor xml:id="_views_8py_source_1l00140"/>00140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cart&#32;=&#32;cart_obj.get_order_array()
+<anchor xml:id="_views_8py_source_1l00141"/>00141 &#32;&#32;&#32;&#32;
+<anchor xml:id="_views_8py_source_1l00142"/>00142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;Response({<emphasis role="stringliteral">&apos;cart&apos;</emphasis>:&#32;json.loads(serializers.serialize(<emphasis role="stringliteral">&apos;json&apos;</emphasis>,&#32;cart)),
+<anchor xml:id="_views_8py_source_1l00143"/>00143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;object_list&apos;</emphasis>:&#32;json.loads(serializers.serialize(<emphasis role="stringliteral">&apos;json&apos;</emphasis>,&#32;object_list)),
+<anchor xml:id="_views_8py_source_1l00144"/>00144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;search&apos;</emphasis>:&#32;search,
+<anchor xml:id="_views_8py_source_1l00145"/>00145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;shit&apos;</emphasis>&#32;:&#32;<emphasis role="stringliteral">&apos;sheeesh&apos;</emphasis>})
+<anchor xml:id="_views_8py_source_1l00146"/>00146 
+<anchor xml:id="_views_8py_source_1l00147"/>00147 <emphasis role="comment">#&#32;возвращает&#32;на&#32;frontend&#32;json&#32;с&#32;блюдами&#32;по&#32;поисковой&#32;строке</emphasis>
+<anchor xml:id="_views_8py_source_1l00148"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api">00148</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api">SearchDishApi</link>(APIView):
+<anchor xml:id="_views_8py_source_1l00149"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api_1ada48bd7ec0ce9964b6ea181d6bdb35a9">00149</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api_1ada48bd7ec0ce9964b6ea181d6bdb35a9">post</link>(self,&#32;request):
+<anchor xml:id="_views_8py_source_1l00150"/>00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;search_string&#32;=&#32;request.data[<emphasis role="stringliteral">&apos;searchString&apos;</emphasis>]
+<anchor xml:id="_views_8py_source_1l00151"/>00151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;search_string&#32;==&#32;<emphasis role="stringliteral">&apos;&apos;</emphasis>:
+<anchor xml:id="_views_8py_source_1l00152"/>00152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;search_string&#32;=&#32;<emphasis role="keywordtype">None</emphasis>
+<anchor xml:id="_views_8py_source_1l00153"/>00153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_views_8py_source_1l00154"/>00154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;search_dish&#32;=&#32;<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish">SearchDish</link>(search_string=search_string)
+<anchor xml:id="_views_8py_source_1l00155"/>00155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;object_list&#32;=&#32;search_dish.get(slice=12)
+<anchor xml:id="_views_8py_source_1l00156"/>00156 
+<anchor xml:id="_views_8py_source_1l00157"/>00157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;Response({<emphasis role="stringliteral">&apos;object_list&apos;</emphasis>:&#32;json.loads(serializers.serialize(<emphasis role="stringliteral">&apos;json&apos;</emphasis>,&#32;object_list))})
+<anchor xml:id="_views_8py_source_1l00158"/>00158 &#32;&#32;&#32;&#32;
+<anchor xml:id="_views_8py_source_1l00159"/>00159 <emphasis role="comment">#&#32;изменяет&#32;корзину&#32;блюд&#32;пользователя&#32;и&#32;возвращает&#32;ее&#32;на&#32;frontend&#32;в&#32;виде&#32;json</emphasis>
+<anchor xml:id="_views_8py_source_1l00160"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_change_cart_api">00160</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_change_cart_api">ChangeCartApi</link>(APIView):
+<anchor xml:id="_views_8py_source_1l00161"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_change_cart_api_1a05cb8ebfa4babf71e5521db9ff9dfcae">00161</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_change_cart_api_1a05cb8ebfa4babf71e5521db9ff9dfcae">post</link>(self,&#32;request):
+<anchor xml:id="_views_8py_source_1l00162"/>00162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cart_change&#32;=&#32;request.data[<emphasis role="stringliteral">&apos;cartChange&apos;</emphasis>]
+<anchor xml:id="_views_8py_source_1l00163"/>00163 
+<anchor xml:id="_views_8py_source_1l00164"/>00164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;start_session(request)</emphasis>
+<anchor xml:id="_views_8py_source_1l00165"/>00165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;user_id&#32;=&#32;User.get_user_id(request)</emphasis>
+<anchor xml:id="_views_8py_source_1l00166"/>00166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cart_obj&#32;=&#32;<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart">Cart</link>(1)
+<anchor xml:id="_views_8py_source_1l00167"/>00167 
+<anchor xml:id="_views_8py_source_1l00168"/>00168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;cart_change[<emphasis role="stringliteral">&apos;dish_pk&apos;</emphasis>]&#32;!=&#32;0:
+<anchor xml:id="_views_8py_source_1l00169"/>00169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cart_obj.change_order(cart_change[<emphasis role="stringliteral">&apos;dish_pk&apos;</emphasis>],&#32;cart_change[<emphasis role="stringliteral">&apos;add_flg&apos;</emphasis>])
+<anchor xml:id="_views_8py_source_1l00170"/>00170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;order_array&#32;=&#32;cart_obj.get_order_array()
+<anchor xml:id="_views_8py_source_1l00171"/>00171 
+<anchor xml:id="_views_8py_source_1l00172"/>00172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cart&#32;=&#32;[]
+<anchor xml:id="_views_8py_source_1l00173"/>00173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;x&#32;<emphasis role="keywordflow">in</emphasis>&#32;order_array:
+<anchor xml:id="_views_8py_source_1l00174"/>00174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cart.append({<emphasis role="stringliteral">&apos;dish_pk&apos;</emphasis>:&#32;x.dish.pk,&#32;<emphasis role="stringliteral">&apos;name&apos;</emphasis>:&#32;x.dish.name,&#32;<emphasis role="stringliteral">&apos;amount&apos;</emphasis>:&#32;x.amount})
+<anchor xml:id="_views_8py_source_1l00175"/>00175 
+<anchor xml:id="_views_8py_source_1l00176"/>00176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;Response(cart)
+<anchor xml:id="_views_8py_source_1l00177"/>00177 
+<anchor xml:id="_views_8py_source_1l00178"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_parse_products_api">00178</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_parse_products_api">ParseProductsApi</link>(APIView):
+<anchor xml:id="_views_8py_source_1l00179"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_parse_products_api_1a1962798efbaeb5f428cc761e7bacf8f6">00179</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_parse_products_api_1a1962798efbaeb5f428cc761e7bacf8f6">post</link>(self,&#32;request):
+<anchor xml:id="_views_8py_source_1l00180"/>00180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;address&#32;=&#32;request.data[<emphasis role="stringliteral">&apos;address&apos;</emphasis>]
+<anchor xml:id="_views_8py_source_1l00181"/>00181 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;user_id&#32;=&#32;User.get_user_id(request)</emphasis>
+<anchor xml:id="_views_8py_source_1l00182"/>00182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;print(&quot;parser&#32;went&#32;to&#32;lavka&quot;)</emphasis>
+<anchor xml:id="_views_8py_source_1l00183"/>00183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;city_street&#32;=&#32;<emphasis role="stringliteral">&apos;,&#32;&apos;</emphasis>.join([address[<emphasis role="stringliteral">&apos;city&apos;</emphasis>],&#32;address[<emphasis role="stringliteral">&apos;street&apos;</emphasis>]])
+<anchor xml:id="_views_8py_source_1l00184"/>00184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;number&#32;=&#32;address[<emphasis role="stringliteral">&apos;number&apos;</emphasis>]
+<anchor xml:id="_views_8py_source_1l00185"/>00185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;parse_by_address(1,&#32;city_street,&#32;number)
+<anchor xml:id="_views_8py_source_1l00186"/>00186 
+<anchor xml:id="_views_8py_source_1l00187"/>00187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;Response({<emphasis role="stringliteral">&apos;cringe&apos;</emphasis>:&#32;<emphasis role="stringliteral">&apos;shit&apos;</emphasis>})
+</programlisting></section>

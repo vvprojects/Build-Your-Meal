@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::Shop</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">models.Model</basecompoundref>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta" prot="public">bym::BYM_project::main_app::models::Shop::Meta</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1af56df25cce9db36a05c3bab3f50881af" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Shop::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Shop.name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="252" column="1" bodyfile="models.py" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1a65cbb33ac3a746c18955a5b5ca9d1303" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Shop::max_length</definition>
+        <argsstring></argsstring>
+        <name>max_length</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Shop.max_length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="252" column="1" bodyfile="models.py" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1a9013b400df80ef53b1663155dbce38bc" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Shop::link</definition>
+        <argsstring></argsstring>
+        <name>link</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Shop.link</qualifiedname>
+        <initializer>=  models.URLField()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="253" column="1" bodyfile="models.py" bodystart="253" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>информация о магазине <linebreak/>
+ name – название магазина <linebreak/>
+ link – ссылка на магазин <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Shop</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Shop</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="models.py" line="242" column="1" bodyfile="models.py" bodystart="242" bodyend="255"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1a9013b400df80ef53b1663155dbce38bc" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Shop</scope><name>link</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1a65cbb33ac3a746c18955a5b5ca9d1303" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Shop</scope><name>max_length</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1af56df25cce9db36a05c3bab3f50881af" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Shop</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

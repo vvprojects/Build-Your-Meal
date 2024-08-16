@@ -1,0 +1,192 @@
+\doxysection{views.\+py}
+\label{views_8py_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{from}\ django.shortcuts\ \textcolor{keyword}{import}\ render}
+\DoxyCodeLine{00002\ \textcolor{keyword}{from}\ main\_app.search\ \textcolor{keyword}{import}\ SearchDish}
+\DoxyCodeLine{00003\ \textcolor{keyword}{from}\ main\_app.functions\_backend\ \textcolor{keyword}{import}\ get\_particular\_dish,\ start\_session}
+\DoxyCodeLine{00004\ \textcolor{keyword}{from}\ main\_app.cart\ \textcolor{keyword}{import}\ Cart}
+\DoxyCodeLine{00005\ \textcolor{keyword}{from}\ main\_app.models\ \textcolor{keyword}{import}\ User}
+\DoxyCodeLine{00006\ \textcolor{keyword}{from}\ main\_app.parser\ \textcolor{keyword}{import}\ parse\_by\_address}
+\DoxyCodeLine{00007\ \textcolor{keyword}{from}\ django.http\ \textcolor{keyword}{import}\ JsonResponse,\ HttpResponseRedirect}
+\DoxyCodeLine{00008\ \textcolor{keyword}{from}\ django.views.decorators.csrf\ \textcolor{keyword}{import}\ csrf\_exempt}
+\DoxyCodeLine{00009\ \textcolor{keyword}{from}\ rest\_framework\ \textcolor{keyword}{import}\ generics}
+\DoxyCodeLine{00010\ \textcolor{keyword}{from}\ .models\ \textcolor{keyword}{import}\ User}
+\DoxyCodeLine{00011\ \textcolor{keyword}{from}\ .serializers\ \textcolor{keyword}{import}\ UserSerializer}
+\DoxyCodeLine{00012\ \textcolor{keyword}{from}\ rest\_framework.views\ \textcolor{keyword}{import}\ APIView}
+\DoxyCodeLine{00013\ \textcolor{keyword}{from}\ rest\_framework.response\ \textcolor{keyword}{import}\ Response}
+\DoxyCodeLine{00014\ \textcolor{keyword}{from}\ django.core\ \textcolor{keyword}{import}\ serializers}
+\DoxyCodeLine{00015\ \textcolor{keyword}{import}\ json}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{def\ }HomePageView(request):}
+\DoxyCodeLine{00019\ \ \ \ \ start\_session(request)}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ user\_id\ =\ User.get\_user\_id(request)}
+\DoxyCodeLine{00022\ \ \ \ \ cart\_obj\ =\ Cart(user\_id)}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{\#\ if\ request.method\ ==\ 'POST':}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{\#\ \ \ \ \ action\ =\ request.POST.get("{}action"{})}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{\#\ \ \ \ \ if\ action\ ==\ "{}click\_mest"{}:}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{\#\ \ \ \ \ \ \ \ \ parse\_by\_address(user\_id)}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ search\ =\ request.GET.get(\textcolor{stringliteral}{'search'})}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{except}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ search\ =\ \textcolor{keywordtype}{None}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ search\_dish\ =\ SearchDish(search\_string=search)}
+\DoxyCodeLine{00035\ \ \ \ \ object\_list\ =\ search\_dish.get(slice=12)}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ cart\ =\ cart\_obj.get\_order\_array()}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordflow}{return}\ render(request,\ \textcolor{stringliteral}{'landing\_page.html'},\ \{\textcolor{stringliteral}{'object\_list'}:\ object\_list,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'cart'}:\ cart,}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'search'}:\ search\})}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{def\ }Dish(request,\ id):}
+\DoxyCodeLine{00045\ \ \ \ \ start\_session(request)}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ user\_id\ =\ User.get\_user\_id(request)}
+\DoxyCodeLine{00048\ \ \ \ \ cart\_obj\ =\ Cart(user\_id)}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{\#\ if\ request.method\ ==\ 'POST':}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{\#\ \ \ \ \ action\ =\ request.POST.get("{}action"{})}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{\#\ \ \ \ \ if\ action\ ==\ "{}click\_mest"{}:}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{\#\ \ \ \ \ \ \ \ \ parse\_by\_address(user\_id)}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordflow}{if}\ request.method\ ==\ \textcolor{stringliteral}{'GET'}:}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ value\ =\ request.GET.get(\textcolor{stringliteral}{"{}add\_dish"{}})}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Action:\ "{}},\ value)}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ value\ ==\ \textcolor{stringliteral}{"{}Добавить\ в\ меню"{}}:}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ cart\_obj.change\_order(id,\ \textcolor{keyword}{True})}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ dish,\ cooking\_stages,\ ingredients\ =\ get\_particular\_dish(id)}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ cart\ =\ cart\_obj.get\_order\_array()}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordflow}{return}\ render(request,\ \textcolor{stringliteral}{'page\_of\_dish.html'},\ \{\textcolor{stringliteral}{'dish'}:\ dish,}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'cart'}:\ cart,}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'cooking\_stages'}:\ cooking\_stages,}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'ingredients'}:\ ingredients\})}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{def\ }FinalPage(request):}
+\DoxyCodeLine{00072\ \ \ \ \ start\_session(request)}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ user\_id\ =\ User.get\_user\_id(request)}
+\DoxyCodeLine{00075\ \ \ \ \ cart\_obj\ =\ Cart(user\_id)}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{comment}{\#\ if\ request.method\ ==\ 'POST':}}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{comment}{\#\ \ \ \ \ action\ =\ request.POST.get("{}action"{})}}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{comment}{\#\ \ \ \ \ if\ action\ ==\ "{}click\_mest"{}:}}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{comment}{\#\ \ \ \ \ \ \ \ \ parse\_by\_address(user\_id)}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ categories\_list\ =\ cart\_obj.get\_categories\_list(slice=4)}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{return}\ render(request,\ \textcolor{stringliteral}{'second\_checkout.html'},\ \{\textcolor{stringliteral}{'CatProd\_list'}:\ categories\_list\})}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{keyword}{def\ }my\_view(request):}
+\DoxyCodeLine{00090\ \ \ \ \ count\ =\ request.POST.get(\textcolor{stringliteral}{'count'},\ 0)}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{comment}{\#передать\ значение\ счётчика\ на\ бэк}}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordflow}{return}\ render(request,\ \textcolor{stringliteral}{'vue.html'})}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{@csrf\_exempt}}
+\DoxyCodeLine{00095\ \textcolor{keyword}{def\ }update\_counter(request):}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{if}\ request.method\ ==\ \textcolor{stringliteral}{'POST'}:}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ count\ =\ int(request.POST.get(\textcolor{stringliteral}{'count'},\ 0))}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ Do\ something\ with\ the\ count\ value\ here}}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ JsonResponse(\{\textcolor{stringliteral}{'success'}:\ \textcolor{keyword}{True}\})}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ JsonResponse(\{\textcolor{stringliteral}{'success'}:\ \textcolor{keyword}{False},\ \textcolor{stringliteral}{'error'}:\ \textcolor{stringliteral}{'Invalid\ request\ method'}\})}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{comment}{\#\ Функция\ ajax\ запроса\ нажатия\ на\ кнопку\ "{}Таллинская\ 34"{}}}
+\DoxyCodeLine{00104\ \textcolor{keyword}{def\ }parse\_adress(request):}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordflow}{if}\ request.method\ ==\ \textcolor{stringliteral}{'POST'}:}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ user\_id\ =\ User.get\_user\_id(request)}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}parser\ went\ to\ lavka"{}})}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ parse\_by\_address(user\_id)}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ JsonResponse(\{\textcolor{stringliteral}{'success'}:\ \textcolor{keyword}{True}\})}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ JsonResponse(\{\textcolor{stringliteral}{'success'}:\ \textcolor{keyword}{False},\ \textcolor{stringliteral}{'error'}:\ \textcolor{stringliteral}{'Invalid\ request\ method'}\})}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \textcolor{comment}{\#\ class\ UserApiView(APIView):}}
+\DoxyCodeLine{00115\ \textcolor{comment}{\#\ \ \ \ \ def\ get(self,\ request):}}
+\DoxyCodeLine{00116\ \textcolor{comment}{\#\ \ \ \ \ \ \ \ \ return\ Response(\{''\})}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \textcolor{keyword}{class\ }UserApiView(generics.ListAPIView):}
+\DoxyCodeLine{00120\ \ \ \ \ queryset\ =\ User.objects.all()}
+\DoxyCodeLine{00121\ \ \ \ \ serializer\_class\ =\ UserSerializer}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \textcolor{comment}{\#\ для\ тестов}}
+\DoxyCodeLine{00125\ \textcolor{keyword}{class\ }HomePageApi(APIView):}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keyword}{def\ }get(self,\ request):}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ start\_session(request)}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ user\_id\ =\ User.get\_user\_id(request)}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ cart\_obj\ =\ Cart(user\_id)}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ search\ =\ request.GET.get(\textcolor{stringliteral}{'search'})}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{except}:}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ search\ =\ \textcolor{keywordtype}{None}}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ search\_dish\ =\ SearchDish(search\_string=search)}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ object\_list\ =\ search\_dish.get(slice=12)}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ cart\ =\ cart\_obj.get\_order\_array()}
+\DoxyCodeLine{00141\ \ \ \ \ }
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Response(\{\textcolor{stringliteral}{'cart'}:\ json.loads(serializers.serialize(\textcolor{stringliteral}{'json'},\ cart)),}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'object\_list'}:\ json.loads(serializers.serialize(\textcolor{stringliteral}{'json'},\ object\_list)),}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'search'}:\ search,}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'shit'}\ :\ \textcolor{stringliteral}{'sheeesh'}\})}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \textcolor{comment}{\#\ возвращает\ на\ frontend\ json\ с\ блюдами\ по\ поисковой\ строке}}
+\DoxyCodeLine{00148\ \textcolor{keyword}{class\ }SearchDishApi(APIView):}
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keyword}{def\ }post(self,\ request):}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ search\_string\ =\ request.data[\textcolor{stringliteral}{'searchString'}]}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ search\_string\ ==\ \textcolor{stringliteral}{''}:}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ search\_string\ =\ \textcolor{keywordtype}{None}}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ search\_dish\ =\ SearchDish(search\_string=search\_string)}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ object\_list\ =\ search\_dish.get(slice=12)}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Response(\{\textcolor{stringliteral}{'object\_list'}:\ json.loads(serializers.serialize(\textcolor{stringliteral}{'json'},\ object\_list))\})}
+\DoxyCodeLine{00158\ \ \ \ \ }
+\DoxyCodeLine{00159\ \textcolor{comment}{\#\ изменяет\ корзину\ блюд\ пользователя\ и\ возвращает\ ее\ на\ frontend\ в\ виде\ json}}
+\DoxyCodeLine{00160\ \textcolor{keyword}{class\ }ChangeCartApi(APIView):}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keyword}{def\ }post(self,\ request):}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ cart\_change\ =\ request.data[\textcolor{stringliteral}{'cartChange'}]}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ start\_session(request)}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ user\_id\ =\ User.get\_user\_id(request)}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ cart\_obj\ =\ Cart(1)}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ cart\_change[\textcolor{stringliteral}{'dish\_pk'}]\ !=\ 0:}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ cart\_obj.change\_order(cart\_change[\textcolor{stringliteral}{'dish\_pk'}],\ cart\_change[\textcolor{stringliteral}{'add\_flg'}])}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ order\_array\ =\ cart\_obj.get\_order\_array()}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ cart\ =\ []}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ x\ \textcolor{keywordflow}{in}\ order\_array:}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ cart.append(\{\textcolor{stringliteral}{'dish\_pk'}:\ x.dish.pk,\ \textcolor{stringliteral}{'name'}:\ x.dish.name,\ \textcolor{stringliteral}{'amount'}:\ x.amount\})}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Response(cart)}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \textcolor{keyword}{class\ }ParseProductsApi(APIView):}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keyword}{def\ }post(self,\ request):}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ address\ =\ request.data[\textcolor{stringliteral}{'address'}]}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ user\_id\ =\ User.get\_user\_id(request)}}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ print("{}parser\ went\ to\ lavka"{})}}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ city\_street\ =\ \textcolor{stringliteral}{',\ '}.join([address[\textcolor{stringliteral}{'city'}],\ address[\textcolor{stringliteral}{'street'}]])}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ number\ =\ address[\textcolor{stringliteral}{'number'}]}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ parse\_by\_address(1,\ city\_street,\ number)}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Response(\{\textcolor{stringliteral}{'cringe'}:\ \textcolor{stringliteral}{'shit'}\})}
+
+\end{DoxyCode}

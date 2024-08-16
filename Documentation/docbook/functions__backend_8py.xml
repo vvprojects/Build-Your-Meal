@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_functions__backend_8py" xml:lang="en-US">
+<title>functions_backend.py File Reference</title>
+<indexterm><primary>functions_backend.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebym">bym</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project">bym.BYM_project</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app">bym.BYM_project.main_app</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend">bym.BYM_project.main_app.functions_backend</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a8c445e64e551d7b0b43b70a843c62965">bym.BYM_project.main_app.functions_backend.start_session</link> (request)</para>
+
+<para>Начало сессии с пользователем и создание его кортежа в бд по session_id. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1acec8d87adc7236e231b7ac0bd7e395fa">bym.BYM_project.main_app.functions_backend.get_dish_types</link> ()</para>
+
+<para>Запрос в бд на получение типов блюд и соответстующих им под типов </para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1acc450f9517914ab71f0b81484e45337d">bym.BYM_project.main_app.functions_backend.get_particular_dish</link> (dish_id)</para>
+
+<para>Возвращает конкретное блюдо, стадии его приготовления и необходимые игридиенты </para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a08d73957bbfccb8e19348c923f80fb53">bym.BYM_project.main_app.functions_backend.string_to_minutes</link> (string)</para>
+
+<para>Возвращает количество минут в строке Варианты входа: &apos;n часов&apos;, &apos;n минут&apos;, &apos;n часов k минут&apos;. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a723d59131bb3c4986041292c982b118f">bym.BYM_project.main_app.functions_backend.convert_fraction</link> (string)</para>
+
+<para>Возвращает float из строки с числом </para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a4a88e8eaaa6f0e827859fc69485a0f3f">bym.BYM_project.main_app.functions_backend.number_and_measure</link> (string)</para>
+
+<para>Возвращает по строке количества продукта число + единицу измерения в начальной форме </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="config_8py" kind="file" language="Python">
+    <compoundname>config.py</compoundname>
+    <innernamespace refid="namespacebym">bym</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project">bym::BYM_project</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app">bym::BYM_project::main_app</innernamespace>
+    <innernamespace refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1config">bym::BYM_project::main_app::config</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1config" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>dotenv<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>load_dotenv</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">load_dotenv()</highlight></codeline>
+<codeline lineno="6" refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1ad2134171b2678db43657ebb4707a71e5" refkind="member"><highlight class="normal">webdriver_name<sp/>=<sp/>os.getenv(</highlight><highlight class="stringliteral">&quot;webdriver_name&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1a33e627ec953d99555066175ad5255567" refkind="member"><highlight class="normal">urls_lavka<sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/ovoshchi_griby_i_zelen&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/Frukty_i_yagody&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/milk_products&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/cheese&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/kefir_smetana_tvorog&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/e64b861bd9a34ebc9103dbf15e2d2932&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/molochnoe_dlya_detej&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/hleb&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/vipechka&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/hlebcy&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/beef_pork&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/wurst_all&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/ryba_i_moreprodukty&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/zakuski_i_pashtety&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/morozhenoe&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/pelmeni_i_vareniki&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/frozen_vegetables_and_berries&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/deserty&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/polufabrikaty&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/553b84d49692448bb06588f9d694cbde&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/b9c6c90166f1487888de39b933119747&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/makarony_krupy_muka&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/hlopya_i_myusli&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/oils_sauces_spices&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/coffee_and_cocoa&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/tea&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;https://lavka.yandex.ru/10743/category/91ba4698f47f450087e3e8de50d93a15&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">]</highlight></codeline>
+    </programlisting>
+    <location file="config.py"/>
+  </compounddef>
+</doxygen>

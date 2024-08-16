@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::parser::Lavka</compoundname>
+    <basecompoundref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser" prot="public" virt="non-virtual">bym.BYM_project.main_app.parser.Parser</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a23885f0e3a25fe52b40160bf50b95d86" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.parser.Lavka::url_main</definition>
+        <argsstring></argsstring>
+        <name>url_main</name>
+        <qualifiedname>bym.BYM_project.main_app.parser.Lavka.url_main</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.py" line="67" column="1" bodyfile="parser.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1aa4d243133ee2225c281004cada6c617f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.parser.Lavka::driver</definition>
+        <argsstring></argsstring>
+        <name>driver</name>
+        <qualifiedname>bym.BYM_project.main_app.parser.Lavka.driver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.py" line="73" column="1" bodyfile="parser.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ab11214453defaf1caacb34e33abbe04f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.parser.Lavka::wait</definition>
+        <argsstring></argsstring>
+        <name>wait</name>
+        <qualifiedname>bym.BYM_project.main_app.parser.Lavka.wait</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.py" line="74" column="1" bodyfile="parser.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ad7973256e11d6291b8641b3e438ca595" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.parser.Lavka::urls</definition>
+        <argsstring></argsstring>
+        <name>urls</name>
+        <qualifiedname>bym.BYM_project.main_app.parser.Lavka.urls</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.py" line="75" column="1" bodyfile="parser.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a928051a5a0fb32b70882272b9c97983c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.parser.Lavka::sl_tags</definition>
+        <argsstring></argsstring>
+        <name>sl_tags</name>
+        <qualifiedname>bym.BYM_project.main_app.parser.Lavka.sl_tags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.py" line="76" column="1" bodyfile="parser.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ae79912d1031916b7daf34ee69d05e8d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.parser.Lavka.__init__</definition>
+        <argsstring>(self, user_id)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>bym.BYM_project.main_app.parser.Lavka.__init__</qualifiedname>
+        <reimplements refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_1acfb5504aa987e575ccfbe05617190604">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>user_id</type>
+          <defname>user_id</defname>
+        </param>
+        <briefdescription>
+<para>Инициализирует класс Lavka. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.py" line="61" column="1" bodyfile="parser.py" bodystart="61" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a44f7318d5af307484c100b74733461b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.parser.Lavka.get_data_product</definition>
+        <argsstring>(self, product)</argsstring>
+        <name>get_data_product</name>
+        <qualifiedname>bym.BYM_project.main_app.parser.Lavka.get_data_product</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>product</type>
+          <defname>product</defname>
+        </param>
+        <briefdescription>
+<para>Выделяет из блока с информацией о продукте нужную и записывает в БД </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>product</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BeautifulSoup </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.py" line="79" column="1" bodyfile="parser.py" bodystart="79" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1aa85beac3725cdc9934390e1c49fcb9f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.parser.Lavka.get_data_html</definition>
+        <argsstring>(self, html)</argsstring>
+        <name>get_data_html</name>
+        <qualifiedname>bym.BYM_project.main_app.parser.Lavka.get_data_html</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>html</type>
+          <defname>html</defname>
+        </param>
+        <briefdescription>
+<para>Разбивает html код на блоки по продуктам, асинхронно запускает их обработку </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>html</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.py" line="107" column="1" bodyfile="parser.py" bodystart="107" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a16780d5d1ca7bb8cf262758e2dac66ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.parser.Lavka.pars</definition>
+        <argsstring>(self, city_street, home)</argsstring>
+        <name>pars</name>
+        <qualifiedname>bym.BYM_project.main_app.parser.Lavka.pars</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>city_street</type>
+          <defname>city_street</defname>
+        </param>
+        <param>
+          <type>home</type>
+          <defname>home</defname>
+        </param>
+        <briefdescription>
+<para>Парсит список продуктов с ценами яндекс лавки по определенному адресу Производит запись в базу данных </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>city_strit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>home</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parser.py" line="123" column="1" bodyfile="parser.py" bodystart="123" bodyend="184"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Определяет класс используемый для парсинга лавки. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.parser.Lavka</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>bym.BYM_project.main_app.parser.Parser</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.parser.Lavka</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>bym.BYM_project.main_app.parser.Parser</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser"/>
+      </node>
+    </collaborationgraph>
+    <location file="parser.py" line="56" column="1" bodyfile="parser.py" bodystart="56" bodyend="184"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ae79912d1031916b7daf34ee69d05e8d6" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::parser::Lavka</scope><name>__init__</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1aa4d243133ee2225c281004cada6c617f" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::parser::Lavka</scope><name>driver</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1aa85beac3725cdc9934390e1c49fcb9f1" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::parser::Lavka</scope><name>get_data_html</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a44f7318d5af307484c100b74733461b3" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::parser::Lavka</scope><name>get_data_product</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a16780d5d1ca7bb8cf262758e2dac66ee" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::parser::Lavka</scope><name>pars</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a928051a5a0fb32b70882272b9c97983c" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::parser::Lavka</scope><name>sl_tags</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a23885f0e3a25fe52b40160bf50b95d86" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::parser::Lavka</scope><name>url_main</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ad7973256e11d6291b8641b3e438ca595" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::parser::Lavka</scope><name>urls</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ab11214453defaf1caacb34e33abbe04f" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::parser::Lavka</scope><name>wait</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

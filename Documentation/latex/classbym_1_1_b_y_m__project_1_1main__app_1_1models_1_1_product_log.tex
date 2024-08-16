@@ -1,0 +1,174 @@
+\doxysection{bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log Class Reference}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log}\index{bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}}
+
+
+информация о ранее заказанных товарах в магазине ~\newline
+ name – название товара ~\newline
+ price – цена ~\newline
+ amount – количество (в unit\+\_\+id) товара которое в одной единице заказ (например 300, unit\+\_\+id – граммы) ~\newline
+ quantity – количество единиц, которое было заказано ~\newline
+ link – ссылка на товар ~\newline
+ shop\+\_\+id – магазин, из которого товар ~\newline
+ order\+\_\+id – заказ, в котором был куплен данный товар ~\newline
+ unit\+\_\+id – единица измерения ~\newline
+  
+
+
+Inheritance diagram for bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ Meta}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ order}
+\item 
+\textbf{ Order}
+\item 
+\textbf{ on\+\_\+delete}
+\item 
+\textbf{ shop} = models.\+Foreign\+Key(\textbf{ Shop}, \textbf{ on\+\_\+delete}=models.\+CASCADE)
+\item 
+\textbf{ unit} = models.\+Foreign\+Key(\textbf{ Unit\+Of\+Measure}, \textbf{ on\+\_\+delete}=models.\+CASCADE)
+\item 
+\textbf{ name} = models.\+Char\+Field(max\+\_\+length=100)
+\item 
+\textbf{ price} = models.\+Positive\+Integer\+Field()
+\item 
+\textbf{ amount} = models.\+Decimal\+Field(max\+\_\+digits=4 + 4, decimal\+\_\+places=4)
+\item 
+\textbf{ quantity} = models.\+Positive\+Integer\+Field()
+\item 
+\textbf{ link} = models.\+URLField()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+информация о ранее заказанных товарах в магазине ~\newline
+ name – название товара ~\newline
+ price – цена ~\newline
+ amount – количество (в unit\+\_\+id) товара которое в одной единице заказ (например 300, unit\+\_\+id – граммы) ~\newline
+ quantity – количество единиц, которое было заказано ~\newline
+ link – ссылка на товар ~\newline
+ shop\+\_\+id – магазин, из которого товар ~\newline
+ order\+\_\+id – заказ, в котором был куплен данный товар ~\newline
+ unit\+\_\+id – единица измерения ~\newline
+ 
+
+Definition at line \textbf{ 281} of file \textbf{ models.\+py}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_ae387b693aa90ec7d8b04d5ae9cc47608} 
+\index{bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}!amount@{amount}}
+\index{amount@{amount}!bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}}
+\doxysubsubsection{amount}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log.\+amount = models.\+Decimal\+Field(max\+\_\+digits=4 + 4, decimal\+\_\+places=4)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 303} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_af8607133f1651d3e132d75183af8d4c3} 
+\index{bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}!link@{link}}
+\index{link@{link}!bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}}
+\doxysubsubsection{link}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log.\+link = models.\+URLField()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 305} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_adf15e6ea2e1f6a0ea640326691140ce8} 
+\index{bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}!name@{name}}
+\index{name@{name}!bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}}
+\doxysubsubsection{name}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log.\+name = models.\+Char\+Field(max\+\_\+length=100)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 301} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_a9cb6e368a91a7fa12f1b9f27a0f10433} 
+\index{bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}!on\_delete@{on\_delete}}
+\index{on\_delete@{on\_delete}!bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}}
+\doxysubsubsection{on\_delete}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log.\+on\+\_\+delete\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 297} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_a84e1b8f531e4e3cd3468320065743fa1} 
+\index{bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}!order@{order}}
+\index{order@{order}!bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}}
+\doxysubsubsection{order}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log.\+order\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 297} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_a98b3d3ef54221e38d976bd04a25e22a6} 
+\index{bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}!Order@{Order}}
+\index{Order@{Order}!bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}}
+\doxysubsubsection{Order}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log.\+Order\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 297} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_af158701900a361a9b0498c97b8ff2310} 
+\index{bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}!price@{price}}
+\index{price@{price}!bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}}
+\doxysubsubsection{price}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log.\+price = models.\+Positive\+Integer\+Field()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 302} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_aa5e3b31f2096adb94626dcfbd356b7de} 
+\index{bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}!quantity@{quantity}}
+\index{quantity@{quantity}!bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}}
+\doxysubsubsection{quantity}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log.\+quantity = models.\+Positive\+Integer\+Field()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 304} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_a65e3a4594a41f198ed662856d2ecbbda} 
+\index{bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}!shop@{shop}}
+\index{shop@{shop}!bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}}
+\doxysubsubsection{shop}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log.\+shop = models.\+Foreign\+Key(\textbf{ Shop}, \textbf{ on\+\_\+delete}=models.\+CASCADE)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 298} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_af46abc1d110ff668e58604b77e767e08} 
+\index{bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}!unit@{unit}}
+\index{unit@{unit}!bym.BYM\_project.main\_app.models.ProductLog@{bym.BYM\_project.main\_app.models.ProductLog}}
+\doxysubsubsection{unit}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log.\+unit = models.\+Foreign\+Key(\textbf{ Unit\+Of\+Measure}, \textbf{ on\+\_\+delete}=models.\+CASCADE)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 299} of file \textbf{ models.\+py}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ models.\+py}\end{DoxyCompactItemize}

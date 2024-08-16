@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::Order</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">models.Model</basecompoundref>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1_1_meta" prot="public">bym::BYM_project::main_app::models::Order::Meta</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a3220615ffc105fee679b8a0e32ebc53f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Order::user</definition>
+        <argsstring></argsstring>
+        <name>user</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Order.user</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="219" column="1" bodyfile="models.py" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a6ca3b1af4a14a45664f1acfd147a3dc3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Order::User</definition>
+        <argsstring></argsstring>
+        <name>User</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Order.User</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="219" column="1" bodyfile="models.py" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a7eaf471782c9434bf40e61a1011687e4" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Order::on_delete</definition>
+        <argsstring></argsstring>
+        <name>on_delete</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Order.on_delete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="219" column="1" bodyfile="models.py" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a609c35dfd5a69b984f4f055552501fd4" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Order::order_date</definition>
+        <argsstring></argsstring>
+        <name>order_date</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Order.order_date</qualifiedname>
+        <initializer>=  models.DateTimeField()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="221" column="1" bodyfile="models.py" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a37e52b58e2a8b31b954384bd4abf4a16" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Order::current</definition>
+        <argsstring></argsstring>
+        <name>current</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Order.current</qualifiedname>
+        <initializer>=  models.BooleanField(default=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="222" column="1" bodyfile="models.py" bodystart="222" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>информация о заказах. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+ order_date – дата заказа <linebreak/>
+ current – статус (выполнен/ не выполнен) <linebreak/>
+ user_id – пользователь совершивший заказ <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Order</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Order</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="models.py" line="208" column="1" bodyfile="models.py" bodystart="208" bodyend="224"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a37e52b58e2a8b31b954384bd4abf4a16" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Order</scope><name>current</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a7eaf471782c9434bf40e61a1011687e4" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Order</scope><name>on_delete</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a609c35dfd5a69b984f4f055552501fd4" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Order</scope><name>order_date</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a3220615ffc105fee679b8a0e32ebc53f" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Order</scope><name>user</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a6ca3b1af4a14a45664f1acfd147a3dc3" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Order</scope><name>User</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_views_8py" xml:lang="en-US">
+<title>views.py File Reference</title>
+<indexterm><primary>views.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view">bym.BYM_project.main_app.views.UserApiView</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_home_page_api">bym.BYM_project.main_app.views.HomePageApi</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api">bym.BYM_project.main_app.views.SearchDishApi</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_change_cart_api">bym.BYM_project.main_app.views.ChangeCartApi</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_parse_products_api">bym.BYM_project.main_app.views.ParseProductsApi</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebym">bym</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project">bym.BYM_project</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app">bym.BYM_project.main_app</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views">bym.BYM_project.main_app.views</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1af62b4a87706c5fb300e65530e91865d5">bym.BYM_project.main_app.views.HomePageView</link> (request)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab171977260210f1eb95ecc71c06ba531">bym.BYM_project.main_app.views.Dish</link> (request, id)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a8fc8f72e5badf96f335b79fed3122955">bym.BYM_project.main_app.views.FinalPage</link> (request)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab62631df59f779ad4e58eb58d2b98428">bym.BYM_project.main_app.views.my_view</link> (request)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a4d8aaf2a4449720f8eb2e47a527692fc">bym.BYM_project.main_app.views.update_counter</link> (request)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a1874c4140cef5dfd5dec770d61515c23">bym.BYM_project.main_app.views.parse_adress</link> (request)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

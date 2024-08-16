@@ -1,0 +1,216 @@
+\doxysection{bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Dish Class Reference}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish}\index{bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}}
+
+
+Класс реализует функционал поиска и сортировки блюд по строке поиска, фильтрам блюда, рекомендациям конткретному пользователю и указанному адресу  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \textbf{ \+\_\+\+\_\+init\+\_\+\+\_\+} (self, types=None, subtypes=None, \textbf{ search\+\_\+string}=\textquotesingle{}\textquotesingle{}, \textbf{ address\+\_\+flg}=0, user\+\_\+id=None, \textbf{ ratio}=1, \textbf{ threshold}=0)
+\begin{DoxyCompactList}\small\item\em Инициализирует класс списком блюд, делая запрос в базу данных \end{DoxyCompactList}\item 
+float \textbf{ score} (self, dish)
+\begin{DoxyCompactList}\small\item\em Сопосталяет каждому объекту класса Dish число, по которому будет осуществлена сортировка \end{DoxyCompactList}\item 
+list \textbf{ get} (self, slice)
+\begin{DoxyCompactList}\small\item\em Сортирует список объектов класса Dish. \end{DoxyCompactList}\item 
+float \textbf{ recommend\+\_\+scorer} (self, dish)
+\begin{DoxyCompactList}\small\item\em Предсказывает вес нравящности для блюда и пользователя. \end{DoxyCompactList}\item 
+float \textbf{ seq\+\_\+match\+\_\+scorer} (self, dish)
+\begin{DoxyCompactList}\small\item\em Сравнивает Dish.\+name и self.\+search\+\_\+string с помощью Sequence\+Mather() \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ threshold}
+\item 
+\textbf{ search\+\_\+string}
+\item 
+\textbf{ address\+\_\+flg}
+\item 
+\textbf{ ratio}
+\item 
+\textbf{ dish\+\_\+list}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс реализует функционал поиска и сортировки блюд по строке поиска, фильтрам блюда, рекомендациям конткретному пользователю и указанному адресу 
+
+Definition at line \textbf{ 7} of file \textbf{ search.\+py}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_ab7f870616fc70cb2a4d1199a60eb6452} 
+\index{bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}}
+\doxysubsubsection{\_\_init\_\_()}
+{\footnotesize\ttfamily  None bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Dish.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{types = {\ttfamily None},  }\item[{}]{subtypes = {\ttfamily None},  }\item[{}]{search\+\_\+string = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{address\+\_\+flg = {\ttfamily 0},  }\item[{}]{user\+\_\+id = {\ttfamily None},  }\item[{}]{ratio = {\ttfamily 1},  }\item[{}]{threshold = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Инициализирует класс списком блюд, делая запрос в базу данных 
+
+
+\begin{DoxyParams}{Parameters}
+{\em types=\mbox{[}$\,$\mbox{]}} & list of int \\
+\hline
+{\em subtypes=\mbox{[}$\,$\mbox{]}} & list of int \\
+\hline
+{\em search\+\_\+string=\textquotesingle{}\textquotesingle{}} & str \\
+\hline
+{\em adress\+\_\+flg=0} & int \\
+\hline
+{\em user\+\_\+id=\+None} & int \\
+\hline
+{\em ratio} & float (во сколько раз рекомендательная система важнее совпадения строк) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 13} of file \textbf{ search.\+py}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_a65b19a56e1f65b7ed560f7e5ddef877e} 
+\index{bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}!get@{get}}
+\index{get@{get}!bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}}
+\doxysubsubsection{get()}
+{\footnotesize\ttfamily  list bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Dish.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{slice }\end{DoxyParamCaption})}
+
+
+
+Сортирует список объектов класса Dish. 
+
+\begin{DoxyReturn}{Returns}
+dish\+\_\+list list of Dish 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 59} of file \textbf{ search.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_afbe65b7e09fdd36049dbfc568a9a3db9} 
+\index{bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}!recommend\_scorer@{recommend\_scorer}}
+\index{recommend\_scorer@{recommend\_scorer}!bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}}
+\doxysubsubsection{recommend\_scorer()}
+{\footnotesize\ttfamily  float bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Dish.\+recommend\+\_\+scorer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dish }\end{DoxyParamCaption})}
+
+
+
+Предсказывает вес нравящности для блюда и пользователя. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dish} & Dish \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+weight double 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 70} of file \textbf{ search.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_a214893e087146660c2e9c28ce0f3610c} 
+\index{bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}!score@{score}}
+\index{score@{score}!bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}}
+\doxysubsubsection{score()}
+{\footnotesize\ttfamily  float bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Dish.\+score (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dish }\end{DoxyParamCaption})}
+
+
+
+Сопосталяет каждому объекту класса Dish число, по которому будет осуществлена сортировка 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dish} & Dish \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+score double 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 48} of file \textbf{ search.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_ac0193c57b7c6f6e00d208737d2cf8e08} 
+\index{bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}!seq\_match\_scorer@{seq\_match\_scorer}}
+\index{seq\_match\_scorer@{seq\_match\_scorer}!bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}}
+\doxysubsubsection{seq\_match\_scorer()}
+{\footnotesize\ttfamily  float bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Dish.\+seq\+\_\+match\+\_\+scorer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dish }\end{DoxyParamCaption})}
+
+
+
+Сравнивает Dish.\+name и self.\+search\+\_\+string с помощью Sequence\+Mather() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dish} & Dish \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sm\+\_\+score float 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 78} of file \textbf{ search.\+py}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_a127bbfb5c6b64d3be69cf35a564c6a3e} 
+\index{bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}!address\_flg@{address\_flg}}
+\index{address\_flg@{address\_flg}!bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}}
+\doxysubsubsection{address\_flg}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Dish.\+address\+\_\+flg}
+
+
+
+Definition at line \textbf{ 30} of file \textbf{ search.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_ae43f9d32132f76eab0278b8df4462071} 
+\index{bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}!dish\_list@{dish\_list}}
+\index{dish\_list@{dish\_list}!bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}}
+\doxysubsubsection{dish\_list}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Dish.\+dish\+\_\+list}
+
+
+
+Definition at line \textbf{ 39} of file \textbf{ search.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_a2b4f1c0ced07f7a4d6b9077ef2495224} 
+\index{bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}!ratio@{ratio}}
+\index{ratio@{ratio}!bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}}
+\doxysubsubsection{ratio}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Dish.\+ratio}
+
+
+
+Definition at line \textbf{ 35} of file \textbf{ search.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_a197d4ded41fbe1069a823bc3b6c117ca} 
+\index{bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}!search\_string@{search\_string}}
+\index{search\_string@{search\_string}!bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}}
+\doxysubsubsection{search\_string}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Dish.\+search\+\_\+string}
+
+
+
+Definition at line \textbf{ 29} of file \textbf{ search.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_ac9cbb3ffcf81339ac4f642304f8216b7} 
+\index{bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}!threshold@{threshold}}
+\index{threshold@{threshold}!bym.BYM\_project.main\_app.search.SearchDish@{bym.BYM\_project.main\_app.search.SearchDish}}
+\doxysubsubsection{threshold}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Dish.\+threshold}
+
+
+
+Definition at line \textbf{ 24} of file \textbf{ search.\+py}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ search.\+py}\end{DoxyCompactItemize}

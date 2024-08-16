@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::cart::Cart</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1a6dadcf33fdddf4dec707ef8eb23a9546" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.cart.Cart::order_obj</definition>
+        <argsstring></argsstring>
+        <name>order_obj</name>
+        <qualifiedname>bym.BYM_project.main_app.cart.Cart.order_obj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cart.py" line="12" column="1" bodyfile="cart.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1aae1ee7fe39927e772c7d309596b76b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.cart.Cart.__init__</definition>
+        <argsstring>(self, user_id)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>bym.BYM_project.main_app.cart.Cart.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>user_id</type>
+          <defname>user_id</defname>
+        </param>
+        <briefdescription>
+<para>Находит текущий Order по user_id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cart.py" line="8" column="1" bodyfile="cart.py" bodystart="8" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1a141414bf901a7f709c1236868d0c455e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.cart.Cart.change_order</definition>
+        <argsstring>(self, dish_id, add_flg)</argsstring>
+        <name>change_order</name>
+        <qualifiedname>bym.BYM_project.main_app.cart.Cart.change_order</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dish_id</type>
+          <defname>dish_id</defname>
+        </param>
+        <param>
+          <type>add_flg</type>
+          <defname>add_flg</defname>
+        </param>
+        <briefdescription>
+<para>Изменяем корзину блюд пользователя - или добавить (+1), или убрать (-1) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dish_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>add_flg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool - True прибавление, False вычитание </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cart.py" line="14" column="1" bodyfile="cart.py" bodystart="14" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1a885a19088c15f1ad61b667bf2ea88324" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.cart.Cart.get_order_array</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_order_array</name>
+        <qualifiedname>bym.BYM_project.main_app.cart.Cart.get_order_array</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Возвращает текущую корзину блюд пользователя </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>order_array [{&quot;dish&quot;: Dish, &quot;amount&quot;: int}, ...] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cart.py" line="32" column="1" bodyfile="cart.py" bodystart="32" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1af16ee5c19236a81b6ebb9412ea6aaf56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.cart.Cart.get_categories_list</definition>
+        <argsstring>(self, slice)</argsstring>
+        <name>get_categories_list</name>
+        <qualifiedname>bym.BYM_project.main_app.cart.Cart.get_categories_list</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>slice</type>
+          <defname>slice</defname>
+        </param>
+        <briefdescription>
+<para>Выдает slice наиболие подходящих товаров в каждой категории </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>categories_list[{&quot;category&quot;: string, &quot;category_amount&quot;: int, &quot;category_unit_name&quot;: string, &quot;product_list&quot;: [Product, ...]}, ...] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cart.py" line="103" column="1" bodyfile="cart.py" bodystart="103" bodyend="122"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1ac4ab133fb38a9416f72aea457b23f8cf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.cart.Cart.get_categories</definition>
+        <argsstring>(order_array)</argsstring>
+        <name>get_categories</name>
+        <qualifiedname>bym.BYM_project.main_app.cart.Cart.get_categories</qualifiedname>
+        <param>
+          <type>order_array</type>
+          <defname>order_array</defname>
+        </param>
+        <briefdescription>
+<para>Раскладывает карзину пользователя (в виде блюд), на товары если в рецептах товары в разных единицах измерения приводит к единой </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>order_array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[{&quot;dish&quot;: Dish, &quot;amount&quot;: int}, ...] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>categories [{&quot;category&quot;: Category, &quot;amount&quot;: float, &quot;unit_name&quot;: string}, ...] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cart.py" line="45" column="1" bodyfile="cart.py" bodystart="45" bodyend="102"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс для работы с карзиной пользователья </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cart.py" line="5" column="1" bodyfile="cart.py" bodystart="5" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1aae1ee7fe39927e772c7d309596b76b8e" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::cart::Cart</scope><name>__init__</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1a141414bf901a7f709c1236868d0c455e" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::cart::Cart</scope><name>change_order</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1ac4ab133fb38a9416f72aea457b23f8cf" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::cart::Cart</scope><name>get_categories</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1af16ee5c19236a81b6ebb9412ea6aaf56" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::cart::Cart</scope><name>get_categories_list</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1a885a19088c15f1ad61b667bf2ea88324" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::cart::Cart</scope><name>get_order_array</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1cart_1_1_cart_1a6dadcf33fdddf4dec707ef8eb23a9546" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::cart::Cart</scope><name>order_obj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

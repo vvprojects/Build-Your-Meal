@@ -1,0 +1,159 @@
+\doxysection{search.\+py}
+\label{search_8py_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{from}\ main\_app.models\ \textcolor{keyword}{import}\ Dish,\ Category,\ Product}
+\DoxyCodeLine{00002\ \textcolor{keyword}{from}\ difflib\ \textcolor{keyword}{import}\ SequenceMatcher}
+\DoxyCodeLine{00003\ \textcolor{keyword}{from}\ django.db.models\ \textcolor{keyword}{import}\ Q}
+\DoxyCodeLine{00004\ \textcolor{keyword}{from}\ main\_app.recommendation\_system\ \textcolor{keyword}{import}\ RecommendationSystem}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }SearchDish:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00009\ \textcolor{stringliteral}{\ \ \ \ Класс\ реализует\ функционал\ поиска\ и\ сортировки\ блюд\ по\ строке\ поиска,\ фильтрам\ блюда,}}
+\DoxyCodeLine{00010\ \textcolor{stringliteral}{\ \ \ \ рекомендациям\ конткретному\ пользователю\ и\ указанному\ адресу}}
+\DoxyCodeLine{00011\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{def\ }\_\_init\_\_(self,\ types=None,\ subtypes=None,\ search\_string='',\ address\_flg=0,\ user\_id=None,\ ratio=1,\ threshold=0)\ -\/>\ None:}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!\ \ \ \ }}
+\DoxyCodeLine{00015\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Инициализирует\ класс\ списком\ блюд,\ делая\ запрос\ в\ базу\ данных}}
+\DoxyCodeLine{00016\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ types=[]\ list\ of\ int}}
+\DoxyCodeLine{00017\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ subtypes=[]\ list\ of\ int}}
+\DoxyCodeLine{00018\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ search\_string=''\ str}}
+\DoxyCodeLine{00019\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ adress\_flg=0\ int}}
+\DoxyCodeLine{00020\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ user\_id=None\ int}}
+\DoxyCodeLine{00021\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ ratio\ float\ (во\ сколько\ раз\ рекомендательная\ система\ важнее\ совпадения\ строк)}}
+\DoxyCodeLine{00022\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ self.threshold\ =\ threshold}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ subtypes\ \textcolor{keywordflow}{is}\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ subtypes\ =\ []}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ types\ \textcolor{keywordflow}{is}\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ types\ =\ []}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ self.search\_string\ =\ search\_string}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ self.address\_flg\ =\ address\_flg}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ratio\ <\ 0:}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{raise}\ ValueError(\textcolor{stringliteral}{"{}Ratio\ is\ less\ than\ 0"{}})}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ self.ratio\ =\ ratio}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ subtypes.\_\_len\_\_():}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ types.\_\_len\_\_():}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self.dish\_list\ =\ Dish.objects.filter(Q(subtype\_\_id\_\_in=subtypes)\ |\ Q(subtype\_\_type\_\_id\_\_in=types))}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self.dish\_list\ =\ Dish.objects.filter(subtype\_\_id\_\_in=subtypes)}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ types.\_\_len\_\_():}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self.dish\_list\ =\ Dish.objects.filter(subtype\_\_type\_\_id\_\_in=types)}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self.dish\_list\ =\ Dish.objects.all()}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{def\ }score(self,\ dish)\ -\/>\ float:}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00050\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Сопосталяет\ каждому\ объекту\ класса\ Dish\ число,\ по\ которому\ будет\ осуществлена\ сортировка}}
+\DoxyCodeLine{00051\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ dish\ Dish}}
+\DoxyCodeLine{00052\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ score\ double}}
+\DoxyCodeLine{00053\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ sm\_score\ =\ self.seq\_match\_scorer(dish)}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ rec\_score\ =\ self.recommend\_scorer(dish)}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ score\ =\ sm\_score\ /\ (self.ratio\ +\ 1)\ +\ rec\_score\ *\ self.ratio\ /\ (self.ratio\ +\ 1)}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ score}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{def\ }get(self,\ slice)\ -\/>\ list:}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00061\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Сортирует\ список\ объектов\ класса\ Dish}}
+\DoxyCodeLine{00062\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ dish\_list\ list\ of\ Dish}}
+\DoxyCodeLine{00063\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ new\ =\ sorted(self.dish\_list,\ key=self.score,\ reverse=\textcolor{keyword}{True})}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ range(len(new)):}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ self.score(new[i])\ <\ self.threshold:}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ new[:min(i,\ slice)]}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ new[:slice]}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{def\ }recommend\_scorer(self,\ dish)\ -\/>\ float:}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!\ Предсказывает\ вес\ нравящности\ для\ блюда\ и\ пользователя.}}
+\DoxyCodeLine{00072\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ dish\ Dish}}
+\DoxyCodeLine{00073\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ weight\ double}}
+\DoxyCodeLine{00074\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{def\ }seq\_match\_scorer(self,\ dish)\ -\/>\ float:}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00080\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Сравнивает\ Dish.name\ и\ self.search\_string\ с\ помощью\ SequenceMather()}}
+\DoxyCodeLine{00081\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ dish\ Dish}}
+\DoxyCodeLine{00082\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ sm\_score\ float}}
+\DoxyCodeLine{00083\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ dish\ \textcolor{keywordflow}{is}\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{keywordflow}{not}\ dish.name\ \textcolor{keywordflow}{or}\ dish.name\ \textcolor{keywordflow}{is}\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{keywordflow}{not}\ self.search\_string:}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ s\ =\ SequenceMatcher(a=self.search\_string,\ b=dish.name)}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ sm\_score\ =\ s.ratio()}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ sm\_score}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \textcolor{keyword}{class\ }SearchProduct:}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00097\ \textcolor{stringliteral}{\ \ \ \ 1.\ Загружаем\ из\ бд\ список\ всех\ спаршенных\ продуктов}}
+\DoxyCodeLine{00098\ \textcolor{stringliteral}{\ \ \ \ 2.\ Вызов\ функции\ SequenceMatch()\ (взвешиваем\ каждый\ product.name\ относительно\ category.name\ по\ похожести)}}
+\DoxyCodeLine{00099\ \textcolor{stringliteral}{\ \ \ \ 3.\ Сортируем\ продукты\ по\ убыванию\ весов\ и\ эффективности\ покупки}}
+\DoxyCodeLine{00100\ \textcolor{stringliteral}{\ \ \ \ @param\ category\_id\ int}}
+\DoxyCodeLine{00101\ \textcolor{stringliteral}{\ \ \ \ @return\ products\ [[Product\ obj,\ ...],\ [Category.name,\ [image1,\ ...]]]]}}
+\DoxyCodeLine{00102\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{def\ }\_\_init\_\_(self,\ category\_id,\ user\_id,\ threshold=0.7)\ -\/>\ None:}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00106\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ category\_id\ int}}
+\DoxyCodeLine{00107\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ self.category\ =\ Category.objects.get(id=category\_id)}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ self.products\ =\ Product.objects.filter(user\_\_id=user\_id)}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ self.threshold\ =\ threshold}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keyword}{def\ }score(self,\ product)\ -\/>\ float:}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00115\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Сопосталяет\ каждому\ объекту\ класса\ Product\ число,\ по\ которому\ будет\ осуществлена\ сортировка}}
+\DoxyCodeLine{00116\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ product\ Product}}
+\DoxyCodeLine{00117\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ score\ double}}
+\DoxyCodeLine{00118\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ sm\_score\ =\ self.seq\_match\_scorer(product)}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ sm\_score}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keyword}{def\ }get(self)\ -\/>\ list:}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00124\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Сортирует\ список\ объектов\ класса\ Product}}
+\DoxyCodeLine{00125\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ products\ list\ of\ Product}}
+\DoxyCodeLine{00126\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ new\ =\ sorted(self.products,\ key=self.score,\ reverse=\textcolor{keyword}{True})}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ range(len(new)):}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ self.score(new[i])\ <\ self.threshold:}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ new[:i]}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ new}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keyword}{def\ }seq\_match\_scorer(self,\ product)\ -\/>\ float:}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00135\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Сравнивает\ Product.name\ и\ self.category.name\ с\ помощью\ SequenceMather()}}
+\DoxyCodeLine{00136\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ product\ Product}}
+\DoxyCodeLine{00137\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ sm\_score\ float}}
+\DoxyCodeLine{00138\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ product\ \textcolor{keywordflow}{is}\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{keywordflow}{not}\ product.name\ \textcolor{keywordflow}{or}\ product.name\ \textcolor{keywordflow}{is}\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{keywordflow}{not}\ self.category.name\ \textcolor{keywordflow}{or}\ self.category.name\ \textcolor{keywordflow}{is}\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ s\ =\ SequenceMatcher(a=self.category.name,\ b=product.name)}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ sm\_score\ =\ s.ratio()}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ sm\_score}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keyword}{def\ }get\_category(self)\ -\/>\ Category:}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!}}
+\DoxyCodeLine{00151\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Возвращает\ self.category}}
+\DoxyCodeLine{00152\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ category\ Category}}
+\DoxyCodeLine{00153\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self.category}
+
+\end{DoxyCode}

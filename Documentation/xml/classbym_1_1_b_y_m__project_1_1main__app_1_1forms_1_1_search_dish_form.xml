@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1forms_1_1_search_dish_form" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::forms::SearchDishForm</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">forms.Form</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1forms_1_1_search_dish_form_1a9e939b7bf2342aee35e263c18ed54cc1" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.forms.SearchDishForm::search_string</definition>
+        <argsstring></argsstring>
+        <name>search_string</name>
+        <qualifiedname>bym.BYM_project.main_app.forms.SearchDishForm.search_string</qualifiedname>
+        <initializer>=  forms.CharField(widget=forms.TextInput(attrs={
+        &quot;id&quot;: &quot;search-input-id&quot;,
+        &quot;class&quot;: &quot;i1ypu1yl&quot;,
+        &quot;value&quot;: &quot;&quot;,
+        &quot;aria-label&quot;: &quot;Поиск&quot;,
+        &quot;autocomplete&quot;: &quot;off&quot;,
+        &quot;placeholder&quot;: &quot;Найти блюдо&quot;
+    }))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="forms.py" line="5" column="1" bodyfile="forms.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.forms.SearchDishForm</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1forms_1_1_search_dish_form"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>forms::Form</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.forms.SearchDishForm</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1forms_1_1_search_dish_form"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>forms::Form</label>
+      </node>
+    </collaborationgraph>
+    <location file="forms.py" line="4" column="1" bodyfile="forms.py" bodystart="4" bodyend="13"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1forms_1_1_search_dish_form_1a9e939b7bf2342aee35e263c18ed54cc1" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::forms::SearchDishForm</scope><name>search_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

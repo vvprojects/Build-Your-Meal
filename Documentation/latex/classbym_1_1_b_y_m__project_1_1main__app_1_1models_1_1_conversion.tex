@@ -1,0 +1,118 @@
+\doxysection{bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Conversion Class Reference}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion}\index{bym.BYM\_project.main\_app.models.Conversion@{bym.BYM\_project.main\_app.models.Conversion}}
+
+
+коэффициенты для перевода единиц измерения ~\newline
+ coefficient – число на которое нужно умножить что бы перевести from\+\_\+unit\+\_\+id в to\+\_\+unit\+\_\+id ~\newline
+ category\+\_\+id – категория для которой выполняется перевод (очевидно что коэффициент для перевода штук в граммы для помидоров и огурцов отличается) ~\newline
+ from\+\_\+unit\+\_\+id– единица измерения из которой выполняется перевод ~\newline
+ to\+\_\+unit\+\_\+id – единица измерения в которую выполняется перевод ~\newline
+  
+
+
+Inheritance diagram for bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Conversion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ Meta}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ category}
+\item 
+\textbf{ Category}
+\item 
+\textbf{ on\+\_\+delete}
+\item 
+\textbf{ from\+\_\+unit} = models.\+Foreign\+Key(\textbf{ Unit\+Of\+Measure}, related\+\_\+name=\textquotesingle{}from\+\_\+unit\textquotesingle{}, \textbf{ on\+\_\+delete}=models.\+CASCADE)
+\item 
+\textbf{ to\+\_\+unit} = models.\+Foreign\+Key(\textbf{ Unit\+Of\+Measure}, related\+\_\+name=\textquotesingle{}to\+\_\+unit\textquotesingle{}, null=True, blank=True, \textbf{ on\+\_\+delete}=models.\+CASCADE)
+\item 
+\textbf{ coefficient} = models.\+Decimal\+Field(max\+\_\+digits=4 + 4, decimal\+\_\+places=4, default=1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+коэффициенты для перевода единиц измерения ~\newline
+ coefficient – число на которое нужно умножить что бы перевести from\+\_\+unit\+\_\+id в to\+\_\+unit\+\_\+id ~\newline
+ category\+\_\+id – категория для которой выполняется перевод (очевидно что коэффициент для перевода штук в граммы для помидоров и огурцов отличается) ~\newline
+ from\+\_\+unit\+\_\+id– единица измерения из которой выполняется перевод ~\newline
+ to\+\_\+unit\+\_\+id – единица измерения в которую выполняется перевод ~\newline
+ 
+
+Definition at line \textbf{ 170} of file \textbf{ models.\+py}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_ad77672c4eab4f735b1ca2bf26ca85628} 
+\index{bym.BYM\_project.main\_app.models.Conversion@{bym.BYM\_project.main\_app.models.Conversion}!category@{category}}
+\index{category@{category}!bym.BYM\_project.main\_app.models.Conversion@{bym.BYM\_project.main\_app.models.Conversion}}
+\doxysubsubsection{category}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Conversion.\+category\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 182} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_a17bd76ab340d9237df03889fc9cb3d22} 
+\index{bym.BYM\_project.main\_app.models.Conversion@{bym.BYM\_project.main\_app.models.Conversion}!Category@{Category}}
+\index{Category@{Category}!bym.BYM\_project.main\_app.models.Conversion@{bym.BYM\_project.main\_app.models.Conversion}}
+\doxysubsubsection{Category}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Conversion.\+Category\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 182} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_ad6746dc9010525fa7f784b471148617a} 
+\index{bym.BYM\_project.main\_app.models.Conversion@{bym.BYM\_project.main\_app.models.Conversion}!coefficient@{coefficient}}
+\index{coefficient@{coefficient}!bym.BYM\_project.main\_app.models.Conversion@{bym.BYM\_project.main\_app.models.Conversion}}
+\doxysubsubsection{coefficient}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Conversion.\+coefficient = models.\+Decimal\+Field(max\+\_\+digits=4 + 4, decimal\+\_\+places=4, default=1)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 186} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_ad4acc8777678dd8cba9d6b57081d8fc6} 
+\index{bym.BYM\_project.main\_app.models.Conversion@{bym.BYM\_project.main\_app.models.Conversion}!from\_unit@{from\_unit}}
+\index{from\_unit@{from\_unit}!bym.BYM\_project.main\_app.models.Conversion@{bym.BYM\_project.main\_app.models.Conversion}}
+\doxysubsubsection{from\_unit}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Conversion.\+from\+\_\+unit = models.\+Foreign\+Key(\textbf{ Unit\+Of\+Measure}, related\+\_\+name=\textquotesingle{}from\+\_\+unit\textquotesingle{}, \textbf{ on\+\_\+delete}=models.\+CASCADE)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 183} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_a9a48f7c7f04f14a202d3fe2bb56cd42e} 
+\index{bym.BYM\_project.main\_app.models.Conversion@{bym.BYM\_project.main\_app.models.Conversion}!on\_delete@{on\_delete}}
+\index{on\_delete@{on\_delete}!bym.BYM\_project.main\_app.models.Conversion@{bym.BYM\_project.main\_app.models.Conversion}}
+\doxysubsubsection{on\_delete}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Conversion.\+on\+\_\+delete\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 182} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_a43a4b6d570628ec9d2a306796d089daa} 
+\index{bym.BYM\_project.main\_app.models.Conversion@{bym.BYM\_project.main\_app.models.Conversion}!to\_unit@{to\_unit}}
+\index{to\_unit@{to\_unit}!bym.BYM\_project.main\_app.models.Conversion@{bym.BYM\_project.main\_app.models.Conversion}}
+\doxysubsubsection{to\_unit}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Conversion.\+to\+\_\+unit = models.\+Foreign\+Key(\textbf{ Unit\+Of\+Measure}, related\+\_\+name=\textquotesingle{}to\+\_\+unit\textquotesingle{}, null=True, blank=True, \textbf{ on\+\_\+delete}=models.\+CASCADE)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 184} of file \textbf{ models.\+py}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ models.\+py}\end{DoxyCompactItemize}

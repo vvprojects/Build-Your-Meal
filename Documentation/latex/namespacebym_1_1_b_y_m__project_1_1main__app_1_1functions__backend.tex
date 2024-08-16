@@ -1,0 +1,150 @@
+\doxysection{bym.\+BYM\+\_\+project.\+main\+\_\+app.\+functions\+\_\+backend Namespace Reference}
+\label{namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend}\index{bym.BYM\_project.main\_app.functions\_backend@{bym.BYM\_project.main\_app.functions\_backend}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ start\+\_\+session} (request)
+\begin{DoxyCompactList}\small\item\em Начало сессии с пользователем и создание его кортежа в бд по session\+\_\+id. \end{DoxyCompactList}\item 
+\textbf{ get\+\_\+dish\+\_\+types} ()
+\begin{DoxyCompactList}\small\item\em Запрос в бд на получение типов блюд и соответстующих им под типов \end{DoxyCompactList}\item 
+\textbf{ get\+\_\+particular\+\_\+dish} (dish\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Возвращает конкретное блюдо, стадии его приготовления и необходимые игридиенты \end{DoxyCompactList}\item 
+\textbf{ string\+\_\+to\+\_\+minutes} (string)
+\begin{DoxyCompactList}\small\item\em Возвращает количество минут в строке Варианты входа\+: \textquotesingle{}n часов\textquotesingle{}, \textquotesingle{}n минут\textquotesingle{}, \textquotesingle{}n часов k минут\textquotesingle{}. \end{DoxyCompactList}\item 
+\textbf{ convert\+\_\+fraction} (string)
+\begin{DoxyCompactList}\small\item\em Возвращает float из строки с числом \end{DoxyCompactList}\item 
+\textbf{ number\+\_\+and\+\_\+measure} (string)
+\begin{DoxyCompactList}\small\item\em Возвращает по строке количества продукта число + единицу измерения в начальной форме \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\label{namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_a723d59131bb3c4986041292c982b118f} 
+\index{bym.BYM\_project.main\_app.functions\_backend@{bym.BYM\_project.main\_app.functions\_backend}!convert\_fraction@{convert\_fraction}}
+\index{convert\_fraction@{convert\_fraction}!bym.BYM\_project.main\_app.functions\_backend@{bym.BYM\_project.main\_app.functions\_backend}}
+\doxysubsubsection{convert\_fraction()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+functions\+\_\+backend.\+convert\+\_\+fraction (\begin{DoxyParamCaption}\item[{}]{string }\end{DoxyParamCaption})}
+
+
+
+Возвращает float из строки с числом 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 68} of file \textbf{ functions\+\_\+backend.\+py}.
+
+\label{namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_acec8d87adc7236e231b7ac0bd7e395fa} 
+\index{bym.BYM\_project.main\_app.functions\_backend@{bym.BYM\_project.main\_app.functions\_backend}!get\_dish\_types@{get\_dish\_types}}
+\index{get\_dish\_types@{get\_dish\_types}!bym.BYM\_project.main\_app.functions\_backend@{bym.BYM\_project.main\_app.functions\_backend}}
+\doxysubsubsection{get\_dish\_types()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+functions\+\_\+backend.\+get\+\_\+dish\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Запрос в бд на получение типов блюд и соответстующих им под типов 
+
+\begin{DoxyReturn}{Returns}
+dict \{type\+:[subtype,...]\} 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 21} of file \textbf{ functions\+\_\+backend.\+py}.
+
+\label{namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_acc450f9517914ab71f0b81484e45337d} 
+\index{bym.BYM\_project.main\_app.functions\_backend@{bym.BYM\_project.main\_app.functions\_backend}!get\_particular\_dish@{get\_particular\_dish}}
+\index{get\_particular\_dish@{get\_particular\_dish}!bym.BYM\_project.main\_app.functions\_backend@{bym.BYM\_project.main\_app.functions\_backend}}
+\doxysubsubsection{get\_particular\_dish()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+functions\+\_\+backend.\+get\+\_\+particular\+\_\+dish (\begin{DoxyParamCaption}\item[{}]{dish\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Возвращает конкретное блюдо, стадии его приготовления и необходимые игридиенты 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dish\+\_\+id} & int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dish Dish 
+
+cooking\+\_\+stages [Cooking\+Stage,...] 
+
+ingredients [\{\textquotesingle{}name\textquotesingle{}\+:string, amount\+:int\}] -\/ список ингридиентов -\/ название категории их кол-\/во 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 32} of file \textbf{ functions\+\_\+backend.\+py}.
+
+\label{namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_a4a88e8eaaa6f0e827859fc69485a0f3f} 
+\index{bym.BYM\_project.main\_app.functions\_backend@{bym.BYM\_project.main\_app.functions\_backend}!number\_and\_measure@{number\_and\_measure}}
+\index{number\_and\_measure@{number\_and\_measure}!bym.BYM\_project.main\_app.functions\_backend@{bym.BYM\_project.main\_app.functions\_backend}}
+\doxysubsubsection{number\_and\_measure()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+functions\+\_\+backend.\+number\+\_\+and\+\_\+measure (\begin{DoxyParamCaption}\item[{}]{string }\end{DoxyParamCaption})}
+
+
+
+Возвращает по строке количества продукта число + единицу измерения в начальной форме 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+
+string 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 79} of file \textbf{ functions\+\_\+backend.\+py}.
+
+\label{namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_a8c445e64e551d7b0b43b70a843c62965} 
+\index{bym.BYM\_project.main\_app.functions\_backend@{bym.BYM\_project.main\_app.functions\_backend}!start\_session@{start\_session}}
+\index{start\_session@{start\_session}!bym.BYM\_project.main\_app.functions\_backend@{bym.BYM\_project.main\_app.functions\_backend}}
+\doxysubsubsection{start\_session()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+functions\+\_\+backend.\+start\+\_\+session (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+
+
+Начало сессии с пользователем и создание его кортежа в бд по session\+\_\+id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Http\+Request \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 7} of file \textbf{ functions\+\_\+backend.\+py}.
+
+\label{namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_a08d73957bbfccb8e19348c923f80fb53} 
+\index{bym.BYM\_project.main\_app.functions\_backend@{bym.BYM\_project.main\_app.functions\_backend}!string\_to\_minutes@{string\_to\_minutes}}
+\index{string\_to\_minutes@{string\_to\_minutes}!bym.BYM\_project.main\_app.functions\_backend@{bym.BYM\_project.main\_app.functions\_backend}}
+\doxysubsubsection{string\_to\_minutes()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+functions\+\_\+backend.\+string\+\_\+to\+\_\+minutes (\begin{DoxyParamCaption}\item[{}]{string }\end{DoxyParamCaption})}
+
+
+
+Возвращает количество минут в строке Варианты входа\+: \textquotesingle{}n часов\textquotesingle{}, \textquotesingle{}n минут\textquotesingle{}, \textquotesingle{}n часов k минут\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 52} of file \textbf{ functions\+\_\+backend.\+py}.
+

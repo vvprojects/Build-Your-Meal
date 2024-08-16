@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views" xml:lang="en-US">
+<title>bym.BYM_project.main_app.views Namespace Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.views</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_change_cart_api">ChangeCartApi</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_home_page_api">HomePageApi</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_parse_products_api">ParseProductsApi</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api">SearchDishApi</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view">UserApiView</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1af62b4a87706c5fb300e65530e91865d5">HomePageView</link> (request)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab171977260210f1eb95ecc71c06ba531">Dish</link> (request, id)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a8fc8f72e5badf96f335b79fed3122955">FinalPage</link> (request)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab62631df59f779ad4e58eb58d2b98428">my_view</link> (request)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a4d8aaf2a4449720f8eb2e47a527692fc">update_counter</link> (request)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a1874c4140cef5dfd5dec770d61515c23">parse_adress</link> (request)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab171977260210f1eb95ecc71c06ba531"/><section>
+    <title>Dish()</title>
+<indexterm><primary>Dish</primary><secondary>bym.BYM_project.main_app.views</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.views</primary><secondary>Dish</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.views.Dish ( request,  id)</computeroutput></para><para>
+Definition at line <link linkend="_views_8py_source_1l00044">44</link> of file <link linkend="_views_8py_source">views.py</link>.</para>
+</section>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a8fc8f72e5badf96f335b79fed3122955"/><section>
+    <title>FinalPage()</title>
+<indexterm><primary>FinalPage</primary><secondary>bym.BYM_project.main_app.views</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.views</primary><secondary>FinalPage</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.views.FinalPage ( request)</computeroutput></para><para>
+Definition at line <link linkend="_views_8py_source_1l00071">71</link> of file <link linkend="_views_8py_source">views.py</link>.</para>
+</section>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1af62b4a87706c5fb300e65530e91865d5"/><section>
+    <title>HomePageView()</title>
+<indexterm><primary>HomePageView</primary><secondary>bym.BYM_project.main_app.views</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.views</primary><secondary>HomePageView</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.views.HomePageView ( request)</computeroutput></para><para>
+Definition at line <link linkend="_views_8py_source_1l00018">18</link> of file <link linkend="_views_8py_source">views.py</link>.</para>
+</section>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab62631df59f779ad4e58eb58d2b98428"/><section>
+    <title>my_view()</title>
+<indexterm><primary>my_view</primary><secondary>bym.BYM_project.main_app.views</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.views</primary><secondary>my_view</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.views.my_view ( request)</computeroutput></para><para>
+Definition at line <link linkend="_views_8py_source_1l00089">89</link> of file <link linkend="_views_8py_source">views.py</link>.</para>
+</section>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a1874c4140cef5dfd5dec770d61515c23"/><section>
+    <title>parse_adress()</title>
+<indexterm><primary>parse_adress</primary><secondary>bym.BYM_project.main_app.views</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.views</primary><secondary>parse_adress</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.views.parse_adress ( request)</computeroutput></para><para>
+Definition at line <link linkend="_views_8py_source_1l00104">104</link> of file <link linkend="_views_8py_source">views.py</link>.</para>
+</section>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a4d8aaf2a4449720f8eb2e47a527692fc"/><section>
+    <title>update_counter()</title>
+<indexterm><primary>update_counter</primary><secondary>bym.BYM_project.main_app.views</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.views</primary><secondary>update_counter</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.views.update_counter ( request)</computeroutput></para><para>
+Definition at line <link linkend="_views_8py_source_1l00095">95</link> of file <link linkend="_views_8py_source">views.py</link>.</para>
+</section>
+</section>
+</section>

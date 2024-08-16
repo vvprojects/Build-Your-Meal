@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::Country::Meta</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta_1a8da9c506d5007f4e82e8556fee272dac" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str bym.BYM_project.main_app.models.Country.Meta::verbose_name</definition>
+        <argsstring></argsstring>
+        <name>verbose_name</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Country.Meta.verbose_name</qualifiedname>
+        <initializer>=  &apos;Страна&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="57" column="1" bodyfile="models.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta_1aff2d8515aba73497fc125e8d32e87707" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str bym.BYM_project.main_app.models.Country.Meta::verbose_name_plural</definition>
+        <argsstring></argsstring>
+        <name>verbose_name_plural</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Country.Meta.verbose_name_plural</qualifiedname>
+        <initializer>=  &apos;Страны&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="58" column="1" bodyfile="models.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="models.py" line="56" column="1" bodyfile="models.py" bodystart="56" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta_1a8da9c506d5007f4e82e8556fee272dac" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Country::Meta</scope><name>verbose_name</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta_1aff2d8515aba73497fc125e8d32e87707" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Country::Meta</scope><name>verbose_name_plural</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views" kind="namespace" language="Python">
+    <compoundname>bym::BYM_project::main_app::views</compoundname>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_change_cart_api" prot="public">bym::BYM_project::main_app::views::ChangeCartApi</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_home_page_api" prot="public">bym::BYM_project::main_app::views::HomePageApi</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_parse_products_api" prot="public">bym::BYM_project::main_app::views::ParseProductsApi</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_search_dish_api" prot="public">bym::BYM_project::main_app::views::SearchDishApi</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view" prot="public">bym::BYM_project::main_app::views::UserApiView</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1af62b4a87706c5fb300e65530e91865d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.views.HomePageView</definition>
+        <argsstring>(request)</argsstring>
+        <name>HomePageView</name>
+        <qualifiedname>bym.BYM_project.main_app.views.HomePageView</qualifiedname>
+        <param>
+          <type>request</type>
+          <defname>request</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="views.py" line="18" column="1" bodyfile="views.py" bodystart="18" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab171977260210f1eb95ecc71c06ba531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.views.Dish</definition>
+        <argsstring>(request, id)</argsstring>
+        <name>Dish</name>
+        <qualifiedname>bym.BYM_project.main_app.views.Dish</qualifiedname>
+        <param>
+          <type>request</type>
+          <defname>request</defname>
+        </param>
+        <param>
+          <type>id</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="views.py" line="44" column="1" bodyfile="views.py" bodystart="44" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a8fc8f72e5badf96f335b79fed3122955" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.views.FinalPage</definition>
+        <argsstring>(request)</argsstring>
+        <name>FinalPage</name>
+        <qualifiedname>bym.BYM_project.main_app.views.FinalPage</qualifiedname>
+        <param>
+          <type>request</type>
+          <defname>request</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="views.py" line="71" column="1" bodyfile="views.py" bodystart="71" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1ab62631df59f779ad4e58eb58d2b98428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.views.my_view</definition>
+        <argsstring>(request)</argsstring>
+        <name>my_view</name>
+        <qualifiedname>bym.BYM_project.main_app.views.my_view</qualifiedname>
+        <param>
+          <type>request</type>
+          <defname>request</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="views.py" line="89" column="1" bodyfile="views.py" bodystart="89" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a4d8aaf2a4449720f8eb2e47a527692fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.views.update_counter</definition>
+        <argsstring>(request)</argsstring>
+        <name>update_counter</name>
+        <qualifiedname>bym.BYM_project.main_app.views.update_counter</qualifiedname>
+        <param>
+          <type>request</type>
+          <defname>request</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="views.py" line="95" column="1" bodyfile="views.py" bodystart="95" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1views_1a1874c4140cef5dfd5dec770d61515c23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.views.parse_adress</definition>
+        <argsstring>(request)</argsstring>
+        <name>parse_adress</name>
+        <qualifiedname>bym.BYM_project.main_app.views.parse_adress</qualifiedname>
+        <param>
+          <type>request</type>
+          <defname>request</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="views.py" line="104" column="1" bodyfile="views.py" bodystart="104" bodyend="118"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="views.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

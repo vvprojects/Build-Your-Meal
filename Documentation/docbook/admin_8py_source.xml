@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_admin_8py_source" xml:lang="en-US">
+<title>admin.py</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_admin_8py_source_1l00001"/><link linkend="_namespacebym">00001</link> <emphasis role="keyword">from</emphasis>&#32;django.contrib&#32;<emphasis role="keyword">import</emphasis>&#32;admin
+<anchor xml:id="_admin_8py_source_1l00002"/>00002 
+<anchor xml:id="_admin_8py_source_1l00003"/>00003 <emphasis role="keyword">from</emphasis>&#32;main_app.models&#32;<emphasis role="keyword">import</emphasis>&#32;User,&#32;Country,&#32;Type,&#32;SubType,&#32;Dish,&#32;CookingStage,&#32;Category,\
+<anchor xml:id="_admin_8py_source_1l00004"/>00004 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;UnitOfMeasure,&#32;Conversion,&#32;DishCategory,&#32;\
+<anchor xml:id="_admin_8py_source_1l00005"/>00005 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Order,&#32;Menu,&#32;Shop,&#32;Product,&#32;ProductLog
+<anchor xml:id="_admin_8py_source_1l00006"/>00006 
+<anchor xml:id="_admin_8py_source_1l00007"/>00007 admin.site.register(User)
+<anchor xml:id="_admin_8py_source_1l00008"/>00008 admin.site.register(Country)
+<anchor xml:id="_admin_8py_source_1l00009"/>00009 admin.site.register(Type)
+<anchor xml:id="_admin_8py_source_1l00010"/>00010 admin.site.register(SubType)
+<anchor xml:id="_admin_8py_source_1l00011"/>00011 admin.site.register(Dish)
+<anchor xml:id="_admin_8py_source_1l00012"/>00012 admin.site.register(CookingStage)
+<anchor xml:id="_admin_8py_source_1l00013"/>00013 admin.site.register(Category)
+<anchor xml:id="_admin_8py_source_1l00014"/>00014 admin.site.register(UnitOfMeasure)
+<anchor xml:id="_admin_8py_source_1l00015"/>00015 admin.site.register(Conversion)
+<anchor xml:id="_admin_8py_source_1l00016"/>00016 admin.site.register(DishCategory)
+<anchor xml:id="_admin_8py_source_1l00017"/>00017 admin.site.register(Order)
+<anchor xml:id="_admin_8py_source_1l00018"/>00018 admin.site.register(Menu)
+<anchor xml:id="_admin_8py_source_1l00019"/>00019 admin.site.register(Shop)
+<anchor xml:id="_admin_8py_source_1l00020"/>00020 admin.site.register(Product)
+<anchor xml:id="_admin_8py_source_1l00021"/>00021 admin.site.register(ProductLog)
+</programlisting></section>

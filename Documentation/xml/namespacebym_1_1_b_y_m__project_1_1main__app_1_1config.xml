@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1config" kind="namespace" language="Python">
+    <compoundname>bym::BYM_project::main_app::config</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1ad2134171b2678db43657ebb4707a71e5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bym::BYM_project::main_app::config.webdriver_name</definition>
+        <argsstring></argsstring>
+        <name>webdriver_name</name>
+        <qualifiedname>bym.BYM_project.main_app.config.webdriver_name</qualifiedname>
+        <initializer>=  os.getenv(&quot;webdriver_name&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="config.py" line="6" column="1" bodyfile="config.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1a33e627ec953d99555066175ad5255567" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list bym::BYM_project::main_app::config.urls_lavka</definition>
+        <argsstring></argsstring>
+        <name>urls_lavka</name>
+        <qualifiedname>bym.BYM_project.main_app.config.urls_lavka</qualifiedname>
+        <initializer>=  [
+    &apos;https://lavka.yandex.ru/10743/category/ovoshchi_griby_i_zelen&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/Frukty_i_yagody&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/milk_products&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/cheese&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/kefir_smetana_tvorog&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/e64b861bd9a34ebc9103dbf15e2d2932&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/molochnoe_dlya_detej&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/hleb&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/vipechka&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/hlebcy&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/beef_pork&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/wurst_all&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/ryba_i_moreprodukty&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/zakuski_i_pashtety&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/morozhenoe&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/pelmeni_i_vareniki&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/frozen_vegetables_and_berries&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/deserty&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/polufabrikaty&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/553b84d49692448bb06588f9d694cbde&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/b9c6c90166f1487888de39b933119747&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/makarony_krupy_muka&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/hlopya_i_myusli&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/oils_sauces_spices&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/coffee_and_cocoa&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/tea&apos;,
+    &apos;https://lavka.yandex.ru/10743/category/91ba4698f47f450087e3e8de50d93a15&apos;
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="config.py" line="8" column="1" bodyfile="config.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="config.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

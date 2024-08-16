@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view" xml:lang="en-US">
+<title>bym.BYM_project.main_app.views.UserApiView Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.views.UserApiView</primary></indexterm>
+<para>Inheritance diagram for bym.BYM_project.main_app.views.UserApiView:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view_1aacb642227e968a27ee2ef74245d562d8">queryset</link> = User.objects.all()</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view_1ab99538f3807467e93d017cf000516cd9">serializer_class</link> = <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer">UserSerializer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_views_8py_source_1l00119">119</link> of file <link linkend="_views_8py_source">views.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view_1aacb642227e968a27ee2ef74245d562d8"/><section>
+    <title>queryset</title>
+<indexterm><primary>queryset</primary><secondary>bym.BYM_project.main_app.views.UserApiView</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.views.UserApiView</primary><secondary>queryset</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.views.UserApiView.queryset = User.objects.all()<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_views_8py_source_1l00120">120</link> of file <link linkend="_views_8py_source">views.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1views_1_1_user_api_view_1ab99538f3807467e93d017cf000516cd9"/><section>
+    <title>serializer_class</title>
+<indexterm><primary>serializer_class</primary><secondary>bym.BYM_project.main_app.views.UserApiView</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.views.UserApiView</primary><secondary>serializer_class</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.views.UserApiView.serializer_class = <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1serializers_1_1_user_serializer">UserSerializer</link><computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_views_8py_source_1l00121">121</link> of file <link linkend="_views_8py_source">views.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_views_8py">views.py</link></section>
+</section>

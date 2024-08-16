@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app" xml:lang="en-US">
+<title>bym.BYM_project.main_app Namespace Reference</title>
+<indexterm><primary>bym.BYM_project.main_app</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1admin">admin</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1apps">apps</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1cart">cart</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1config">config</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions">conversions_functions</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1forms">forms</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend">functions_backend</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1models">models</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1parser">parser</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1recommendation__system">recommendation_system</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1search">search</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1serializers">serializers</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1tests">tests</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1views">views</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::DishCategory::Meta</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta_1a106adcf838c65b717f5afd11c7cb1059" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str bym.BYM_project.main_app.models.DishCategory.Meta::verbose_name</definition>
+        <argsstring></argsstring>
+        <name>verbose_name</name>
+        <qualifiedname>bym.BYM_project.main_app.models.DishCategory.Meta.verbose_name</qualifiedname>
+        <initializer>=  &apos;Продукт в блюде&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="198" column="1" bodyfile="models.py" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta_1aad2adc21c080b9cc65126e81c584ceae" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str bym.BYM_project.main_app.models.DishCategory.Meta::verbose_name_plural</definition>
+        <argsstring></argsstring>
+        <name>verbose_name_plural</name>
+        <qualifiedname>bym.BYM_project.main_app.models.DishCategory.Meta.verbose_name_plural</qualifiedname>
+        <initializer>=  &apos;Продукты в блюдах&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="199" column="1" bodyfile="models.py" bodystart="199" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="models.py" line="197" column="1" bodyfile="models.py" bodystart="197" bodyend="200"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta_1a106adcf838c65b717f5afd11c7cb1059" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::DishCategory::Meta</scope><name>verbose_name</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta_1aad2adc21c080b9cc65126e81c584ceae" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::DishCategory::Meta</scope><name>verbose_name_plural</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

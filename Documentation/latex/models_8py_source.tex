@@ -1,0 +1,310 @@
+\doxysection{models.\+py}
+\label{models_8py_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{from}\ django.db\ \textcolor{keyword}{import}\ models}
+\DoxyCodeLine{00002\ \textcolor{keyword}{from}\ django.contrib.sessions.models\ \textcolor{keyword}{import}\ Session}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }User(models.Model):}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{'''!\ Информация\ о\ пользователе.\ <br>}}
+\DoxyCodeLine{00007\ \textcolor{stringliteral}{\ \ \ \ last\_address\ –\ последний\ адрес,\ с\ которого\ пользователь\ заказывал\ <br>}}
+\DoxyCodeLine{00008\ \textcolor{stringliteral}{\ \ \ \ nickname\ –\ ник\ пользователья\ <br>}}
+\DoxyCodeLine{00009\ \textcolor{stringliteral}{\ \ \ \ login\ –\ его\ логин\ <br>}}
+\DoxyCodeLine{00010\ \textcolor{stringliteral}{\ \ \ \ session\_id\ –\ id\ текущей\ сессии\ <br>}}
+\DoxyCodeLine{00011\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Пользователь'}}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Пользователи'}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ session\ =\ models.ForeignKey(Session,\ on\_delete=models.CASCADE,\ null=\textcolor{keyword}{True},\ blank=\textcolor{keyword}{True})}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ last\_address\ =\ models.CharField(max\_length=100,\ null=\textcolor{keyword}{True},\ blank=\textcolor{keyword}{True})}
+\DoxyCodeLine{00020\ \ \ \ \ nickname\ =\ models.CharField(max\_length=50,\ null=\textcolor{keyword}{True},\ blank=\textcolor{keyword}{True})}
+\DoxyCodeLine{00021\ \ \ \ \ login\ =\ models.EmailField(null=\textcolor{keyword}{True},\ blank=\textcolor{keyword}{True})}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{preprocessor}{@staticmethod}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{def\ }authorization(user\_id,\ login):}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!\ Поиск\ пользователя\ по\ логину,\ если\ не\ найден\ то\ присвоить\ логин\ текущему\ user\_id.}}
+\DoxyCodeLine{00026\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ В\ противном\ случае\ вернуть\ новый\ user\_id}}
+\DoxyCodeLine{00027\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ user\_id\ int}}
+\DoxyCodeLine{00028\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ login\ string}}
+\DoxyCodeLine{00029\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ user\_id\ int}}
+\DoxyCodeLine{00030\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ user\ =\ User.objects.get(login=login)}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ user\_id\ =\ user.pk}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{except}\ User.DoesNotExist:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ User.objects.filter(pk=user\_id).update(login=login)}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ user\_id}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{preprocessor}{@staticmethod}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{def\ }get\_user\_id(request):}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'''!\ Возвращаем\ id\ пользователя\ -\/\ залогиненного\ или\ выданного\ по\ session\_id}}
+\DoxyCodeLine{00041\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ request\ HttpRequest}}
+\DoxyCodeLine{00042\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ user\_id\ int}}
+\DoxyCodeLine{00043\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ '''}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ request.user.is\_authenticated:}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ current\_user\ =\ request.user}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ current\_user\ =\ User.objects.get(session\_id=request.session.session\_key)}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ current\_user.id}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{class\ }Country(models.Model):}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{stringliteral}{'''!\ Таблица\ с\ кухнями\ различных\ стран\ <br>}}
+\DoxyCodeLine{00053\ \textcolor{stringliteral}{\ \ \ \ name\ –\ название\ кухни\ (например\ Русская\ кухня)\ <br>}}
+\DoxyCodeLine{00054\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Страна'}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Страны'}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ name\ =\ models.CharField(max\_length=30)}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{class\ }Type(models.Model):}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{stringliteral}{'''!\ таблица\ с\ типами\ блюд\ <br>}}
+\DoxyCodeLine{00065\ \textcolor{stringliteral}{\ \ \ \ name\ –\ название\ типа\ (например\ Завтраки)\ <br>}}
+\DoxyCodeLine{00066\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Тип\ бдюда'}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Типы\ блюд'}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ name\ =\ models.CharField(max\_length=30)}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{class\ }SubType(models.Model):}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{stringliteral}{'''!\ таблица\ с\ подтипами\ блюд\ <br>}}
+\DoxyCodeLine{00077\ \textcolor{stringliteral}{\ \ \ \ name\ –\ название\ подтипа\ (например\ фруктовые\ десерты)\ <br>}}
+\DoxyCodeLine{00078\ \textcolor{stringliteral}{\ \ \ \ type\_id\ –\ тип\ к\ которому\ относится\ подтип\ <br>}}
+\DoxyCodeLine{00079\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Подтип\ блюда'}}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Подтипы\ блюд'}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ type\ =\ models.ForeignKey(Type,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ name\ =\ models.CharField(max\_length=30)}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{class\ }Dish(models.Model):}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{stringliteral}{'''!\ информация\ о\ блюде\ <br>}}
+\DoxyCodeLine{00092\ \textcolor{stringliteral}{\ \ \ \ name\ –\ названия\ блюда\ <br>}}
+\DoxyCodeLine{00093\ \textcolor{stringliteral}{\ \ \ \ pers\_num\ –\ кол-\/во\ порций\ <br>}}
+\DoxyCodeLine{00094\ \textcolor{stringliteral}{\ \ \ \ cooking\_time\_minutes\ –\ время\ готовки\ в\ минутах\ <br>}}
+\DoxyCodeLine{00095\ \textcolor{stringliteral}{\ \ \ \ calories\ –\ кол-\/во\ калорий\ в\ блюде\ <br>}}
+\DoxyCodeLine{00096\ \textcolor{stringliteral}{\ \ \ \ proteins\ –\ кол0белки\ в\ блюде\ <br>}}
+\DoxyCodeLine{00097\ \textcolor{stringliteral}{\ \ \ \ carbohydrates\ –\ углеводы\ в\ блюде\ <br>}}
+\DoxyCodeLine{00098\ \textcolor{stringliteral}{\ \ \ \ fats\ –\ жиры\ <br>}}
+\DoxyCodeLine{00099\ \textcolor{stringliteral}{\ \ \ \ country\_id\ –\ страна\ из\ кухни\ которой\ это\ блюдо\ (например\ итальянская\ кухня)\ <br>}}
+\DoxyCodeLine{00100\ \textcolor{stringliteral}{\ \ \ \ subtype\_id\ –\ подтип\ блюда\ (например,\ фруктовые\ десерты)\ <br>}}
+\DoxyCodeLine{00101\ \textcolor{stringliteral}{\ \ \ \ image\ –\ ссылка\ на\ изображения\ блюда\ <br>}}
+\DoxyCodeLine{00102\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Блюдо'}}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Блюда'}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ country\ =\ models.ForeignKey(Country,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00109\ \ \ \ \ subtype\ =\ models.ForeignKey(SubType,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ name\ =\ models.CharField(max\_length=100)}
+\DoxyCodeLine{00112\ \ \ \ \ pers\_num\ =\ models.PositiveIntegerField()}
+\DoxyCodeLine{00113\ \ \ \ \ cooking\_time\_minutes\ =\ models.PositiveIntegerField()}
+\DoxyCodeLine{00114\ \ \ \ \ image\ =\ models.ImageField(null=\textcolor{keyword}{True},\ blank=\textcolor{keyword}{True},\ max\_length=130)}
+\DoxyCodeLine{00115\ \ \ \ \ calories\ =\ models.PositiveIntegerField()}
+\DoxyCodeLine{00116\ \ \ \ \ proteins\ =\ models.PositiveIntegerField()}
+\DoxyCodeLine{00117\ \ \ \ \ carbohydrates\ =\ models.PositiveIntegerField()}
+\DoxyCodeLine{00118\ \ \ \ \ fats\ =\ models.PositiveIntegerField()}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \textcolor{keyword}{class\ }CookingStage(models.Model):}
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{stringliteral}{'''!\ шаги\ для\ приготовления\ блюда\ <br>}}
+\DoxyCodeLine{00123\ \textcolor{stringliteral}{\ \ \ \ description\ –\ текст\ того,\ что\ нужно\ сделать\ на\ этом\ шаге\ <br>}}
+\DoxyCodeLine{00124\ \textcolor{stringliteral}{\ \ \ \ order\ –\ порядковый\ номер\ шага\ <br>}}
+\DoxyCodeLine{00125\ \textcolor{stringliteral}{\ \ \ \ dish\_id\ –\ блюдо,\ к\ которому\ относится\ этот\ шаг\ <br>}}
+\DoxyCodeLine{00126\ \textcolor{stringliteral}{\ \ \ \ image\ –\ ссылка\ на\ изображение\ шага\ <br>}}
+\DoxyCodeLine{00127\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Этап\ приготовления\ блюда'}}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Этапы\ приготовления\ блюд'}}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ dish\ =\ models.ForeignKey(Dish,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ description\ =\ models.TextField()}
+\DoxyCodeLine{00136\ \ \ \ \ order\ =\ models.PositiveIntegerField()}
+\DoxyCodeLine{00137\ \ \ \ \ image\ =\ models.ImageField(null=\textcolor{keyword}{True},\ blank=\textcolor{keyword}{True},\ max\_length=130)}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \textcolor{keyword}{class\ }Category(models.Model):}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{stringliteral}{'''!\ категории\ различных\ продуктов\ для\ приготовления\ <br>}}
+\DoxyCodeLine{00142\ \textcolor{stringliteral}{\ \ \ \ name\ –\ название\ категории\ (например:\ бакалея\ или\ помидоры)\ <br>}}
+\DoxyCodeLine{00143\ \textcolor{stringliteral}{\ \ \ \ supreme\_category\_id\ –\ надкатегория\ (например\ надкатегорией\ римских\ помидор\ являются\ помидоры)\ <br>}}
+\DoxyCodeLine{00144\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Категория\ продукта'}}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Категории\ продуктов'}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ supreme\_category\ =\ models.ForeignKey(\textcolor{stringliteral}{'self'},\ null=\textcolor{keyword}{True},\ blank=\textcolor{keyword}{True},\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \ \ name\ =\ models.CharField(max\_length=70)}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \textcolor{keyword}{class\ }UnitOfMeasure(models.Model):}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{stringliteral}{'''!\ единицы\ изменения\ <br>}}
+\DoxyCodeLine{00157\ \textcolor{stringliteral}{\ \ \ \ name\ –\ название\ единицы\ измерения\ (например\ штуки\ или\ кг)\ <br>}}
+\DoxyCodeLine{00158\ \textcolor{stringliteral}{\ \ \ \ supreme\_unit\_id\ –\ основная\ форма\ категории\ (например\ Supreme\_unit\_id\ у\ "{}штуки"{}\ это\ "{}штука"{})\ <br>}}
+\DoxyCodeLine{00159\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Единица\ измерения'}}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Единицы\ измерения'}}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ supreme\_unit\ =\ models.ForeignKey(\textcolor{stringliteral}{'self'},\ null=\textcolor{keyword}{True},\ blank=\textcolor{keyword}{True},\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ name\ =\ models.CharField(max\_length=20)}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \textcolor{keyword}{class\ }Conversion(models.Model):}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{stringliteral}{'''!\ коэффициенты\ для\ перевода\ единиц\ измерения\ <br>}}
+\DoxyCodeLine{00172\ \textcolor{stringliteral}{\ \ \ \ coefficient\ –\ число\ на\ которое\ нужно\ умножить\ что\ бы\ перевести\ from\_unit\_id\ в\ to\_unit\_id\ <br>}}
+\DoxyCodeLine{00173\ \textcolor{stringliteral}{\ \ \ \ category\_id\ –\ категория\ для\ которой\ выполняется\ перевод\ (очевидно\ что\ коэффициент\ для\ перевода\ штук\ в\ граммы\ для\ помидоров\ и\ огурцов\ отличается)\ <br>}}
+\DoxyCodeLine{00174\ \textcolor{stringliteral}{\ \ \ \ from\_unit\_id–\ единица\ измерения\ из\ которой\ выполняется\ перевод\ <br>}}
+\DoxyCodeLine{00175\ \textcolor{stringliteral}{\ \ \ \ to\_unit\_id\ –\ единица\ измерения\ в\ которую\ выполняется\ перевод\ <br>}}
+\DoxyCodeLine{00176\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Преобразование\ единицы\ измерения'}}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Преобразования\ единиц\ измерения'}}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ \ \ \ \ category\ =\ models.ForeignKey(Category,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00183\ \ \ \ \ from\_unit\ =\ models.ForeignKey(UnitOfMeasure,\ related\_name=\textcolor{stringliteral}{'from\_unit'},\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00184\ \ \ \ \ to\_unit\ =\ models.ForeignKey(UnitOfMeasure,\ related\_name=\textcolor{stringliteral}{'to\_unit'},\ null=\textcolor{keyword}{True},\ blank=\textcolor{keyword}{True},\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ \ \ \ \ coefficient\ =\ models.DecimalField(max\_digits=4\ +\ 4,\ decimal\_places=4,\ default=1)}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00189\ \textcolor{keyword}{class\ }DishCategory(models.Model):}
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{stringliteral}{'''!\ информация\ о\ составе\ блюда.\ <br>}}
+\DoxyCodeLine{00191\ \textcolor{stringliteral}{\ \ \ \ amount\ –\ кол-\/во\ продукта\ в\ блюде\ <br>}}
+\DoxyCodeLine{00192\ \textcolor{stringliteral}{\ \ \ \ category\_id\ –\ категория\ продукта\ <br>}}
+\DoxyCodeLine{00193\ \textcolor{stringliteral}{\ \ \ \ dish\_id\ –\ блюдо\ к\ которому\ относится\ продукт\ <br>}}
+\DoxyCodeLine{00194\ \textcolor{stringliteral}{\ \ \ \ unit\_id\ –\ единицы\ измерения\ в\ которых\ указано\ кол-\/во\ <br>}}
+\DoxyCodeLine{00195\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Продукт\ в\ блюде'}}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Продукты\ в\ блюдах'}}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00201\ \ \ \ \ dish\ =\ models.ForeignKey(Dish,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00202\ \ \ \ \ category\ =\ models.ForeignKey(Category,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00203\ \ \ \ \ unit\ =\ models.ForeignKey(UnitOfMeasure,\ null=\textcolor{keyword}{True},\ blank=\textcolor{keyword}{True},\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \ \ \ \ amount\ =\ models.DecimalField(max\_digits=4\ +\ 4,\ decimal\_places=4)}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ \textcolor{keyword}{class\ }Order(models.Model):}
+\DoxyCodeLine{00209\ \ \ \ \ \textcolor{stringliteral}{'''!\ информация\ о\ заказах.\ <br>}}
+\DoxyCodeLine{00210\ \textcolor{stringliteral}{\ \ \ \ order\_date\ –\ дата\ заказа\ <br>}}
+\DoxyCodeLine{00211\ \textcolor{stringliteral}{\ \ \ \ current\ –\ статус\ (выполнен/\ не\ выполнен)\ <br>}}
+\DoxyCodeLine{00212\ \textcolor{stringliteral}{\ \ \ \ user\_id\ –\ пользователь\ совершивший\ заказ\ <br>}}
+\DoxyCodeLine{00213\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Заказ'}}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Заказы'}}
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00219\ \ \ \ \ user\ =\ models.ForeignKey(User,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00221\ \ \ \ \ order\_date\ =\ models.DateTimeField()}
+\DoxyCodeLine{00222\ \ \ \ \ current\ =\ models.BooleanField(default=\textcolor{keyword}{True})}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00225\ \textcolor{keyword}{class\ }Menu(models.Model):}
+\DoxyCodeLine{00226\ \ \ \ \ \textcolor{stringliteral}{'''!\ состав\ заказа\ <br>}}
+\DoxyCodeLine{00227\ \textcolor{stringliteral}{\ \ \ \ amount–\ кол-\/во\ товара,\ которое\ было\ заказано\ <br>}}
+\DoxyCodeLine{00228\ \textcolor{stringliteral}{\ \ \ \ dish\_id\ –\ товар\ который\ был\ заказан\ <br>}}
+\DoxyCodeLine{00229\ \textcolor{stringliteral}{\ \ \ \ order\_id\ –\ заказ\ в\ котором\ этот\ товар\ был\ заказан\ <br>}}
+\DoxyCodeLine{00230\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00232\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Меню'}}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Меню'}}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00236\ \ \ \ \ dish\ =\ models.ForeignKey(Dish,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00237\ \ \ \ \ order\ =\ models.ForeignKey(Order,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00239\ \ \ \ \ amount\ =\ models.PositiveIntegerField(default=1)}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00242\ \textcolor{keyword}{class\ }Shop(models.Model):}
+\DoxyCodeLine{00243\ \ \ \ \ \textcolor{stringliteral}{'''!\ информация\ о\ магазине\ <br>}}
+\DoxyCodeLine{00244\ \textcolor{stringliteral}{\ \ \ \ name\ –\ название\ магазина\ <br>}}
+\DoxyCodeLine{00245\ \textcolor{stringliteral}{\ \ \ \ link\ –\ ссылка\ на\ магазин\ <br>}}
+\DoxyCodeLine{00246\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00247\ }
+\DoxyCodeLine{00248\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Магазин'}}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Магазины'}}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \ \ \ \ name\ =\ models.CharField(max\_length=30)}
+\DoxyCodeLine{00253\ \ \ \ \ link\ =\ models.URLField()}
+\DoxyCodeLine{00254\ }
+\DoxyCodeLine{00255\ }
+\DoxyCodeLine{00256\ \textcolor{keyword}{class\ }Product(models.Model):}
+\DoxyCodeLine{00257\ \ \ \ \ \textcolor{stringliteral}{'''!\ информация\ о\ конкретном\ товаре\ в\ магазине\ <br>}}
+\DoxyCodeLine{00258\ \textcolor{stringliteral}{\ \ \ \ name\ –\ название\ товара\ <br>}}
+\DoxyCodeLine{00259\ \textcolor{stringliteral}{\ \ \ \ price\ –\ цена\ <br>}}
+\DoxyCodeLine{00260\ \textcolor{stringliteral}{\ \ \ \ amount\ –\ количество\ (в\ unit\_id)\ товара\ которое\ в\ одной\ единице\ заказ\ (например\ 300,\ unit\_id\ –\ граммы)\ <br>}}
+\DoxyCodeLine{00261\ \textcolor{stringliteral}{\ \ \ \ link\ –\ ссылка\ на\ товар\ <br>}}
+\DoxyCodeLine{00262\ \textcolor{stringliteral}{\ \ \ \ shop\_id\ –\ магазин,\ из\ которого\ товар\ <br>}}
+\DoxyCodeLine{00263\ \textcolor{stringliteral}{\ \ \ \ unit\_id\ –\ единица\ измерения\ <br>}}
+\DoxyCodeLine{00264\ \textcolor{stringliteral}{\ \ \ \ user\_id\ –\ пользователь\ для\ которого\ был\ спаршен\ данный\ товар\ <br>}}
+\DoxyCodeLine{00265\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00267\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Продукт\ из\ магазина'}}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Продукты\ из\ магазинов'}}
+\DoxyCodeLine{00270\ }
+\DoxyCodeLine{00271\ \ \ \ \ user\ =\ models.ForeignKey(User,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00272\ \ \ \ \ unit\ =\ models.ForeignKey(UnitOfMeasure,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00273\ \ \ \ \ shop\ =\ models.ForeignKey(Shop,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00274\ }
+\DoxyCodeLine{00275\ \ \ \ \ name\ =\ models.CharField(max\_length=100)}
+\DoxyCodeLine{00276\ \ \ \ \ price\ =\ models.PositiveIntegerField()}
+\DoxyCodeLine{00277\ \ \ \ \ amount\ =\ models.DecimalField(max\_digits=4\ +\ 4,\ decimal\_places=4)}
+\DoxyCodeLine{00278\ \ \ \ \ link\ =\ models.URLField()}
+\DoxyCodeLine{00279\ }
+\DoxyCodeLine{00280\ }
+\DoxyCodeLine{00281\ \textcolor{keyword}{class\ }ProductLog(models.Model):}
+\DoxyCodeLine{00282\ \ \ \ \ \textcolor{stringliteral}{'''!\ информация\ о\ ранее\ заказанных\ товарах\ в\ магазине\ <br>}}
+\DoxyCodeLine{00283\ \textcolor{stringliteral}{\ \ \ \ name\ –\ название\ товара\ <br>}}
+\DoxyCodeLine{00284\ \textcolor{stringliteral}{\ \ \ \ price\ –\ цена\ \ <br>}}
+\DoxyCodeLine{00285\ \textcolor{stringliteral}{\ \ \ \ amount\ –\ количество\ (в\ unit\_id)\ товара\ которое\ в\ одной\ единице\ заказ\ (например\ 300,\ unit\_id\ –\ граммы)\ <br>}}
+\DoxyCodeLine{00286\ \textcolor{stringliteral}{\ \ \ \ quantity\ –\ количество\ единиц,\ которое\ было\ заказано\ <br>}}
+\DoxyCodeLine{00287\ \textcolor{stringliteral}{\ \ \ \ link\ –\ ссылка\ на\ товар\ <br>}}
+\DoxyCodeLine{00288\ \textcolor{stringliteral}{\ \ \ \ shop\_id\ –\ магазин,\ из\ которого\ товар\ <br>}}
+\DoxyCodeLine{00289\ \textcolor{stringliteral}{\ \ \ \ order\_id\ –\ заказ,\ в\ котором\ был\ куплен\ данный\ товар\ <br>}}
+\DoxyCodeLine{00290\ \textcolor{stringliteral}{\ \ \ \ unit\_id\ –\ единица\ измерения\ <br>}}
+\DoxyCodeLine{00291\ \textcolor{stringliteral}{\ \ \ \ '''}}
+\DoxyCodeLine{00292\ }
+\DoxyCodeLine{00293\ \ \ \ \ \textcolor{keyword}{class\ }Meta:}
+\DoxyCodeLine{00294\ \ \ \ \ \ \ \ \ verbose\_name\ =\ \textcolor{stringliteral}{'Лог\ родукта\ из\ магазина'}}
+\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ verbose\_name\_plural\ =\ \textcolor{stringliteral}{'Логи\ родуктов\ из\ магазинов'}}
+\DoxyCodeLine{00296\ }
+\DoxyCodeLine{00297\ \ \ \ \ order\ =\ models.ForeignKey(Order,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00298\ \ \ \ \ shop\ =\ models.ForeignKey(Shop,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00299\ \ \ \ \ unit\ =\ models.ForeignKey(UnitOfMeasure,\ on\_delete=models.CASCADE)}
+\DoxyCodeLine{00300\ }
+\DoxyCodeLine{00301\ \ \ \ \ name\ =\ models.CharField(max\_length=100)}
+\DoxyCodeLine{00302\ \ \ \ \ price\ =\ models.PositiveIntegerField()}
+\DoxyCodeLine{00303\ \ \ \ \ amount\ =\ models.DecimalField(max\_digits=4\ +\ 4,\ decimal\_places=4)}
+\DoxyCodeLine{00304\ \ \ \ \ quantity\ =\ models.PositiveIntegerField()}
+\DoxyCodeLine{00305\ \ \ \ \ link\ =\ models.URLField()}
+
+\end{DoxyCode}

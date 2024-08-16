@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_config_8py" xml:lang="en-US">
+<title>config.py File Reference</title>
+<indexterm><primary>config.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebym">bym</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project">bym.BYM_project</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app">bym.BYM_project.main_app</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1config">bym.BYM_project.main_app.config</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1ad2134171b2678db43657ebb4707a71e5">bym.BYM_project.main_app.config.webdriver_name</link> = os.getenv(&quot;webdriver_name&quot;)</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1a33e627ec953d99555066175ad5255567">bym.BYM_project.main_app.config.urls_lavka</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

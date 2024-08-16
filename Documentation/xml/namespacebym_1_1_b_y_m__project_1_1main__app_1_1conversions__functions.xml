@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions" kind="namespace" language="Python">
+    <compoundname>bym::BYM_project::main_app::conversions_functions</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions_1aedc887b909c552c4dc6d68d3f3c82294" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.conversions_functions.how_many_add</definition>
+        <argsstring>(category_id, need_unit, have_unit, need, have)</argsstring>
+        <name>how_many_add</name>
+        <qualifiedname>bym.BYM_project.main_app.conversions_functions.how_many_add</qualifiedname>
+        <param>
+          <type>category_id</type>
+          <defname>category_id</defname>
+        </param>
+        <param>
+          <type>need_unit</type>
+          <defname>need_unit</defname>
+        </param>
+        <param>
+          <type>have_unit</type>
+          <defname>have_unit</defname>
+        </param>
+        <param>
+          <type>need</type>
+          <defname>need</defname>
+        </param>
+        <param>
+          <type>have</type>
+          <defname>have</defname>
+        </param>
+        <briefdescription>
+<para>Расчет сколько штук товара необходимо купть на что бы полностью покрыть рецепт </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>category_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>need_unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UnitOfMeasure - еденицы измерения продукта по рецепту (например стаканы) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>have_unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UnitOfMeasure - еденицы измерения товара из магазина (например граммы) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>need</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int - необходимое количество по рецепту (например 5, have_unit - стаканы) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>have</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int - количество в одном юните в магазине (например 500, have_unit-граммы) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>kol int - сколько нужно заказать </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conversions_functions.py" line="6" column="1" bodyfile="conversions_functions.py" bodystart="6" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions_1a7f6cdbfd78f849181eb8729d15de8339" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>bym.BYM_project.main_app.conversions_functions.get_lavka_unit_id</definition>
+        <argsstring>(name_unit)</argsstring>
+        <name>get_lavka_unit_id</name>
+        <qualifiedname>bym.BYM_project.main_app.conversions_functions.get_lavka_unit_id</qualifiedname>
+        <param>
+          <type>name_unit</type>
+          <defname>name_unit</defname>
+        </param>
+        <briefdescription>
+<para>Исчет единицу измерения из магазина в базе данных, если нет создает </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name_unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>UnitOfMeasure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conversions_functions.py" line="47" column="1" bodyfile="conversions_functions.py" bodystart="47" bodyend="68"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="conversions_functions.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

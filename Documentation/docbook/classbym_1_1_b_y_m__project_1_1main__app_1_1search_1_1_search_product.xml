@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product" xml:lang="en-US">
+<title>bym.BYM_project.main_app.search.SearchProduct Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchProduct</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a915ef58475303424251d924cf320cfde">__init__</link> (self, category_id, user_id, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a47c3087bdb8dbfbd2d8ef5afb605e3ed">threshold</link>=0.7)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a98b6b788934df61c45018bad900da5b9">score</link> (self, product)</para>
+
+<para>Сопосталяет каждому объекту класса Product число, по которому будет осуществлена сортировка </para>
+</listitem>
+            <listitem><para>list <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1ab8d86256ea2baed501418f019c0cee48">get</link> (self)</para>
+
+<para>Сортирует список объектов класса Product. </para>
+</listitem>
+            <listitem><para>float <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a260d6a89c8d23506cd854aba92524a75">seq_match_scorer</link> (self, product)</para>
+
+<para>Сравнивает Product.name и self.category.name с помощью SequenceMather() </para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category">Category</link> <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a13bba77ad707a998d896a172d2e37899">get_category</link> (self)</para>
+
+<para>Возвращает self.category. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a21b433635039afa0a1432ccd644e3d59">category</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a16ef129c969ce1b76a9b57a52bd5ee85">products</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a47c3087bdb8dbfbd2d8ef5afb605e3ed">threshold</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><orderedlist>
+<listitem>
+<para>Загружаем из бд список всех спаршенных продуктов</para>
+</listitem><listitem>
+<para>Вызов функции SequenceMatch() (взвешиваем каждый product.name относительно category.name по похожести)</para>
+</listitem><listitem>
+<para>Сортируем продукты по убыванию весов и эффективности покупки 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>category_id</entry><entry>
+<para>int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>products [[Product obj, ...], [Category.name, [image1, ...]]]] </para>
+</formalpara>
+</para>
+</listitem></orderedlist>
+</para>
+<para>
+Definition at line <link linkend="_search_8py_source_1l00095">95</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a915ef58475303424251d924cf320cfde"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>bym.BYM_project.main_app.search.SearchProduct</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchProduct</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None bym.BYM_project.main_app.search.SearchProduct.__init__ ( self,  category_id,  user_id,  threshold = <computeroutput>0.7</computeroutput>
+)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>category_id</entry><entry>
+<para>int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_search_8py_source_1l00104">104</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1ab8d86256ea2baed501418f019c0cee48"/><section>
+    <title>get()</title>
+<indexterm><primary>get</primary><secondary>bym.BYM_project.main_app.search.SearchProduct</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchProduct</primary><secondary>get</secondary></indexterm>
+<para><computeroutput> list bym.BYM_project.main_app.search.SearchProduct.get ( self)</computeroutput></para><para>
+
+<para>Сортирует список объектов класса Product. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>products list of Product </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_search_8py_source_1l00122">122</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a13bba77ad707a998d896a172d2e37899"/><section>
+    <title>get_category()</title>
+<indexterm><primary>get_category</primary><secondary>bym.BYM_project.main_app.search.SearchProduct</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchProduct</primary><secondary>get_category</secondary></indexterm>
+<para><computeroutput> <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category">Category</link> bym.BYM_project.main_app.search.SearchProduct.get_category ( self)</computeroutput></para><para>
+
+<para>Возвращает self.category. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>category Category </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_search_8py_source_1l00149">149</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a98b6b788934df61c45018bad900da5b9"/><section>
+    <title>score()</title>
+<indexterm><primary>score</primary><secondary>bym.BYM_project.main_app.search.SearchProduct</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchProduct</primary><secondary>score</secondary></indexterm>
+<para><computeroutput> float bym.BYM_project.main_app.search.SearchProduct.score ( self,  product)</computeroutput></para><para>
+
+<para>Сопосталяет каждому объекту класса Product число, по которому будет осуществлена сортировка </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>product</entry><entry>
+<para>Product </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>score double </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_search_8py_source_1l00113">113</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a260d6a89c8d23506cd854aba92524a75"/><section>
+    <title>seq_match_scorer()</title>
+<indexterm><primary>seq_match_scorer</primary><secondary>bym.BYM_project.main_app.search.SearchProduct</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchProduct</primary><secondary>seq_match_scorer</secondary></indexterm>
+<para><computeroutput> float bym.BYM_project.main_app.search.SearchProduct.seq_match_scorer ( self,  product)</computeroutput></para><para>
+
+<para>Сравнивает Product.name и self.category.name с помощью SequenceMather() </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>product</entry><entry>
+<para>Product </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>sm_score float </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_search_8py_source_1l00133">133</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a21b433635039afa0a1432ccd644e3d59"/><section>
+    <title>category</title>
+<indexterm><primary>category</primary><secondary>bym.BYM_project.main_app.search.SearchProduct</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchProduct</primary><secondary>category</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.search.SearchProduct.category</computeroutput></para><para>
+Definition at line <link linkend="_search_8py_source_1l00109">109</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a16ef129c969ce1b76a9b57a52bd5ee85"/><section>
+    <title>products</title>
+<indexterm><primary>products</primary><secondary>bym.BYM_project.main_app.search.SearchProduct</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchProduct</primary><secondary>products</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.search.SearchProduct.products</computeroutput></para><para>
+Definition at line <link linkend="_search_8py_source_1l00110">110</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_1a47c3087bdb8dbfbd2d8ef5afb605e3ed"/><section>
+    <title>threshold</title>
+<indexterm><primary>threshold</primary><secondary>bym.BYM_project.main_app.search.SearchProduct</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchProduct</primary><secondary>threshold</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.search.SearchProduct.threshold</computeroutput></para><para>
+Definition at line <link linkend="_search_8py_source_1l00111">111</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_search_8py">search.py</link></section>
+</section>

@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend" xml:lang="en-US">
+<title>bym.BYM_project.main_app.functions_backend Namespace Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.functions_backend</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a8c445e64e551d7b0b43b70a843c62965">start_session</link> (request)</para>
+
+<para>Начало сессии с пользователем и создание его кортежа в бд по session_id. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1acec8d87adc7236e231b7ac0bd7e395fa">get_dish_types</link> ()</para>
+
+<para>Запрос в бд на получение типов блюд и соответстующих им под типов </para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1acc450f9517914ab71f0b81484e45337d">get_particular_dish</link> (dish_id)</para>
+
+<para>Возвращает конкретное блюдо, стадии его приготовления и необходимые игридиенты </para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a08d73957bbfccb8e19348c923f80fb53">string_to_minutes</link> (string)</para>
+
+<para>Возвращает количество минут в строке Варианты входа: &apos;n часов&apos;, &apos;n минут&apos;, &apos;n часов k минут&apos;. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a723d59131bb3c4986041292c982b118f">convert_fraction</link> (string)</para>
+
+<para>Возвращает float из строки с числом </para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a4a88e8eaaa6f0e827859fc69485a0f3f">number_and_measure</link> (string)</para>
+
+<para>Возвращает по строке количества продукта число + единицу измерения в начальной форме </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a723d59131bb3c4986041292c982b118f"/><section>
+    <title>convert_fraction()</title>
+<indexterm><primary>convert_fraction</primary><secondary>bym.BYM_project.main_app.functions_backend</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.functions_backend</primary><secondary>convert_fraction</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.functions_backend.convert_fraction ( string)</computeroutput></para><para>
+
+<para>Возвращает float из строки с числом </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>string</entry><entry>
+<para>string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>float </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_functions__backend_8py_source_1l00068">68</link> of file <link linkend="_functions__backend_8py_source">functions_backend.py</link>.</para>
+</section>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1acec8d87adc7236e231b7ac0bd7e395fa"/><section>
+    <title>get_dish_types()</title>
+<indexterm><primary>get_dish_types</primary><secondary>bym.BYM_project.main_app.functions_backend</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.functions_backend</primary><secondary>get_dish_types</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.functions_backend.get_dish_types ( )</computeroutput></para><para>
+
+<para>Запрос в бд на получение типов блюд и соответстующих им под типов </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>dict {type:[subtype,...]} </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_functions__backend_8py_source_1l00021">21</link> of file <link linkend="_functions__backend_8py_source">functions_backend.py</link>.</para>
+</section>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1acc450f9517914ab71f0b81484e45337d"/><section>
+    <title>get_particular_dish()</title>
+<indexterm><primary>get_particular_dish</primary><secondary>bym.BYM_project.main_app.functions_backend</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.functions_backend</primary><secondary>get_particular_dish</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.functions_backend.get_particular_dish ( dish_id)</computeroutput></para><para>
+
+<para>Возвращает конкретное блюдо, стадии его приготовления и необходимые игридиенты </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dish_id</entry><entry>
+<para>int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>dish Dish </para>
+
+<para>cooking_stages [CookingStage,...] </para>
+
+<para>ingredients [{&apos;name&apos;:string, amount:int}] - список ингридиентов - название категории их кол-во </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_functions__backend_8py_source_1l00032">32</link> of file <link linkend="_functions__backend_8py_source">functions_backend.py</link>.</para>
+</section>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a4a88e8eaaa6f0e827859fc69485a0f3f"/><section>
+    <title>number_and_measure()</title>
+<indexterm><primary>number_and_measure</primary><secondary>bym.BYM_project.main_app.functions_backend</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.functions_backend</primary><secondary>number_and_measure</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.functions_backend.number_and_measure ( string)</computeroutput></para><para>
+
+<para>Возвращает по строке количества продукта число + единицу измерения в начальной форме </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>string</entry><entry>
+<para>string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>float </para>
+
+<para>string </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_functions__backend_8py_source_1l00079">79</link> of file <link linkend="_functions__backend_8py_source">functions_backend.py</link>.</para>
+</section>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a8c445e64e551d7b0b43b70a843c62965"/><section>
+    <title>start_session()</title>
+<indexterm><primary>start_session</primary><secondary>bym.BYM_project.main_app.functions_backend</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.functions_backend</primary><secondary>start_session</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.functions_backend.start_session ( request)</computeroutput></para><para>
+
+<para>Начало сессии с пользователем и создание его кортежа в бд по session_id. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>request</entry><entry>
+<para>HttpRequest </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_functions__backend_8py_source_1l00007">7</link> of file <link linkend="_functions__backend_8py_source">functions_backend.py</link>.</para>
+</section>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a08d73957bbfccb8e19348c923f80fb53"/><section>
+    <title>string_to_minutes()</title>
+<indexterm><primary>string_to_minutes</primary><secondary>bym.BYM_project.main_app.functions_backend</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.functions_backend</primary><secondary>string_to_minutes</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.functions_backend.string_to_minutes ( string)</computeroutput></para><para>
+
+<para>Возвращает количество минут в строке Варианты входа: &apos;n часов&apos;, &apos;n минут&apos;, &apos;n часов k минут&apos;. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>string</entry><entry>
+<para>string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>int </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_functions__backend_8py_source_1l00052">52</link> of file <link linkend="_functions__backend_8py_source">functions_backend.py</link>.</para>
+</section>
+</section>
+</section>

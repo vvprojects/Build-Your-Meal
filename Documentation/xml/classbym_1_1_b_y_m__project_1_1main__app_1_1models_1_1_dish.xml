@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::Dish</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">models.Model</basecompoundref>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1_1_meta" prot="public">bym::BYM_project::main_app::models::Dish::Meta</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a98e01229bbeada507b776f7ecc8ead27" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Dish::country</definition>
+        <argsstring></argsstring>
+        <name>country</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Dish.country</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="108" column="1" bodyfile="models.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a59ec1607401fd259b23b47847b59b296" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Dish::Country</definition>
+        <argsstring></argsstring>
+        <name>Country</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Dish.Country</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="108" column="1" bodyfile="models.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a914c843d8b866b98e3cfbd26f7ef8202" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Dish::on_delete</definition>
+        <argsstring></argsstring>
+        <name>on_delete</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Dish.on_delete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="108" column="1" bodyfile="models.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a273d0e1c9b091aadb25f4a17e77262bc" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Dish::subtype</definition>
+        <argsstring></argsstring>
+        <name>subtype</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Dish.subtype</qualifiedname>
+        <initializer>=  models.ForeignKey(<ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type" kindref="compound">SubType</ref>, <ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a914c843d8b866b98e3cfbd26f7ef8202" kindref="member">on_delete</ref>=models.CASCADE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="109" column="1" bodyfile="models.py" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1ac16c094d9da72cb8d08d0a8b177f3e4f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Dish::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Dish.name</qualifiedname>
+        <initializer>=  models.CharField(max_length=100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="111" column="1" bodyfile="models.py" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1aa6dc2e38ec33dc3515ec2ee5f473da8d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Dish::pers_num</definition>
+        <argsstring></argsstring>
+        <name>pers_num</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Dish.pers_num</qualifiedname>
+        <initializer>=  models.PositiveIntegerField()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="112" column="1" bodyfile="models.py" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a8e70dff838d796fa6fdde5a2bf71cbb2" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Dish::cooking_time_minutes</definition>
+        <argsstring></argsstring>
+        <name>cooking_time_minutes</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Dish.cooking_time_minutes</qualifiedname>
+        <initializer>=  models.PositiveIntegerField()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="113" column="1" bodyfile="models.py" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a466a56c198c08d4acf38553a5eb725df" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Dish::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Dish.image</qualifiedname>
+        <initializer>=  models.ImageField(null=True, blank=True, max_length=130)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="114" column="1" bodyfile="models.py" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1aef53fe87ee71c04493865e68f150e2b0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Dish::calories</definition>
+        <argsstring></argsstring>
+        <name>calories</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Dish.calories</qualifiedname>
+        <initializer>=  models.PositiveIntegerField()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="115" column="1" bodyfile="models.py" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1ab2d72414d6b36df30358e4f7d11d0db4" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Dish::proteins</definition>
+        <argsstring></argsstring>
+        <name>proteins</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Dish.proteins</qualifiedname>
+        <initializer>=  models.PositiveIntegerField()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="116" column="1" bodyfile="models.py" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a0d59ba53aacdf9b785a7b919c65fc6c3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Dish::carbohydrates</definition>
+        <argsstring></argsstring>
+        <name>carbohydrates</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Dish.carbohydrates</qualifiedname>
+        <initializer>=  models.PositiveIntegerField()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="117" column="1" bodyfile="models.py" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a6219673d99d12e14f8118d897b8c75e1" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Dish::fats</definition>
+        <argsstring></argsstring>
+        <name>fats</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Dish.fats</qualifiedname>
+        <initializer>=  models.PositiveIntegerField()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="118" column="1" bodyfile="models.py" bodystart="118" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>информация о блюде <linebreak/>
+ name – названия блюда <linebreak/>
+ pers_num – кол-во порций <linebreak/>
+ cooking_time_minutes – время готовки в минутах <linebreak/>
+ calories – кол-во калорий в блюде <linebreak/>
+ proteins – кол0белки в блюде <linebreak/>
+ carbohydrates – углеводы в блюде <linebreak/>
+ fats – жиры <linebreak/>
+ country_id – страна из кухни которой это блюдо (например итальянская кухня) <linebreak/>
+ subtype_id – подтип блюда (например, фруктовые десерты) <linebreak/>
+ image – ссылка на изображения блюда <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Dish</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Dish</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="models.py" line="90" column="1" bodyfile="models.py" bodystart="90" bodyend="120"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1aef53fe87ee71c04493865e68f150e2b0" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Dish</scope><name>calories</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a0d59ba53aacdf9b785a7b919c65fc6c3" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Dish</scope><name>carbohydrates</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a8e70dff838d796fa6fdde5a2bf71cbb2" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Dish</scope><name>cooking_time_minutes</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a98e01229bbeada507b776f7ecc8ead27" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Dish</scope><name>country</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a59ec1607401fd259b23b47847b59b296" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Dish</scope><name>Country</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a6219673d99d12e14f8118d897b8c75e1" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Dish</scope><name>fats</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a466a56c198c08d4acf38553a5eb725df" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Dish</scope><name>image</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1ac16c094d9da72cb8d08d0a8b177f3e4f" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Dish</scope><name>name</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a914c843d8b866b98e3cfbd26f7ef8202" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Dish</scope><name>on_delete</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1aa6dc2e38ec33dc3515ec2ee5f473da8d" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Dish</scope><name>pers_num</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1ab2d72414d6b36df30358e4f7d11d0db4" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Dish</scope><name>proteins</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a273d0e1c9b091aadb25f4a17e77262bc" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Dish</scope><name>subtype</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

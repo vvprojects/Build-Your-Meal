@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.Dish Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.Dish</primary></indexterm>
+<para>
+
+<para>информация о блюде <?linebreak?> name – названия блюда <?linebreak?> pers_num – кол-во порций <?linebreak?> cooking_time_minutes – время готовки в минутах <?linebreak?> calories – кол-во калорий в блюде <?linebreak?> proteins – кол0белки в блюде <?linebreak?> carbohydrates – углеводы в блюде <?linebreak?> fats – жиры <?linebreak?> country_id – страна из кухни которой это блюдо (например итальянская кухня) <?linebreak?> subtype_id – подтип блюда (например, фруктовые десерты) <?linebreak?> image – ссылка на изображения блюда <?linebreak?> </para>
+ 
+</para>
+<para>Inheritance diagram for bym.BYM_project.main_app.models.Dish:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1_1_meta">Meta</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a98e01229bbeada507b776f7ecc8ead27">country</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a59ec1607401fd259b23b47847b59b296">Country</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a914c843d8b866b98e3cfbd26f7ef8202">on_delete</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a273d0e1c9b091aadb25f4a17e77262bc">subtype</link> = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type">SubType</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a914c843d8b866b98e3cfbd26f7ef8202">on_delete</link>=models.CASCADE)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1ac16c094d9da72cb8d08d0a8b177f3e4f">name</link> = models.CharField(max_length=100)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1aa6dc2e38ec33dc3515ec2ee5f473da8d">pers_num</link> = models.PositiveIntegerField()</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a8e70dff838d796fa6fdde5a2bf71cbb2">cooking_time_minutes</link> = models.PositiveIntegerField()</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a466a56c198c08d4acf38553a5eb725df">image</link> = models.ImageField(null=True, blank=True, max_length=130)</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1aef53fe87ee71c04493865e68f150e2b0">calories</link> = models.PositiveIntegerField()</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1ab2d72414d6b36df30358e4f7d11d0db4">proteins</link> = models.PositiveIntegerField()</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a0d59ba53aacdf9b785a7b919c65fc6c3">carbohydrates</link> = models.PositiveIntegerField()</para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a6219673d99d12e14f8118d897b8c75e1">fats</link> = models.PositiveIntegerField()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>информация о блюде <?linebreak?> name – названия блюда <?linebreak?> pers_num – кол-во порций <?linebreak?> cooking_time_minutes – время готовки в минутах <?linebreak?> calories – кол-во калорий в блюде <?linebreak?> proteins – кол0белки в блюде <?linebreak?> carbohydrates – углеводы в блюде <?linebreak?> fats – жиры <?linebreak?> country_id – страна из кухни которой это блюдо (например итальянская кухня) <?linebreak?> subtype_id – подтип блюда (например, фруктовые десерты) <?linebreak?> image – ссылка на изображения блюда <?linebreak?> </para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00090">90</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1aef53fe87ee71c04493865e68f150e2b0"/><section>
+    <title>calories</title>
+<indexterm><primary>calories</primary><secondary>bym.BYM_project.main_app.models.Dish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Dish</primary><secondary>calories</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Dish.calories = models.PositiveIntegerField()<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00115">115</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a0d59ba53aacdf9b785a7b919c65fc6c3"/><section>
+    <title>carbohydrates</title>
+<indexterm><primary>carbohydrates</primary><secondary>bym.BYM_project.main_app.models.Dish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Dish</primary><secondary>carbohydrates</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Dish.carbohydrates = models.PositiveIntegerField()<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00117">117</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a8e70dff838d796fa6fdde5a2bf71cbb2"/><section>
+    <title>cooking_time_minutes</title>
+<indexterm><primary>cooking_time_minutes</primary><secondary>bym.BYM_project.main_app.models.Dish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Dish</primary><secondary>cooking_time_minutes</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Dish.cooking_time_minutes = models.PositiveIntegerField()<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00113">113</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a98e01229bbeada507b776f7ecc8ead27"/><section>
+    <title>country</title>
+<indexterm><primary>country</primary><secondary>bym.BYM_project.main_app.models.Dish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Dish</primary><secondary>country</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Dish.country<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00108">108</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a59ec1607401fd259b23b47847b59b296"/><section>
+    <title>Country</title>
+<indexterm><primary>Country</primary><secondary>bym.BYM_project.main_app.models.Dish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Dish</primary><secondary>Country</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Dish.Country<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00108">108</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a6219673d99d12e14f8118d897b8c75e1"/><section>
+    <title>fats</title>
+<indexterm><primary>fats</primary><secondary>bym.BYM_project.main_app.models.Dish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Dish</primary><secondary>fats</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Dish.fats = models.PositiveIntegerField()<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00118">118</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a466a56c198c08d4acf38553a5eb725df"/><section>
+    <title>image</title>
+<indexterm><primary>image</primary><secondary>bym.BYM_project.main_app.models.Dish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Dish</primary><secondary>image</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Dish.image = models.ImageField(null=True, blank=True, max_length=130)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00114">114</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1ac16c094d9da72cb8d08d0a8b177f3e4f"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>bym.BYM_project.main_app.models.Dish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Dish</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Dish.name = models.CharField(max_length=100)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00111">111</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a914c843d8b866b98e3cfbd26f7ef8202"/><section>
+    <title>on_delete</title>
+<indexterm><primary>on_delete</primary><secondary>bym.BYM_project.main_app.models.Dish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Dish</primary><secondary>on_delete</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Dish.on_delete<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00108">108</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1aa6dc2e38ec33dc3515ec2ee5f473da8d"/><section>
+    <title>pers_num</title>
+<indexterm><primary>pers_num</primary><secondary>bym.BYM_project.main_app.models.Dish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Dish</primary><secondary>pers_num</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Dish.pers_num = models.PositiveIntegerField()<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00112">112</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1ab2d72414d6b36df30358e4f7d11d0db4"/><section>
+    <title>proteins</title>
+<indexterm><primary>proteins</primary><secondary>bym.BYM_project.main_app.models.Dish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Dish</primary><secondary>proteins</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Dish.proteins = models.PositiveIntegerField()<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00116">116</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a273d0e1c9b091aadb25f4a17e77262bc"/><section>
+    <title>subtype</title>
+<indexterm><primary>subtype</primary><secondary>bym.BYM_project.main_app.models.Dish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Dish</primary><secondary>subtype</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Dish.subtype = models.ForeignKey(<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type">SubType</link>, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a914c843d8b866b98e3cfbd26f7ef8202">on_delete</link>=models.CASCADE)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00109">109</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

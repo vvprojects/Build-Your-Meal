@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.Country Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.Country</primary></indexterm>
+<para>
+
+<para>Таблица с кухнями различных стран <?linebreak?> name – название кухни (например Русская кухня) <?linebreak?> </para>
+ 
+</para>
+<para>Inheritance diagram for bym.BYM_project.main_app.models.Country:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta">Meta</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1aa8ac90d41c1054d04261479a1430ee06">name</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1ae6fcd5e555cc5f98574cc4a2dc1b1d8f">max_length</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Таблица с кухнями различных стран <?linebreak?> name – название кухни (например Русская кухня) <?linebreak?> </para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00051">51</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1ae6fcd5e555cc5f98574cc4a2dc1b1d8f"/><section>
+    <title>max_length</title>
+<indexterm><primary>max_length</primary><secondary>bym.BYM_project.main_app.models.Country</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Country</primary><secondary>max_length</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Country.max_length<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00060">60</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1aa8ac90d41c1054d04261479a1430ee06"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>bym.BYM_project.main_app.models.Country</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Country</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Country.name<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00060">60</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.UnitOfMeasure.Meta Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.UnitOfMeasure.Meta</primary></indexterm>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta_1a9e71859360b9cce0e1f49a53a466f6f0">verbose_name</link> = &apos;Единица измерения&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta_1aeea5099ac1d8491e243d1211184059d9">verbose_name_plural</link> = &apos;Единицы измерения&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00161">161</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta_1a9e71859360b9cce0e1f49a53a466f6f0"/><section>
+    <title>verbose_name</title>
+<indexterm><primary>verbose_name</primary><secondary>bym.BYM_project.main_app.models.UnitOfMeasure.Meta</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.UnitOfMeasure.Meta</primary><secondary>verbose_name</secondary></indexterm>
+<para><computeroutput>str bym.BYM_project.main_app.models.UnitOfMeasure.Meta.verbose_name = &apos;Единица измерения&apos;<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00162">162</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta_1aeea5099ac1d8491e243d1211184059d9"/><section>
+    <title>verbose_name_plural</title>
+<indexterm><primary>verbose_name_plural</primary><secondary>bym.BYM_project.main_app.models.UnitOfMeasure.Meta</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.UnitOfMeasure.Meta</primary><secondary>verbose_name_plural</secondary></indexterm>
+<para><computeroutput>str bym.BYM_project.main_app.models.UnitOfMeasure.Meta.verbose_name_plural = &apos;Единицы измерения&apos;<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00163">163</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

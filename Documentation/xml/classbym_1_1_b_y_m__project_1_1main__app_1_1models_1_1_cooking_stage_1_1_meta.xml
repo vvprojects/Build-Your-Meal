@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::CookingStage::Meta</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta_1ad04241cf369d16076a09693381d37188" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str bym.BYM_project.main_app.models.CookingStage.Meta::verbose_name</definition>
+        <argsstring></argsstring>
+        <name>verbose_name</name>
+        <qualifiedname>bym.BYM_project.main_app.models.CookingStage.Meta.verbose_name</qualifiedname>
+        <initializer>=  &apos;Этап приготовления блюда&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="130" column="1" bodyfile="models.py" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta_1a0453040ff15291fa8b5f89ee67904712" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str bym.BYM_project.main_app.models.CookingStage.Meta::verbose_name_plural</definition>
+        <argsstring></argsstring>
+        <name>verbose_name_plural</name>
+        <qualifiedname>bym.BYM_project.main_app.models.CookingStage.Meta.verbose_name_plural</qualifiedname>
+        <initializer>=  &apos;Этапы приготовления блюд&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="131" column="1" bodyfile="models.py" bodystart="131" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="models.py" line="129" column="1" bodyfile="models.py" bodystart="129" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta_1ad04241cf369d16076a09693381d37188" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::CookingStage::Meta</scope><name>verbose_name</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta_1a0453040ff15291fa8b5f89ee67904712" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::CookingStage::Meta</scope><name>verbose_name_plural</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

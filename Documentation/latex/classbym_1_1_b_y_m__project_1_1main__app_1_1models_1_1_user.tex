@@ -1,0 +1,219 @@
+\doxysection{bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User Class Reference}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user}\index{bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}}
+
+
+Информация о пользователе.  
+
+
+Inheritance diagram for bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ Meta}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ authorization} (user\+\_\+id, \textbf{ login})
+\begin{DoxyCompactList}\small\item\em Поиск пользователя по логину, если не найден то присвоить логин текущему user\+\_\+id. \end{DoxyCompactList}\item 
+\textbf{ get\+\_\+user\+\_\+id} (request)
+\begin{DoxyCompactList}\small\item\em Возвращаем id пользователя -\/ залогиненного или выданного по session\+\_\+id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ session}
+\item 
+\textbf{ Session}
+\item 
+\textbf{ on\+\_\+delete}
+\item 
+\textbf{ CASCADE}
+\item 
+\textbf{ null}
+\item 
+\textbf{ True}
+\item 
+\textbf{ blank}
+\item 
+\textbf{ last\+\_\+address} = models.\+Char\+Field(max\+\_\+length=100, \textbf{ null}=\textbf{ True}, \textbf{ blank}=\textbf{ True})
+\item 
+\textbf{ nickname} = models.\+Char\+Field(max\+\_\+length=50, \textbf{ null}=\textbf{ True}, \textbf{ blank}=\textbf{ True})
+\item 
+\textbf{ login} = models.\+Email\+Field(\textbf{ null}=\textbf{ True}, \textbf{ blank}=\textbf{ True})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Информация о пользователе. 
+
+~\newline
+ last\+\_\+address – последний адрес, с которого пользователь заказывал ~\newline
+ nickname – ник пользователья ~\newline
+ login – его логин ~\newline
+ session\+\_\+id – id текущей сессии ~\newline
+ 
+
+Definition at line \textbf{ 5} of file \textbf{ models.\+py}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_ab0a8bfa053f7e8010fd64f61a5b1ff68} 
+\index{bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}!authorization@{authorization}}
+\index{authorization@{authorization}!bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}}
+\doxysubsubsection{authorization()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User.\+authorization (\begin{DoxyParamCaption}\item[{}]{user\+\_\+id,  }\item[{}]{login }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Поиск пользователя по логину, если не найден то присвоить логин текущему user\+\_\+id. 
+
+В противном случае вернуть новый user\+\_\+id 
+\begin{DoxyParams}{Parameters}
+{\em user\+\_\+id} & int \\
+\hline
+{\em login} & string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+user\+\_\+id int 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 24} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_af999c39e1e2700b9feb14cbb9f4dd951} 
+\index{bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}!get\_user\_id@{get\_user\_id}}
+\index{get\_user\_id@{get\_user\_id}!bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}}
+\doxysubsubsection{get\_user\_id()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User.\+get\+\_\+user\+\_\+id (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Возвращаем id пользователя -\/ залогиненного или выданного по session\+\_\+id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Http\+Request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+user\+\_\+id int 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 39} of file \textbf{ models.\+py}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_ae82374586f8dddce1f3eb664b6b09687} 
+\index{bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}!blank@{blank}}
+\index{blank@{blank}!bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}}
+\doxysubsubsection{blank}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User.\+blank\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 17} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_af28f869bcfc2144c48e30c231ca2cc4a} 
+\index{bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}!CASCADE@{CASCADE}}
+\index{CASCADE@{CASCADE}!bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}}
+\doxysubsubsection{CASCADE}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User.\+CASCADE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 17} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_a774e79a804baf0f13d4e1c7e0e9bc464} 
+\index{bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}!last\_address@{last\_address}}
+\index{last\_address@{last\_address}!bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}}
+\doxysubsubsection{last\_address}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User.\+last\+\_\+address = models.\+Char\+Field(max\+\_\+length=100, \textbf{ null}=\textbf{ True}, \textbf{ blank}=\textbf{ True})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 19} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_a8cd58cf6d85c37d43c5dcc3527efce8c} 
+\index{bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}!login@{login}}
+\index{login@{login}!bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}}
+\doxysubsubsection{login}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User.\+login = models.\+Email\+Field(\textbf{ null}=\textbf{ True}, \textbf{ blank}=\textbf{ True})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 21} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_a8aa271136e93202daf9e8d79f2059049} 
+\index{bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}!nickname@{nickname}}
+\index{nickname@{nickname}!bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}}
+\doxysubsubsection{nickname}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User.\+nickname = models.\+Char\+Field(max\+\_\+length=50, \textbf{ null}=\textbf{ True}, \textbf{ blank}=\textbf{ True})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 20} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_a17edf846d38a7295eb9805b7e286dea1} 
+\index{bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}!null@{null}}
+\index{null@{null}!bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}}
+\doxysubsubsection{null}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User.\+null\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 17} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_a6bcdd4b2f18cd6f8eb8a2b0ed1f9c98f} 
+\index{bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}!on\_delete@{on\_delete}}
+\index{on\_delete@{on\_delete}!bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}}
+\doxysubsubsection{on\_delete}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User.\+on\+\_\+delete\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 17} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_ae2702233c542947f0a785e208f8907f6} 
+\index{bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}!session@{session}}
+\index{session@{session}!bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}}
+\doxysubsubsection{session}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User.\+session\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 17} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_a1fc29e11a30a6b31a558f4ef9817e31c} 
+\index{bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}!Session@{Session}}
+\index{Session@{Session}!bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}}
+\doxysubsubsection{Session}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User.\+Session\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 17} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_a76a20d5f32b81209cb51cec7a7f16a61} 
+\index{bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}!True@{True}}
+\index{True@{True}!bym.BYM\_project.main\_app.models.User@{bym.BYM\_project.main\_app.models.User}}
+\doxysubsubsection{True}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User.\+True\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 17} of file \textbf{ models.\+py}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ models.\+py}\end{DoxyCompactItemize}

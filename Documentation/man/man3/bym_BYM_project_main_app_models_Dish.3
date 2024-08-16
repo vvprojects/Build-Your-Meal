@@ -1,0 +1,161 @@
+.TH "bym.BYM_project.main_app.models.Dish" 3 "BYM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bym.BYM_project.main_app.models.Dish \- информация о блюде 
+.br
+ name – названия блюда 
+.br
+ pers_num – кол-во порций 
+.br
+ cooking_time_minutes – время готовки в минутах 
+.br
+ calories – кол-во калорий в блюде 
+.br
+ proteins – кол0белки в блюде 
+.br
+ carbohydrates – углеводы в блюде 
+.br
+ fats – жиры 
+.br
+ country_id – страна из кухни которой это блюдо (например итальянская кухня) 
+.br
+ subtype_id – подтип блюда (например, фруктовые десерты) 
+.br
+ image – ссылка на изображения блюда 
+.br
+  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits models\&.Model\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMeta\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBcountry\fP"
+.br
+.ti -1c
+.RI "\fBCountry\fP"
+.br
+.ti -1c
+.RI "\fBon_delete\fP"
+.br
+.ti -1c
+.RI "\fBsubtype\fP = models\&.ForeignKey(\fBSubType\fP, \fBon_delete\fP=models\&.CASCADE)"
+.br
+.ti -1c
+.RI "\fBname\fP = models\&.CharField(max_length=100)"
+.br
+.ti -1c
+.RI "\fBpers_num\fP = models\&.PositiveIntegerField()"
+.br
+.ti -1c
+.RI "\fBcooking_time_minutes\fP = models\&.PositiveIntegerField()"
+.br
+.ti -1c
+.RI "\fBimage\fP = models\&.ImageField(null=True, blank=True, max_length=130)"
+.br
+.ti -1c
+.RI "\fBcalories\fP = models\&.PositiveIntegerField()"
+.br
+.ti -1c
+.RI "\fBproteins\fP = models\&.PositiveIntegerField()"
+.br
+.ti -1c
+.RI "\fBcarbohydrates\fP = models\&.PositiveIntegerField()"
+.br
+.ti -1c
+.RI "\fBfats\fP = models\&.PositiveIntegerField()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+информация о блюде 
+.br
+ name – названия блюда 
+.br
+ pers_num – кол-во порций 
+.br
+ cooking_time_minutes – время готовки в минутах 
+.br
+ calories – кол-во калорий в блюде 
+.br
+ proteins – кол0белки в блюде 
+.br
+ carbohydrates – углеводы в блюде 
+.br
+ fats – жиры 
+.br
+ country_id – страна из кухни которой это блюдо (например итальянская кухня) 
+.br
+ subtype_id – подтип блюда (например, фруктовые десерты) 
+.br
+ image – ссылка на изображения блюда 
+.br
+ 
+.PP
+Definition at line \fB90\fP of file \fBmodels\&.py\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Dish\&.calories = models\&.PositiveIntegerField()\fC [static]\fP"
+
+.PP
+Definition at line \fB115\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Dish\&.carbohydrates = models\&.PositiveIntegerField()\fC [static]\fP"
+
+.PP
+Definition at line \fB117\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Dish\&.cooking_time_minutes = models\&.PositiveIntegerField()\fC [static]\fP"
+
+.PP
+Definition at line \fB113\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Dish\&.country\fC [static]\fP"
+
+.PP
+Definition at line \fB108\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Dish\&.Country\fC [static]\fP"
+
+.PP
+Definition at line \fB108\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Dish\&.fats = models\&.PositiveIntegerField()\fC [static]\fP"
+
+.PP
+Definition at line \fB118\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Dish\&.image = models\&.ImageField(null=True, blank=True, max_length=130)\fC [static]\fP"
+
+.PP
+Definition at line \fB114\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Dish\&.name = models\&.CharField(max_length=100)\fC [static]\fP"
+
+.PP
+Definition at line \fB111\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Dish\&.on_delete\fC [static]\fP"
+
+.PP
+Definition at line \fB108\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Dish\&.pers_num = models\&.PositiveIntegerField()\fC [static]\fP"
+
+.PP
+Definition at line \fB112\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Dish\&.proteins = models\&.PositiveIntegerField()\fC [static]\fP"
+
+.PP
+Definition at line \fB116\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Dish\&.subtype = models\&.ForeignKey(\fBSubType\fP, \fBon_delete\fP=models\&.CASCADE)\fC [static]\fP"
+
+.PP
+Definition at line \fB109\fP of file \fBmodels\&.py\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BYM from the source code\&.

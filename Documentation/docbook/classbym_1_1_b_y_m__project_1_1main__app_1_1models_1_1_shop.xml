@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.Shop Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.Shop</primary></indexterm>
+<para>
+
+<para>информация о магазине <?linebreak?> name – название магазина <?linebreak?> link – ссылка на магазин <?linebreak?> </para>
+ 
+</para>
+<para>Inheritance diagram for bym.BYM_project.main_app.models.Shop:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta">Meta</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1af56df25cce9db36a05c3bab3f50881af">name</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1a65cbb33ac3a746c18955a5b5ca9d1303">max_length</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1a9013b400df80ef53b1663155dbce38bc">link</link> = models.URLField()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>информация о магазине <?linebreak?> name – название магазина <?linebreak?> link – ссылка на магазин <?linebreak?> </para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00242">242</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1a9013b400df80ef53b1663155dbce38bc"/><section>
+    <title>link</title>
+<indexterm><primary>link</primary><secondary>bym.BYM_project.main_app.models.Shop</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Shop</primary><secondary>link</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Shop.link = models.URLField()<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00253">253</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1a65cbb33ac3a746c18955a5b5ca9d1303"/><section>
+    <title>max_length</title>
+<indexterm><primary>max_length</primary><secondary>bym.BYM_project.main_app.models.Shop</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Shop</primary><secondary>max_length</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Shop.max_length<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00252">252</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1af56df25cce9db36a05c3bab3f50881af"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>bym.BYM_project.main_app.models.Shop</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Shop</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Shop.name<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00252">252</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::Type</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">models.Model</basecompoundref>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1_1_meta" prot="public">bym::BYM_project::main_app::models::Type::Meta</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1a76f2c5ad5c43a7f0f3408a19377c1273" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Type::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Type.name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="72" column="1" bodyfile="models.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1ada45504e4babeb26a397200f2f0c9b8d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Type::max_length</definition>
+        <argsstring></argsstring>
+        <name>max_length</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Type.max_length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="72" column="1" bodyfile="models.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>таблица с типами блюд <linebreak/>
+ name – название типа (например Завтраки) <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Type</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Type</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="models.py" line="63" column="1" bodyfile="models.py" bodystart="63" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1ada45504e4babeb26a397200f2f0c9b8d" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Type</scope><name>max_length</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1a76f2c5ad5c43a7f0f3408a19377c1273" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Type</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

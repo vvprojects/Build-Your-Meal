@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacebym_1_1_b_y_m__project_1_1main__app_1_1models" kind="namespace" language="Python">
+    <compoundname>bym::BYM_project::main_app::models</compoundname>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category" prot="public">bym::BYM_project::main_app::models::Category</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion" prot="public">bym::BYM_project::main_app::models::Conversion</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage" prot="public">bym::BYM_project::main_app::models::CookingStage</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country" prot="public">bym::BYM_project::main_app::models::Country</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish" prot="public">bym::BYM_project::main_app::models::Dish</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category" prot="public">bym::BYM_project::main_app::models::DishCategory</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu" prot="public">bym::BYM_project::main_app::models::Menu</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order" prot="public">bym::BYM_project::main_app::models::Order</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product" prot="public">bym::BYM_project::main_app::models::Product</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log" prot="public">bym::BYM_project::main_app::models::ProductLog</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop" prot="public">bym::BYM_project::main_app::models::Shop</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type" prot="public">bym::BYM_project::main_app::models::SubType</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type" prot="public">bym::BYM_project::main_app::models::Type</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure" prot="public">bym::BYM_project::main_app::models::UnitOfMeasure</innerclass>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user" prot="public">bym::BYM_project::main_app::models::User</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="models.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

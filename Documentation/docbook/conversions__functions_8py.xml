@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_conversions__functions_8py" xml:lang="en-US">
+<title>conversions_functions.py File Reference</title>
+<indexterm><primary>conversions_functions.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebym">bym</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project">bym.BYM_project</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app">bym.BYM_project.main_app</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions">bym.BYM_project.main_app.conversions_functions</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions_1aedc887b909c552c4dc6d68d3f3c82294">bym.BYM_project.main_app.conversions_functions.how_many_add</link> (category_id, need_unit, have_unit, need, have)</para>
+
+<para>Расчет сколько штук товара необходимо купть на что бы полностью покрыть рецепт </para>
+</listitem>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions_1a7f6cdbfd78f849181eb8729d15de8339">bym.BYM_project.main_app.conversions_functions.get_lavka_unit_id</link> (name_unit)</para>
+
+<para>Исчет единицу измерения из магазина в базе данных, если нет создает </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

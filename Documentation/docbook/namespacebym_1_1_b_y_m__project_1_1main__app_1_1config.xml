@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1config" xml:lang="en-US">
+<title>bym.BYM_project.main_app.config Namespace Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.config</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1ad2134171b2678db43657ebb4707a71e5">webdriver_name</link> = os.getenv(&quot;webdriver_name&quot;)</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1a33e627ec953d99555066175ad5255567">urls_lavka</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1a33e627ec953d99555066175ad5255567"/><section>
+    <title>urls_lavka</title>
+<indexterm><primary>urls_lavka</primary><secondary>bym.BYM_project.main_app.config</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.config</primary><secondary>urls_lavka</secondary></indexterm>
+<para><computeroutput>list bym.BYM_project.main_app.config.urls_lavka</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">00001 =&#32;&#32;[
+00002 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/ovoshchi_griby_i_zelen&apos;</emphasis>,
+00003 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/Frukty_i_yagody&apos;</emphasis>,
+00004 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/milk_products&apos;</emphasis>,
+00005 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/cheese&apos;</emphasis>,
+00006 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/kefir_smetana_tvorog&apos;</emphasis>,
+00007 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/e64b861bd9a34ebc9103dbf15e2d2932&apos;</emphasis>,
+00008 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/molochnoe_dlya_detej&apos;</emphasis>,
+00009 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/hleb&apos;</emphasis>,
+00010 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/vipechka&apos;</emphasis>,
+00011 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/hlebcy&apos;</emphasis>,
+00012 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/beef_pork&apos;</emphasis>,
+00013 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/wurst_all&apos;</emphasis>,
+00014 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/ryba_i_moreprodukty&apos;</emphasis>,
+00015 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/zakuski_i_pashtety&apos;</emphasis>,
+00016 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/morozhenoe&apos;</emphasis>,
+00017 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/pelmeni_i_vareniki&apos;</emphasis>,
+00018 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/frozen_vegetables_and_berries&apos;</emphasis>,
+00019 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/deserty&apos;</emphasis>,
+00020 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/polufabrikaty&apos;</emphasis>,
+00021 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/553b84d49692448bb06588f9d694cbde&apos;</emphasis>,
+00022 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/b9c6c90166f1487888de39b933119747&apos;</emphasis>,
+00023 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/makarony_krupy_muka&apos;</emphasis>,
+00024 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/hlopya_i_myusli&apos;</emphasis>,
+00025 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/oils_sauces_spices&apos;</emphasis>,
+00026 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/coffee_and_cocoa&apos;</emphasis>,
+00027 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/tea&apos;</emphasis>,
+00028 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;https://lavka.yandex.ru/10743/category/91ba4698f47f450087e3e8de50d93a15&apos;</emphasis>
+00029 ]
+</programlisting><para>
+Definition at line <link linkend="_config_8py_source_1l00008">8</link> of file <link linkend="_config_8py_source">config.py</link>.</para>
+</section>
+<anchor xml:id="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1config_1ad2134171b2678db43657ebb4707a71e5"/><section>
+    <title>webdriver_name</title>
+<indexterm><primary>webdriver_name</primary><secondary>bym.BYM_project.main_app.config</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.config</primary><secondary>webdriver_name</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.config.webdriver_name = os.getenv(&quot;webdriver_name&quot;)</computeroutput></para><para>
+Definition at line <link linkend="_config_8py_source_1l00006">6</link> of file <link linkend="_config_8py_source">config.py</link>.</para>
+</section>
+</section>
+</section>

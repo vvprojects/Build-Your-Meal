@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_models_8py" xml:lang="en-US">
+<title>models.py File Reference</title>
+<indexterm><primary>models.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user">bym.BYM_project.main_app.models.User</link></para>
+
+<para>Информация о пользователе. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1_1_meta">bym.BYM_project.main_app.models.User.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country">bym.BYM_project.main_app.models.Country</link></para>
+
+<para>Таблица с кухнями различных стран <?linebreak?> name – название кухни (например Русская кухня) <?linebreak?> </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta">bym.BYM_project.main_app.models.Country.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type">bym.BYM_project.main_app.models.Type</link></para>
+
+<para>таблица с типами блюд <?linebreak?> name – название типа (например Завтраки) <?linebreak?> </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1_1_meta">bym.BYM_project.main_app.models.Type.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type">bym.BYM_project.main_app.models.SubType</link></para>
+
+<para>таблица с подтипами блюд <?linebreak?> name – название подтипа (например фруктовые десерты) <?linebreak?> type_id – тип к которому относится подтип <?linebreak?> </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1_1_meta">bym.BYM_project.main_app.models.SubType.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish">bym.BYM_project.main_app.models.Dish</link></para>
+
+<para>информация о блюде <?linebreak?> name – названия блюда <?linebreak?> pers_num – кол-во порций <?linebreak?> cooking_time_minutes – время готовки в минутах <?linebreak?> calories – кол-во калорий в блюде <?linebreak?> proteins – кол0белки в блюде <?linebreak?> carbohydrates – углеводы в блюде <?linebreak?> fats – жиры <?linebreak?> country_id – страна из кухни которой это блюдо (например итальянская кухня) <?linebreak?> subtype_id – подтип блюда (например, фруктовые десерты) <?linebreak?> image – ссылка на изображения блюда <?linebreak?> </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1_1_meta">bym.BYM_project.main_app.models.Dish.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage">bym.BYM_project.main_app.models.CookingStage</link></para>
+
+<para>шаги для приготовления блюда <?linebreak?> description – текст того, что нужно сделать на этом шаге <?linebreak?> order – порядковый номер шага <?linebreak?> dish_id – блюдо, к которому относится этот шаг <?linebreak?> image – ссылка на изображение шага <?linebreak?> </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta">bym.BYM_project.main_app.models.CookingStage.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category">bym.BYM_project.main_app.models.Category</link></para>
+
+<para>категории различных продуктов для приготовления <?linebreak?> name – название категории (например: бакалея или помидоры) <?linebreak?> supreme_category_id – надкатегория (например надкатегорией римских помидор являются помидоры) <?linebreak?> </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1_1_meta">bym.BYM_project.main_app.models.Category.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure">bym.BYM_project.main_app.models.UnitOfMeasure</link></para>
+
+<para>единицы изменения <?linebreak?> name – название единицы измерения (например штуки или кг) <?linebreak?> supreme_unit_id – основная форма категории (например Supreme_unit_id у &quot;штуки&quot; это &quot;штука&quot;) <?linebreak?> </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta">bym.BYM_project.main_app.models.UnitOfMeasure.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion">bym.BYM_project.main_app.models.Conversion</link></para>
+
+<para>коэффициенты для перевода единиц измерения <?linebreak?> coefficient – число на которое нужно умножить что бы перевести from_unit_id в to_unit_id <?linebreak?> category_id – категория для которой выполняется перевод (очевидно что коэффициент для перевода штук в граммы для помидоров и огурцов отличается) <?linebreak?> from_unit_id– единица измерения из которой выполняется перевод <?linebreak?> to_unit_id – единица измерения в которую выполняется перевод <?linebreak?> </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1_1_meta">bym.BYM_project.main_app.models.Conversion.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category">bym.BYM_project.main_app.models.DishCategory</link></para>
+
+<para>информация о составе блюда. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta">bym.BYM_project.main_app.models.DishCategory.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order">bym.BYM_project.main_app.models.Order</link></para>
+
+<para>информация о заказах. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1_1_meta">bym.BYM_project.main_app.models.Order.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu">bym.BYM_project.main_app.models.Menu</link></para>
+
+<para>состав заказа <?linebreak?> amount– кол-во товара, которое было заказано <?linebreak?> dish_id – товар который был заказан <?linebreak?> order_id – заказ в котором этот товар был заказан <?linebreak?> </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1_1_meta">bym.BYM_project.main_app.models.Menu.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop">bym.BYM_project.main_app.models.Shop</link></para>
+
+<para>информация о магазине <?linebreak?> name – название магазина <?linebreak?> link – ссылка на магазин <?linebreak?> </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta">bym.BYM_project.main_app.models.Shop.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product">bym.BYM_project.main_app.models.Product</link></para>
+
+<para>информация о конкретном товаре в магазине <?linebreak?> name – название товара <?linebreak?> price – цена <?linebreak?> amount – количество (в unit_id) товара которое в одной единице заказ (например 300, unit_id – граммы) <?linebreak?> link – ссылка на товар <?linebreak?> shop_id – магазин, из которого товар <?linebreak?> unit_id – единица измерения <?linebreak?> user_id – пользователь для которого был спаршен данный товар <?linebreak?> </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1_1_meta">bym.BYM_project.main_app.models.Product.Meta</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log">bym.BYM_project.main_app.models.ProductLog</link></para>
+
+<para>информация о ранее заказанных товарах в магазине <?linebreak?> name – название товара <?linebreak?> price – цена <?linebreak?> amount – количество (в unit_id) товара которое в одной единице заказ (например 300, unit_id – граммы) <?linebreak?> quantity – количество единиц, которое было заказано <?linebreak?> link – ссылка на товар <?linebreak?> shop_id – магазин, из которого товар <?linebreak?> order_id – заказ, в котором был куплен данный товар <?linebreak?> unit_id – единица измерения <?linebreak?> </para>
+</listitem>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1_1_meta">bym.BYM_project.main_app.models.ProductLog.Meta</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebym">bym</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project">bym.BYM_project</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app">bym.BYM_project.main_app</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1models">bym.BYM_project.main_app.models</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

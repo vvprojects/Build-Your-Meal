@@ -1,0 +1,84 @@
+.TH "bym.BYM_project.main_app.models.Menu" 3 "BYM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bym.BYM_project.main_app.models.Menu \- состав заказа 
+.br
+ amount– кол-во товара, которое было заказано 
+.br
+ dish_id – товар который был заказан 
+.br
+ order_id – заказ в котором этот товар был заказан 
+.br
+  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits models\&.Model\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMeta\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBdish\fP"
+.br
+.ti -1c
+.RI "\fBDish\fP"
+.br
+.ti -1c
+.RI "\fBon_delete\fP"
+.br
+.ti -1c
+.RI "\fBorder\fP = models\&.ForeignKey(\fBOrder\fP, \fBon_delete\fP=models\&.CASCADE)"
+.br
+.ti -1c
+.RI "\fBamount\fP = models\&.PositiveIntegerField(default=1)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+состав заказа 
+.br
+ amount– кол-во товара, которое было заказано 
+.br
+ dish_id – товар который был заказан 
+.br
+ order_id – заказ в котором этот товар был заказан 
+.br
+ 
+.PP
+Definition at line \fB225\fP of file \fBmodels\&.py\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Menu\&.amount = models\&.PositiveIntegerField(default=1)\fC [static]\fP"
+
+.PP
+Definition at line \fB239\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Menu\&.dish\fC [static]\fP"
+
+.PP
+Definition at line \fB236\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Menu\&.Dish\fC [static]\fP"
+
+.PP
+Definition at line \fB236\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Menu\&.on_delete\fC [static]\fP"
+
+.PP
+Definition at line \fB236\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Menu\&.order = models\&.ForeignKey(\fBOrder\fP, \fBon_delete\fP=models\&.CASCADE)\fC [static]\fP"
+
+.PP
+Definition at line \fB237\fP of file \fBmodels\&.py\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BYM from the source code\&.

@@ -1,0 +1,165 @@
+.TH "bym.BYM_project.main_app.parser.Lavka" 3 "BYM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bym.BYM_project.main_app.parser.Lavka \- Определяет класс используемый для парсинга лавки\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbym\&.BYM_project\&.main_app\&.parser\&.Parser\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB__init__\fP (self, user_id)"
+.br
+.RI "Инициализирует класс Lavka\&. "
+.ti -1c
+.RI "\fBget_data_product\fP (self, product)"
+.br
+.RI "Выделяет из блока с информацией о продукте нужную и записывает в БД "
+.ti -1c
+.RI "\fBget_data_html\fP (self, html)"
+.br
+.RI "Разбивает html код на блоки по продуктам, асинхронно запускает их обработку "
+.ti -1c
+.RI "\fBpars\fP (self, city_street, home)"
+.br
+.RI "Парсит список продуктов с ценами яндекс лавки по определенному адресу Производит запись в базу данных "
+.in -1c
+
+Public Member Functions inherited from \fBbym\&.BYM_project\&.main_app\&.parser\&.Parser\fP
+.in +1c
+.ti -1c
+.RI "\fBsql_script\fP (self)"
+.br
+.RI "Сохраняет в базу данных "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBurl_main\fP"
+.br
+.ti -1c
+.RI "\fBdriver\fP"
+.br
+.ti -1c
+.RI "\fBwait\fP"
+.br
+.ti -1c
+.RI "\fBurls\fP"
+.br
+.ti -1c
+.RI "\fBsl_tags\fP"
+.br
+.in -1c
+
+Public Attributes inherited from \fBbym\&.BYM_project\&.main_app\&.parser\&.Parser\fP
+.in +1c
+.ti -1c
+.RI "\fBuser_obj\fP"
+.br
+.ti -1c
+.RI "\fBoptions\fP"
+.br
+.ti -1c
+.RI "\fBproduct_list\fP"
+.br
+.ti -1c
+.RI "\fBshop_obj\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Определяет класс используемый для парсинга лавки\&. 
+.PP
+Definition at line \fB56\fP of file \fBparser\&.py\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.parser\&.Lavka\&.__init__ ( self,  user_id)"
+
+.PP
+Инициализирует класс Lavka\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuser_id\fP int 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBbym\&.BYM_project\&.main_app\&.parser\&.Parser\fP\&.
+.PP
+Definition at line \fB61\fP of file \fBparser\&.py\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.parser\&.Lavka\&.get_data_html ( self,  html)"
+
+.PP
+Разбивает html код на блоки по продуктам, асинхронно запускает их обработку 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhtml\fP string 
+.RE
+.PP
+
+.PP
+Definition at line \fB107\fP of file \fBparser\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.parser\&.Lavka\&.get_data_product ( self,  product)"
+
+.PP
+Выделяет из блока с информацией о продукте нужную и записывает в БД 
+.PP
+\fBParameters\fP
+.RS 4
+\fIproduct\fP BeautifulSoup 
+.RE
+.PP
+
+.PP
+Definition at line \fB79\fP of file \fBparser\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.parser\&.Lavka\&.pars ( self,  city_street,  home)"
+
+.PP
+Парсит список продуктов с ценами яндекс лавки по определенному адресу Производит запись в базу данных 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcity_strit\fP string 
+.br
+\fIhome\fP string 
+.RE
+.PP
+
+.PP
+Definition at line \fB123\fP of file \fBparser\&.py\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.parser\&.Lavka\&.driver"
+
+.PP
+Definition at line \fB73\fP of file \fBparser\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.parser\&.Lavka\&.sl_tags"
+
+.PP
+Definition at line \fB76\fP of file \fBparser\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.parser\&.Lavka\&.url_main"
+
+.PP
+Definition at line \fB67\fP of file \fBparser\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.parser\&.Lavka\&.urls"
+
+.PP
+Definition at line \fB75\fP of file \fBparser\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.parser\&.Lavka\&.wait"
+
+.PP
+Definition at line \fB74\fP of file \fBparser\&.py\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BYM from the source code\&.

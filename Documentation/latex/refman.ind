@@ -1,0 +1,640 @@
+\begin{theindex}
+
+  \item {\_\_init\_\_}
+    \subitem {bym.BYM\_project.main\_app.cart.Cart}, 21
+    \subitem {bym.BYM\_project.main\_app.parser.Lavka}, 37
+    \subitem {bym.BYM\_project.main\_app.parser.Parser}, 55
+    \subitem {bym.BYM\_project.main\_app.recommendation\_system.RecommendationSystem}, 
+		62
+    \subitem {bym.BYM\_project.main\_app.search.SearchDish}, 63
+    \subitem {bym.BYM\_project.main\_app.search.SearchProduct}, 68
+  \item {\_\_init\_\_.py}, 81
+
+  \indexspace
+
+  \item {address\_flg}
+    \subitem {bym.BYM\_project.main\_app.search.SearchDish}, 65
+  \item {admin.py}, 81
+  \item {amount}
+    \subitem {bym.BYM\_project.main\_app.models.DishCategory}, 35
+    \subitem {bym.BYM\_project.main\_app.models.Menu}, 41
+    \subitem {bym.BYM\_project.main\_app.models.Product}, 58
+    \subitem {bym.BYM\_project.main\_app.models.ProductLog}, 60
+  \item {apps.py}, 82
+  \item {authorization}
+    \subitem {bym.BYM\_project.main\_app.models.User}, 76
+
+  \indexspace
+
+  \item {blank}
+    \subitem {bym.BYM\_project.main\_app.models.Category}, 25
+    \subitem {bym.BYM\_project.main\_app.models.UnitOfMeasure}, 74
+    \subitem {bym.BYM\_project.main\_app.models.User}, 77
+  \item {bym}, 11
+  \item {bym.BYM\_project}, 11
+  \item {bym.BYM\_project.main\_app}, 11
+  \item {bym.BYM\_project.main\_app.admin}, 12
+  \item {bym.BYM\_project.main\_app.apps}, 12
+  \item {bym.BYM\_project.main\_app.apps.MainAppConfig}, 40
+    \subitem {default\_auto\_field}, 40
+    \subitem {name}, 40
+  \item {bym.BYM\_project.main\_app.cart}, 12
+  \item {bym.BYM\_project.main\_app.cart.Cart}, 21
+    \subitem {\_\_init\_\_}, 21
+    \subitem {change\_order}, 22
+    \subitem {get\_categories}, 22
+    \subitem {get\_categories\_list}, 22
+    \subitem {get\_order\_array}, 24
+    \subitem {order\_obj}, 24
+  \item {bym.BYM\_project.main\_app.config}, 12
+    \subitem {urls\_lavka}, 12
+    \subitem {webdriver\_name}, 12
+  \item {bym.BYM\_project.main\_app.conversions\_functions}, 13
+    \subitem {get\_lavka\_unit\_id}, 13
+    \subitem {how\_many\_add}, 13
+  \item {bym.BYM\_project.main\_app.forms}, 14
+  \item {bym.BYM\_project.main\_app.forms.SearchDishForm}, 67
+    \subitem {search\_string}, 67
+  \item {bym.BYM\_project.main\_app.functions\_backend}, 14
+    \subitem {convert\_fraction}, 14
+    \subitem {get\_dish\_types}, 15
+    \subitem {get\_particular\_dish}, 15
+    \subitem {number\_and\_measure}, 15
+    \subitem {start\_session}, 16
+    \subitem {string\_to\_minutes}, 16
+  \item {bym.BYM\_project.main\_app.models}, 16
+  \item {bym.BYM\_project.main\_app.models.Category}, 24
+    \subitem {blank}, 25
+    \subitem {name}, 25
+    \subitem {null}, 25
+    \subitem {on\_delete}, 25
+    \subitem {supreme\_category}, 25
+    \subitem {True}, 26
+  \item {bym.BYM\_project.main\_app.models.Category.Meta}, 42
+    \subitem {verbose\_name}, 42
+    \subitem {verbose\_name\_plural}, 42
+  \item {bym.BYM\_project.main\_app.models.Conversion}, 27
+    \subitem {Category}, 27
+    \subitem {category}, 27
+    \subitem {coefficient}, 28
+    \subitem {from\_unit}, 28
+    \subitem {on\_delete}, 28
+    \subitem {to\_unit}, 28
+  \item {bym.BYM\_project.main\_app.models.Conversion.Meta}, 42
+    \subitem {verbose\_name}, 43
+    \subitem {verbose\_name\_plural}, 43
+  \item {bym.BYM\_project.main\_app.models.CookingStage}, 28
+    \subitem {description}, 29
+    \subitem {Dish}, 29
+    \subitem {dish}, 29
+    \subitem {image}, 29
+    \subitem {on\_delete}, 29
+    \subitem {order}, 30
+  \item {bym.BYM\_project.main\_app.models.CookingStage.Meta}, 43
+    \subitem {verbose\_name}, 43
+    \subitem {verbose\_name\_plural}, 43
+  \item {bym.BYM\_project.main\_app.models.Country}, 30
+    \subitem {max\_length}, 31
+    \subitem {name}, 31
+  \item {bym.BYM\_project.main\_app.models.Country.Meta}, 44
+    \subitem {verbose\_name}, 44
+    \subitem {verbose\_name\_plural}, 44
+  \item {bym.BYM\_project.main\_app.models.Dish}, 31
+    \subitem {calories}, 32
+    \subitem {carbohydrates}, 32
+    \subitem {cooking\_time\_minutes}, 32
+    \subitem {Country}, 33
+    \subitem {country}, 32
+    \subitem {fats}, 33
+    \subitem {image}, 33
+    \subitem {name}, 33
+    \subitem {on\_delete}, 33
+    \subitem {pers\_num}, 33
+    \subitem {proteins}, 33
+    \subitem {subtype}, 33
+  \item {bym.BYM\_project.main\_app.models.Dish.Meta}, 44
+    \subitem {verbose\_name}, 45
+    \subitem {verbose\_name\_plural}, 45
+  \item {bym.BYM\_project.main\_app.models.DishCategory}, 34
+    \subitem {amount}, 35
+    \subitem {category}, 35
+    \subitem {Dish}, 35
+    \subitem {dish}, 35
+    \subitem {on\_delete}, 35
+    \subitem {unit}, 35
+  \item {bym.BYM\_project.main\_app.models.DishCategory.Meta}, 45
+    \subitem {verbose\_name}, 45
+    \subitem {verbose\_name\_plural}, 45
+  \item {bym.BYM\_project.main\_app.models.Menu}, 40
+    \subitem {amount}, 41
+    \subitem {Dish}, 41
+    \subitem {dish}, 41
+    \subitem {on\_delete}, 41
+    \subitem {order}, 41
+  \item {bym.BYM\_project.main\_app.models.Menu.Meta}, 46
+    \subitem {verbose\_name}, 46
+    \subitem {verbose\_name\_plural}, 46
+  \item {bym.BYM\_project.main\_app.models.Order}, 53
+    \subitem {current}, 53
+    \subitem {on\_delete}, 53
+    \subitem {order\_date}, 53
+    \subitem {User}, 54
+    \subitem {user}, 54
+  \item {bym.BYM\_project.main\_app.models.Order.Meta}, 46
+    \subitem {verbose\_name}, 47
+    \subitem {verbose\_name\_plural}, 47
+  \item {bym.BYM\_project.main\_app.models.Product}, 57
+    \subitem {amount}, 58
+    \subitem {link}, 58
+    \subitem {name}, 58
+    \subitem {on\_delete}, 58
+    \subitem {price}, 58
+    \subitem {shop}, 58
+    \subitem {unit}, 58
+    \subitem {User}, 59
+    \subitem {user}, 58
+  \item {bym.BYM\_project.main\_app.models.Product.Meta}, 47
+    \subitem {verbose\_name}, 47
+    \subitem {verbose\_name\_plural}, 47
+  \item {bym.BYM\_project.main\_app.models.ProductLog}, 59
+    \subitem {amount}, 60
+    \subitem {link}, 60
+    \subitem {name}, 60
+    \subitem {on\_delete}, 60
+    \subitem {Order}, 60
+    \subitem {order}, 60
+    \subitem {price}, 61
+    \subitem {quantity}, 61
+    \subitem {shop}, 61
+    \subitem {unit}, 61
+  \item {bym.BYM\_project.main\_app.models.ProductLog.Meta}, 48
+    \subitem {verbose\_name}, 48
+    \subitem {verbose\_name\_plural}, 48
+  \item {bym.BYM\_project.main\_app.models.Shop}, 70
+    \subitem {link}, 71
+    \subitem {max\_length}, 71
+    \subitem {name}, 71
+  \item {bym.BYM\_project.main\_app.models.Shop.Meta}, 48
+    \subitem {verbose\_name}, 49
+    \subitem {verbose\_name\_plural}, 49
+  \item {bym.BYM\_project.main\_app.models.SubType}, 71
+    \subitem {name}, 72
+    \subitem {on\_delete}, 72
+    \subitem {Type}, 72
+    \subitem {type}, 72
+  \item {bym.BYM\_project.main\_app.models.SubType.Meta}, 49
+    \subitem {verbose\_name}, 49
+    \subitem {verbose\_name\_plural}, 49
+  \item {bym.BYM\_project.main\_app.models.Type}, 73
+    \subitem {max\_length}, 73
+    \subitem {name}, 73
+  \item {bym.BYM\_project.main\_app.models.Type.Meta}, 50
+    \subitem {verbose\_name}, 50
+    \subitem {verbose\_name\_plural}, 50
+  \item {bym.BYM\_project.main\_app.models.UnitOfMeasure}, 74
+    \subitem {blank}, 74
+    \subitem {name}, 74
+    \subitem {null}, 75
+    \subitem {on\_delete}, 75
+    \subitem {supreme\_unit}, 75
+    \subitem {True}, 75
+  \item {bym.BYM\_project.main\_app.models.UnitOfMeasure.Meta}, 50
+    \subitem {verbose\_name}, 51
+    \subitem {verbose\_name\_plural}, 51
+  \item {bym.BYM\_project.main\_app.models.User}, 75
+    \subitem {authorization}, 76
+    \subitem {blank}, 77
+    \subitem {CASCADE}, 77
+    \subitem {get\_user\_id}, 77
+    \subitem {last\_address}, 77
+    \subitem {login}, 77
+    \subitem {nickname}, 78
+    \subitem {null}, 78
+    \subitem {on\_delete}, 78
+    \subitem {Session}, 78
+    \subitem {session}, 78
+    \subitem {True}, 78
+  \item {bym.BYM\_project.main\_app.models.User.Meta}, 51
+    \subitem {verbose\_name}, 51
+    \subitem {verbose\_name\_plural}, 51
+  \item {bym.BYM\_project.main\_app.parser}, 18
+    \subitem {parse\_by\_address}, 18
+  \item {bym.BYM\_project.main\_app.parser.Lavka}, 36
+    \subitem {\_\_init\_\_}, 37
+    \subitem {driver}, 39
+    \subitem {get\_data\_html}, 38
+    \subitem {get\_data\_product}, 38
+    \subitem {pars}, 38
+    \subitem {sl\_tags}, 39
+    \subitem {url\_main}, 39
+    \subitem {urls}, 39
+    \subitem {wait}, 39
+  \item {bym.BYM\_project.main\_app.parser.Parser}, 55
+    \subitem {\_\_init\_\_}, 55
+    \subitem {options}, 56
+    \subitem {product\_list}, 56
+    \subitem {shop\_obj}, 56
+    \subitem {sql\_script}, 56
+    \subitem {user\_obj}, 56
+  \item {bym.BYM\_project.main\_app.recommendation\_system}, 19
+  \item {bym.BYM\_project.main\_app.recommendation\_system.RecommendationSystem}, 
+		61
+    \subitem {\_\_init\_\_}, 62
+    \subitem {fit}, 62
+    \subitem {predict}, 62
+  \item {bym.BYM\_project.main\_app.search}, 19
+  \item {bym.BYM\_project.main\_app.search.SearchDish}, 62
+    \subitem {\_\_init\_\_}, 63
+    \subitem {address\_flg}, 65
+    \subitem {dish\_list}, 65
+    \subitem {get}, 64
+    \subitem {ratio}, 65
+    \subitem {recommend\_scorer}, 64
+    \subitem {score}, 64
+    \subitem {search\_string}, 65
+    \subitem {seq\_match\_scorer}, 65
+    \subitem {threshold}, 65
+  \item {bym.BYM\_project.main\_app.search.SearchProduct}, 67
+    \subitem {\_\_init\_\_}, 68
+    \subitem {category}, 70
+    \subitem {get}, 68
+    \subitem {get\_category}, 69
+    \subitem {products}, 70
+    \subitem {score}, 69
+    \subitem {seq\_match\_scorer}, 69
+    \subitem {threshold}, 70
+  \item {bym.BYM\_project.main\_app.serializers}, 19
+  \item {bym.BYM\_project.main\_app.serializers.UserSerializer}, 79
+  \item {bym.BYM\_project.main\_app.serializers.UserSerializer.Meta}, 
+		52
+    \subitem {fields}, 52
+    \subitem {model}, 52
+  \item {bym.BYM\_project.main\_app.tests}, 19
+  \item {bym.BYM\_project.main\_app.views}, 19
+    \subitem {Dish}, 20
+    \subitem {FinalPage}, 20
+    \subitem {HomePageView}, 20
+    \subitem {my\_view}, 20
+    \subitem {parse\_adress}, 20
+    \subitem {update\_counter}, 20
+  \item {bym.BYM\_project.main\_app.views.ChangeCartApi}, 26
+    \subitem {post}, 26
+  \item {bym.BYM\_project.main\_app.views.HomePageApi}, 36
+    \subitem {get}, 36
+  \item {bym.BYM\_project.main\_app.views.ParseProductsApi}, 54
+    \subitem {post}, 55
+  \item {bym.BYM\_project.main\_app.views.SearchDishApi}, 66
+    \subitem {post}, 66
+  \item {bym.BYM\_project.main\_app.views.UserApiView}, 79
+    \subitem {queryset}, 79
+    \subitem {serializer\_class}, 79
+
+  \indexspace
+
+  \item {calories}
+    \subitem {bym.BYM\_project.main\_app.models.Dish}, 32
+  \item {carbohydrates}
+    \subitem {bym.BYM\_project.main\_app.models.Dish}, 32
+  \item {cart.py}, 82
+  \item {CASCADE}
+    \subitem {bym.BYM\_project.main\_app.models.User}, 77
+  \item {Category}
+    \subitem {bym.BYM\_project.main\_app.models.Conversion}, 27
+  \item {category}
+    \subitem {bym.BYM\_project.main\_app.models.Conversion}, 27
+    \subitem {bym.BYM\_project.main\_app.models.DishCategory}, 35
+    \subitem {bym.BYM\_project.main\_app.search.SearchProduct}, 70
+  \item {change\_order}
+    \subitem {bym.BYM\_project.main\_app.cart.Cart}, 22
+  \item {coefficient}
+    \subitem {bym.BYM\_project.main\_app.models.Conversion}, 28
+  \item {config.py}, 84
+  \item {conversions\_functions.py}, 85
+  \item {convert\_fraction}
+    \subitem {bym.BYM\_project.main\_app.functions\_backend}, 14
+  \item {cooking\_time\_minutes}
+    \subitem {bym.BYM\_project.main\_app.models.Dish}, 32
+  \item {Country}
+    \subitem {bym.BYM\_project.main\_app.models.Dish}, 33
+  \item {country}
+    \subitem {bym.BYM\_project.main\_app.models.Dish}, 32
+  \item {current}
+    \subitem {bym.BYM\_project.main\_app.models.Order}, 53
+
+  \indexspace
+
+  \item {default\_auto\_field}
+    \subitem {bym.BYM\_project.main\_app.apps.MainAppConfig}, 40
+  \item {description}
+    \subitem {bym.BYM\_project.main\_app.models.CookingStage}, 29
+  \item {Dish}
+    \subitem {bym.BYM\_project.main\_app.models.CookingStage}, 29
+    \subitem {bym.BYM\_project.main\_app.models.DishCategory}, 35
+    \subitem {bym.BYM\_project.main\_app.models.Menu}, 41
+    \subitem {bym.BYM\_project.main\_app.views}, 20
+  \item {dish}
+    \subitem {bym.BYM\_project.main\_app.models.CookingStage}, 29
+    \subitem {bym.BYM\_project.main\_app.models.DishCategory}, 35
+    \subitem {bym.BYM\_project.main\_app.models.Menu}, 41
+  \item {dish\_list}
+    \subitem {bym.BYM\_project.main\_app.search.SearchDish}, 65
+  \item {driver}
+    \subitem {bym.BYM\_project.main\_app.parser.Lavka}, 39
+
+  \indexspace
+
+  \item {fats}
+    \subitem {bym.BYM\_project.main\_app.models.Dish}, 33
+  \item {fields}
+    \subitem {bym.BYM\_project.main\_app.serializers.UserSerializer.Meta}, 
+		52
+  \item {FinalPage}
+    \subitem {bym.BYM\_project.main\_app.views}, 20
+  \item {fit}
+    \subitem {bym.BYM\_project.main\_app.recommendation\_system.RecommendationSystem}, 
+		62
+  \item {forms.py}, 86
+  \item {from\_unit}
+    \subitem {bym.BYM\_project.main\_app.models.Conversion}, 28
+  \item {functions\_backend.py}, 87
+
+  \indexspace
+
+  \item {get}
+    \subitem {bym.BYM\_project.main\_app.search.SearchDish}, 64
+    \subitem {bym.BYM\_project.main\_app.search.SearchProduct}, 68
+    \subitem {bym.BYM\_project.main\_app.views.HomePageApi}, 36
+  \item {get\_categories}
+    \subitem {bym.BYM\_project.main\_app.cart.Cart}, 22
+  \item {get\_categories\_list}
+    \subitem {bym.BYM\_project.main\_app.cart.Cart}, 22
+  \item {get\_category}
+    \subitem {bym.BYM\_project.main\_app.search.SearchProduct}, 69
+  \item {get\_data\_html}
+    \subitem {bym.BYM\_project.main\_app.parser.Lavka}, 38
+  \item {get\_data\_product}
+    \subitem {bym.BYM\_project.main\_app.parser.Lavka}, 38
+  \item {get\_dish\_types}
+    \subitem {bym.BYM\_project.main\_app.functions\_backend}, 15
+  \item {get\_lavka\_unit\_id}
+    \subitem {bym.BYM\_project.main\_app.conversions\_functions}, 13
+  \item {get\_order\_array}
+    \subitem {bym.BYM\_project.main\_app.cart.Cart}, 24
+  \item {get\_particular\_dish}
+    \subitem {bym.BYM\_project.main\_app.functions\_backend}, 15
+  \item {get\_user\_id}
+    \subitem {bym.BYM\_project.main\_app.models.User}, 77
+
+  \indexspace
+
+  \item {HomePageView}
+    \subitem {bym.BYM\_project.main\_app.views}, 20
+  \item {how\_many\_add}
+    \subitem {bym.BYM\_project.main\_app.conversions\_functions}, 13
+
+  \indexspace
+
+  \item {image}
+    \subitem {bym.BYM\_project.main\_app.models.CookingStage}, 29
+    \subitem {bym.BYM\_project.main\_app.models.Dish}, 33
+
+  \indexspace
+
+  \item {last\_address}
+    \subitem {bym.BYM\_project.main\_app.models.User}, 77
+  \item {link}
+    \subitem {bym.BYM\_project.main\_app.models.Product}, 58
+    \subitem {bym.BYM\_project.main\_app.models.ProductLog}, 60
+    \subitem {bym.BYM\_project.main\_app.models.Shop}, 71
+  \item {login}
+    \subitem {bym.BYM\_project.main\_app.models.User}, 77
+
+  \indexspace
+
+  \item {max\_length}
+    \subitem {bym.BYM\_project.main\_app.models.Country}, 31
+    \subitem {bym.BYM\_project.main\_app.models.Shop}, 71
+    \subitem {bym.BYM\_project.main\_app.models.Type}, 73
+  \item {model}
+    \subitem {bym.BYM\_project.main\_app.serializers.UserSerializer.Meta}, 
+		52
+  \item {models.py}, 88
+  \item {my\_view}
+    \subitem {bym.BYM\_project.main\_app.views}, 20
+
+  \indexspace
+
+  \item {name}
+    \subitem {bym.BYM\_project.main\_app.apps.MainAppConfig}, 40
+    \subitem {bym.BYM\_project.main\_app.models.Category}, 25
+    \subitem {bym.BYM\_project.main\_app.models.Country}, 31
+    \subitem {bym.BYM\_project.main\_app.models.Dish}, 33
+    \subitem {bym.BYM\_project.main\_app.models.Product}, 58
+    \subitem {bym.BYM\_project.main\_app.models.ProductLog}, 60
+    \subitem {bym.BYM\_project.main\_app.models.Shop}, 71
+    \subitem {bym.BYM\_project.main\_app.models.SubType}, 72
+    \subitem {bym.BYM\_project.main\_app.models.Type}, 73
+    \subitem {bym.BYM\_project.main\_app.models.UnitOfMeasure}, 74
+  \item {nickname}
+    \subitem {bym.BYM\_project.main\_app.models.User}, 78
+  \item {null}
+    \subitem {bym.BYM\_project.main\_app.models.Category}, 25
+    \subitem {bym.BYM\_project.main\_app.models.UnitOfMeasure}, 75
+    \subitem {bym.BYM\_project.main\_app.models.User}, 78
+  \item {number\_and\_measure}
+    \subitem {bym.BYM\_project.main\_app.functions\_backend}, 15
+
+  \indexspace
+
+  \item {on\_delete}
+    \subitem {bym.BYM\_project.main\_app.models.Category}, 25
+    \subitem {bym.BYM\_project.main\_app.models.Conversion}, 28
+    \subitem {bym.BYM\_project.main\_app.models.CookingStage}, 29
+    \subitem {bym.BYM\_project.main\_app.models.Dish}, 33
+    \subitem {bym.BYM\_project.main\_app.models.DishCategory}, 35
+    \subitem {bym.BYM\_project.main\_app.models.Menu}, 41
+    \subitem {bym.BYM\_project.main\_app.models.Order}, 53
+    \subitem {bym.BYM\_project.main\_app.models.Product}, 58
+    \subitem {bym.BYM\_project.main\_app.models.ProductLog}, 60
+    \subitem {bym.BYM\_project.main\_app.models.SubType}, 72
+    \subitem {bym.BYM\_project.main\_app.models.UnitOfMeasure}, 75
+    \subitem {bym.BYM\_project.main\_app.models.User}, 78
+  \item {options}
+    \subitem {bym.BYM\_project.main\_app.parser.Parser}, 56
+  \item {Order}
+    \subitem {bym.BYM\_project.main\_app.models.ProductLog}, 60
+  \item {order}
+    \subitem {bym.BYM\_project.main\_app.models.CookingStage}, 30
+    \subitem {bym.BYM\_project.main\_app.models.Menu}, 41
+    \subitem {bym.BYM\_project.main\_app.models.ProductLog}, 60
+  \item {order\_date}
+    \subitem {bym.BYM\_project.main\_app.models.Order}, 53
+  \item {order\_obj}
+    \subitem {bym.BYM\_project.main\_app.cart.Cart}, 24
+
+  \indexspace
+
+  \item {pars}
+    \subitem {bym.BYM\_project.main\_app.parser.Lavka}, 38
+  \item {parse\_adress}
+    \subitem {bym.BYM\_project.main\_app.views}, 20
+  \item {parse\_by\_address}
+    \subitem {bym.BYM\_project.main\_app.parser}, 18
+  \item {parser.py}, 94
+  \item {pers\_num}
+    \subitem {bym.BYM\_project.main\_app.models.Dish}, 33
+  \item {post}
+    \subitem {bym.BYM\_project.main\_app.views.ChangeCartApi}, 26
+    \subitem {bym.BYM\_project.main\_app.views.ParseProductsApi}, 55
+    \subitem {bym.BYM\_project.main\_app.views.SearchDishApi}, 66
+  \item {predict}
+    \subitem {bym.BYM\_project.main\_app.recommendation\_system.RecommendationSystem}, 
+		62
+  \item {price}
+    \subitem {bym.BYM\_project.main\_app.models.Product}, 58
+    \subitem {bym.BYM\_project.main\_app.models.ProductLog}, 61
+  \item {product\_list}
+    \subitem {bym.BYM\_project.main\_app.parser.Parser}, 56
+  \item {products}
+    \subitem {bym.BYM\_project.main\_app.search.SearchProduct}, 70
+  \item {proteins}
+    \subitem {bym.BYM\_project.main\_app.models.Dish}, 33
+
+  \indexspace
+
+  \item {quantity}
+    \subitem {bym.BYM\_project.main\_app.models.ProductLog}, 61
+  \item {queryset}
+    \subitem {bym.BYM\_project.main\_app.views.UserApiView}, 79
+
+  \indexspace
+
+  \item {ratio}
+    \subitem {bym.BYM\_project.main\_app.search.SearchDish}, 65
+  \item {recommend\_scorer}
+    \subitem {bym.BYM\_project.main\_app.search.SearchDish}, 64
+  \item {recommendation\_system.py}, 97
+
+  \indexspace
+
+  \item {score}
+    \subitem {bym.BYM\_project.main\_app.search.SearchDish}, 64
+    \subitem {bym.BYM\_project.main\_app.search.SearchProduct}, 69
+  \item {search.py}, 97
+  \item {search\_string}
+    \subitem {bym.BYM\_project.main\_app.forms.SearchDishForm}, 67
+    \subitem {bym.BYM\_project.main\_app.search.SearchDish}, 65
+  \item {seq\_match\_scorer}
+    \subitem {bym.BYM\_project.main\_app.search.SearchDish}, 65
+    \subitem {bym.BYM\_project.main\_app.search.SearchProduct}, 69
+  \item {serializer\_class}
+    \subitem {bym.BYM\_project.main\_app.views.UserApiView}, 79
+  \item {serializers.py}, 99
+  \item {Session}
+    \subitem {bym.BYM\_project.main\_app.models.User}, 78
+  \item {session}
+    \subitem {bym.BYM\_project.main\_app.models.User}, 78
+  \item {shop}
+    \subitem {bym.BYM\_project.main\_app.models.Product}, 58
+    \subitem {bym.BYM\_project.main\_app.models.ProductLog}, 61
+  \item {shop\_obj}
+    \subitem {bym.BYM\_project.main\_app.parser.Parser}, 56
+  \item {sl\_tags}
+    \subitem {bym.BYM\_project.main\_app.parser.Lavka}, 39
+  \item {sql\_script}
+    \subitem {bym.BYM\_project.main\_app.parser.Parser}, 56
+  \item {start\_session}
+    \subitem {bym.BYM\_project.main\_app.functions\_backend}, 16
+  \item {string\_to\_minutes}
+    \subitem {bym.BYM\_project.main\_app.functions\_backend}, 16
+  \item {subtype}
+    \subitem {bym.BYM\_project.main\_app.models.Dish}, 33
+  \item {supreme\_category}
+    \subitem {bym.BYM\_project.main\_app.models.Category}, 25
+  \item {supreme\_unit}
+    \subitem {bym.BYM\_project.main\_app.models.UnitOfMeasure}, 75
+
+  \indexspace
+
+  \item {tests.py}, 100
+  \item {threshold}
+    \subitem {bym.BYM\_project.main\_app.search.SearchDish}, 65
+    \subitem {bym.BYM\_project.main\_app.search.SearchProduct}, 70
+  \item {to\_unit}
+    \subitem {bym.BYM\_project.main\_app.models.Conversion}, 28
+  \item {True}
+    \subitem {bym.BYM\_project.main\_app.models.Category}, 26
+    \subitem {bym.BYM\_project.main\_app.models.UnitOfMeasure}, 75
+    \subitem {bym.BYM\_project.main\_app.models.User}, 78
+  \item {Type}
+    \subitem {bym.BYM\_project.main\_app.models.SubType}, 72
+  \item {type}
+    \subitem {bym.BYM\_project.main\_app.models.SubType}, 72
+
+  \indexspace
+
+  \item {unit}
+    \subitem {bym.BYM\_project.main\_app.models.DishCategory}, 35
+    \subitem {bym.BYM\_project.main\_app.models.Product}, 58
+    \subitem {bym.BYM\_project.main\_app.models.ProductLog}, 61
+  \item {update\_counter}
+    \subitem {bym.BYM\_project.main\_app.views}, 20
+  \item {url\_main}
+    \subitem {bym.BYM\_project.main\_app.parser.Lavka}, 39
+  \item {urls}
+    \subitem {bym.BYM\_project.main\_app.parser.Lavka}, 39
+  \item {urls\_lavka}
+    \subitem {bym.BYM\_project.main\_app.config}, 12
+  \item {User}
+    \subitem {bym.BYM\_project.main\_app.models.Order}, 54
+    \subitem {bym.BYM\_project.main\_app.models.Product}, 59
+  \item {user}
+    \subitem {bym.BYM\_project.main\_app.models.Order}, 54
+    \subitem {bym.BYM\_project.main\_app.models.Product}, 58
+  \item {user\_obj}
+    \subitem {bym.BYM\_project.main\_app.parser.Parser}, 56
+
+  \indexspace
+
+  \item {verbose\_name}
+    \subitem {bym.BYM\_project.main\_app.models.Category.Meta}, 42
+    \subitem {bym.BYM\_project.main\_app.models.Conversion.Meta}, 43
+    \subitem {bym.BYM\_project.main\_app.models.CookingStage.Meta}, 43
+    \subitem {bym.BYM\_project.main\_app.models.Country.Meta}, 44
+    \subitem {bym.BYM\_project.main\_app.models.Dish.Meta}, 45
+    \subitem {bym.BYM\_project.main\_app.models.DishCategory.Meta}, 45
+    \subitem {bym.BYM\_project.main\_app.models.Menu.Meta}, 46
+    \subitem {bym.BYM\_project.main\_app.models.Order.Meta}, 47
+    \subitem {bym.BYM\_project.main\_app.models.Product.Meta}, 47
+    \subitem {bym.BYM\_project.main\_app.models.ProductLog.Meta}, 48
+    \subitem {bym.BYM\_project.main\_app.models.Shop.Meta}, 49
+    \subitem {bym.BYM\_project.main\_app.models.SubType.Meta}, 49
+    \subitem {bym.BYM\_project.main\_app.models.Type.Meta}, 50
+    \subitem {bym.BYM\_project.main\_app.models.UnitOfMeasure.Meta}, 51
+    \subitem {bym.BYM\_project.main\_app.models.User.Meta}, 51
+  \item {verbose\_name\_plural}
+    \subitem {bym.BYM\_project.main\_app.models.Category.Meta}, 42
+    \subitem {bym.BYM\_project.main\_app.models.Conversion.Meta}, 43
+    \subitem {bym.BYM\_project.main\_app.models.CookingStage.Meta}, 43
+    \subitem {bym.BYM\_project.main\_app.models.Country.Meta}, 44
+    \subitem {bym.BYM\_project.main\_app.models.Dish.Meta}, 45
+    \subitem {bym.BYM\_project.main\_app.models.DishCategory.Meta}, 45
+    \subitem {bym.BYM\_project.main\_app.models.Menu.Meta}, 46
+    \subitem {bym.BYM\_project.main\_app.models.Order.Meta}, 47
+    \subitem {bym.BYM\_project.main\_app.models.Product.Meta}, 47
+    \subitem {bym.BYM\_project.main\_app.models.ProductLog.Meta}, 48
+    \subitem {bym.BYM\_project.main\_app.models.Shop.Meta}, 49
+    \subitem {bym.BYM\_project.main\_app.models.SubType.Meta}, 49
+    \subitem {bym.BYM\_project.main\_app.models.Type.Meta}, 50
+    \subitem {bym.BYM\_project.main\_app.models.UnitOfMeasure.Meta}, 51
+    \subitem {bym.BYM\_project.main\_app.models.User.Meta}, 51
+  \item {views.py}, 100
+
+  \indexspace
+
+  \item {wait}
+    \subitem {bym.BYM\_project.main\_app.parser.Lavka}, 39
+  \item {webdriver\_name}
+    \subitem {bym.BYM\_project.main\_app.config}, 12
+
+\end{theindex}

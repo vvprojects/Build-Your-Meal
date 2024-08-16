@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_functions__backend_8py_source" xml:lang="en-US">
+<title>functions_backend.py</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_functions__backend_8py_source_1l00001"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend">00001</link> <emphasis role="keyword">from</emphasis>&#32;django.utils&#32;<emphasis role="keyword">import</emphasis>&#32;timezone
+<anchor xml:id="_functions__backend_8py_source_1l00002"/>00002 <emphasis role="keyword">import</emphasis>&#32;re
+<anchor xml:id="_functions__backend_8py_source_1l00003"/>00003 <emphasis role="keyword">import</emphasis>&#32;unicodedata
+<anchor xml:id="_functions__backend_8py_source_1l00004"/>00004 <emphasis role="keyword">from</emphasis>&#32;main_app.models&#32;<emphasis role="keyword">import</emphasis>&#32;User,&#32;Type,&#32;SubType,&#32;Dish,&#32;CookingStage,&#32;Order,&#32;DishCategory
+<anchor xml:id="_functions__backend_8py_source_1l00005"/>00005 
+<anchor xml:id="_functions__backend_8py_source_1l00006"/>00006 
+<anchor xml:id="_functions__backend_8py_source_1l00007"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a8c445e64e551d7b0b43b70a843c62965">00007</link> <emphasis role="keyword">def&#32;</emphasis>start_session(request):
+<anchor xml:id="_functions__backend_8py_source_1l00008"/>00008 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;Начало&#32;сессии&#32;с&#32;пользователем&#32;и&#32;создание&#32;его&#32;кортежа&#32;в&#32;бд&#32;по&#32;session_id</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00009"/>00009 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;@param&#32;request&#32;HttpRequest</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00010"/>00010 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;<emphasis role="stringliteral">&apos;start_session&apos;</emphasis>&#32;<emphasis role="keywordflow">not</emphasis>&#32;<emphasis role="keywordflow">in</emphasis>&#32;request.session:
+<anchor xml:id="_functions__backend_8py_source_1l00012"/>00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;request.session[<emphasis role="stringliteral">&apos;start_session&apos;</emphasis>]&#32;=&#32;<emphasis role="stringliteral">&apos;start&apos;</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;request.session.save()
+<anchor xml:id="_functions__backend_8py_source_1l00014"/>00014 
+<anchor xml:id="_functions__backend_8py_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;user_obj&#32;=&#32;<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user">User</link>(session_id=request.session.session_key)
+<anchor xml:id="_functions__backend_8py_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;user_obj.save()
+<anchor xml:id="_functions__backend_8py_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;order&#32;=&#32;<link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order">Order</link>(user=user_obj,&#32;order_date=timezone.now())
+<anchor xml:id="_functions__backend_8py_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;order.save()
+<anchor xml:id="_functions__backend_8py_source_1l00019"/>00019 
+<anchor xml:id="_functions__backend_8py_source_1l00020"/>00020 
+<anchor xml:id="_functions__backend_8py_source_1l00021"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1acec8d87adc7236e231b7ac0bd7e395fa">00021</link> <emphasis role="keyword">def&#32;</emphasis><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1acec8d87adc7236e231b7ac0bd7e395fa">get_dish_types</link>():
+<anchor xml:id="_functions__backend_8py_source_1l00022"/>00022 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;Запрос&#32;в&#32;бд&#32;на&#32;получение&#32;типов&#32;блюд&#32;и&#32;соответстующих&#32;им&#32;под&#32;типов</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00023"/>00023 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;@return&#32;dict&#32;{type:[subtype,...]}</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00024"/>00024 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00025"/>00025 &#32;&#32;&#32;&#32;dic&#32;=&#32;{}
+<anchor xml:id="_functions__backend_8py_source_1l00026"/>00026 &#32;&#32;&#32;&#32;types&#32;=&#32;Type.objects.all()
+<anchor xml:id="_functions__backend_8py_source_1l00027"/>00027 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;type&#32;<emphasis role="keywordflow">in</emphasis>&#32;types:
+<anchor xml:id="_functions__backend_8py_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;dic[type]&#32;=&#32;[subtype&#32;<emphasis role="keywordflow">for</emphasis>&#32;subtype&#32;<emphasis role="keywordflow">in</emphasis>&#32;SubType.objects.filter(type=type)]
+<anchor xml:id="_functions__backend_8py_source_1l00029"/>00029 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;dic
+<anchor xml:id="_functions__backend_8py_source_1l00030"/>00030 
+<anchor xml:id="_functions__backend_8py_source_1l00031"/>00031 
+<anchor xml:id="_functions__backend_8py_source_1l00032"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1acc450f9517914ab71f0b81484e45337d">00032</link> <emphasis role="keyword">def&#32;</emphasis>get_particular_dish(dish_id):
+<anchor xml:id="_functions__backend_8py_source_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;Возвращает&#32;конкретное&#32;блюдо,&#32;стадии&#32;его&#32;приготовления&#32;и&#32;необходимые&#32;игридиенты</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00034"/>00034 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;@param&#32;dish_id&#32;int</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00035"/>00035 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;@return&#32;dish&#32;Dish</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00036"/>00036 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;@return&#32;cooking_stages&#32;[CookingStage,...]</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00037"/>00037 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;@return&#32;ingredients&#32;[{&apos;name&apos;:string,&#32;amount:int}]&#32;-&#32;список&#32;ингридиентов&#32;-&#32;название&#32;категории&#32;их&#32;кол-во</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00038"/>00038 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00039"/>00039 &#32;&#32;&#32;&#32;dish&#32;=&#32;Dish.objects.get(pk=dish_id)
+<anchor xml:id="_functions__backend_8py_source_1l00040"/>00040 &#32;&#32;&#32;&#32;cooking_stages&#32;=&#32;CookingStage.objects.filter(dish=dish)
+<anchor xml:id="_functions__backend_8py_source_1l00041"/>00041 &#32;&#32;&#32;&#32;ingredients&#32;=&#32;[]
+<anchor xml:id="_functions__backend_8py_source_1l00042"/>00042 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;x&#32;<emphasis role="keywordflow">in</emphasis>&#32;DishCategory.objects.filter(dish=dish):
+<anchor xml:id="_functions__backend_8py_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;x.amount&#32;!=&#32;0:
+<anchor xml:id="_functions__backend_8py_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;amount&#32;=&#32;<emphasis role="stringliteral">&apos;&#32;&apos;</emphasis>.join([f<emphasis role="stringliteral">&apos;{float(x.amount):g}&apos;</emphasis>,&#32;x.unit.name])
+<anchor xml:id="_functions__backend_8py_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>:
+<anchor xml:id="_functions__backend_8py_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;amount&#32;=&#32;x.unit.name
+<anchor xml:id="_functions__backend_8py_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ingredients.append({<emphasis role="stringliteral">&apos;name&apos;</emphasis>:&#32;x.category.name,&#32;<emphasis role="stringliteral">&apos;amount&apos;</emphasis>:&#32;amount})
+<anchor xml:id="_functions__backend_8py_source_1l00048"/>00048 
+<anchor xml:id="_functions__backend_8py_source_1l00049"/>00049 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;dish,&#32;cooking_stages,&#32;ingredients
+<anchor xml:id="_functions__backend_8py_source_1l00050"/>00050 
+<anchor xml:id="_functions__backend_8py_source_1l00051"/>00051 
+<anchor xml:id="_functions__backend_8py_source_1l00052"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a08d73957bbfccb8e19348c923f80fb53">00052</link> <emphasis role="keyword">def&#32;</emphasis><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a08d73957bbfccb8e19348c923f80fb53">string_to_minutes</link>(string):
+<anchor xml:id="_functions__backend_8py_source_1l00053"/>00053 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;Возвращает&#32;количество&#32;минут&#32;в&#32;строке</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00054"/>00054 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;Варианты&#32;входа:&#32;&apos;n&#32;часов&apos;,&#32;&apos;n&#32;минут&apos;,&#32;&apos;n&#32;часов&#32;k&#32;минут&apos;</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00055"/>00055 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;@param&#32;string&#32;string</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00056"/>00056 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;@return&#32;int</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00057"/>00057 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00058"/>00058 &#32;&#32;&#32;&#32;nums&#32;=&#32;[int(x)&#32;<emphasis role="keywordflow">for</emphasis>&#32;x&#32;<emphasis role="keywordflow">in</emphasis>&#32;re.findall(<emphasis role="stringliteral">r&apos;\d+&apos;</emphasis>,&#32;string)]
+<anchor xml:id="_functions__backend_8py_source_1l00059"/>00059 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;<emphasis role="stringliteral">&apos;час&apos;</emphasis>&#32;<emphasis role="keywordflow">in</emphasis>&#32;string:
+<anchor xml:id="_functions__backend_8py_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;<emphasis role="stringliteral">&apos;мин&apos;</emphasis>&#32;<emphasis role="keywordflow">in</emphasis>&#32;string:
+<anchor xml:id="_functions__backend_8py_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;nums[0]&#32;*&#32;60&#32;+&#32;nums[1]
+<anchor xml:id="_functions__backend_8py_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>:
+<anchor xml:id="_functions__backend_8py_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;nums[0]&#32;*&#32;60
+<anchor xml:id="_functions__backend_8py_source_1l00064"/>00064 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>:
+<anchor xml:id="_functions__backend_8py_source_1l00065"/>00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;nums[0]
+<anchor xml:id="_functions__backend_8py_source_1l00066"/>00066 
+<anchor xml:id="_functions__backend_8py_source_1l00067"/>00067 
+<anchor xml:id="_functions__backend_8py_source_1l00068"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a723d59131bb3c4986041292c982b118f">00068</link> <emphasis role="keyword">def&#32;</emphasis><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a723d59131bb3c4986041292c982b118f">convert_fraction</link>(string):
+<anchor xml:id="_functions__backend_8py_source_1l00069"/>00069 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;Возвращает&#32;float&#32;из&#32;строки&#32;с&#32;числом</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00070"/>00070 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;@param&#32;string&#32;string</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00071"/>00071 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;@return&#32;float</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00072"/>00072 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00073"/>00073 &#32;&#32;&#32;&#32;string&#32;=&#32;string.replace(<emphasis role="stringliteral">&apos;,&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;.&apos;</emphasis>)
+<anchor xml:id="_functions__backend_8py_source_1l00074"/>00074 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;len(string)&#32;==&#32;1:
+<anchor xml:id="_functions__backend_8py_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;unicodedata.numeric(string)
+<anchor xml:id="_functions__backend_8py_source_1l00076"/>00076 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;float(string)
+<anchor xml:id="_functions__backend_8py_source_1l00077"/>00077 
+<anchor xml:id="_functions__backend_8py_source_1l00078"/>00078 
+<anchor xml:id="_functions__backend_8py_source_1l00079"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a4a88e8eaaa6f0e827859fc69485a0f3f">00079</link> <emphasis role="keyword">def&#32;</emphasis><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a4a88e8eaaa6f0e827859fc69485a0f3f">number_and_measure</link>(string):
+<anchor xml:id="_functions__backend_8py_source_1l00080"/>00080 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;Возвращает&#32;по&#32;строке&#32;количества&#32;продукта&#32;число&#32;+&#32;единицу&#32;измерения&#32;в&#32;начальной&#32;форме</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00081"/>00081 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;@param&#32;string&#32;string</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00082"/>00082 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;@return&#32;float</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00083"/>00083 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;@return&#32;string</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00084"/>00084 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_functions__backend_8py_source_1l00085"/>00085 &#32;&#32;&#32;&#32;words&#32;=&#32;string.split()
+<anchor xml:id="_functions__backend_8py_source_1l00086"/>00086 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;len(words)&#32;&gt;=&#32;2&#32;<emphasis role="keywordflow">and</emphasis>&#32;(words[0].isnumeric()&#32;<emphasis role="keywordflow">or</emphasis>&#32;<emphasis role="stringliteral">&apos;.&apos;</emphasis>&#32;<emphasis role="keywordflow">in</emphasis>&#32;words[0]&#32;<emphasis role="keywordflow">or</emphasis>&#32;<emphasis role="stringliteral">&apos;,&apos;</emphasis>&#32;<emphasis role="keywordflow">in</emphasis>&#32;words[0]):
+<anchor xml:id="_functions__backend_8py_source_1l00087"/>00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1functions__backend_1a723d59131bb3c4986041292c982b118f">convert_fraction</link>(words[0]),&#32;<emphasis role="stringliteral">&apos;&#32;&apos;</emphasis>.join(words[1:])
+<anchor xml:id="_functions__backend_8py_source_1l00088"/>00088 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>:
+<anchor xml:id="_functions__backend_8py_source_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0.0,&#32;<emphasis role="stringliteral">&apos;&#32;&apos;</emphasis>.join(words)
+</programlisting></section>

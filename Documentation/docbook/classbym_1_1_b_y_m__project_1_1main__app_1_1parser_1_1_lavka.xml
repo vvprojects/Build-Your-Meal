@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka" xml:lang="en-US">
+<title>bym.BYM_project.main_app.parser.Lavka Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.parser.Lavka</primary></indexterm>
+<para>
+
+<para>Определяет класс используемый для парсинга лавки. </para>
+ 
+</para>
+<para>Inheritance diagram for bym.BYM_project.main_app.parser.Lavka:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ae79912d1031916b7daf34ee69d05e8d6">__init__</link> (self, user_id)</para>
+
+<para>Инициализирует класс Lavka. </para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a44f7318d5af307484c100b74733461b3">get_data_product</link> (self, product)</para>
+
+<para>Выделяет из блока с информацией о продукте нужную и записывает в БД </para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1aa85beac3725cdc9934390e1c49fcb9f1">get_data_html</link> (self, html)</para>
+
+<para>Разбивает html код на блоки по продуктам, асинхронно запускает их обработку </para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a16780d5d1ca7bb8cf262758e2dac66ee">pars</link> (self, city_street, home)</para>
+
+<para>Парсит список продуктов с ценами яндекс лавки по определенному адресу Производит запись в базу данных </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser">bym.BYM_project.main_app.parser.Parser</link>        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_1a86d3e44d06c24d8d354c5eb2ed5a8cde">sql_script</link> (self)</para>
+
+<para>Сохраняет в базу данных </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a23885f0e3a25fe52b40160bf50b95d86">url_main</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1aa4d243133ee2225c281004cada6c617f">driver</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ab11214453defaf1caacb34e33abbe04f">wait</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ad7973256e11d6291b8641b3e438ca595">urls</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a928051a5a0fb32b70882272b9c97983c">sl_tags</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Attributes inherited from <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser">bym.BYM_project.main_app.parser.Parser</link>        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_1aed9cf2be1a6f7d6b919c1e785439841f">user_obj</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_1a5c931b5a38f849cc37bef4901ce4b4d6">options</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_1a6b93696ad189eeeb4ce00ce8ff8f2808">product_list</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_1ab419c1f3c1d5bcc94f0bdb3af2b175a2">shop_obj</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Определяет класс используемый для парсинга лавки. </para>
+<para>
+Definition at line <link linkend="_parser_8py_source_1l00056">56</link> of file <link linkend="_parser_8py_source">parser.py</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ae79912d1031916b7daf34ee69d05e8d6"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>bym.BYM_project.main_app.parser.Lavka</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.parser.Lavka</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.parser.Lavka.__init__ ( self,  user_id)</computeroutput></para><para>
+
+<para>Инициализирует класс Lavka. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>user_id</entry><entry>
+<para>int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Reimplemented from <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_1acfb5504aa987e575ccfbe05617190604">bym.BYM_project.main_app.parser.Parser</link>.</para>
+<para>
+Definition at line <link linkend="_parser_8py_source_1l00061">61</link> of file <link linkend="_parser_8py_source">parser.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1aa85beac3725cdc9934390e1c49fcb9f1"/><section>
+    <title>get_data_html()</title>
+<indexterm><primary>get_data_html</primary><secondary>bym.BYM_project.main_app.parser.Lavka</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.parser.Lavka</primary><secondary>get_data_html</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.parser.Lavka.get_data_html ( self,  html)</computeroutput></para><para>
+
+<para>Разбивает html код на блоки по продуктам, асинхронно запускает их обработку </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>html</entry><entry>
+<para>string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_parser_8py_source_1l00107">107</link> of file <link linkend="_parser_8py_source">parser.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a44f7318d5af307484c100b74733461b3"/><section>
+    <title>get_data_product()</title>
+<indexterm><primary>get_data_product</primary><secondary>bym.BYM_project.main_app.parser.Lavka</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.parser.Lavka</primary><secondary>get_data_product</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.parser.Lavka.get_data_product ( self,  product)</computeroutput></para><para>
+
+<para>Выделяет из блока с информацией о продукте нужную и записывает в БД </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>product</entry><entry>
+<para>BeautifulSoup </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_parser_8py_source_1l00079">79</link> of file <link linkend="_parser_8py_source">parser.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a16780d5d1ca7bb8cf262758e2dac66ee"/><section>
+    <title>pars()</title>
+<indexterm><primary>pars</primary><secondary>bym.BYM_project.main_app.parser.Lavka</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.parser.Lavka</primary><secondary>pars</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.parser.Lavka.pars ( self,  city_street,  home)</computeroutput></para><para>
+
+<para>Парсит список продуктов с ценами яндекс лавки по определенному адресу Производит запись в базу данных </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>city_strit</entry><entry>
+<para>string </para>
+</entry>
+                            </row>
+                            <row>
+<entry>home</entry><entry>
+<para>string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_parser_8py_source_1l00123">123</link> of file <link linkend="_parser_8py_source">parser.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1aa4d243133ee2225c281004cada6c617f"/><section>
+    <title>driver</title>
+<indexterm><primary>driver</primary><secondary>bym.BYM_project.main_app.parser.Lavka</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.parser.Lavka</primary><secondary>driver</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.parser.Lavka.driver</computeroutput></para><para>
+Definition at line <link linkend="_parser_8py_source_1l00073">73</link> of file <link linkend="_parser_8py_source">parser.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a928051a5a0fb32b70882272b9c97983c"/><section>
+    <title>sl_tags</title>
+<indexterm><primary>sl_tags</primary><secondary>bym.BYM_project.main_app.parser.Lavka</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.parser.Lavka</primary><secondary>sl_tags</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.parser.Lavka.sl_tags</computeroutput></para><para>
+Definition at line <link linkend="_parser_8py_source_1l00076">76</link> of file <link linkend="_parser_8py_source">parser.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1a23885f0e3a25fe52b40160bf50b95d86"/><section>
+    <title>url_main</title>
+<indexterm><primary>url_main</primary><secondary>bym.BYM_project.main_app.parser.Lavka</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.parser.Lavka</primary><secondary>url_main</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.parser.Lavka.url_main</computeroutput></para><para>
+Definition at line <link linkend="_parser_8py_source_1l00067">67</link> of file <link linkend="_parser_8py_source">parser.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ad7973256e11d6291b8641b3e438ca595"/><section>
+    <title>urls</title>
+<indexterm><primary>urls</primary><secondary>bym.BYM_project.main_app.parser.Lavka</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.parser.Lavka</primary><secondary>urls</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.parser.Lavka.urls</computeroutput></para><para>
+Definition at line <link linkend="_parser_8py_source_1l00075">75</link> of file <link linkend="_parser_8py_source">parser.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_1ab11214453defaf1caacb34e33abbe04f"/><section>
+    <title>wait</title>
+<indexterm><primary>wait</primary><secondary>bym.BYM_project.main_app.parser.Lavka</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.parser.Lavka</primary><secondary>wait</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.parser.Lavka.wait</computeroutput></para><para>
+Definition at line <link linkend="_parser_8py_source_1l00074">74</link> of file <link linkend="_parser_8py_source">parser.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_parser_8py">parser.py</link></section>
+</section>

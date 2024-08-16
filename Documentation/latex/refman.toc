@@ -1,0 +1,406 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {russian}{}\relax 
+\contentsline {chapter}{\numberline {1}Namespace Index}{1}{}%
+\contentsline {section}{\numberline {1.1}Namespace List}{1}{}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{}%
+\contentsline {chapter}{\numberline {4}File Index}{9}{}%
+\contentsline {section}{\numberline {4.1}File List}{9}{}%
+\contentsline {chapter}{\numberline {5}Namespace Documentation}{11}{}%
+\contentsline {section}{\numberline {5.1}bym Namespace Reference}{11}{}%
+\contentsline {section}{\numberline {5.2}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project Namespace Reference}{11}{}%
+\contentsline {section}{\numberline {5.3}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app Namespace Reference}{11}{}%
+\contentsline {section}{\numberline {5.4}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}admin Namespace Reference}{12}{}%
+\contentsline {section}{\numberline {5.5}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}apps Namespace Reference}{12}{}%
+\contentsline {section}{\numberline {5.6}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cart Namespace Reference}{12}{}%
+\contentsline {section}{\numberline {5.7}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}config Namespace Reference}{12}{}%
+\contentsline {subsection}{\numberline {5.7.1}Variable Documentation}{12}{}%
+\contentsline {subsubsection}{\numberline {5.7.1.1}urls\_lavka}{12}{}%
+\contentsline {subsubsection}{\numberline {5.7.1.2}webdriver\_name}{13}{}%
+\contentsline {section}{\numberline {5.8}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}conversions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions Namespace Reference}{13}{}%
+\contentsline {subsection}{\numberline {5.8.1}Function Documentation}{13}{}%
+\contentsline {subsubsection}{\numberline {5.8.1.1}get\_lavka\_unit\_id()}{13}{}%
+\contentsline {subsubsection}{\numberline {5.8.1.2}how\_many\_add()}{13}{}%
+\contentsline {section}{\numberline {5.9}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}forms Namespace Reference}{14}{}%
+\contentsline {section}{\numberline {5.10}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}backend Namespace Reference}{14}{}%
+\contentsline {subsection}{\numberline {5.10.1}Function Documentation}{14}{}%
+\contentsline {subsubsection}{\numberline {5.10.1.1}convert\_fraction()}{14}{}%
+\contentsline {subsubsection}{\numberline {5.10.1.2}get\_dish\_types()}{15}{}%
+\contentsline {subsubsection}{\numberline {5.10.1.3}get\_particular\_dish()}{15}{}%
+\contentsline {subsubsection}{\numberline {5.10.1.4}number\_and\_measure()}{15}{}%
+\contentsline {subsubsection}{\numberline {5.10.1.5}start\_session()}{16}{}%
+\contentsline {subsubsection}{\numberline {5.10.1.6}string\_to\_minutes()}{16}{}%
+\contentsline {section}{\numberline {5.11}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models Namespace Reference}{16}{}%
+\contentsline {section}{\numberline {5.12}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}parser Namespace Reference}{18}{}%
+\contentsline {subsection}{\numberline {5.12.1}Function Documentation}{18}{}%
+\contentsline {subsubsection}{\numberline {5.12.1.1}parse\_by\_address()}{18}{}%
+\contentsline {section}{\numberline {5.13}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}recommendation\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}system Namespace Reference}{19}{}%
+\contentsline {section}{\numberline {5.14}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}search Namespace Reference}{19}{}%
+\contentsline {section}{\numberline {5.15}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}serializers Namespace Reference}{19}{}%
+\contentsline {section}{\numberline {5.16}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}tests Namespace Reference}{19}{}%
+\contentsline {section}{\numberline {5.17}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}views Namespace Reference}{19}{}%
+\contentsline {subsection}{\numberline {5.17.1}Function Documentation}{20}{}%
+\contentsline {subsubsection}{\numberline {5.17.1.1}Dish()}{20}{}%
+\contentsline {subsubsection}{\numberline {5.17.1.2}FinalPage()}{20}{}%
+\contentsline {subsubsection}{\numberline {5.17.1.3}HomePageView()}{20}{}%
+\contentsline {subsubsection}{\numberline {5.17.1.4}my\_view()}{20}{}%
+\contentsline {subsubsection}{\numberline {5.17.1.5}parse\_adress()}{20}{}%
+\contentsline {subsubsection}{\numberline {5.17.1.6}update\_counter()}{20}{}%
+\contentsline {chapter}{\numberline {6}Class Documentation}{21}{}%
+\contentsline {section}{\numberline {6.1}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cart.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cart Class Reference}{21}{}%
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{21}{}%
+\contentsline {subsection}{\numberline {6.1.2}Constructor \& Destructor Documentation}{21}{}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}\_\_init\_\_()}{21}{}%
+\contentsline {subsection}{\numberline {6.1.3}Member Function Documentation}{22}{}%
+\contentsline {subsubsection}{\numberline {6.1.3.1}change\_order()}{22}{}%
+\contentsline {subsubsection}{\numberline {6.1.3.2}get\_categories()}{22}{}%
+\contentsline {subsubsection}{\numberline {6.1.3.3}get\_categories\_list()}{22}{}%
+\contentsline {subsubsection}{\numberline {6.1.3.4}get\_order\_array()}{24}{}%
+\contentsline {subsection}{\numberline {6.1.4}Member Data Documentation}{24}{}%
+\contentsline {subsubsection}{\numberline {6.1.4.1}order\_obj}{24}{}%
+\contentsline {section}{\numberline {6.2}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Category Class Reference}{24}{}%
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{25}{}%
+\contentsline {subsection}{\numberline {6.2.2}Member Data Documentation}{25}{}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}blank}{25}{}%
+\contentsline {subsubsection}{\numberline {6.2.2.2}name}{25}{}%
+\contentsline {subsubsection}{\numberline {6.2.2.3}null}{25}{}%
+\contentsline {subsubsection}{\numberline {6.2.2.4}on\_delete}{25}{}%
+\contentsline {subsubsection}{\numberline {6.2.2.5}supreme\_category}{26}{}%
+\contentsline {subsubsection}{\numberline {6.2.2.6}True}{26}{}%
+\contentsline {section}{\numberline {6.3}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}views.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Change\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cart\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Api Class Reference}{26}{}%
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{26}{}%
+\contentsline {subsection}{\numberline {6.3.2}Member Function Documentation}{26}{}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}post()}{26}{}%
+\contentsline {section}{\numberline {6.4}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Conversion Class Reference}{27}{}%
+\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{27}{}%
+\contentsline {subsection}{\numberline {6.4.2}Member Data Documentation}{27}{}%
+\contentsline {subsubsection}{\numberline {6.4.2.1}category}{27}{}%
+\contentsline {subsubsection}{\numberline {6.4.2.2}Category}{28}{}%
+\contentsline {subsubsection}{\numberline {6.4.2.3}coefficient}{28}{}%
+\contentsline {subsubsection}{\numberline {6.4.2.4}from\_unit}{28}{}%
+\contentsline {subsubsection}{\numberline {6.4.2.5}on\_delete}{28}{}%
+\contentsline {subsubsection}{\numberline {6.4.2.6}to\_unit}{28}{}%
+\contentsline {section}{\numberline {6.5}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cooking\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stage Class Reference}{28}{}%
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{29}{}%
+\contentsline {subsection}{\numberline {6.5.2}Member Data Documentation}{29}{}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}description}{29}{}%
+\contentsline {subsubsection}{\numberline {6.5.2.2}dish}{29}{}%
+\contentsline {subsubsection}{\numberline {6.5.2.3}Dish}{29}{}%
+\contentsline {subsubsection}{\numberline {6.5.2.4}image}{29}{}%
+\contentsline {subsubsection}{\numberline {6.5.2.5}on\_delete}{30}{}%
+\contentsline {subsubsection}{\numberline {6.5.2.6}order}{30}{}%
+\contentsline {section}{\numberline {6.6}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Country Class Reference}{30}{}%
+\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{30}{}%
+\contentsline {subsection}{\numberline {6.6.2}Member Data Documentation}{31}{}%
+\contentsline {subsubsection}{\numberline {6.6.2.1}max\_length}{31}{}%
+\contentsline {subsubsection}{\numberline {6.6.2.2}name}{31}{}%
+\contentsline {section}{\numberline {6.7}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dish Class Reference}{31}{}%
+\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{32}{}%
+\contentsline {subsection}{\numberline {6.7.2}Member Data Documentation}{32}{}%
+\contentsline {subsubsection}{\numberline {6.7.2.1}calories}{32}{}%
+\contentsline {subsubsection}{\numberline {6.7.2.2}carbohydrates}{32}{}%
+\contentsline {subsubsection}{\numberline {6.7.2.3}cooking\_time\_minutes}{32}{}%
+\contentsline {subsubsection}{\numberline {6.7.2.4}country}{33}{}%
+\contentsline {subsubsection}{\numberline {6.7.2.5}Country}{33}{}%
+\contentsline {subsubsection}{\numberline {6.7.2.6}fats}{33}{}%
+\contentsline {subsubsection}{\numberline {6.7.2.7}image}{33}{}%
+\contentsline {subsubsection}{\numberline {6.7.2.8}name}{33}{}%
+\contentsline {subsubsection}{\numberline {6.7.2.9}on\_delete}{33}{}%
+\contentsline {subsubsection}{\numberline {6.7.2.10}pers\_num}{33}{}%
+\contentsline {subsubsection}{\numberline {6.7.2.11}proteins}{33}{}%
+\contentsline {subsubsection}{\numberline {6.7.2.12}subtype}{34}{}%
+\contentsline {section}{\numberline {6.8}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dish\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Category Class Reference}{34}{}%
+\contentsline {subsection}{\numberline {6.8.1}Detailed Description}{34}{}%
+\contentsline {subsection}{\numberline {6.8.2}Member Data Documentation}{35}{}%
+\contentsline {subsubsection}{\numberline {6.8.2.1}amount}{35}{}%
+\contentsline {subsubsection}{\numberline {6.8.2.2}category}{35}{}%
+\contentsline {subsubsection}{\numberline {6.8.2.3}dish}{35}{}%
+\contentsline {subsubsection}{\numberline {6.8.2.4}Dish}{35}{}%
+\contentsline {subsubsection}{\numberline {6.8.2.5}on\_delete}{35}{}%
+\contentsline {subsubsection}{\numberline {6.8.2.6}unit}{35}{}%
+\contentsline {section}{\numberline {6.9}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}views.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Home\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Page\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Api Class Reference}{36}{}%
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{36}{}%
+\contentsline {subsection}{\numberline {6.9.2}Member Function Documentation}{36}{}%
+\contentsline {subsubsection}{\numberline {6.9.2.1}get()}{36}{}%
+\contentsline {section}{\numberline {6.10}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}parser.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lavka Class Reference}{36}{}%
+\contentsline {subsection}{\numberline {6.10.1}Detailed Description}{37}{}%
+\contentsline {subsection}{\numberline {6.10.2}Constructor \& Destructor Documentation}{37}{}%
+\contentsline {subsubsection}{\numberline {6.10.2.1}\_\_init\_\_()}{37}{}%
+\contentsline {subsection}{\numberline {6.10.3}Member Function Documentation}{38}{}%
+\contentsline {subsubsection}{\numberline {6.10.3.1}get\_data\_html()}{38}{}%
+\contentsline {subsubsection}{\numberline {6.10.3.2}get\_data\_product()}{38}{}%
+\contentsline {subsubsection}{\numberline {6.10.3.3}pars()}{38}{}%
+\contentsline {subsection}{\numberline {6.10.4}Member Data Documentation}{39}{}%
+\contentsline {subsubsection}{\numberline {6.10.4.1}driver}{39}{}%
+\contentsline {subsubsection}{\numberline {6.10.4.2}sl\_tags}{39}{}%
+\contentsline {subsubsection}{\numberline {6.10.4.3}url\_main}{39}{}%
+\contentsline {subsubsection}{\numberline {6.10.4.4}urls}{39}{}%
+\contentsline {subsubsection}{\numberline {6.10.4.5}wait}{39}{}%
+\contentsline {section}{\numberline {6.11}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}apps.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config Class Reference}{40}{}%
+\contentsline {subsection}{\numberline {6.11.1}Detailed Description}{40}{}%
+\contentsline {subsection}{\numberline {6.11.2}Member Data Documentation}{40}{}%
+\contentsline {subsubsection}{\numberline {6.11.2.1}default\_auto\_field}{40}{}%
+\contentsline {subsubsection}{\numberline {6.11.2.2}name}{40}{}%
+\contentsline {section}{\numberline {6.12}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu Class Reference}{40}{}%
+\contentsline {subsection}{\numberline {6.12.1}Detailed Description}{41}{}%
+\contentsline {subsection}{\numberline {6.12.2}Member Data Documentation}{41}{}%
+\contentsline {subsubsection}{\numberline {6.12.2.1}amount}{41}{}%
+\contentsline {subsubsection}{\numberline {6.12.2.2}dish}{41}{}%
+\contentsline {subsubsection}{\numberline {6.12.2.3}Dish}{41}{}%
+\contentsline {subsubsection}{\numberline {6.12.2.4}on\_delete}{41}{}%
+\contentsline {subsubsection}{\numberline {6.12.2.5}order}{42}{}%
+\contentsline {section}{\numberline {6.13}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Category.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{42}{}%
+\contentsline {subsection}{\numberline {6.13.1}Detailed Description}{42}{}%
+\contentsline {subsection}{\numberline {6.13.2}Member Data Documentation}{42}{}%
+\contentsline {subsubsection}{\numberline {6.13.2.1}verbose\_name}{42}{}%
+\contentsline {subsubsection}{\numberline {6.13.2.2}verbose\_name\_plural}{42}{}%
+\contentsline {section}{\numberline {6.14}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Conversion.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{42}{}%
+\contentsline {subsection}{\numberline {6.14.1}Detailed Description}{43}{}%
+\contentsline {subsection}{\numberline {6.14.2}Member Data Documentation}{43}{}%
+\contentsline {subsubsection}{\numberline {6.14.2.1}verbose\_name}{43}{}%
+\contentsline {subsubsection}{\numberline {6.14.2.2}verbose\_name\_plural}{43}{}%
+\contentsline {section}{\numberline {6.15}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cooking\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stage.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{43}{}%
+\contentsline {subsection}{\numberline {6.15.1}Detailed Description}{43}{}%
+\contentsline {subsection}{\numberline {6.15.2}Member Data Documentation}{43}{}%
+\contentsline {subsubsection}{\numberline {6.15.2.1}verbose\_name}{43}{}%
+\contentsline {subsubsection}{\numberline {6.15.2.2}verbose\_name\_plural}{44}{}%
+\contentsline {section}{\numberline {6.16}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Country.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{44}{}%
+\contentsline {subsection}{\numberline {6.16.1}Detailed Description}{44}{}%
+\contentsline {subsection}{\numberline {6.16.2}Member Data Documentation}{44}{}%
+\contentsline {subsubsection}{\numberline {6.16.2.1}verbose\_name}{44}{}%
+\contentsline {subsubsection}{\numberline {6.16.2.2}verbose\_name\_plural}{44}{}%
+\contentsline {section}{\numberline {6.17}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dish.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{44}{}%
+\contentsline {subsection}{\numberline {6.17.1}Detailed Description}{45}{}%
+\contentsline {subsection}{\numberline {6.17.2}Member Data Documentation}{45}{}%
+\contentsline {subsubsection}{\numberline {6.17.2.1}verbose\_name}{45}{}%
+\contentsline {subsubsection}{\numberline {6.17.2.2}verbose\_name\_plural}{45}{}%
+\contentsline {section}{\numberline {6.18}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dish\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Category.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{45}{}%
+\contentsline {subsection}{\numberline {6.18.1}Detailed Description}{45}{}%
+\contentsline {subsection}{\numberline {6.18.2}Member Data Documentation}{45}{}%
+\contentsline {subsubsection}{\numberline {6.18.2.1}verbose\_name}{45}{}%
+\contentsline {subsubsection}{\numberline {6.18.2.2}verbose\_name\_plural}{46}{}%
+\contentsline {section}{\numberline {6.19}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{46}{}%
+\contentsline {subsection}{\numberline {6.19.1}Detailed Description}{46}{}%
+\contentsline {subsection}{\numberline {6.19.2}Member Data Documentation}{46}{}%
+\contentsline {subsubsection}{\numberline {6.19.2.1}verbose\_name}{46}{}%
+\contentsline {subsubsection}{\numberline {6.19.2.2}verbose\_name\_plural}{46}{}%
+\contentsline {section}{\numberline {6.20}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Order.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{46}{}%
+\contentsline {subsection}{\numberline {6.20.1}Detailed Description}{47}{}%
+\contentsline {subsection}{\numberline {6.20.2}Member Data Documentation}{47}{}%
+\contentsline {subsubsection}{\numberline {6.20.2.1}verbose\_name}{47}{}%
+\contentsline {subsubsection}{\numberline {6.20.2.2}verbose\_name\_plural}{47}{}%
+\contentsline {section}{\numberline {6.21}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Product.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{47}{}%
+\contentsline {subsection}{\numberline {6.21.1}Detailed Description}{47}{}%
+\contentsline {subsection}{\numberline {6.21.2}Member Data Documentation}{47}{}%
+\contentsline {subsubsection}{\numberline {6.21.2.1}verbose\_name}{47}{}%
+\contentsline {subsubsection}{\numberline {6.21.2.2}verbose\_name\_plural}{48}{}%
+\contentsline {section}{\numberline {6.22}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Product\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Log.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{48}{}%
+\contentsline {subsection}{\numberline {6.22.1}Detailed Description}{48}{}%
+\contentsline {subsection}{\numberline {6.22.2}Member Data Documentation}{48}{}%
+\contentsline {subsubsection}{\numberline {6.22.2.1}verbose\_name}{48}{}%
+\contentsline {subsubsection}{\numberline {6.22.2.2}verbose\_name\_plural}{48}{}%
+\contentsline {section}{\numberline {6.23}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shop.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{48}{}%
+\contentsline {subsection}{\numberline {6.23.1}Detailed Description}{49}{}%
+\contentsline {subsection}{\numberline {6.23.2}Member Data Documentation}{49}{}%
+\contentsline {subsubsection}{\numberline {6.23.2.1}verbose\_name}{49}{}%
+\contentsline {subsubsection}{\numberline {6.23.2.2}verbose\_name\_plural}{49}{}%
+\contentsline {section}{\numberline {6.24}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sub\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{49}{}%
+\contentsline {subsection}{\numberline {6.24.1}Detailed Description}{49}{}%
+\contentsline {subsection}{\numberline {6.24.2}Member Data Documentation}{49}{}%
+\contentsline {subsubsection}{\numberline {6.24.2.1}verbose\_name}{49}{}%
+\contentsline {subsubsection}{\numberline {6.24.2.2}verbose\_name\_plural}{50}{}%
+\contentsline {section}{\numberline {6.25}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{50}{}%
+\contentsline {subsection}{\numberline {6.25.1}Detailed Description}{50}{}%
+\contentsline {subsection}{\numberline {6.25.2}Member Data Documentation}{50}{}%
+\contentsline {subsubsection}{\numberline {6.25.2.1}verbose\_name}{50}{}%
+\contentsline {subsubsection}{\numberline {6.25.2.2}verbose\_name\_plural}{50}{}%
+\contentsline {section}{\numberline {6.26}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Unit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Of\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Measure.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{50}{}%
+\contentsline {subsection}{\numberline {6.26.1}Detailed Description}{51}{}%
+\contentsline {subsection}{\numberline {6.26.2}Member Data Documentation}{51}{}%
+\contentsline {subsubsection}{\numberline {6.26.2.1}verbose\_name}{51}{}%
+\contentsline {subsubsection}{\numberline {6.26.2.2}verbose\_name\_plural}{51}{}%
+\contentsline {section}{\numberline {6.27}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{51}{}%
+\contentsline {subsection}{\numberline {6.27.1}Detailed Description}{51}{}%
+\contentsline {subsection}{\numberline {6.27.2}Member Data Documentation}{51}{}%
+\contentsline {subsubsection}{\numberline {6.27.2.1}verbose\_name}{51}{}%
+\contentsline {subsubsection}{\numberline {6.27.2.2}verbose\_name\_plural}{52}{}%
+\contentsline {section}{\numberline {6.28}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}serializers.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Serializer.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Meta Class Reference}{52}{}%
+\contentsline {subsection}{\numberline {6.28.1}Detailed Description}{52}{}%
+\contentsline {subsection}{\numberline {6.28.2}Member Data Documentation}{52}{}%
+\contentsline {subsubsection}{\numberline {6.28.2.1}fields}{52}{}%
+\contentsline {subsubsection}{\numberline {6.28.2.2}model}{52}{}%
+\contentsline {section}{\numberline {6.29}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Order Class Reference}{53}{}%
+\contentsline {subsection}{\numberline {6.29.1}Detailed Description}{53}{}%
+\contentsline {subsection}{\numberline {6.29.2}Member Data Documentation}{53}{}%
+\contentsline {subsubsection}{\numberline {6.29.2.1}current}{53}{}%
+\contentsline {subsubsection}{\numberline {6.29.2.2}on\_delete}{53}{}%
+\contentsline {subsubsection}{\numberline {6.29.2.3}order\_date}{54}{}%
+\contentsline {subsubsection}{\numberline {6.29.2.4}user}{54}{}%
+\contentsline {subsubsection}{\numberline {6.29.2.5}User}{54}{}%
+\contentsline {section}{\numberline {6.30}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}views.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parse\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Products\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Api Class Reference}{54}{}%
+\contentsline {subsection}{\numberline {6.30.1}Detailed Description}{54}{}%
+\contentsline {subsection}{\numberline {6.30.2}Member Function Documentation}{55}{}%
+\contentsline {subsubsection}{\numberline {6.30.2.1}post()}{55}{}%
+\contentsline {section}{\numberline {6.31}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}parser.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parser Class Reference}{55}{}%
+\contentsline {subsection}{\numberline {6.31.1}Detailed Description}{55}{}%
+\contentsline {subsection}{\numberline {6.31.2}Constructor \& Destructor Documentation}{55}{}%
+\contentsline {subsubsection}{\numberline {6.31.2.1}\_\_init\_\_()}{55}{}%
+\contentsline {subsection}{\numberline {6.31.3}Member Function Documentation}{56}{}%
+\contentsline {subsubsection}{\numberline {6.31.3.1}sql\_script()}{56}{}%
+\contentsline {subsection}{\numberline {6.31.4}Member Data Documentation}{56}{}%
+\contentsline {subsubsection}{\numberline {6.31.4.1}options}{56}{}%
+\contentsline {subsubsection}{\numberline {6.31.4.2}product\_list}{56}{}%
+\contentsline {subsubsection}{\numberline {6.31.4.3}shop\_obj}{56}{}%
+\contentsline {subsubsection}{\numberline {6.31.4.4}user\_obj}{56}{}%
+\contentsline {section}{\numberline {6.32}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Product Class Reference}{57}{}%
+\contentsline {subsection}{\numberline {6.32.1}Detailed Description}{57}{}%
+\contentsline {subsection}{\numberline {6.32.2}Member Data Documentation}{58}{}%
+\contentsline {subsubsection}{\numberline {6.32.2.1}amount}{58}{}%
+\contentsline {subsubsection}{\numberline {6.32.2.2}link}{58}{}%
+\contentsline {subsubsection}{\numberline {6.32.2.3}name}{58}{}%
+\contentsline {subsubsection}{\numberline {6.32.2.4}on\_delete}{58}{}%
+\contentsline {subsubsection}{\numberline {6.32.2.5}price}{58}{}%
+\contentsline {subsubsection}{\numberline {6.32.2.6}shop}{58}{}%
+\contentsline {subsubsection}{\numberline {6.32.2.7}unit}{58}{}%
+\contentsline {subsubsection}{\numberline {6.32.2.8}user}{59}{}%
+\contentsline {subsubsection}{\numberline {6.32.2.9}User}{59}{}%
+\contentsline {section}{\numberline {6.33}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Product\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Log Class Reference}{59}{}%
+\contentsline {subsection}{\numberline {6.33.1}Detailed Description}{60}{}%
+\contentsline {subsection}{\numberline {6.33.2}Member Data Documentation}{60}{}%
+\contentsline {subsubsection}{\numberline {6.33.2.1}amount}{60}{}%
+\contentsline {subsubsection}{\numberline {6.33.2.2}link}{60}{}%
+\contentsline {subsubsection}{\numberline {6.33.2.3}name}{60}{}%
+\contentsline {subsubsection}{\numberline {6.33.2.4}on\_delete}{60}{}%
+\contentsline {subsubsection}{\numberline {6.33.2.5}order}{60}{}%
+\contentsline {subsubsection}{\numberline {6.33.2.6}Order}{61}{}%
+\contentsline {subsubsection}{\numberline {6.33.2.7}price}{61}{}%
+\contentsline {subsubsection}{\numberline {6.33.2.8}quantity}{61}{}%
+\contentsline {subsubsection}{\numberline {6.33.2.9}shop}{61}{}%
+\contentsline {subsubsection}{\numberline {6.33.2.10}unit}{61}{}%
+\contentsline {section}{\numberline {6.34}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}recommendation\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}system.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Recommendation\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}System Class Reference}{61}{}%
+\contentsline {subsection}{\numberline {6.34.1}Detailed Description}{62}{}%
+\contentsline {subsection}{\numberline {6.34.2}Constructor \& Destructor Documentation}{62}{}%
+\contentsline {subsubsection}{\numberline {6.34.2.1}\_\_init\_\_()}{62}{}%
+\contentsline {subsection}{\numberline {6.34.3}Member Function Documentation}{62}{}%
+\contentsline {subsubsection}{\numberline {6.34.3.1}fit()}{62}{}%
+\contentsline {subsubsection}{\numberline {6.34.3.2}predict()}{62}{}%
+\contentsline {section}{\numberline {6.35}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}search.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Search\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dish Class Reference}{62}{}%
+\contentsline {subsection}{\numberline {6.35.1}Detailed Description}{63}{}%
+\contentsline {subsection}{\numberline {6.35.2}Constructor \& Destructor Documentation}{63}{}%
+\contentsline {subsubsection}{\numberline {6.35.2.1}\_\_init\_\_()}{63}{}%
+\contentsline {subsection}{\numberline {6.35.3}Member Function Documentation}{64}{}%
+\contentsline {subsubsection}{\numberline {6.35.3.1}get()}{64}{}%
+\contentsline {subsubsection}{\numberline {6.35.3.2}recommend\_scorer()}{64}{}%
+\contentsline {subsubsection}{\numberline {6.35.3.3}score()}{64}{}%
+\contentsline {subsubsection}{\numberline {6.35.3.4}seq\_match\_scorer()}{65}{}%
+\contentsline {subsection}{\numberline {6.35.4}Member Data Documentation}{65}{}%
+\contentsline {subsubsection}{\numberline {6.35.4.1}address\_flg}{65}{}%
+\contentsline {subsubsection}{\numberline {6.35.4.2}dish\_list}{65}{}%
+\contentsline {subsubsection}{\numberline {6.35.4.3}ratio}{65}{}%
+\contentsline {subsubsection}{\numberline {6.35.4.4}search\_string}{65}{}%
+\contentsline {subsubsection}{\numberline {6.35.4.5}threshold}{66}{}%
+\contentsline {section}{\numberline {6.36}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}views.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Search\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dish\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Api Class Reference}{66}{}%
+\contentsline {subsection}{\numberline {6.36.1}Detailed Description}{66}{}%
+\contentsline {subsection}{\numberline {6.36.2}Member Function Documentation}{66}{}%
+\contentsline {subsubsection}{\numberline {6.36.2.1}post()}{66}{}%
+\contentsline {section}{\numberline {6.37}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}forms.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Search\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dish\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Form Class Reference}{67}{}%
+\contentsline {subsection}{\numberline {6.37.1}Detailed Description}{67}{}%
+\contentsline {subsection}{\numberline {6.37.2}Member Data Documentation}{67}{}%
+\contentsline {subsubsection}{\numberline {6.37.2.1}search\_string}{67}{}%
+\contentsline {section}{\numberline {6.38}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}search.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Search\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Product Class Reference}{67}{}%
+\contentsline {subsection}{\numberline {6.38.1}Detailed Description}{68}{}%
+\contentsline {subsection}{\numberline {6.38.2}Constructor \& Destructor Documentation}{68}{}%
+\contentsline {subsubsection}{\numberline {6.38.2.1}\_\_init\_\_()}{68}{}%
+\contentsline {subsection}{\numberline {6.38.3}Member Function Documentation}{68}{}%
+\contentsline {subsubsection}{\numberline {6.38.3.1}get()}{68}{}%
+\contentsline {subsubsection}{\numberline {6.38.3.2}get\_category()}{69}{}%
+\contentsline {subsubsection}{\numberline {6.38.3.3}score()}{69}{}%
+\contentsline {subsubsection}{\numberline {6.38.3.4}seq\_match\_scorer()}{69}{}%
+\contentsline {subsection}{\numberline {6.38.4}Member Data Documentation}{70}{}%
+\contentsline {subsubsection}{\numberline {6.38.4.1}category}{70}{}%
+\contentsline {subsubsection}{\numberline {6.38.4.2}products}{70}{}%
+\contentsline {subsubsection}{\numberline {6.38.4.3}threshold}{70}{}%
+\contentsline {section}{\numberline {6.39}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shop Class Reference}{70}{}%
+\contentsline {subsection}{\numberline {6.39.1}Detailed Description}{71}{}%
+\contentsline {subsection}{\numberline {6.39.2}Member Data Documentation}{71}{}%
+\contentsline {subsubsection}{\numberline {6.39.2.1}link}{71}{}%
+\contentsline {subsubsection}{\numberline {6.39.2.2}max\_length}{71}{}%
+\contentsline {subsubsection}{\numberline {6.39.2.3}name}{71}{}%
+\contentsline {section}{\numberline {6.40}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sub\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type Class Reference}{71}{}%
+\contentsline {subsection}{\numberline {6.40.1}Detailed Description}{72}{}%
+\contentsline {subsection}{\numberline {6.40.2}Member Data Documentation}{72}{}%
+\contentsline {subsubsection}{\numberline {6.40.2.1}name}{72}{}%
+\contentsline {subsubsection}{\numberline {6.40.2.2}on\_delete}{72}{}%
+\contentsline {subsubsection}{\numberline {6.40.2.3}type}{72}{}%
+\contentsline {subsubsection}{\numberline {6.40.2.4}Type}{72}{}%
+\contentsline {section}{\numberline {6.41}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type Class Reference}{73}{}%
+\contentsline {subsection}{\numberline {6.41.1}Detailed Description}{73}{}%
+\contentsline {subsection}{\numberline {6.41.2}Member Data Documentation}{73}{}%
+\contentsline {subsubsection}{\numberline {6.41.2.1}max\_length}{73}{}%
+\contentsline {subsubsection}{\numberline {6.41.2.2}name}{73}{}%
+\contentsline {section}{\numberline {6.42}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Unit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Of\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Measure Class Reference}{74}{}%
+\contentsline {subsection}{\numberline {6.42.1}Detailed Description}{74}{}%
+\contentsline {subsection}{\numberline {6.42.2}Member Data Documentation}{74}{}%
+\contentsline {subsubsection}{\numberline {6.42.2.1}blank}{74}{}%
+\contentsline {subsubsection}{\numberline {6.42.2.2}name}{75}{}%
+\contentsline {subsubsection}{\numberline {6.42.2.3}null}{75}{}%
+\contentsline {subsubsection}{\numberline {6.42.2.4}on\_delete}{75}{}%
+\contentsline {subsubsection}{\numberline {6.42.2.5}supreme\_unit}{75}{}%
+\contentsline {subsubsection}{\numberline {6.42.2.6}True}{75}{}%
+\contentsline {section}{\numberline {6.43}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User Class Reference}{75}{}%
+\contentsline {subsection}{\numberline {6.43.1}Detailed Description}{76}{}%
+\contentsline {subsection}{\numberline {6.43.2}Member Function Documentation}{76}{}%
+\contentsline {subsubsection}{\numberline {6.43.2.1}authorization()}{76}{}%
+\contentsline {subsubsection}{\numberline {6.43.2.2}get\_user\_id()}{77}{}%
+\contentsline {subsection}{\numberline {6.43.3}Member Data Documentation}{77}{}%
+\contentsline {subsubsection}{\numberline {6.43.3.1}blank}{77}{}%
+\contentsline {subsubsection}{\numberline {6.43.3.2}CASCADE}{77}{}%
+\contentsline {subsubsection}{\numberline {6.43.3.3}last\_address}{77}{}%
+\contentsline {subsubsection}{\numberline {6.43.3.4}login}{78}{}%
+\contentsline {subsubsection}{\numberline {6.43.3.5}nickname}{78}{}%
+\contentsline {subsubsection}{\numberline {6.43.3.6}null}{78}{}%
+\contentsline {subsubsection}{\numberline {6.43.3.7}on\_delete}{78}{}%
+\contentsline {subsubsection}{\numberline {6.43.3.8}session}{78}{}%
+\contentsline {subsubsection}{\numberline {6.43.3.9}Session}{78}{}%
+\contentsline {subsubsection}{\numberline {6.43.3.10}True}{78}{}%
+\contentsline {section}{\numberline {6.44}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}views.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Api\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}View Class Reference}{79}{}%
+\contentsline {subsection}{\numberline {6.44.1}Detailed Description}{79}{}%
+\contentsline {subsection}{\numberline {6.44.2}Member Data Documentation}{79}{}%
+\contentsline {subsubsection}{\numberline {6.44.2.1}queryset}{79}{}%
+\contentsline {subsubsection}{\numberline {6.44.2.2}serializer\_class}{79}{}%
+\contentsline {section}{\numberline {6.45}bym.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BYM\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}project.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}app.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}serializers.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Serializer Class Reference}{79}{}%
+\contentsline {subsection}{\numberline {6.45.1}Detailed Description}{80}{}%
+\contentsline {chapter}{\numberline {7}File Documentation}{81}{}%
+\contentsline {section}{\numberline {7.1}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{81}{}%
+\contentsline {section}{\numberline {7.2}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{81}{}%
+\contentsline {section}{\numberline {7.3}admin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{81}{}%
+\contentsline {section}{\numberline {7.4}admin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{81}{}%
+\contentsline {section}{\numberline {7.5}apps.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{82}{}%
+\contentsline {section}{\numberline {7.6}apps.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{82}{}%
+\contentsline {section}{\numberline {7.7}cart.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{82}{}%
+\contentsline {section}{\numberline {7.8}cart.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{83}{}%
+\contentsline {section}{\numberline {7.9}config.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{84}{}%
+\contentsline {section}{\numberline {7.10}config.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{84}{}%
+\contentsline {section}{\numberline {7.11}conversions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{85}{}%
+\contentsline {section}{\numberline {7.12}conversions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{85}{}%
+\contentsline {section}{\numberline {7.13}forms.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{86}{}%
+\contentsline {section}{\numberline {7.14}forms.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{87}{}%
+\contentsline {section}{\numberline {7.15}functions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{87}{}%
+\contentsline {section}{\numberline {7.16}functions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}backend.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{87}{}%
+\contentsline {section}{\numberline {7.17}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{88}{}%
+\contentsline {section}{\numberline {7.18}models.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{91}{}%
+\contentsline {section}{\numberline {7.19}parser.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{94}{}%
+\contentsline {section}{\numberline {7.20}parser.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{95}{}%
+\contentsline {section}{\numberline {7.21}recommendation\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}system.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{97}{}%
+\contentsline {section}{\numberline {7.22}recommendation\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}system.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{97}{}%
+\contentsline {section}{\numberline {7.23}search.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{97}{}%
+\contentsline {section}{\numberline {7.24}search.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{98}{}%
+\contentsline {section}{\numberline {7.25}serializers.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{99}{}%
+\contentsline {section}{\numberline {7.26}serializers.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{100}{}%
+\contentsline {section}{\numberline {7.27}tests.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{100}{}%
+\contentsline {section}{\numberline {7.28}tests.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{100}{}%
+\contentsline {section}{\numberline {7.29}views.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py File Reference}{100}{}%
+\contentsline {section}{\numberline {7.30}views.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}py}{101}{}%
+\contentsline {chapter}{{\cyrillictext \CYRP \cyrr \cyre \cyrd \cyrm \cyre \cyrt \cyrn \cyrery \cyrishrt \ \cyru \cyrk \cyra \cyrz \cyra \cyrt \cyre \cyrl \cyrsftsn }}{105}{}%

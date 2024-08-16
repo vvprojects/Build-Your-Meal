@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish" xml:lang="en-US">
+<title>bym.BYM_project.main_app.search.SearchDish Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchDish</primary></indexterm>
+<para>
+
+<para>Класс реализует функционал поиска и сортировки блюд по строке поиска, фильтрам блюда, рекомендациям конткретному пользователю и указанному адресу </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ab7f870616fc70cb2a4d1199a60eb6452">__init__</link> (self, types=None, subtypes=None, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a197d4ded41fbe1069a823bc3b6c117ca">search_string</link>=&apos;&apos;, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a127bbfb5c6b64d3be69cf35a564c6a3e">address_flg</link>=0, user_id=None, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a2b4f1c0ced07f7a4d6b9077ef2495224">ratio</link>=1, <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ac9cbb3ffcf81339ac4f642304f8216b7">threshold</link>=0)</para>
+
+<para>Инициализирует класс списком блюд, делая запрос в базу данных </para>
+</listitem>
+            <listitem><para>float <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a214893e087146660c2e9c28ce0f3610c">score</link> (self, dish)</para>
+
+<para>Сопосталяет каждому объекту класса Dish число, по которому будет осуществлена сортировка </para>
+</listitem>
+            <listitem><para>list <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a65b19a56e1f65b7ed560f7e5ddef877e">get</link> (self, slice)</para>
+
+<para>Сортирует список объектов класса Dish. </para>
+</listitem>
+            <listitem><para>float <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1afbe65b7e09fdd36049dbfc568a9a3db9">recommend_scorer</link> (self, dish)</para>
+
+<para>Предсказывает вес нравящности для блюда и пользователя. </para>
+</listitem>
+            <listitem><para>float <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ac0193c57b7c6f6e00d208737d2cf8e08">seq_match_scorer</link> (self, dish)</para>
+
+<para>Сравнивает Dish.name и self.search_string с помощью SequenceMather() </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ac9cbb3ffcf81339ac4f642304f8216b7">threshold</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a197d4ded41fbe1069a823bc3b6c117ca">search_string</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a127bbfb5c6b64d3be69cf35a564c6a3e">address_flg</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a2b4f1c0ced07f7a4d6b9077ef2495224">ratio</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ae43f9d32132f76eab0278b8df4462071">dish_list</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Класс реализует функционал поиска и сортировки блюд по строке поиска, фильтрам блюда, рекомендациям конткретному пользователю и указанному адресу </para>
+<para>
+Definition at line <link linkend="_search_8py_source_1l00007">7</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ab7f870616fc70cb2a4d1199a60eb6452"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>bym.BYM_project.main_app.search.SearchDish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchDish</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput> None bym.BYM_project.main_app.search.SearchDish.__init__ ( self,  types = <computeroutput>None</computeroutput>
+,  subtypes = <computeroutput>None</computeroutput>
+,  search_string = <computeroutput>&apos;&apos;</computeroutput>
+,  address_flg = <computeroutput>0</computeroutput>
+,  user_id = <computeroutput>None</computeroutput>
+,  ratio = <computeroutput>1</computeroutput>
+,  threshold = <computeroutput>0</computeroutput>
+)</computeroutput></para><para>
+
+<para>Инициализирует класс списком блюд, делая запрос в базу данных </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>types=[]</entry><entry>
+<para>list of int </para>
+</entry>
+                            </row>
+                            <row>
+<entry>subtypes=[]</entry><entry>
+<para>list of int </para>
+</entry>
+                            </row>
+                            <row>
+<entry>search_string=&apos;&apos;</entry><entry>
+<para>str </para>
+</entry>
+                            </row>
+                            <row>
+<entry>adress_flg=0</entry><entry>
+<para>int </para>
+</entry>
+                            </row>
+                            <row>
+<entry>user_id=None</entry><entry>
+<para>int </para>
+</entry>
+                            </row>
+                            <row>
+<entry>ratio</entry><entry>
+<para>float (во сколько раз рекомендательная система важнее совпадения строк) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_search_8py_source_1l00013">13</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a65b19a56e1f65b7ed560f7e5ddef877e"/><section>
+    <title>get()</title>
+<indexterm><primary>get</primary><secondary>bym.BYM_project.main_app.search.SearchDish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchDish</primary><secondary>get</secondary></indexterm>
+<para><computeroutput> list bym.BYM_project.main_app.search.SearchDish.get ( self,  slice)</computeroutput></para><para>
+
+<para>Сортирует список объектов класса Dish. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>dish_list list of Dish </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_search_8py_source_1l00059">59</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1afbe65b7e09fdd36049dbfc568a9a3db9"/><section>
+    <title>recommend_scorer()</title>
+<indexterm><primary>recommend_scorer</primary><secondary>bym.BYM_project.main_app.search.SearchDish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchDish</primary><secondary>recommend_scorer</secondary></indexterm>
+<para><computeroutput> float bym.BYM_project.main_app.search.SearchDish.recommend_scorer ( self,  dish)</computeroutput></para><para>
+
+<para>Предсказывает вес нравящности для блюда и пользователя. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dish</entry><entry>
+<para>Dish </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>weight double </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_search_8py_source_1l00070">70</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a214893e087146660c2e9c28ce0f3610c"/><section>
+    <title>score()</title>
+<indexterm><primary>score</primary><secondary>bym.BYM_project.main_app.search.SearchDish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchDish</primary><secondary>score</secondary></indexterm>
+<para><computeroutput> float bym.BYM_project.main_app.search.SearchDish.score ( self,  dish)</computeroutput></para><para>
+
+<para>Сопосталяет каждому объекту класса Dish число, по которому будет осуществлена сортировка </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dish</entry><entry>
+<para>Dish </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>score double </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_search_8py_source_1l00048">48</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ac0193c57b7c6f6e00d208737d2cf8e08"/><section>
+    <title>seq_match_scorer()</title>
+<indexterm><primary>seq_match_scorer</primary><secondary>bym.BYM_project.main_app.search.SearchDish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchDish</primary><secondary>seq_match_scorer</secondary></indexterm>
+<para><computeroutput> float bym.BYM_project.main_app.search.SearchDish.seq_match_scorer ( self,  dish)</computeroutput></para><para>
+
+<para>Сравнивает Dish.name и self.search_string с помощью SequenceMather() </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dish</entry><entry>
+<para>Dish </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>sm_score float </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_search_8py_source_1l00078">78</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a127bbfb5c6b64d3be69cf35a564c6a3e"/><section>
+    <title>address_flg</title>
+<indexterm><primary>address_flg</primary><secondary>bym.BYM_project.main_app.search.SearchDish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchDish</primary><secondary>address_flg</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.search.SearchDish.address_flg</computeroutput></para><para>
+Definition at line <link linkend="_search_8py_source_1l00030">30</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ae43f9d32132f76eab0278b8df4462071"/><section>
+    <title>dish_list</title>
+<indexterm><primary>dish_list</primary><secondary>bym.BYM_project.main_app.search.SearchDish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchDish</primary><secondary>dish_list</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.search.SearchDish.dish_list</computeroutput></para><para>
+Definition at line <link linkend="_search_8py_source_1l00039">39</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a2b4f1c0ced07f7a4d6b9077ef2495224"/><section>
+    <title>ratio</title>
+<indexterm><primary>ratio</primary><secondary>bym.BYM_project.main_app.search.SearchDish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchDish</primary><secondary>ratio</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.search.SearchDish.ratio</computeroutput></para><para>
+Definition at line <link linkend="_search_8py_source_1l00035">35</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1a197d4ded41fbe1069a823bc3b6c117ca"/><section>
+    <title>search_string</title>
+<indexterm><primary>search_string</primary><secondary>bym.BYM_project.main_app.search.SearchDish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchDish</primary><secondary>search_string</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.search.SearchDish.search_string</computeroutput></para><para>
+Definition at line <link linkend="_search_8py_source_1l00029">29</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish_1ac9cbb3ffcf81339ac4f642304f8216b7"/><section>
+    <title>threshold</title>
+<indexterm><primary>threshold</primary><secondary>bym.BYM_project.main_app.search.SearchDish</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.search.SearchDish</primary><secondary>threshold</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.search.SearchDish.threshold</computeroutput></para><para>
+Definition at line <link linkend="_search_8py_source_1l00024">24</link> of file <link linkend="_search_8py_source">search.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_search_8py">search.py</link></section>
+</section>

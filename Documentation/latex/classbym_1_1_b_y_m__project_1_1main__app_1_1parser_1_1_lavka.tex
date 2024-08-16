@@ -1,0 +1,206 @@
+\doxysection{bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Lavka Class Reference}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka}\index{bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}}
+
+
+Определяет класс используемый для парсинга лавки.  
+
+
+Inheritance diagram for bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Lavka\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ \+\_\+\+\_\+init\+\_\+\+\_\+} (self, user\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Инициализирует класс Lavka. \end{DoxyCompactList}\item 
+\textbf{ get\+\_\+data\+\_\+product} (self, product)
+\begin{DoxyCompactList}\small\item\em Выделяет из блока с информацией о продукте нужную и записывает в БД \end{DoxyCompactList}\item 
+\textbf{ get\+\_\+data\+\_\+html} (self, html)
+\begin{DoxyCompactList}\small\item\em Разбивает html код на блоки по продуктам, асинхронно запускает их обработку \end{DoxyCompactList}\item 
+\textbf{ pars} (self, city\+\_\+street, home)
+\begin{DoxyCompactList}\small\item\em Парсит список продуктов с ценами яндекс лавки по определенному адресу Производит запись в базу данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Parser}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ sql\+\_\+script} (self)
+\begin{DoxyCompactList}\small\item\em Сохраняет в базу данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ url\+\_\+main}
+\item 
+\textbf{ driver}
+\item 
+\textbf{ wait}
+\item 
+\textbf{ urls}
+\item 
+\textbf{ sl\+\_\+tags}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Parser}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ user\+\_\+obj}
+\item 
+\textbf{ options}
+\item 
+\textbf{ product\+\_\+list}
+\item 
+\textbf{ shop\+\_\+obj}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Определяет класс используемый для парсинга лавки. 
+
+Definition at line \textbf{ 56} of file \textbf{ parser.\+py}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_ae79912d1031916b7daf34ee69d05e8d6} 
+\index{bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}}
+\doxysubsubsection{\_\_init\_\_()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Lavka.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{user\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Инициализирует класс Lavka. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+\_\+id} & int \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Parser} \doxyref{}{p.}{classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser_acfb5504aa987e575ccfbe05617190604}.
+
+
+
+Definition at line \textbf{ 61} of file \textbf{ parser.\+py}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_aa85beac3725cdc9934390e1c49fcb9f1} 
+\index{bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}!get\_data\_html@{get\_data\_html}}
+\index{get\_data\_html@{get\_data\_html}!bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}}
+\doxysubsubsection{get\_data\_html()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Lavka.\+get\+\_\+data\+\_\+html (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{html }\end{DoxyParamCaption})}
+
+
+
+Разбивает html код на блоки по продуктам, асинхронно запускает их обработку 
+
+
+\begin{DoxyParams}{Parameters}
+{\em html} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 107} of file \textbf{ parser.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_a44f7318d5af307484c100b74733461b3} 
+\index{bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}!get\_data\_product@{get\_data\_product}}
+\index{get\_data\_product@{get\_data\_product}!bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}}
+\doxysubsubsection{get\_data\_product()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Lavka.\+get\+\_\+data\+\_\+product (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{product }\end{DoxyParamCaption})}
+
+
+
+Выделяет из блока с информацией о продукте нужную и записывает в БД 
+
+
+\begin{DoxyParams}{Parameters}
+{\em product} & Beautiful\+Soup \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 79} of file \textbf{ parser.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_a16780d5d1ca7bb8cf262758e2dac66ee} 
+\index{bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}!pars@{pars}}
+\index{pars@{pars}!bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}}
+\doxysubsubsection{pars()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Lavka.\+pars (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{city\+\_\+street,  }\item[{}]{home }\end{DoxyParamCaption})}
+
+
+
+Парсит список продуктов с ценами яндекс лавки по определенному адресу Производит запись в базу данных 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city\+\_\+strit} & string \\
+\hline
+{\em home} & string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 123} of file \textbf{ parser.\+py}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_aa4d243133ee2225c281004cada6c617f} 
+\index{bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}!driver@{driver}}
+\index{driver@{driver}!bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}}
+\doxysubsubsection{driver}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Lavka.\+driver}
+
+
+
+Definition at line \textbf{ 73} of file \textbf{ parser.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_a928051a5a0fb32b70882272b9c97983c} 
+\index{bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}!sl\_tags@{sl\_tags}}
+\index{sl\_tags@{sl\_tags}!bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}}
+\doxysubsubsection{sl\_tags}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Lavka.\+sl\+\_\+tags}
+
+
+
+Definition at line \textbf{ 76} of file \textbf{ parser.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_a23885f0e3a25fe52b40160bf50b95d86} 
+\index{bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}!url\_main@{url\_main}}
+\index{url\_main@{url\_main}!bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}}
+\doxysubsubsection{url\_main}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Lavka.\+url\+\_\+main}
+
+
+
+Definition at line \textbf{ 67} of file \textbf{ parser.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_ad7973256e11d6291b8641b3e438ca595} 
+\index{bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}!urls@{urls}}
+\index{urls@{urls}!bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}}
+\doxysubsubsection{urls}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Lavka.\+urls}
+
+
+
+Definition at line \textbf{ 75} of file \textbf{ parser.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka_ab11214453defaf1caacb34e33abbe04f} 
+\index{bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}!wait@{wait}}
+\index{wait@{wait}!bym.BYM\_project.main\_app.parser.Lavka@{bym.BYM\_project.main\_app.parser.Lavka}}
+\doxysubsubsection{wait}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+parser.\+Lavka.\+wait}
+
+
+
+Definition at line \textbf{ 74} of file \textbf{ parser.\+py}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ parser.\+py}\end{DoxyCompactItemize}

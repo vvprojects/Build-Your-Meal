@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['threshold_0',['threshold',['../classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_dish.html#ac9cbb3ffcf81339ac4f642304f8216b7',1,'bym.BYM_project.main_app.search.SearchDish.threshold'],['../classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product.html#a47c3087bdb8dbfbd2d8ef5afb605e3ed',1,'bym.BYM_project.main_app.search.SearchProduct.threshold']]],
+  ['to_5funit_1',['to_unit',['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion.html#a43a4b6d570628ec9d2a306796d089daa',1,'bym::BYM_project::main_app::models::Conversion']]],
+  ['true_2',['true',['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user.html#a76a20d5f32b81209cb51cec7a7f16a61',1,'bym.BYM_project.main_app.models.User.True'],['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category.html#a332600d9dc56374e36e5366f9084fa2c',1,'bym.BYM_project.main_app.models.Category.True'],['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure.html#aeff13c235b7e7fff55860bcb163b490c',1,'bym.BYM_project.main_app.models.UnitOfMeasure.True']]],
+  ['type_3',['type',['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type.html#ae3a0877aafd0c4cf0311dbd6992ac550',1,'bym.BYM_project.main_app.models.SubType.type'],['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type.html#a6056327a813f8bc582cf30e156827da9',1,'bym.BYM_project.main_app.models.SubType.Type']]]
+];

@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['unit_0',['unit',['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category.html#a7cc4793ed0df72cb94a9d2d1944efa13',1,'bym.BYM_project.main_app.models.DishCategory.unit'],['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product.html#af0343ad34783cf481faab110321612f0',1,'bym.BYM_project.main_app.models.Product.unit'],['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log.html#af46abc1d110ff668e58604b77e767e08',1,'bym.BYM_project.main_app.models.ProductLog.unit']]],
+  ['url_5fmain_1',['url_main',['../classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka.html#a23885f0e3a25fe52b40160bf50b95d86',1,'bym::BYM_project::main_app::parser::Lavka']]],
+  ['urls_2',['urls',['../classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_lavka.html#ad7973256e11d6291b8641b3e438ca595',1,'bym::BYM_project::main_app::parser::Lavka']]],
+  ['urls_5flavka_3',['urls_lavka',['../namespacebym_1_1_b_y_m__project_1_1main__app_1_1config.html#a33e627ec953d99555066175ad5255567',1,'bym::BYM_project::main_app::config']]],
+  ['user_4',['user',['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order.html#a6ca3b1af4a14a45664f1acfd147a3dc3',1,'bym.BYM_project.main_app.models.Order.User'],['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product.html#aa394d0514225da780a89399d98480137',1,'bym.BYM_project.main_app.models.Product.User'],['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order.html#a3220615ffc105fee679b8a0e32ebc53f',1,'bym.BYM_project.main_app.models.Order.user'],['../classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product.html#ac9e0922428a11a7b2f84f0be129df61d',1,'bym.BYM_project.main_app.models.Product.user']]],
+  ['user_5fobj_5',['user_obj',['../classbym_1_1_b_y_m__project_1_1main__app_1_1parser_1_1_parser.html#aed9cf2be1a6f7d6b919c1e785439841f',1,'bym::BYM_project::main_app::parser::Parser']]]
+];

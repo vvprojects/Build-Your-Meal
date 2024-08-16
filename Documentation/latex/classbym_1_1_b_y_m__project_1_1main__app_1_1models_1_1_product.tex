@@ -1,0 +1,160 @@
+\doxysection{bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product Class Reference}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product}\index{bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}}
+
+
+информация о конкретном товаре в магазине ~\newline
+ name – название товара ~\newline
+ price – цена ~\newline
+ amount – количество (в unit\+\_\+id) товара которое в одной единице заказ (например 300, unit\+\_\+id – граммы) ~\newline
+ link – ссылка на товар ~\newline
+ shop\+\_\+id – магазин, из которого товар ~\newline
+ unit\+\_\+id – единица измерения ~\newline
+ user\+\_\+id – пользователь для которого был спаршен данный товар ~\newline
+  
+
+
+Inheritance diagram for bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ Meta}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ user}
+\item 
+\textbf{ User}
+\item 
+\textbf{ on\+\_\+delete}
+\item 
+\textbf{ unit} = models.\+Foreign\+Key(\textbf{ Unit\+Of\+Measure}, \textbf{ on\+\_\+delete}=models.\+CASCADE)
+\item 
+\textbf{ shop} = models.\+Foreign\+Key(\textbf{ Shop}, \textbf{ on\+\_\+delete}=models.\+CASCADE)
+\item 
+\textbf{ name} = models.\+Char\+Field(max\+\_\+length=100)
+\item 
+\textbf{ price} = models.\+Positive\+Integer\+Field()
+\item 
+\textbf{ amount} = models.\+Decimal\+Field(max\+\_\+digits=4 + 4, decimal\+\_\+places=4)
+\item 
+\textbf{ link} = models.\+URLField()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+информация о конкретном товаре в магазине ~\newline
+ name – название товара ~\newline
+ price – цена ~\newline
+ amount – количество (в unit\+\_\+id) товара которое в одной единице заказ (например 300, unit\+\_\+id – граммы) ~\newline
+ link – ссылка на товар ~\newline
+ shop\+\_\+id – магазин, из которого товар ~\newline
+ unit\+\_\+id – единица измерения ~\newline
+ user\+\_\+id – пользователь для которого был спаршен данный товар ~\newline
+ 
+
+Definition at line \textbf{ 256} of file \textbf{ models.\+py}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_ad3098ea42061e5edd90246487a1681ee} 
+\index{bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}!amount@{amount}}
+\index{amount@{amount}!bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}}
+\doxysubsubsection{amount}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product.\+amount = models.\+Decimal\+Field(max\+\_\+digits=4 + 4, decimal\+\_\+places=4)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 277} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_a437b04ab4c70ba73e87291ae41849a22} 
+\index{bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}!link@{link}}
+\index{link@{link}!bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}}
+\doxysubsubsection{link}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product.\+link = models.\+URLField()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 278} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_aced0198e63546bdc47f09ebe932fc489} 
+\index{bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}!name@{name}}
+\index{name@{name}!bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}}
+\doxysubsubsection{name}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product.\+name = models.\+Char\+Field(max\+\_\+length=100)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 275} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_afd57eb422a20419b099d3a32076368c1} 
+\index{bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}!on\_delete@{on\_delete}}
+\index{on\_delete@{on\_delete}!bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}}
+\doxysubsubsection{on\_delete}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product.\+on\+\_\+delete\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 271} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_ad84f499b39050cd0d1cf361c61a7d0e1} 
+\index{bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}!price@{price}}
+\index{price@{price}!bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}}
+\doxysubsubsection{price}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product.\+price = models.\+Positive\+Integer\+Field()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 276} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_ae61b00ace29b79c99799c7eed8b1cc0f} 
+\index{bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}!shop@{shop}}
+\index{shop@{shop}!bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}}
+\doxysubsubsection{shop}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product.\+shop = models.\+Foreign\+Key(\textbf{ Shop}, \textbf{ on\+\_\+delete}=models.\+CASCADE)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 273} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_af0343ad34783cf481faab110321612f0} 
+\index{bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}!unit@{unit}}
+\index{unit@{unit}!bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}}
+\doxysubsubsection{unit}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product.\+unit = models.\+Foreign\+Key(\textbf{ Unit\+Of\+Measure}, \textbf{ on\+\_\+delete}=models.\+CASCADE)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 272} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_ac9e0922428a11a7b2f84f0be129df61d} 
+\index{bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}!user@{user}}
+\index{user@{user}!bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}}
+\doxysubsubsection{user}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product.\+user\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 271} of file \textbf{ models.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_aa394d0514225da780a89399d98480137} 
+\index{bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}!User@{User}}
+\index{User@{User}!bym.BYM\_project.main\_app.models.Product@{bym.BYM\_project.main\_app.models.Product}}
+\doxysubsubsection{User}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product.\+User\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 271} of file \textbf{ models.\+py}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ models.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+.TH "bym.BYM_project.main_app.search.SearchProduct" 3 "BYM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bym.BYM_project.main_app.search.SearchProduct
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "None \fB__init__\fP (self, category_id, user_id, \fBthreshold\fP=0\&.7)"
+.br
+.ti -1c
+.RI "float \fBscore\fP (self, product)"
+.br
+.RI "Сопосталяет каждому объекту класса Product число, по которому будет осуществлена сортировка "
+.ti -1c
+.RI "list \fBget\fP (self)"
+.br
+.RI "Сортирует список объектов класса Product\&. "
+.ti -1c
+.RI "float \fBseq_match_scorer\fP (self, product)"
+.br
+.RI "Сравнивает Product\&.name и self\&.category\&.name с помощью SequenceMather() "
+.ti -1c
+.RI "\fBCategory\fP \fBget_category\fP (self)"
+.br
+.RI "Возвращает self\&.category\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBcategory\fP"
+.br
+.ti -1c
+.RI "\fBproducts\fP"
+.br
+.ti -1c
+.RI "\fBthreshold\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.IP "1." 4
+Загружаем из бд список всех спаршенных продуктов
+.IP "2." 4
+Вызов функции SequenceMatch() (взвешиваем каждый product\&.name относительно category\&.name по похожести)
+.IP "3." 4
+Сортируем продукты по убыванию весов и эффективности покупки 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcategory_id\fP int 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+products [[Product obj, \&.\&.\&.], [Category\&.name, [image1, \&.\&.\&.]]]] 
+.RE
+.PP
+
+.PP
+
+.PP
+Definition at line \fB95\fP of file \fBsearch\&.py\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS " None bym\&.BYM_project\&.main_app\&.search\&.SearchProduct\&.__init__ ( self,  category_id,  user_id,  threshold = \fC0\&.7\fP)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIcategory_id\fP int 
+.RE
+.PP
+
+.PP
+Definition at line \fB104\fP of file \fBsearch\&.py\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS " list bym\&.BYM_project\&.main_app\&.search\&.SearchProduct\&.get ( self)"
+
+.PP
+Сортирует список объектов класса Product\&. 
+.PP
+\fBReturns\fP
+.RS 4
+products list of Product 
+.RE
+.PP
+
+.PP
+Definition at line \fB122\fP of file \fBsearch\&.py\fP\&.
+.SS " \fBCategory\fP bym\&.BYM_project\&.main_app\&.search\&.SearchProduct\&.get_category ( self)"
+
+.PP
+Возвращает self\&.category\&. 
+.PP
+\fBReturns\fP
+.RS 4
+category Category 
+.RE
+.PP
+
+.PP
+Definition at line \fB149\fP of file \fBsearch\&.py\fP\&.
+.SS " float bym\&.BYM_project\&.main_app\&.search\&.SearchProduct\&.score ( self,  product)"
+
+.PP
+Сопосталяет каждому объекту класса Product число, по которому будет осуществлена сортировка 
+.PP
+\fBParameters\fP
+.RS 4
+\fIproduct\fP Product 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+score double 
+.RE
+.PP
+
+.PP
+Definition at line \fB113\fP of file \fBsearch\&.py\fP\&.
+.SS " float bym\&.BYM_project\&.main_app\&.search\&.SearchProduct\&.seq_match_scorer ( self,  product)"
+
+.PP
+Сравнивает Product\&.name и self\&.category\&.name с помощью SequenceMather() 
+.PP
+\fBParameters\fP
+.RS 4
+\fIproduct\fP Product 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+sm_score float 
+.RE
+.PP
+
+.PP
+Definition at line \fB133\fP of file \fBsearch\&.py\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.search\&.SearchProduct\&.category"
+
+.PP
+Definition at line \fB109\fP of file \fBsearch\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.search\&.SearchProduct\&.products"
+
+.PP
+Definition at line \fB110\fP of file \fBsearch\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.search\&.SearchProduct\&.threshold"
+
+.PP
+Definition at line \fB111\fP of file \fBsearch\&.py\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BYM from the source code\&.

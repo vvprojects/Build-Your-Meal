@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::Category</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">models.Model</basecompoundref>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1_1_meta" prot="public">bym::BYM_project::main_app::models::Category::Meta</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1aa704133cb427ffc20a6ddf673ca52a0e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Category::supreme_category</definition>
+        <argsstring></argsstring>
+        <name>supreme_category</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Category.supreme_category</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="150" column="1" bodyfile="models.py" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1ae872f27c1746cfee0f6f9ed36ee6493e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Category::null</definition>
+        <argsstring></argsstring>
+        <name>null</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Category.null</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="150" column="1" bodyfile="models.py" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a332600d9dc56374e36e5366f9084fa2c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Category::True</definition>
+        <argsstring></argsstring>
+        <name>True</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Category.True</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="150" column="1" bodyfile="models.py" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a9c1f3305e89355c12f2a40dfdd2cde78" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Category::blank</definition>
+        <argsstring></argsstring>
+        <name>blank</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Category.blank</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="150" column="1" bodyfile="models.py" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1afa1db1b3e4007af9c1d7c68c0134fded" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Category::on_delete</definition>
+        <argsstring></argsstring>
+        <name>on_delete</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Category.on_delete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="150" column="1" bodyfile="models.py" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a9de968ced436a1b6629a47ac306c9524" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.Category::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>bym.BYM_project.main_app.models.Category.name</qualifiedname>
+        <initializer>=  models.CharField(max_length=70)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="152" column="1" bodyfile="models.py" bodystart="152" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>категории различных продуктов для приготовления <linebreak/>
+ name – название категории (например: бакалея или помидоры) <linebreak/>
+ supreme_category_id – надкатегория (например надкатегорией римских помидор являются помидоры) <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Category</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models::Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.Category</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models::Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="models.py" line="140" column="1" bodyfile="models.py" bodystart="140" bodyend="154"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a9c1f3305e89355c12f2a40dfdd2cde78" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Category</scope><name>blank</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a9de968ced436a1b6629a47ac306c9524" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Category</scope><name>name</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1ae872f27c1746cfee0f6f9ed36ee6493e" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Category</scope><name>null</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1afa1db1b3e4007af9c1d7c68c0134fded" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Category</scope><name>on_delete</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1aa704133cb427ffc20a6ddf673ca52a0e" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Category</scope><name>supreme_category</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a332600d9dc56374e36e5366f9084fa2c" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::Category</scope><name>True</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

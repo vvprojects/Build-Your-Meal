@@ -1,0 +1,134 @@
+\doxysection{models.\+py File Reference}
+\label{models_8py}\index{models.py@{models.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User}
+\begin{DoxyCompactList}\small\item\em Информация о пользователе. \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+User.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Country}
+\begin{DoxyCompactList}\small\item\em Таблица с кухнями различных стран ~\newline
+ name – название кухни (например Русская кухня) ~\newline
+ \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Country.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Type}
+\begin{DoxyCompactList}\small\item\em таблица с типами блюд ~\newline
+ name – название типа (например Завтраки) ~\newline
+ \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Type.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Sub\+Type}
+\begin{DoxyCompactList}\small\item\em таблица с подтипами блюд ~\newline
+ name – название подтипа (например фруктовые десерты) ~\newline
+ type\+\_\+id – тип к которому относится подтип ~\newline
+ \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Sub\+Type.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish}
+\begin{DoxyCompactList}\small\item\em информация о блюде ~\newline
+ name – названия блюда ~\newline
+ pers\+\_\+num – кол-\/во порций ~\newline
+ cooking\+\_\+time\+\_\+minutes – время готовки в минутах ~\newline
+ calories – кол-\/во калорий в блюде ~\newline
+ proteins – кол0белки в блюде ~\newline
+ carbohydrates – углеводы в блюде ~\newline
+ fats – жиры ~\newline
+ country\+\_\+id – страна из кухни которой это блюдо (например итальянская кухня) ~\newline
+ subtype\+\_\+id – подтип блюда (например, фруктовые десерты) ~\newline
+ image – ссылка на изображения блюда ~\newline
+ \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Cooking\+Stage}
+\begin{DoxyCompactList}\small\item\em шаги для приготовления блюда ~\newline
+ description – текст того, что нужно сделать на этом шаге ~\newline
+ order – порядковый номер шага ~\newline
+ dish\+\_\+id – блюдо, к которому относится этот шаг ~\newline
+ image – ссылка на изображение шага ~\newline
+ \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Cooking\+Stage.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Category}
+\begin{DoxyCompactList}\small\item\em категории различных продуктов для приготовления ~\newline
+ name – название категории (например\+: бакалея или помидоры) ~\newline
+ supreme\+\_\+category\+\_\+id – надкатегория (например надкатегорией римских помидор являются помидоры) ~\newline
+ \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Category.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Unit\+Of\+Measure}
+\begin{DoxyCompactList}\small\item\em единицы изменения ~\newline
+ name – название единицы измерения (например штуки или кг) ~\newline
+ supreme\+\_\+unit\+\_\+id – основная форма категории (например Supreme\+\_\+unit\+\_\+id у "{}штуки"{} это "{}штука"{}) ~\newline
+ \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Unit\+Of\+Measure.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Conversion}
+\begin{DoxyCompactList}\small\item\em коэффициенты для перевода единиц измерения ~\newline
+ coefficient – число на которое нужно умножить что бы перевести from\+\_\+unit\+\_\+id в to\+\_\+unit\+\_\+id ~\newline
+ category\+\_\+id – категория для которой выполняется перевод (очевидно что коэффициент для перевода штук в граммы для помидоров и огурцов отличается) ~\newline
+ from\+\_\+unit\+\_\+id– единица измерения из которой выполняется перевод ~\newline
+ to\+\_\+unit\+\_\+id – единица измерения в которую выполняется перевод ~\newline
+ \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Conversion.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish\+Category}
+\begin{DoxyCompactList}\small\item\em информация о составе блюда. \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Dish\+Category.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Order}
+\begin{DoxyCompactList}\small\item\em информация о заказах. \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Order.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Menu}
+\begin{DoxyCompactList}\small\item\em состав заказа ~\newline
+ amount– кол-\/во товара, которое было заказано ~\newline
+ dish\+\_\+id – товар который был заказан ~\newline
+ order\+\_\+id – заказ в котором этот товар был заказан ~\newline
+ \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Menu.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Shop}
+\begin{DoxyCompactList}\small\item\em информация о магазине ~\newline
+ name – название магазина ~\newline
+ link – ссылка на магазин ~\newline
+ \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Shop.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product}
+\begin{DoxyCompactList}\small\item\em информация о конкретном товаре в магазине ~\newline
+ name – название товара ~\newline
+ price – цена ~\newline
+ amount – количество (в unit\+\_\+id) товара которое в одной единице заказ (например 300, unit\+\_\+id – граммы) ~\newline
+ link – ссылка на товар ~\newline
+ shop\+\_\+id – магазин, из которого товар ~\newline
+ unit\+\_\+id – единица измерения ~\newline
+ user\+\_\+id – пользователь для которого был спаршен данный товар ~\newline
+ \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product.\+Meta}
+\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log}
+\begin{DoxyCompactList}\small\item\em информация о ранее заказанных товарах в магазине ~\newline
+ name – название товара ~\newline
+ price – цена ~\newline
+ amount – количество (в unit\+\_\+id) товара которое в одной единице заказ (например 300, unit\+\_\+id – граммы) ~\newline
+ quantity – количество единиц, которое было заказано ~\newline
+ link – ссылка на товар ~\newline
+ shop\+\_\+id – магазин, из которого товар ~\newline
+ order\+\_\+id – заказ, в котором был куплен данный товар ~\newline
+ unit\+\_\+id – единица измерения ~\newline
+ \end{DoxyCompactList}\item 
+class \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models.\+Product\+Log.\+Meta}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \textbf{ bym}
+\item 
+namespace \textbf{ bym.\+BYM\+\_\+project}
+\item 
+namespace \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app}
+\item 
+namespace \textbf{ bym.\+BYM\+\_\+project.\+main\+\_\+app.\+models}
+\end{DoxyCompactItemize}

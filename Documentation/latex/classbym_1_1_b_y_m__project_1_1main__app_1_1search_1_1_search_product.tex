@@ -1,0 +1,181 @@
+\doxysection{bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Product Class Reference}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product}\index{bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \textbf{ \+\_\+\+\_\+init\+\_\+\+\_\+} (self, category\+\_\+id, user\+\_\+id, \textbf{ threshold}=0.\+7)
+\item 
+float \textbf{ score} (self, product)
+\begin{DoxyCompactList}\small\item\em Сопосталяет каждому объекту класса Product число, по которому будет осуществлена сортировка \end{DoxyCompactList}\item 
+list \textbf{ get} (self)
+\begin{DoxyCompactList}\small\item\em Сортирует список объектов класса Product. \end{DoxyCompactList}\item 
+float \textbf{ seq\+\_\+match\+\_\+scorer} (self, product)
+\begin{DoxyCompactList}\small\item\em Сравнивает Product.\+name и self.\+category.\+name с помощью Sequence\+Mather() \end{DoxyCompactList}\item 
+\textbf{ Category} \textbf{ get\+\_\+category} (self)
+\begin{DoxyCompactList}\small\item\em Возвращает self.\+category. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ category}
+\item 
+\textbf{ products}
+\item 
+\textbf{ threshold}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+\begin{DoxyEnumerate}
+\item Загружаем из бд список всех спаршенных продуктов
+\item Вызов функции Sequence\+Match() (взвешиваем каждый product.\+name относительно category.\+name по похожести)
+\item Сортируем продукты по убыванию весов и эффективности покупки 
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+id} & int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+products [[Product obj, ...], [Category.\+name, [image1, ...]]]] 
+\end{DoxyReturn}
+
+\end{DoxyEnumerate}
+
+Definition at line \textbf{ 95} of file \textbf{ search.\+py}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_a915ef58475303424251d924cf320cfde} 
+\index{bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}}
+\doxysubsubsection{\_\_init\_\_()}
+{\footnotesize\ttfamily  None bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Product.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{category\+\_\+id,  }\item[{}]{user\+\_\+id,  }\item[{}]{threshold = {\ttfamily 0.7} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+id} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 104} of file \textbf{ search.\+py}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_ab8d86256ea2baed501418f019c0cee48} 
+\index{bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}!get@{get}}
+\index{get@{get}!bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}}
+\doxysubsubsection{get()}
+{\footnotesize\ttfamily  list bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Product.\+get (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Сортирует список объектов класса Product. 
+
+\begin{DoxyReturn}{Returns}
+products list of Product 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 122} of file \textbf{ search.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_a13bba77ad707a998d896a172d2e37899} 
+\index{bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}!get\_category@{get\_category}}
+\index{get\_category@{get\_category}!bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}}
+\doxysubsubsection{get\_category()}
+{\footnotesize\ttfamily  \textbf{ Category} bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Product.\+get\+\_\+category (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Возвращает self.\+category. 
+
+\begin{DoxyReturn}{Returns}
+category Category 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 149} of file \textbf{ search.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_a98b6b788934df61c45018bad900da5b9} 
+\index{bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}!score@{score}}
+\index{score@{score}!bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}}
+\doxysubsubsection{score()}
+{\footnotesize\ttfamily  float bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Product.\+score (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{product }\end{DoxyParamCaption})}
+
+
+
+Сопосталяет каждому объекту класса Product число, по которому будет осуществлена сортировка 
+
+
+\begin{DoxyParams}{Parameters}
+{\em product} & Product \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+score double 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 113} of file \textbf{ search.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_a260d6a89c8d23506cd854aba92524a75} 
+\index{bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}!seq\_match\_scorer@{seq\_match\_scorer}}
+\index{seq\_match\_scorer@{seq\_match\_scorer}!bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}}
+\doxysubsubsection{seq\_match\_scorer()}
+{\footnotesize\ttfamily  float bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Product.\+seq\+\_\+match\+\_\+scorer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{product }\end{DoxyParamCaption})}
+
+
+
+Сравнивает Product.\+name и self.\+category.\+name с помощью Sequence\+Mather() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em product} & Product \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sm\+\_\+score float 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 133} of file \textbf{ search.\+py}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_a21b433635039afa0a1432ccd644e3d59} 
+\index{bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}!category@{category}}
+\index{category@{category}!bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}}
+\doxysubsubsection{category}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Product.\+category}
+
+
+
+Definition at line \textbf{ 109} of file \textbf{ search.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_a16ef129c969ce1b76a9b57a52bd5ee85} 
+\index{bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}!products@{products}}
+\index{products@{products}!bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}}
+\doxysubsubsection{products}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Product.\+products}
+
+
+
+Definition at line \textbf{ 110} of file \textbf{ search.\+py}.
+
+\label{classbym_1_1_b_y_m__project_1_1main__app_1_1search_1_1_search_product_a47c3087bdb8dbfbd2d8ef5afb605e3ed} 
+\index{bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}!threshold@{threshold}}
+\index{threshold@{threshold}!bym.BYM\_project.main\_app.search.SearchProduct@{bym.BYM\_project.main\_app.search.SearchProduct}}
+\doxysubsubsection{threshold}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+search.\+Search\+Product.\+threshold}
+
+
+
+Definition at line \textbf{ 111} of file \textbf{ search.\+py}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ search.\+py}\end{DoxyCompactItemize}

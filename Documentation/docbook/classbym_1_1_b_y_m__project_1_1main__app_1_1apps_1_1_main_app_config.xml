@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config" xml:lang="en-US">
+<title>bym.BYM_project.main_app.apps.MainAppConfig Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.apps.MainAppConfig</primary></indexterm>
+<para>Inheritance diagram for bym.BYM_project.main_app.apps.MainAppConfig:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config_1aef0cf79007455603508a92ee4790336a">default_auto_field</link> = &apos;django.db.models.BigAutoField&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config_1a4721d005d31a86d57752c61316c6ae23">name</link> = &apos;main_app&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_apps_8py_source_1l00004">4</link> of file <link linkend="_apps_8py_source">apps.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config_1aef0cf79007455603508a92ee4790336a"/><section>
+    <title>default_auto_field</title>
+<indexterm><primary>default_auto_field</primary><secondary>bym.BYM_project.main_app.apps.MainAppConfig</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.apps.MainAppConfig</primary><secondary>default_auto_field</secondary></indexterm>
+<para><computeroutput>str bym.BYM_project.main_app.apps.MainAppConfig.default_auto_field = &apos;django.db.models.BigAutoField&apos;<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_apps_8py_source_1l00005">5</link> of file <link linkend="_apps_8py_source">apps.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1apps_1_1_main_app_config_1a4721d005d31a86d57752c61316c6ae23"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>bym.BYM_project.main_app.apps.MainAppConfig</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.apps.MainAppConfig</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>str bym.BYM_project.main_app.apps.MainAppConfig.name = &apos;main_app&apos;<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_apps_8py_source_1l00006">6</link> of file <link linkend="_apps_8py_source">apps.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_apps_8py">apps.py</link></section>
+</section>

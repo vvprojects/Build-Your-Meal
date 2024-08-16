@@ -1,0 +1,95 @@
+.TH "bym.BYM_project.main_app.models.Conversion" 3 "BYM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bym.BYM_project.main_app.models.Conversion \- коэффициенты для перевода единиц измерения 
+.br
+ coefficient – число на которое нужно умножить что бы перевести from_unit_id в to_unit_id 
+.br
+ category_id – категория для которой выполняется перевод (очевидно что коэффициент для перевода штук в граммы для помидоров и огурцов отличается) 
+.br
+ from_unit_id– единица измерения из которой выполняется перевод 
+.br
+ to_unit_id – единица измерения в которую выполняется перевод 
+.br
+  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits models\&.Model\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMeta\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBcategory\fP"
+.br
+.ti -1c
+.RI "\fBCategory\fP"
+.br
+.ti -1c
+.RI "\fBon_delete\fP"
+.br
+.ti -1c
+.RI "\fBfrom_unit\fP = models\&.ForeignKey(\fBUnitOfMeasure\fP, related_name='from_unit', \fBon_delete\fP=models\&.CASCADE)"
+.br
+.ti -1c
+.RI "\fBto_unit\fP = models\&.ForeignKey(\fBUnitOfMeasure\fP, related_name='to_unit', null=True, blank=True, \fBon_delete\fP=models\&.CASCADE)"
+.br
+.ti -1c
+.RI "\fBcoefficient\fP = models\&.DecimalField(max_digits=4 + 4, decimal_places=4, default=1)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+коэффициенты для перевода единиц измерения 
+.br
+ coefficient – число на которое нужно умножить что бы перевести from_unit_id в to_unit_id 
+.br
+ category_id – категория для которой выполняется перевод (очевидно что коэффициент для перевода штук в граммы для помидоров и огурцов отличается) 
+.br
+ from_unit_id– единица измерения из которой выполняется перевод 
+.br
+ to_unit_id – единица измерения в которую выполняется перевод 
+.br
+ 
+.PP
+Definition at line \fB170\fP of file \fBmodels\&.py\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Conversion\&.category\fC [static]\fP"
+
+.PP
+Definition at line \fB182\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Conversion\&.Category\fC [static]\fP"
+
+.PP
+Definition at line \fB182\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Conversion\&.coefficient = models\&.DecimalField(max_digits=4 + 4, decimal_places=4, default=1)\fC [static]\fP"
+
+.PP
+Definition at line \fB186\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Conversion\&.from_unit = models\&.ForeignKey(\fBUnitOfMeasure\fP, related_name='from_unit', \fBon_delete\fP=models\&.CASCADE)\fC [static]\fP"
+
+.PP
+Definition at line \fB183\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Conversion\&.on_delete\fC [static]\fP"
+
+.PP
+Definition at line \fB182\fP of file \fBmodels\&.py\fP\&.
+.SS "bym\&.BYM_project\&.main_app\&.models\&.Conversion\&.to_unit = models\&.ForeignKey(\fBUnitOfMeasure\fP, related_name='to_unit', null=True, blank=True, \fBon_delete\fP=models\&.CASCADE)\fC [static]\fP"
+
+.PP
+Definition at line \fB184\fP of file \fBmodels\&.py\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for BYM from the source code\&.

@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category" xml:lang="en-US">
+<title>bym.BYM_project.main_app.models.Category Class Reference</title>
+<indexterm><primary>bym.BYM_project.main_app.models.Category</primary></indexterm>
+<para>
+
+<para>категории различных продуктов для приготовления <?linebreak?> name – название категории (например: бакалея или помидоры) <?linebreak?> supreme_category_id – надкатегория (например надкатегорией римских помидор являются помидоры) <?linebreak?> </para>
+ 
+</para>
+<para>Inheritance diagram for bym.BYM_project.main_app.models.Category:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1_1_meta">Meta</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1aa704133cb427ffc20a6ddf673ca52a0e">supreme_category</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1ae872f27c1746cfee0f6f9ed36ee6493e">null</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a332600d9dc56374e36e5366f9084fa2c">True</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a9c1f3305e89355c12f2a40dfdd2cde78">blank</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1afa1db1b3e4007af9c1d7c68c0134fded">on_delete</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a9de968ced436a1b6629a47ac306c9524">name</link> = models.CharField(max_length=70)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>категории различных продуктов для приготовления <?linebreak?> name – название категории (например: бакалея или помидоры) <?linebreak?> supreme_category_id – надкатегория (например надкатегорией римских помидор являются помидоры) <?linebreak?> </para>
+<para>
+Definition at line <link linkend="_models_8py_source_1l00140">140</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a9c1f3305e89355c12f2a40dfdd2cde78"/><section>
+    <title>blank</title>
+<indexterm><primary>blank</primary><secondary>bym.BYM_project.main_app.models.Category</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Category</primary><secondary>blank</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Category.blank<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00150">150</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a9de968ced436a1b6629a47ac306c9524"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>bym.BYM_project.main_app.models.Category</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Category</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Category.name = models.CharField(max_length=70)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00152">152</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1ae872f27c1746cfee0f6f9ed36ee6493e"/><section>
+    <title>null</title>
+<indexterm><primary>null</primary><secondary>bym.BYM_project.main_app.models.Category</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Category</primary><secondary>null</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Category.null<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00150">150</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1afa1db1b3e4007af9c1d7c68c0134fded"/><section>
+    <title>on_delete</title>
+<indexterm><primary>on_delete</primary><secondary>bym.BYM_project.main_app.models.Category</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Category</primary><secondary>on_delete</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Category.on_delete<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00150">150</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1aa704133cb427ffc20a6ddf673ca52a0e"/><section>
+    <title>supreme_category</title>
+<indexterm><primary>supreme_category</primary><secondary>bym.BYM_project.main_app.models.Category</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Category</primary><secondary>supreme_category</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Category.supreme_category<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00150">150</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<anchor xml:id="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a332600d9dc56374e36e5366f9084fa2c"/><section>
+    <title>True</title>
+<indexterm><primary>True</primary><secondary>bym.BYM_project.main_app.models.Category</secondary></indexterm>
+<indexterm><primary>bym.BYM_project.main_app.models.Category</primary><secondary>True</secondary></indexterm>
+<para><computeroutput>bym.BYM_project.main_app.models.Category.True<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_models_8py_source_1l00150">150</link> of file <link linkend="_models_8py_source">models.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_models_8py">models.py</link></section>
+</section>

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::DishCategory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">models.Model</basecompoundref>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta" prot="public">bym::BYM_project::main_app::models::DishCategory::Meta</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a4d5c513b84d4b7232adfa7ee54209b0a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.DishCategory::dish</definition>
+        <argsstring></argsstring>
+        <name>dish</name>
+        <qualifiedname>bym.BYM_project.main_app.models.DishCategory.dish</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="201" column="1" bodyfile="models.py" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a4c77ce78acd97e2311f1b9380865606b" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.DishCategory::Dish</definition>
+        <argsstring></argsstring>
+        <name>Dish</name>
+        <qualifiedname>bym.BYM_project.main_app.models.DishCategory.Dish</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="201" column="1" bodyfile="models.py" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a1679693f639f3e5e4e43f94032e82bdc" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.DishCategory::on_delete</definition>
+        <argsstring></argsstring>
+        <name>on_delete</name>
+        <qualifiedname>bym.BYM_project.main_app.models.DishCategory.on_delete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="201" column="1" bodyfile="models.py" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a981a0bc18837363acca13f8dfb08f2c3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.DishCategory::category</definition>
+        <argsstring></argsstring>
+        <name>category</name>
+        <qualifiedname>bym.BYM_project.main_app.models.DishCategory.category</qualifiedname>
+        <initializer>=  models.ForeignKey(<ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category" kindref="compound">Category</ref>, <ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a1679693f639f3e5e4e43f94032e82bdc" kindref="member">on_delete</ref>=models.CASCADE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="202" column="1" bodyfile="models.py" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a7cc4793ed0df72cb94a9d2d1944efa13" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.DishCategory::unit</definition>
+        <argsstring></argsstring>
+        <name>unit</name>
+        <qualifiedname>bym.BYM_project.main_app.models.DishCategory.unit</qualifiedname>
+        <initializer>=  models.ForeignKey(<ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure" kindref="compound">UnitOfMeasure</ref>, null=True, blank=True, <ref refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a1679693f639f3e5e4e43f94032e82bdc" kindref="member">on_delete</ref>=models.CASCADE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="203" column="1" bodyfile="models.py" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1aae8ce0362f2bcdc47aebf75e88d6f1c7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.DishCategory::amount</definition>
+        <argsstring></argsstring>
+        <name>amount</name>
+        <qualifiedname>bym.BYM_project.main_app.models.DishCategory.amount</qualifiedname>
+        <initializer>=  models.DecimalField(max_digits=4 + 4, decimal_places=4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="205" column="1" bodyfile="models.py" bodystart="205" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>информация о составе блюда. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+ amount – кол-во продукта в блюде <linebreak/>
+ category_id – категория продукта <linebreak/>
+ dish_id – блюдо к которому относится продукт <linebreak/>
+ unit_id – единицы измерения в которых указано кол-во <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.DishCategory</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.DishCategory</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="models.py" line="189" column="1" bodyfile="models.py" bodystart="189" bodyend="207"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1aae8ce0362f2bcdc47aebf75e88d6f1c7" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::DishCategory</scope><name>amount</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a981a0bc18837363acca13f8dfb08f2c3" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::DishCategory</scope><name>category</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a4d5c513b84d4b7232adfa7ee54209b0a" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::DishCategory</scope><name>dish</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a4c77ce78acd97e2311f1b9380865606b" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::DishCategory</scope><name>Dish</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a1679693f639f3e5e4e43f94032e82bdc" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::DishCategory</scope><name>on_delete</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a7cc4793ed0df72cb94a9d2d1944efa13" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::DishCategory</scope><name>unit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_models_8py_source" xml:lang="en-US">
+<title>models.py</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_models_8py_source_1l00001"/><link linkend="_namespacebym_1_1_b_y_m__project_1_1main__app_1_1models">00001</link> <emphasis role="keyword">from</emphasis>&#32;django.db&#32;<emphasis role="keyword">import</emphasis>&#32;models
+<anchor xml:id="_models_8py_source_1l00002"/>00002 <emphasis role="keyword">from</emphasis>&#32;django.contrib.sessions.models&#32;<emphasis role="keyword">import</emphasis>&#32;Session
+<anchor xml:id="_models_8py_source_1l00003"/>00003 
+<anchor xml:id="_models_8py_source_1l00004"/>00004 
+<anchor xml:id="_models_8py_source_1l00005"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user">00005</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user">User</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00006"/>00006 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;Информация&#32;о&#32;пользователе.&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00007"/>00007 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;last_address&#32;–&#32;последний&#32;адрес,&#32;с&#32;которого&#32;пользователь&#32;заказывал&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00008"/>00008 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;nickname&#32;–&#32;ник&#32;пользователья&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00009"/>00009 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;login&#32;–&#32;его&#32;логин&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00010"/>00010 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;session_id&#32;–&#32;id&#32;текущей&#32;сессии&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00011"/>00011 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00012"/>00012 
+<anchor xml:id="_models_8py_source_1l00013"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1_1_meta">00013</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00014"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1_1_meta_1a5bc3daeb8015a968c0cd8b1abe9ded6c">00014</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Пользователь&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00015"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1_1_meta_1aedc34f1aa1ba262a16ffe98c11e4ea8f">00015</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Пользователи&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00016"/>00016 
+<anchor xml:id="_models_8py_source_1l00017"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ae82374586f8dddce1f3eb664b6b09687">00017</link> &#32;&#32;&#32;&#32;session&#32;=&#32;models.ForeignKey(Session,&#32;on_delete=models.CASCADE,&#32;null=<emphasis role="keyword">True</emphasis>,&#32;blank=<emphasis role="keyword">True</emphasis>)
+<anchor xml:id="_models_8py_source_1l00018"/>00018 
+<anchor xml:id="_models_8py_source_1l00019"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a774e79a804baf0f13d4e1c7e0e9bc464">00019</link> &#32;&#32;&#32;&#32;last_address&#32;=&#32;models.CharField(max_length=100,&#32;null=<emphasis role="keyword">True</emphasis>,&#32;blank=<emphasis role="keyword">True</emphasis>)
+<anchor xml:id="_models_8py_source_1l00020"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a8aa271136e93202daf9e8d79f2059049">00020</link> &#32;&#32;&#32;&#32;nickname&#32;=&#32;models.CharField(max_length=50,&#32;null=<emphasis role="keyword">True</emphasis>,&#32;blank=<emphasis role="keyword">True</emphasis>)
+<anchor xml:id="_models_8py_source_1l00021"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1a8cd58cf6d85c37d43c5dcc3527efce8c">00021</link> &#32;&#32;&#32;&#32;login&#32;=&#32;models.EmailField(null=<emphasis role="keyword">True</emphasis>,&#32;blank=<emphasis role="keyword">True</emphasis>)
+<anchor xml:id="_models_8py_source_1l00022"/>00022 
+<anchor xml:id="_models_8py_source_1l00023"/>00023 &#32;&#32;&#32;&#32;<emphasis role="preprocessor">@staticmethod</emphasis>
+<anchor xml:id="_models_8py_source_1l00024"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ab0a8bfa053f7e8010fd64f61a5b1ff68">00024</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1ab0a8bfa053f7e8010fd64f61a5b1ff68">authorization</link>(user_id,&#32;login):
+<anchor xml:id="_models_8py_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;Поиск&#32;пользователя&#32;по&#32;логину,&#32;если&#32;не&#32;найден&#32;то&#32;присвоить&#32;логин&#32;текущему&#32;user_id.</emphasis>
+<anchor xml:id="_models_8py_source_1l00026"/>00026 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;В&#32;противном&#32;случае&#32;вернуть&#32;новый&#32;user_id</emphasis>
+<anchor xml:id="_models_8py_source_1l00027"/>00027 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;@param&#32;user_id&#32;int</emphasis>
+<anchor xml:id="_models_8py_source_1l00028"/>00028 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;@param&#32;login&#32;string</emphasis>
+<anchor xml:id="_models_8py_source_1l00029"/>00029 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;@return&#32;user_id&#32;int</emphasis>
+<anchor xml:id="_models_8py_source_1l00030"/>00030 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>:
+<anchor xml:id="_models_8py_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;user&#32;=&#32;User.objects.get(login=login)
+<anchor xml:id="_models_8py_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;user_id&#32;=&#32;user.pk
+<anchor xml:id="_models_8py_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">except</emphasis>&#32;User.DoesNotExist:
+<anchor xml:id="_models_8py_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;User.objects.filter(pk=user_id).update(login=login)
+<anchor xml:id="_models_8py_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;user_id
+<anchor xml:id="_models_8py_source_1l00037"/>00037 
+<anchor xml:id="_models_8py_source_1l00038"/>00038 &#32;&#32;&#32;&#32;<emphasis role="preprocessor">@staticmethod</emphasis>
+<anchor xml:id="_models_8py_source_1l00039"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1af999c39e1e2700b9feb14cbb9f4dd951">00039</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">def&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_user_1af999c39e1e2700b9feb14cbb9f4dd951">get_user_id</link>(request):
+<anchor xml:id="_models_8py_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;Возвращаем&#32;id&#32;пользователя&#32;-&#32;залогиненного&#32;или&#32;выданного&#32;по&#32;session_id</emphasis>
+<anchor xml:id="_models_8py_source_1l00041"/>00041 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;@param&#32;request&#32;HttpRequest</emphasis>
+<anchor xml:id="_models_8py_source_1l00042"/>00042 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;@return&#32;user_id&#32;int</emphasis>
+<anchor xml:id="_models_8py_source_1l00043"/>00043 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;request.user.is_authenticated:
+<anchor xml:id="_models_8py_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;current_user&#32;=&#32;request.user
+<anchor xml:id="_models_8py_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>:
+<anchor xml:id="_models_8py_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;current_user&#32;=&#32;User.objects.get(session_id=request.session.session_key)
+<anchor xml:id="_models_8py_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;current_user.id
+<anchor xml:id="_models_8py_source_1l00049"/>00049 
+<anchor xml:id="_models_8py_source_1l00050"/>00050 
+<anchor xml:id="_models_8py_source_1l00051"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country">00051</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country">Country</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00052"/>00052 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;Таблица&#32;с&#32;кухнями&#32;различных&#32;стран&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00053"/>00053 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;name&#32;–&#32;название&#32;кухни&#32;(например&#32;Русская&#32;кухня)&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00054"/>00054 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00055"/>00055 
+<anchor xml:id="_models_8py_source_1l00056"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta">00056</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00057"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta_1a8da9c506d5007f4e82e8556fee272dac">00057</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Страна&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00058"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1_1_meta_1aff2d8515aba73497fc125e8d32e87707">00058</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Страны&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00059"/>00059 
+<anchor xml:id="_models_8py_source_1l00060"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_country_1ae6fcd5e555cc5f98574cc4a2dc1b1d8f">00060</link> &#32;&#32;&#32;&#32;name&#32;=&#32;models.CharField(max_length=30)
+<anchor xml:id="_models_8py_source_1l00061"/>00061 
+<anchor xml:id="_models_8py_source_1l00062"/>00062 
+<anchor xml:id="_models_8py_source_1l00063"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type">00063</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type">Type</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00064"/>00064 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;таблица&#32;с&#32;типами&#32;блюд&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00065"/>00065 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;name&#32;–&#32;название&#32;типа&#32;(например&#32;Завтраки)&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00066"/>00066 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00067"/>00067 
+<anchor xml:id="_models_8py_source_1l00068"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1_1_meta">00068</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00069"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1_1_meta_1af2ad721d00f1dc6699c89f285a7d2da6">00069</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Тип&#32;бдюда&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00070"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1_1_meta_1a10387b4849a72d1ae3f8632fd4f54315">00070</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Типы&#32;блюд&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00071"/>00071 
+<anchor xml:id="_models_8py_source_1l00072"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_type_1ada45504e4babeb26a397200f2f0c9b8d">00072</link> &#32;&#32;&#32;&#32;name&#32;=&#32;models.CharField(max_length=30)
+<anchor xml:id="_models_8py_source_1l00073"/>00073 
+<anchor xml:id="_models_8py_source_1l00074"/>00074 
+<anchor xml:id="_models_8py_source_1l00075"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type">00075</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type">SubType</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00076"/>00076 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;таблица&#32;с&#32;подтипами&#32;блюд&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00077"/>00077 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;name&#32;–&#32;название&#32;подтипа&#32;(например&#32;фруктовые&#32;десерты)&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00078"/>00078 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;type_id&#32;–&#32;тип&#32;к&#32;которому&#32;относится&#32;подтип&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00079"/>00079 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00080"/>00080 
+<anchor xml:id="_models_8py_source_1l00081"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1_1_meta">00081</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00082"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1_1_meta_1a79e9e0c74f949107d98f4622dcbc72a7">00082</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Подтип&#32;блюда&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00083"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1_1_meta_1ae8be74e068817e66887182cb6a46a9a7">00083</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Подтипы&#32;блюд&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00084"/>00084 
+<anchor xml:id="_models_8py_source_1l00085"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a498b3918f9d559c2f57d5e8a7743e5f5">00085</link> &#32;&#32;&#32;&#32;type&#32;=&#32;models.ForeignKey(Type,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00086"/>00086 
+<anchor xml:id="_models_8py_source_1l00087"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_sub_type_1a2a8418c68b0aba53d130a3ea16bc320e">00087</link> &#32;&#32;&#32;&#32;name&#32;=&#32;models.CharField(max_length=30)
+<anchor xml:id="_models_8py_source_1l00088"/>00088 
+<anchor xml:id="_models_8py_source_1l00089"/>00089 
+<anchor xml:id="_models_8py_source_1l00090"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish">00090</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish">Dish</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00091"/>00091 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;информация&#32;о&#32;блюде&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00092"/>00092 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;name&#32;–&#32;названия&#32;блюда&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00093"/>00093 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;pers_num&#32;–&#32;кол-во&#32;порций&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00094"/>00094 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;cooking_time_minutes&#32;–&#32;время&#32;готовки&#32;в&#32;минутах&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00095"/>00095 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;calories&#32;–&#32;кол-во&#32;калорий&#32;в&#32;блюде&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00096"/>00096 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;proteins&#32;–&#32;кол0белки&#32;в&#32;блюде&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00097"/>00097 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;carbohydrates&#32;–&#32;углеводы&#32;в&#32;блюде&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00098"/>00098 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;fats&#32;–&#32;жиры&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00099"/>00099 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;country_id&#32;–&#32;страна&#32;из&#32;кухни&#32;которой&#32;это&#32;блюдо&#32;(например&#32;итальянская&#32;кухня)&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00100"/>00100 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;subtype_id&#32;–&#32;подтип&#32;блюда&#32;(например,&#32;фруктовые&#32;десерты)&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00101"/>00101 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;image&#32;–&#32;ссылка&#32;на&#32;изображения&#32;блюда&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00102"/>00102 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00103"/>00103 
+<anchor xml:id="_models_8py_source_1l00104"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1_1_meta">00104</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00105"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1_1_meta_1aeb0acd0e031f566a72c321685c492611">00105</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Блюдо&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00106"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1_1_meta_1ac209a6b791399869d1d1dc7b32b8bdaf">00106</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Блюда&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00107"/>00107 
+<anchor xml:id="_models_8py_source_1l00108"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a98e01229bbeada507b776f7ecc8ead27">00108</link> &#32;&#32;&#32;&#32;country&#32;=&#32;models.ForeignKey(Country,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00109"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a273d0e1c9b091aadb25f4a17e77262bc">00109</link> &#32;&#32;&#32;&#32;subtype&#32;=&#32;models.ForeignKey(SubType,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00110"/>00110 
+<anchor xml:id="_models_8py_source_1l00111"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1ac16c094d9da72cb8d08d0a8b177f3e4f">00111</link> &#32;&#32;&#32;&#32;name&#32;=&#32;models.CharField(max_length=100)
+<anchor xml:id="_models_8py_source_1l00112"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1aa6dc2e38ec33dc3515ec2ee5f473da8d">00112</link> &#32;&#32;&#32;&#32;pers_num&#32;=&#32;models.PositiveIntegerField()
+<anchor xml:id="_models_8py_source_1l00113"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a8e70dff838d796fa6fdde5a2bf71cbb2">00113</link> &#32;&#32;&#32;&#32;cooking_time_minutes&#32;=&#32;models.PositiveIntegerField()
+<anchor xml:id="_models_8py_source_1l00114"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a466a56c198c08d4acf38553a5eb725df">00114</link> &#32;&#32;&#32;&#32;image&#32;=&#32;models.ImageField(null=<emphasis role="keyword">True</emphasis>,&#32;blank=<emphasis role="keyword">True</emphasis>,&#32;max_length=130)
+<anchor xml:id="_models_8py_source_1l00115"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1aef53fe87ee71c04493865e68f150e2b0">00115</link> &#32;&#32;&#32;&#32;calories&#32;=&#32;models.PositiveIntegerField()
+<anchor xml:id="_models_8py_source_1l00116"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1ab2d72414d6b36df30358e4f7d11d0db4">00116</link> &#32;&#32;&#32;&#32;proteins&#32;=&#32;models.PositiveIntegerField()
+<anchor xml:id="_models_8py_source_1l00117"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a0d59ba53aacdf9b785a7b919c65fc6c3">00117</link> &#32;&#32;&#32;&#32;carbohydrates&#32;=&#32;models.PositiveIntegerField()
+<anchor xml:id="_models_8py_source_1l00118"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_1a6219673d99d12e14f8118d897b8c75e1">00118</link> &#32;&#32;&#32;&#32;fats&#32;=&#32;models.PositiveIntegerField()
+<anchor xml:id="_models_8py_source_1l00119"/>00119 
+<anchor xml:id="_models_8py_source_1l00120"/>00120 
+<anchor xml:id="_models_8py_source_1l00121"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage">00121</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage">CookingStage</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00122"/>00122 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;шаги&#32;для&#32;приготовления&#32;блюда&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00123"/>00123 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;description&#32;–&#32;текст&#32;того,&#32;что&#32;нужно&#32;сделать&#32;на&#32;этом&#32;шаге&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00124"/>00124 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;order&#32;–&#32;порядковый&#32;номер&#32;шага&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00125"/>00125 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;dish_id&#32;–&#32;блюдо,&#32;к&#32;которому&#32;относится&#32;этот&#32;шаг&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00126"/>00126 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;image&#32;–&#32;ссылка&#32;на&#32;изображение&#32;шага&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00127"/>00127 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00128"/>00128 
+<anchor xml:id="_models_8py_source_1l00129"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta">00129</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00130"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta_1ad04241cf369d16076a09693381d37188">00130</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Этап&#32;приготовления&#32;блюда&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00131"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1_1_meta_1a0453040ff15291fa8b5f89ee67904712">00131</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Этапы&#32;приготовления&#32;блюд&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00132"/>00132 
+<anchor xml:id="_models_8py_source_1l00133"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1a7efd4e0231bdb1d4f552cd8c995c5b02">00133</link> &#32;&#32;&#32;&#32;dish&#32;=&#32;models.ForeignKey(Dish,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00134"/>00134 
+<anchor xml:id="_models_8py_source_1l00135"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1a3e9f3884aa758a7a5a6c8e04b4cd187c">00135</link> &#32;&#32;&#32;&#32;description&#32;=&#32;models.TextField()
+<anchor xml:id="_models_8py_source_1l00136"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1ac42016ad7c5c2eda4a332a7f88495a66">00136</link> &#32;&#32;&#32;&#32;order&#32;=&#32;models.PositiveIntegerField()
+<anchor xml:id="_models_8py_source_1l00137"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_cooking_stage_1a733164f5e440d4d5060abd28f3127082">00137</link> &#32;&#32;&#32;&#32;image&#32;=&#32;models.ImageField(null=<emphasis role="keyword">True</emphasis>,&#32;blank=<emphasis role="keyword">True</emphasis>,&#32;max_length=130)
+<anchor xml:id="_models_8py_source_1l00138"/>00138 
+<anchor xml:id="_models_8py_source_1l00139"/>00139 
+<anchor xml:id="_models_8py_source_1l00140"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category">00140</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category">Category</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00141"/>00141 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;категории&#32;различных&#32;продуктов&#32;для&#32;приготовления&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00142"/>00142 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;name&#32;–&#32;название&#32;категории&#32;(например:&#32;бакалея&#32;или&#32;помидоры)&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00143"/>00143 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;supreme_category_id&#32;–&#32;надкатегория&#32;(например&#32;надкатегорией&#32;римских&#32;помидор&#32;являются&#32;помидоры)&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00144"/>00144 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00145"/>00145 
+<anchor xml:id="_models_8py_source_1l00146"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1_1_meta">00146</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00147"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1_1_meta_1a6f6824b1e0c914c0adb00a530add8708">00147</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Категория&#32;продукта&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00148"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1_1_meta_1a5770ffbd597d9ca2f97e2192ed26e1f1">00148</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Категории&#32;продуктов&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00149"/>00149 
+<anchor xml:id="_models_8py_source_1l00150"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a9c1f3305e89355c12f2a40dfdd2cde78">00150</link> &#32;&#32;&#32;&#32;supreme_category&#32;=&#32;models.ForeignKey(<emphasis role="stringliteral">&apos;self&apos;</emphasis>,&#32;null=<emphasis role="keyword">True</emphasis>,&#32;blank=<emphasis role="keyword">True</emphasis>,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00151"/>00151 
+<anchor xml:id="_models_8py_source_1l00152"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_category_1a9de968ced436a1b6629a47ac306c9524">00152</link> &#32;&#32;&#32;&#32;name&#32;=&#32;models.CharField(max_length=70)
+<anchor xml:id="_models_8py_source_1l00153"/>00153 
+<anchor xml:id="_models_8py_source_1l00154"/>00154 
+<anchor xml:id="_models_8py_source_1l00155"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure">00155</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure">UnitOfMeasure</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00156"/>00156 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;единицы&#32;изменения&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00157"/>00157 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;name&#32;–&#32;название&#32;единицы&#32;измерения&#32;(например&#32;штуки&#32;или&#32;кг)&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00158"/>00158 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;supreme_unit_id&#32;–&#32;основная&#32;форма&#32;категории&#32;(например&#32;Supreme_unit_id&#32;у&#32;&quot;штуки&quot;&#32;это&#32;&quot;штука&quot;)&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00159"/>00159 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00160"/>00160 
+<anchor xml:id="_models_8py_source_1l00161"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta">00161</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00162"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta_1a9e71859360b9cce0e1f49a53a466f6f0">00162</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Единица&#32;измерения&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00163"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta_1aeea5099ac1d8491e243d1211184059d9">00163</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Единицы&#32;измерения&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00164"/>00164 
+<anchor xml:id="_models_8py_source_1l00165"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a3109f3e7f355a8ff4b0ca4b7ff10e7ad">00165</link> &#32;&#32;&#32;&#32;supreme_unit&#32;=&#32;models.ForeignKey(<emphasis role="stringliteral">&apos;self&apos;</emphasis>,&#32;null=<emphasis role="keyword">True</emphasis>,&#32;blank=<emphasis role="keyword">True</emphasis>,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00166"/>00166 
+<anchor xml:id="_models_8py_source_1l00167"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a7332fe3a27b419882b39cf2552fd67ab">00167</link> &#32;&#32;&#32;&#32;name&#32;=&#32;models.CharField(max_length=20)
+<anchor xml:id="_models_8py_source_1l00168"/>00168 
+<anchor xml:id="_models_8py_source_1l00169"/>00169 
+<anchor xml:id="_models_8py_source_1l00170"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion">00170</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion">Conversion</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00171"/>00171 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;коэффициенты&#32;для&#32;перевода&#32;единиц&#32;измерения&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00172"/>00172 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;coefficient&#32;–&#32;число&#32;на&#32;которое&#32;нужно&#32;умножить&#32;что&#32;бы&#32;перевести&#32;from_unit_id&#32;в&#32;to_unit_id&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00173"/>00173 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;category_id&#32;–&#32;категория&#32;для&#32;которой&#32;выполняется&#32;перевод&#32;(очевидно&#32;что&#32;коэффициент&#32;для&#32;перевода&#32;штук&#32;в&#32;граммы&#32;для&#32;помидоров&#32;и&#32;огурцов&#32;отличается)&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00174"/>00174 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;from_unit_id–&#32;единица&#32;измерения&#32;из&#32;которой&#32;выполняется&#32;перевод&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00175"/>00175 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;to_unit_id&#32;–&#32;единица&#32;измерения&#32;в&#32;которую&#32;выполняется&#32;перевод&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00176"/>00176 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00177"/>00177 
+<anchor xml:id="_models_8py_source_1l00178"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1_1_meta">00178</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00179"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1_1_meta_1a5b91f7b3138d28acaa379cee2d2bdf52">00179</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Преобразование&#32;единицы&#32;измерения&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00180"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1_1_meta_1abc0878b259b6d58b8b1db9b1cc03415a">00180</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Преобразования&#32;единиц&#32;измерения&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00181"/>00181 
+<anchor xml:id="_models_8py_source_1l00182"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a17bd76ab340d9237df03889fc9cb3d22">00182</link> &#32;&#32;&#32;&#32;category&#32;=&#32;models.ForeignKey(Category,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00183"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad4acc8777678dd8cba9d6b57081d8fc6">00183</link> &#32;&#32;&#32;&#32;from_unit&#32;=&#32;models.ForeignKey(UnitOfMeasure,&#32;related_name=<emphasis role="stringliteral">&apos;from_unit&apos;</emphasis>,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00184"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1a43a4b6d570628ec9d2a306796d089daa">00184</link> &#32;&#32;&#32;&#32;to_unit&#32;=&#32;models.ForeignKey(UnitOfMeasure,&#32;related_name=<emphasis role="stringliteral">&apos;to_unit&apos;</emphasis>,&#32;null=<emphasis role="keyword">True</emphasis>,&#32;blank=<emphasis role="keyword">True</emphasis>,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00185"/>00185 
+<anchor xml:id="_models_8py_source_1l00186"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_conversion_1ad6746dc9010525fa7f784b471148617a">00186</link> &#32;&#32;&#32;&#32;coefficient&#32;=&#32;models.DecimalField(max_digits=4&#32;+&#32;4,&#32;decimal_places=4,&#32;default=1)
+<anchor xml:id="_models_8py_source_1l00187"/>00187 
+<anchor xml:id="_models_8py_source_1l00188"/>00188 
+<anchor xml:id="_models_8py_source_1l00189"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category">00189</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category">DishCategory</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00190"/>00190 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;информация&#32;о&#32;составе&#32;блюда.&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00191"/>00191 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;amount&#32;–&#32;кол-во&#32;продукта&#32;в&#32;блюде&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00192"/>00192 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;category_id&#32;–&#32;категория&#32;продукта&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00193"/>00193 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;dish_id&#32;–&#32;блюдо&#32;к&#32;которому&#32;относится&#32;продукт&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00194"/>00194 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;unit_id&#32;–&#32;единицы&#32;измерения&#32;в&#32;которых&#32;указано&#32;кол-во&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00195"/>00195 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00196"/>00196 
+<anchor xml:id="_models_8py_source_1l00197"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta">00197</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00198"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta_1a106adcf838c65b717f5afd11c7cb1059">00198</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Продукт&#32;в&#32;блюде&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00199"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1_1_meta_1aad2adc21c080b9cc65126e81c584ceae">00199</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Продукты&#32;в&#32;блюдах&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00200"/>00200 
+<anchor xml:id="_models_8py_source_1l00201"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a4d5c513b84d4b7232adfa7ee54209b0a">00201</link> &#32;&#32;&#32;&#32;dish&#32;=&#32;models.ForeignKey(Dish,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00202"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a981a0bc18837363acca13f8dfb08f2c3">00202</link> &#32;&#32;&#32;&#32;category&#32;=&#32;models.ForeignKey(Category,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00203"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1a7cc4793ed0df72cb94a9d2d1944efa13">00203</link> &#32;&#32;&#32;&#32;unit&#32;=&#32;models.ForeignKey(UnitOfMeasure,&#32;null=<emphasis role="keyword">True</emphasis>,&#32;blank=<emphasis role="keyword">True</emphasis>,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00204"/>00204 
+<anchor xml:id="_models_8py_source_1l00205"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_dish_category_1aae8ce0362f2bcdc47aebf75e88d6f1c7">00205</link> &#32;&#32;&#32;&#32;amount&#32;=&#32;models.DecimalField(max_digits=4&#32;+&#32;4,&#32;decimal_places=4)
+<anchor xml:id="_models_8py_source_1l00206"/>00206 
+<anchor xml:id="_models_8py_source_1l00207"/>00207 
+<anchor xml:id="_models_8py_source_1l00208"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order">00208</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order">Order</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00209"/>00209 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;информация&#32;о&#32;заказах.&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00210"/>00210 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;order_date&#32;–&#32;дата&#32;заказа&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00211"/>00211 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;current&#32;–&#32;статус&#32;(выполнен/&#32;не&#32;выполнен)&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00212"/>00212 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;user_id&#32;–&#32;пользователь&#32;совершивший&#32;заказ&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00213"/>00213 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00214"/>00214 
+<anchor xml:id="_models_8py_source_1l00215"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1_1_meta">00215</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00216"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1_1_meta_1aa2c46ff2b38ab1fe365f21d19baed10f">00216</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Заказ&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00217"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1_1_meta_1a3388cd09441c1fc223dc9065b263aecf">00217</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Заказы&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00218"/>00218 
+<anchor xml:id="_models_8py_source_1l00219"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a7eaf471782c9434bf40e61a1011687e4">00219</link> &#32;&#32;&#32;&#32;user&#32;=&#32;models.ForeignKey(User,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00220"/>00220 
+<anchor xml:id="_models_8py_source_1l00221"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a609c35dfd5a69b984f4f055552501fd4">00221</link> &#32;&#32;&#32;&#32;order_date&#32;=&#32;models.DateTimeField()
+<anchor xml:id="_models_8py_source_1l00222"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_order_1a37e52b58e2a8b31b954384bd4abf4a16">00222</link> &#32;&#32;&#32;&#32;current&#32;=&#32;models.BooleanField(default=<emphasis role="keyword">True</emphasis>)
+<anchor xml:id="_models_8py_source_1l00223"/>00223 
+<anchor xml:id="_models_8py_source_1l00224"/>00224 
+<anchor xml:id="_models_8py_source_1l00225"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu">00225</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu">Menu</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00226"/>00226 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;состав&#32;заказа&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00227"/>00227 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;amount–&#32;кол-во&#32;товара,&#32;которое&#32;было&#32;заказано&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00228"/>00228 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;dish_id&#32;–&#32;товар&#32;который&#32;был&#32;заказан&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00229"/>00229 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;order_id&#32;–&#32;заказ&#32;в&#32;котором&#32;этот&#32;товар&#32;был&#32;заказан&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00230"/>00230 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00231"/>00231 
+<anchor xml:id="_models_8py_source_1l00232"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1_1_meta">00232</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00233"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1_1_meta_1ad5f7df30634aa88e95cd0e6d52ba75ec">00233</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Меню&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00234"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1_1_meta_1a055158e6db5b6195869dde452583dec6">00234</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Меню&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00235"/>00235 
+<anchor xml:id="_models_8py_source_1l00236"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1ae4080b09fc284646192827337d90c3ab">00236</link> &#32;&#32;&#32;&#32;dish&#32;=&#32;models.ForeignKey(Dish,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00237"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a0d4a72836a3e7d09b49f4ce66faa7b5c">00237</link> &#32;&#32;&#32;&#32;order&#32;=&#32;models.ForeignKey(Order,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00238"/>00238 
+<anchor xml:id="_models_8py_source_1l00239"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_menu_1a60fdd5397861c0b59ecd1296d7575140">00239</link> &#32;&#32;&#32;&#32;amount&#32;=&#32;models.PositiveIntegerField(default=1)
+<anchor xml:id="_models_8py_source_1l00240"/>00240 
+<anchor xml:id="_models_8py_source_1l00241"/>00241 
+<anchor xml:id="_models_8py_source_1l00242"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop">00242</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop">Shop</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00243"/>00243 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;информация&#32;о&#32;магазине&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00244"/>00244 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;name&#32;–&#32;название&#32;магазина&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00245"/>00245 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;link&#32;–&#32;ссылка&#32;на&#32;магазин&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00246"/>00246 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00247"/>00247 
+<anchor xml:id="_models_8py_source_1l00248"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta">00248</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00249"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta_1ad0ccc462233e9843d141b6612d0736d8">00249</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Магазин&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00250"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1_1_meta_1ad7aa3f44386afe3f13b9a69da9423fbc">00250</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Магазины&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00251"/>00251 
+<anchor xml:id="_models_8py_source_1l00252"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1a65cbb33ac3a746c18955a5b5ca9d1303">00252</link> &#32;&#32;&#32;&#32;name&#32;=&#32;models.CharField(max_length=30)
+<anchor xml:id="_models_8py_source_1l00253"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_shop_1a9013b400df80ef53b1663155dbce38bc">00253</link> &#32;&#32;&#32;&#32;link&#32;=&#32;models.URLField()
+<anchor xml:id="_models_8py_source_1l00254"/>00254 
+<anchor xml:id="_models_8py_source_1l00255"/>00255 
+<anchor xml:id="_models_8py_source_1l00256"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product">00256</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product">Product</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00257"/>00257 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;информация&#32;о&#32;конкретном&#32;товаре&#32;в&#32;магазине&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00258"/>00258 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;name&#32;–&#32;название&#32;товара&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00259"/>00259 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;price&#32;–&#32;цена&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00260"/>00260 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;amount&#32;–&#32;количество&#32;(в&#32;unit_id)&#32;товара&#32;которое&#32;в&#32;одной&#32;единице&#32;заказ&#32;(например&#32;300,&#32;unit_id&#32;–&#32;граммы)&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00261"/>00261 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;link&#32;–&#32;ссылка&#32;на&#32;товар&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00262"/>00262 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;shop_id&#32;–&#32;магазин,&#32;из&#32;которого&#32;товар&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00263"/>00263 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;unit_id&#32;–&#32;единица&#32;измерения&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00264"/>00264 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;user_id&#32;–&#32;пользователь&#32;для&#32;которого&#32;был&#32;спаршен&#32;данный&#32;товар&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00265"/>00265 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00266"/>00266 
+<anchor xml:id="_models_8py_source_1l00267"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1_1_meta">00267</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00268"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1_1_meta_1a3ba91158825e66889edef7b33eb338e5">00268</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Продукт&#32;из&#32;магазина&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00269"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1_1_meta_1a214e7e28d4d5e16c32362fa32365fca0">00269</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Продукты&#32;из&#32;магазинов&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00270"/>00270 
+<anchor xml:id="_models_8py_source_1l00271"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1afd57eb422a20419b099d3a32076368c1">00271</link> &#32;&#32;&#32;&#32;user&#32;=&#32;models.ForeignKey(User,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00272"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1af0343ad34783cf481faab110321612f0">00272</link> &#32;&#32;&#32;&#32;unit&#32;=&#32;models.ForeignKey(UnitOfMeasure,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00273"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ae61b00ace29b79c99799c7eed8b1cc0f">00273</link> &#32;&#32;&#32;&#32;shop&#32;=&#32;models.ForeignKey(Shop,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00274"/>00274 
+<anchor xml:id="_models_8py_source_1l00275"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1aced0198e63546bdc47f09ebe932fc489">00275</link> &#32;&#32;&#32;&#32;name&#32;=&#32;models.CharField(max_length=100)
+<anchor xml:id="_models_8py_source_1l00276"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ad84f499b39050cd0d1cf361c61a7d0e1">00276</link> &#32;&#32;&#32;&#32;price&#32;=&#32;models.PositiveIntegerField()
+<anchor xml:id="_models_8py_source_1l00277"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1ad3098ea42061e5edd90246487a1681ee">00277</link> &#32;&#32;&#32;&#32;amount&#32;=&#32;models.DecimalField(max_digits=4&#32;+&#32;4,&#32;decimal_places=4)
+<anchor xml:id="_models_8py_source_1l00278"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_1a437b04ab4c70ba73e87291ae41849a22">00278</link> &#32;&#32;&#32;&#32;link&#32;=&#32;models.URLField()
+<anchor xml:id="_models_8py_source_1l00279"/>00279 
+<anchor xml:id="_models_8py_source_1l00280"/>00280 
+<anchor xml:id="_models_8py_source_1l00281"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log">00281</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log">ProductLog</link>(models.Model):
+<anchor xml:id="_models_8py_source_1l00282"/>00282 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;!&#32;информация&#32;о&#32;ранее&#32;заказанных&#32;товарах&#32;в&#32;магазине&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00283"/>00283 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;name&#32;–&#32;название&#32;товара&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00284"/>00284 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;price&#32;–&#32;цена&#32;&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00285"/>00285 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;amount&#32;–&#32;количество&#32;(в&#32;unit_id)&#32;товара&#32;которое&#32;в&#32;одной&#32;единице&#32;заказ&#32;(например&#32;300,&#32;unit_id&#32;–&#32;граммы)&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00286"/>00286 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;quantity&#32;–&#32;количество&#32;единиц,&#32;которое&#32;было&#32;заказано&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00287"/>00287 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;link&#32;–&#32;ссылка&#32;на&#32;товар&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00288"/>00288 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;shop_id&#32;–&#32;магазин,&#32;из&#32;которого&#32;товар&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00289"/>00289 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;order_id&#32;–&#32;заказ,&#32;в&#32;котором&#32;был&#32;куплен&#32;данный&#32;товар&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00290"/>00290 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;unit_id&#32;–&#32;единица&#32;измерения&#32;&lt;br&gt;</emphasis>
+<anchor xml:id="_models_8py_source_1l00291"/>00291 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;&apos;&apos;&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00292"/>00292 
+<anchor xml:id="_models_8py_source_1l00293"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1_1_meta">00293</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1_1_meta">Meta</link>:
+<anchor xml:id="_models_8py_source_1l00294"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1_1_meta_1aa2670518c91030e0cbb7fa488b69557e">00294</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name&#32;=&#32;<emphasis role="stringliteral">&apos;Лог&#32;родукта&#32;из&#32;магазина&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00295"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1_1_meta_1ab824c629b4cc6e5679185cdead1f4aae">00295</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;verbose_name_plural&#32;=&#32;<emphasis role="stringliteral">&apos;Логи&#32;родуктов&#32;из&#32;магазинов&apos;</emphasis>
+<anchor xml:id="_models_8py_source_1l00296"/>00296 
+<anchor xml:id="_models_8py_source_1l00297"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a9cb6e368a91a7fa12f1b9f27a0f10433">00297</link> &#32;&#32;&#32;&#32;order&#32;=&#32;models.ForeignKey(Order,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00298"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1a65e3a4594a41f198ed662856d2ecbbda">00298</link> &#32;&#32;&#32;&#32;shop&#32;=&#32;models.ForeignKey(Shop,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00299"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1af46abc1d110ff668e58604b77e767e08">00299</link> &#32;&#32;&#32;&#32;unit&#32;=&#32;models.ForeignKey(UnitOfMeasure,&#32;on_delete=models.CASCADE)
+<anchor xml:id="_models_8py_source_1l00300"/>00300 
+<anchor xml:id="_models_8py_source_1l00301"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1adf15e6ea2e1f6a0ea640326691140ce8">00301</link> &#32;&#32;&#32;&#32;name&#32;=&#32;models.CharField(max_length=100)
+<anchor xml:id="_models_8py_source_1l00302"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1af158701900a361a9b0498c97b8ff2310">00302</link> &#32;&#32;&#32;&#32;price&#32;=&#32;models.PositiveIntegerField()
+<anchor xml:id="_models_8py_source_1l00303"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1ae387b693aa90ec7d8b04d5ae9cc47608">00303</link> &#32;&#32;&#32;&#32;amount&#32;=&#32;models.DecimalField(max_digits=4&#32;+&#32;4,&#32;decimal_places=4)
+<anchor xml:id="_models_8py_source_1l00304"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1aa5e3b31f2096adb94626dcfbd356b7de">00304</link> &#32;&#32;&#32;&#32;quantity&#32;=&#32;models.PositiveIntegerField()
+<anchor xml:id="_models_8py_source_1l00305"/><link linkend="_classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_product_log_1af8607133f1651d3e132d75183af8d4c3">00305</link> &#32;&#32;&#32;&#32;link&#32;=&#32;models.URLField()
+</programlisting></section>

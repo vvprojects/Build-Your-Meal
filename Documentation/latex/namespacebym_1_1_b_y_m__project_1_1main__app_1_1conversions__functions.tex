@@ -1,0 +1,64 @@
+\doxysection{bym.\+BYM\+\_\+project.\+main\+\_\+app.\+conversions\+\_\+functions Namespace Reference}
+\label{namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions}\index{bym.BYM\_project.main\_app.conversions\_functions@{bym.BYM\_project.main\_app.conversions\_functions}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ how\+\_\+many\+\_\+add} (category\+\_\+id, need\+\_\+unit, have\+\_\+unit, need, have)
+\begin{DoxyCompactList}\small\item\em Расчет сколько штук товара необходимо купть на что бы полностью покрыть рецепт \end{DoxyCompactList}\item 
+\textbf{ get\+\_\+lavka\+\_\+unit\+\_\+id} (name\+\_\+unit)
+\begin{DoxyCompactList}\small\item\em Исчет единицу измерения из магазина в базе данных, если нет создает \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\label{namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions_a7f6cdbfd78f849181eb8729d15de8339} 
+\index{bym.BYM\_project.main\_app.conversions\_functions@{bym.BYM\_project.main\_app.conversions\_functions}!get\_lavka\_unit\_id@{get\_lavka\_unit\_id}}
+\index{get\_lavka\_unit\_id@{get\_lavka\_unit\_id}!bym.BYM\_project.main\_app.conversions\_functions@{bym.BYM\_project.main\_app.conversions\_functions}}
+\doxysubsubsection{get\_lavka\_unit\_id()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+conversions\+\_\+functions.\+get\+\_\+lavka\+\_\+unit\+\_\+id (\begin{DoxyParamCaption}\item[{}]{name\+\_\+unit }\end{DoxyParamCaption})}
+
+
+
+Исчет единицу измерения из магазина в базе данных, если нет создает 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+\_\+unit} & string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unit\+Of\+Measure 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 47} of file \textbf{ conversions\+\_\+functions.\+py}.
+
+\label{namespacebym_1_1_b_y_m__project_1_1main__app_1_1conversions__functions_aedc887b909c552c4dc6d68d3f3c82294} 
+\index{bym.BYM\_project.main\_app.conversions\_functions@{bym.BYM\_project.main\_app.conversions\_functions}!how\_many\_add@{how\_many\_add}}
+\index{how\_many\_add@{how\_many\_add}!bym.BYM\_project.main\_app.conversions\_functions@{bym.BYM\_project.main\_app.conversions\_functions}}
+\doxysubsubsection{how\_many\_add()}
+{\footnotesize\ttfamily bym.\+BYM\+\_\+project.\+main\+\_\+app.\+conversions\+\_\+functions.\+how\+\_\+many\+\_\+add (\begin{DoxyParamCaption}\item[{}]{category\+\_\+id,  }\item[{}]{need\+\_\+unit,  }\item[{}]{have\+\_\+unit,  }\item[{}]{need,  }\item[{}]{have }\end{DoxyParamCaption})}
+
+
+
+Расчет сколько штук товара необходимо купть на что бы полностью покрыть рецепт 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+id} & int \\
+\hline
+{\em need\+\_\+unit} & Unit\+Of\+Measure -\/ еденицы измерения продукта по рецепту (например стаканы) \\
+\hline
+{\em have\+\_\+unit} & Unit\+Of\+Measure -\/ еденицы измерения товара из магазина (например граммы) \\
+\hline
+{\em need} & int -\/ необходимое количество по рецепту (например 5, have\+\_\+unit -\/ стаканы) \\
+\hline
+{\em have} & int -\/ количество в одном юните в магазине (например 500, have\+\_\+unit-\/граммы) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+kol int -\/ сколько нужно заказать 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 6} of file \textbf{ conversions\+\_\+functions.\+py}.
+

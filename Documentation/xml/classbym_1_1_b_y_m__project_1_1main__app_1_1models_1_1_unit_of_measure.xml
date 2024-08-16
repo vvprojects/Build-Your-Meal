@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure" kind="class" language="Python" prot="public">
+    <compoundname>bym::BYM_project::main_app::models::UnitOfMeasure</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">models.Model</basecompoundref>
+    <innerclass refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1_1_meta" prot="public">bym::BYM_project::main_app::models::UnitOfMeasure::Meta</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a1b1b02a5da6f179c95963877165048f7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.UnitOfMeasure::supreme_unit</definition>
+        <argsstring></argsstring>
+        <name>supreme_unit</name>
+        <qualifiedname>bym.BYM_project.main_app.models.UnitOfMeasure.supreme_unit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="165" column="1" bodyfile="models.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a7359e9ef1a76227493aedcaa8b42c9e3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.UnitOfMeasure::null</definition>
+        <argsstring></argsstring>
+        <name>null</name>
+        <qualifiedname>bym.BYM_project.main_app.models.UnitOfMeasure.null</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="165" column="1" bodyfile="models.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1aeff13c235b7e7fff55860bcb163b490c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.UnitOfMeasure::True</definition>
+        <argsstring></argsstring>
+        <name>True</name>
+        <qualifiedname>bym.BYM_project.main_app.models.UnitOfMeasure.True</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="165" column="1" bodyfile="models.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a3109f3e7f355a8ff4b0ca4b7ff10e7ad" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.UnitOfMeasure::blank</definition>
+        <argsstring></argsstring>
+        <name>blank</name>
+        <qualifiedname>bym.BYM_project.main_app.models.UnitOfMeasure.blank</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="165" column="1" bodyfile="models.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1ac5889745ab38ac425281ac68e663e6b7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.UnitOfMeasure::on_delete</definition>
+        <argsstring></argsstring>
+        <name>on_delete</name>
+        <qualifiedname>bym.BYM_project.main_app.models.UnitOfMeasure.on_delete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="165" column="1" bodyfile="models.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a7332fe3a27b419882b39cf2552fd67ab" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>bym.BYM_project.main_app.models.UnitOfMeasure::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>bym.BYM_project.main_app.models.UnitOfMeasure.name</qualifiedname>
+        <initializer>=  models.CharField(max_length=20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="models.py" line="167" column="1" bodyfile="models.py" bodystart="167" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>единицы изменения <linebreak/>
+ name – название единицы измерения (например штуки или кг) <linebreak/>
+ supreme_unit_id – основная форма категории (например Supreme_unit_id у &quot;штуки&quot; это &quot;штука&quot;) <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.UnitOfMeasure</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>bym.BYM_project.main_app.models.UnitOfMeasure</label>
+        <link refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models.Model</label>
+      </node>
+    </collaborationgraph>
+    <location file="models.py" line="155" column="1" bodyfile="models.py" bodystart="155" bodyend="169"/>
+    <listofallmembers>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a3109f3e7f355a8ff4b0ca4b7ff10e7ad" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::UnitOfMeasure</scope><name>blank</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a7332fe3a27b419882b39cf2552fd67ab" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::UnitOfMeasure</scope><name>name</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a7359e9ef1a76227493aedcaa8b42c9e3" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::UnitOfMeasure</scope><name>null</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1ac5889745ab38ac425281ac68e663e6b7" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::UnitOfMeasure</scope><name>on_delete</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1a1b1b02a5da6f179c95963877165048f7" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::UnitOfMeasure</scope><name>supreme_unit</name></member>
+      <member refid="classbym_1_1_b_y_m__project_1_1main__app_1_1models_1_1_unit_of_measure_1aeff13c235b7e7fff55860bcb163b490c" prot="public" virt="non-virtual"><scope>bym::BYM_project::main_app::models::UnitOfMeasure</scope><name>True</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
