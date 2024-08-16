@@ -1,0 +1,8 @@
+user_id: int (инициализируется в начале сессии)
+login: str
+<other information from login>
+search_log = [[type_id1: int, ...], search_str: str]
+address: : str
+order_arr = [[dish_id: int, position: str, cook_date: str, amount: int],...]
+categories_arr = [[category_id: int, amount: int],...]
+products_arr = [[product_name: str, amount: int],...]
